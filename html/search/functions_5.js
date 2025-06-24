@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['matrix_0',['Matrix',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a631c80a196b2955609d8608f5a2d813e',1,'pbpt::math::Matrix::Matrix() noexcept=default'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a01671601f07b87ef9a1f7b65aa21391d',1,'pbpt::math::Matrix::Matrix(Vecs &amp;&amp;... rows) noexcept']]],
-  ['mid_5fpoint_1',['mid_point',['../d1/d2f/namespacepbpt_1_1math.html#a1948ec5bd690920ce61af922b9daeac0',1,'pbpt::math']]]
+  ['identity_0',['identity',['../da/d16/classpbpt_1_1math_1_1_matrix.html#acd1080391d4ce48ff76a609c1ef5bc95',1,'pbpt::math::Matrix']]],
+  ['inverse_1',['inverse',['../da/d16/classpbpt_1_1math_1_1_matrix.html#afbc9290f0d431faee4436f2cccd930d4',1,'pbpt::math::Matrix']]],
+  ['is_5fpoint_2',['is_point',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a9e99341dc533d059b32f74aefc947128',1,'pbpt::math::Homogeneous']]],
+  ['is_5fvector_3',['is_vector',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a559dd8593f04e9acae755d92b457e9fd',1,'pbpt::math::Homogeneous']]]
 ];

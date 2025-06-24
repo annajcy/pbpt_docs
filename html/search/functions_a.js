@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['sqrt_0',['sqrt',['../d1/d2f/namespacepbpt_1_1math.html#a05c90d3b8d7543103db19c3638a4105f',1,'pbpt::math']]],
-  ['sqrt_5fnewton_5fraphson_1',['sqrt_newton_raphson',['../d1/d30/namespacepbpt_1_1math_1_1detail.html#a498e700b59ce33ea68c0cc819c7ef070',1,'pbpt::math::detail']]],
-  ['submatrix_2',['submatrix',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a05839265522abc71a4afefcf1af5ec23',1,'pbpt::math::Matrix::submatrix(const std::array&lt; int, NewR &gt; &amp;rows_to_keep, const std::array&lt; int, NewC &gt; &amp;cols_to_keep) const'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a6ed134f57905f5197d1354ffe2c7a03d',1,'pbpt::math::Matrix::submatrix(int row_start, int col_start) const']]]
+  ['perspective_0',['perspective',['../d0/d29/classpbpt_1_1math_1_1_transform.html#a0375131d4af2fa60405eea227f83a3e8',1,'pbpt::math::Transform']]],
+  ['point_1',['Point',['../d7/d1b/classpbpt_1_1math_1_1_point.html#a349654edbf4ca320a4a267ede35e377d',1,'pbpt::math::Point::Point() noexcept'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#aa7e55f0d6663d2156fc228be2786b381',1,'pbpt::math::Point::Point(const Vector&lt; T, N &gt; &amp;vec) noexcept'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#ab7c4e8ad30190b66daba4a1e1f4ca914',1,'pbpt::math::Point::Point(Args &amp;&amp;... args) noexcept']]]
 ];

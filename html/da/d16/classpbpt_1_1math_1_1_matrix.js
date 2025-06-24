@@ -1,9 +1,10 @@
 var classpbpt_1_1math_1_1_matrix =
 [
-    [ "ConstView", "da/d16/classpbpt_1_1math_1_1_matrix.html#ac74761ba870ef52d366c8e4f0ce3bfb6", null ],
-    [ "View", "da/d16/classpbpt_1_1math_1_1_matrix.html#a589da5785f081872f5b730b9ef116547", null ],
+    [ "ConstView", "da/d16/classpbpt_1_1math_1_1_matrix.html#a54a9f953c4bb1b0346931c62dd6573d3", null ],
+    [ "View", "da/d16/classpbpt_1_1math_1_1_matrix.html#a1e70253ac626aa55ae9e5545c8637e31", null ],
     [ "Matrix", "da/d16/classpbpt_1_1math_1_1_matrix.html#a631c80a196b2955609d8608f5a2d813e", null ],
-    [ "Matrix", "da/d16/classpbpt_1_1math_1_1_matrix.html#a01671601f07b87ef9a1f7b65aa21391d", null ],
+    [ "Matrix", "da/d16/classpbpt_1_1math_1_1_matrix.html#a2054990640a5b0097c19e0bbe119e70a", null ],
+    [ "Matrix", "da/d16/classpbpt_1_1math_1_1_matrix.html#a16aedbe8ee198de41f5814a7c084c0a4", null ],
     [ "col", "da/d16/classpbpt_1_1math_1_1_matrix.html#a905d0069ee988db38ecb65989939139b", null ],
     [ "col", "da/d16/classpbpt_1_1math_1_1_matrix.html#a9b3b7b027f232feeef07d697f2fa29c3", null ],
     [ "col_dims", "da/d16/classpbpt_1_1math_1_1_matrix.html#a6fac9e89dcdd3cba8485605a08aabe46", null ],
@@ -22,6 +23,6 @@ var classpbpt_1_1math_1_1_matrix =
     [ "submatrix", "da/d16/classpbpt_1_1math_1_1_matrix.html#a05839265522abc71a4afefcf1af5ec23", null ],
     [ "submatrix", "da/d16/classpbpt_1_1math_1_1_matrix.html#a6ed134f57905f5197d1354ffe2c7a03d", null ],
     [ "transpose", "da/d16/classpbpt_1_1math_1_1_matrix.html#a08615df203db96831e4fff1c92a450db", null ],
-    [ "view", "da/d16/classpbpt_1_1math_1_1_matrix.html#aea40964cee4483d90df2103172dacbde", null ],
-    [ "view", "da/d16/classpbpt_1_1math_1_1_matrix.html#a031673371bf3ef4d68419b4dac543c46", null ]
+    [ "view", "da/d16/classpbpt_1_1math_1_1_matrix.html#ad6f73bcf87199b74d3ca296dd6e7a7e1", null ],
+    [ "view", "da/d16/classpbpt_1_1math_1_1_matrix.html#a11e644510f47ad17d1060779edd6d64d", null ]
 ];

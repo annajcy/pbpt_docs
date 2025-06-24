@@ -1,11 +1,11 @@
 var point_8hpp =
 [
     [ "pbpt::math::Point< T, N >", "d7/d1b/classpbpt_1_1math_1_1_point.html", "d7/d1b/classpbpt_1_1math_1_1_point" ],
-    [ "pbpt::math::Point2", "d1/d2f/namespacepbpt_1_1math.html#ab83707f56bbf41e98a8eaa798d3c76b8", null ],
-    [ "pbpt::math::Point3", "d1/d2f/namespacepbpt_1_1math.html#a2789472def48578264814b992d89d2a9", null ],
-    [ "pbpt::math::Point4", "d1/d2f/namespacepbpt_1_1math.html#a89de02969593508ff9fc88d1931d3970", null ],
+    [ "pbpt::math::Pt2", "d1/d2f/namespacepbpt_1_1math.html#a38aae464f14d90a8e81f2d6720070838", null ],
+    [ "pbpt::math::Pt3", "d1/d2f/namespacepbpt_1_1math.html#a6571acadeb280b710b17c16897d14a64", null ],
+    [ "pbpt::math::Pt4", "d1/d2f/namespacepbpt_1_1math.html#ac602f90f05b18e9ece16a922e79afc2e", null ],
     [ "pbpt::math::mid_point", "d1/d2f/namespacepbpt_1_1math.html#a1948ec5bd690920ce61af922b9daeac0", null ],
-    [ "pbpt::math::operator+", "d1/d2f/namespacepbpt_1_1math.html#a18c5bad8a1667f9c09c0867ab2e4e0d2", null ],
-    [ "pbpt::math::operator-", "d1/d2f/namespacepbpt_1_1math.html#a12ff96bd79ad504aa681734a9e724999", null ],
-    [ "pbpt::math::operator-", "d1/d2f/namespacepbpt_1_1math.html#ab8c952ac63f8063064961f653b7a5123", null ]
+    [ "pbpt::math::operator+", "d1/d2f/namespacepbpt_1_1math.html#a1617e96f022ed6e19e7648f0e8fbe9be", null ],
+    [ "pbpt::math::operator-", "d1/d2f/namespacepbpt_1_1math.html#ae5b82187f34eb7864e9020f2bab5aff6", null ],
+    [ "pbpt::math::operator-", "d1/d2f/namespacepbpt_1_1math.html#a71a67ed2f551f03140513de70a5dce76", null ]
 ];

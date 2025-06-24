@@ -1,11 +1,14 @@
 var searchData=
 [
-  ['ray_0',['Ray',['../de/d7d/classpbpt_1_1math_1_1_ray.html',1,'pbpt::math::Ray&lt; T, N &gt;'],['../de/d7d/classpbpt_1_1math_1_1_ray.html#ae8f8abae1c788e23b806a64b69656fba',1,'pbpt::math::Ray::Ray() noexcept'],['../de/d7d/classpbpt_1_1math_1_1_ray.html#a1fa5fbaf372b07cdaebc5b96878fc33a',1,'pbpt::math::Ray::Ray(const Point&lt; T, N &gt; &amp;origin, const Vec&lt; T, N &gt; &amp;direction)'],['../de/d7d/classpbpt_1_1math_1_1_ray.html#a300bb51582991822458ab5d298fa5a4a',1,'pbpt::math::Ray::Ray(const Point&lt; T, N &gt; &amp;origin, const Point&lt; T, N &gt; &amp;target)']]],
-  ['ray_2ehpp_1',['ray.hpp',['../db/d1d/ray_8hpp.html',1,'']]],
-  ['ray2_2',['Ray2',['../d1/d2f/namespacepbpt_1_1math.html#a6da443c22d4090c6371cbb9d9c83f62e',1,'pbpt::math']]],
-  ['ray3_3',['Ray3',['../d1/d2f/namespacepbpt_1_1math.html#a71dc4e1dcf7601243cfee5970695b0b8',1,'pbpt::math']]],
-  ['ray_3c_20float_2c_202_20_3e_4',['Ray&lt; Float, 2 &gt;',['../de/d7d/classpbpt_1_1math_1_1_ray.html',1,'pbpt::math']]],
-  ['ray_3c_20float_2c_203_20_3e_5',['Ray&lt; Float, 3 &gt;',['../de/d7d/classpbpt_1_1math_1_1_ray.html',1,'pbpt::math']]],
-  ['row_6',['row',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a9222b93d18058b70a3cd52f42fd8a5f7',1,'pbpt::math::Matrix::row(int r)'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a0d51378ea4ee899dc501f7e9bb593a18',1,'pbpt::math::Matrix::row(int r) const']]],
-  ['row_5fdims_7',['row_dims',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a240731ddbc168e28cbf20f6bbb926304',1,'pbpt::math::Matrix']]]
+  ['pbpt_3a_3amath_0',['math',['../d1/d2f/namespacepbpt_1_1math.html',1,'pbpt']]],
+  ['pbpt_3a_3amath_3a_3adetail_1',['detail',['../d1/d30/namespacepbpt_1_1math_1_1detail.html',1,'pbpt::math']]],
+  ['perspective_2',['perspective',['../d0/d29/classpbpt_1_1math_1_1_transform.html#a0375131d4af2fa60405eea227f83a3e8',1,'pbpt::math::Transform']]],
+  ['point_3',['Point',['../d7/d1b/classpbpt_1_1math_1_1_point.html',1,'pbpt::math::Point&lt; T, N &gt;'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#a349654edbf4ca320a4a267ede35e377d',1,'pbpt::math::Point::Point() noexcept'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#aa7e55f0d6663d2156fc228be2786b381',1,'pbpt::math::Point::Point(const Vector&lt; T, N &gt; &amp;vec) noexcept'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#ab7c4e8ad30190b66daba4a1e1f4ca914',1,'pbpt::math::Point::Point(Args &amp;&amp;... args) noexcept']]],
+  ['point_2ehpp_4',['point.hpp',['../d0/de4/point_8hpp.html',1,'']]],
+  ['point_3c_20float_2c_202_20_3e_5',['Point&lt; Float, 2 &gt;',['../d7/d1b/classpbpt_1_1math_1_1_point.html',1,'pbpt::math']]],
+  ['point_3c_20float_2c_203_20_3e_6',['Point&lt; Float, 3 &gt;',['../d7/d1b/classpbpt_1_1math_1_1_point.html',1,'pbpt::math']]],
+  ['point_3c_20float_2c_204_20_3e_7',['Point&lt; Float, 4 &gt;',['../d7/d1b/classpbpt_1_1math_1_1_point.html',1,'pbpt::math']]],
+  ['pt2_8',['Pt2',['../d1/d2f/namespacepbpt_1_1math.html#a38aae464f14d90a8e81f2d6720070838',1,'pbpt::math']]],
+  ['pt3_9',['Pt3',['../d1/d2f/namespacepbpt_1_1math.html#a6571acadeb280b710b17c16897d14a64',1,'pbpt::math']]],
+  ['pt4_10',['Pt4',['../d1/d2f/namespacepbpt_1_1math.html#ac602f90f05b18e9ece16a922e79afc2e',1,'pbpt::math']]]
 ];

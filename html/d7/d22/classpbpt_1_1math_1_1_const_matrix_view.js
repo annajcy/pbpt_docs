@@ -1,9 +1,9 @@
 var classpbpt_1_1math_1_1_const_matrix_view =
 [
-    [ "ConstMatrixView", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view.html#a00162cf561aa2afcd46734296583235f", null ],
-    [ "operator Matrix< T, R, C >", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view.html#af2ebb52d67e5fc10cde7d0f63c7b4f89", null ],
-    [ "operator()", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view.html#a797402a3c524d6d238e6f7f0810cf037", null ],
-    [ "m_col_start", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view.html#aa8db026d1a72393536b53356891f4c79", null ],
-    [ "m_original", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view.html#aacaf6c7d4497fe7c6eb1b7cc63ad2f4c", null ],
-    [ "m_row_start", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view.html#ae7670960cc7c447573a16065e358700f", null ]
+    [ "ConstMatrixView", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view.html#a9b02391903426474fd80e74ab7a62413", null ],
+    [ "operator Matrix< T, ViewR, ViewC >", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view.html#afe38ad5f3bffa498f89c41cf8f8d1ff7", null ],
+    [ "operator()", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view.html#aa8384754361f9281ee8b96ca9087e0b9", null ],
+    [ "m_col_start", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view.html#a0bdcea2fc0e2fdbaf18476682625de17", null ],
+    [ "m_original", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view.html#aa8291659983316ac80f75237c025e7b2", null ],
+    [ "m_row_start", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view.html#a43a8bd28d8faff930950ea1a1a50202c", null ]
 ];

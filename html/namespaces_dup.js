@@ -1,4 +1,6 @@
 var namespaces_dup =
 [
-    [ "pbpt", "d8/dab/namespacepbpt.html", "d8/dab/namespacepbpt" ]
+    [ "pbpt", null, [
+      [ "math", "d1/d2f/namespacepbpt_1_1math.html", "d1/d2f/namespacepbpt_1_1math" ]
+    ] ]
 ];

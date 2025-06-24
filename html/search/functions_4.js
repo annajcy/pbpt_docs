@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['length_0',['length',['../dd/da3/classpbpt_1_1math_1_1_vec.html#a0dd4cc2dde01c69f772f82d40a3ad669',1,'pbpt::math::Vec']]],
-  ['length_5fsquared_1',['length_squared',['../dd/da3/classpbpt_1_1math_1_1_vec.html#a67730865097a2236d6ac8d8d5fbb13ae',1,'pbpt::math::Vec']]]
+  ['homogeneous_0',['Homogeneous',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#ac435ee47f9538c71f33d46f63168f94d',1,'pbpt::math::Homogeneous::Homogeneous() noexcept'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a7d9265551a7fcbf644169d8f529224f6',1,'pbpt::math::Homogeneous::Homogeneous(const Point&lt; T, N &gt; &amp;p) noexcept'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a1292434e768d3c1681e54a24b51c4c3d',1,'pbpt::math::Homogeneous::Homogeneous(const Vector&lt; T, N &gt; &amp;v) noexcept'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#aacf08c978596238abd63b0e0eadfe1b7',1,'pbpt::math::Homogeneous::Homogeneous(Vals... vals) noexcept'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#ad6bf50d307c5fb7e5d9a083ff4c78cce',1,'pbpt::math::Homogeneous::Homogeneous(const Vector&lt; T, N+1 &gt; &amp;data) noexcept']]]
 ];

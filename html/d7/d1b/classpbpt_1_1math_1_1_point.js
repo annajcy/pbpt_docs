@@ -1,13 +1,12 @@
 var classpbpt_1_1math_1_1_point =
 [
     [ "Point", "d7/d1b/classpbpt_1_1math_1_1_point.html#a349654edbf4ca320a4a267ede35e377d", null ],
-    [ "Point", "d7/d1b/classpbpt_1_1math_1_1_point.html#a164f09a6c1a49ab6e5cb747e451c09bc", null ],
-    [ "Point", "d7/d1b/classpbpt_1_1math_1_1_point.html#a7a146c2f9634f263cca9204b237939a1", null ],
+    [ "Point", "d7/d1b/classpbpt_1_1math_1_1_point.html#aa7e55f0d6663d2156fc228be2786b381", null ],
     [ "Point", "d7/d1b/classpbpt_1_1math_1_1_point.html#ab7c4e8ad30190b66daba4a1e1f4ca914", null ],
     [ "dims", "d7/d1b/classpbpt_1_1math_1_1_point.html#acd4ffe984be2e39cdbb9be22ffbff73e", null ],
-    [ "operator Vec< T, N >", "d7/d1b/classpbpt_1_1math_1_1_point.html#a457e97730997efb2859070d2e780faa1", null ],
-    [ "operator+=", "d7/d1b/classpbpt_1_1math_1_1_point.html#a1f30fc08e34fe1492329fb20c8741254", null ],
-    [ "operator-=", "d7/d1b/classpbpt_1_1math_1_1_point.html#a72d0f035051fd59377e2f96664a19d05", null ],
+    [ "operator Vector< T, N >", "d7/d1b/classpbpt_1_1math_1_1_point.html#ab56d100528a6c23ccde5884859e03764", null ],
+    [ "operator+=", "d7/d1b/classpbpt_1_1math_1_1_point.html#a0f1525192e0297f0ee247a90817c4931", null ],
+    [ "operator-=", "d7/d1b/classpbpt_1_1math_1_1_point.html#af74830daa85f1c333490a8c645cb765d", null ],
     [ "operator[]", "d7/d1b/classpbpt_1_1math_1_1_point.html#ab15d2501d80f3bc107c464c9fd536ee1", null ],
     [ "operator[]", "d7/d1b/classpbpt_1_1math_1_1_point.html#ae1e3f9e30bf930167e5e48a3abf6630b", null ],
     [ "w", "d7/d1b/classpbpt_1_1math_1_1_point.html#a00d44c9202df1807b2cf35cb9180de05", null ],

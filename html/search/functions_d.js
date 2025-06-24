@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['w_0',['w',['../d7/d1b/classpbpt_1_1math_1_1_point.html#a54aa3ddeb39416171570ad7eb61eb357',1,'pbpt::math::Point::w() noexcept'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#a00d44c9202df1807b2cf35cb9180de05',1,'pbpt::math::Point::w() const noexcept'],['../dd/da3/classpbpt_1_1math_1_1_vec.html#a83133eb4f037b8e9e9a5e5a6c9d6b1f2',1,'pbpt::math::Vec::w() noexcept'],['../dd/da3/classpbpt_1_1math_1_1_vec.html#a9d57aad3cdda01641f3342a4dcf1101b',1,'pbpt::math::Vec::w() const noexcept']]]
+  ['to_5fpoint_0',['to_point',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#afd8045a3a3ec424d6ef49720a06016ad',1,'pbpt::math::Homogeneous']]],
+  ['to_5fvector_1',['to_vector',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a450453282af4c6158902e878de518e2b',1,'pbpt::math::Homogeneous']]],
+  ['translate_2',['translate',['../d0/d29/classpbpt_1_1math_1_1_transform.html#a837b608293a2849b526cfdd762c784db',1,'pbpt::math::Transform']]],
+  ['transpose_3',['transpose',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a08615df203db96831e4fff1c92a450db',1,'pbpt::math::Matrix']]]
 ];
