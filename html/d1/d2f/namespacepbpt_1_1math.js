@@ -1,6 +1,8 @@
 var namespacepbpt_1_1math =
 [
     [ "detail", "d1/d30/namespacepbpt_1_1math_1_1detail.html", [
+      [ "cos_taylor", "d1/d30/namespacepbpt_1_1math_1_1detail.html#aed0624710722b0f143b162cf2fb41260", null ],
+      [ "sin_taylor", "d1/d30/namespacepbpt_1_1math_1_1detail.html#a6ba889adf576d5ed3476787ac53a434a", null ],
       [ "sqrt_newton_raphson", "d1/d30/namespacepbpt_1_1math_1_1detail.html#a498e700b59ce33ea68c0cc819c7ef070", null ]
     ] ],
     [ "ConstMatrixView", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view.html", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view" ],
@@ -29,6 +31,7 @@ var namespacepbpt_1_1math =
     [ "Vec3", "d1/d2f/namespacepbpt_1_1math.html#a3cbdb553bfd2e6f9afc2d72be6ed15da", null ],
     [ "Vec4", "d1/d2f/namespacepbpt_1_1math.html#aafbc6d0fb7dd77bd0648c4f436f35697", null ],
     [ "abs", "d1/d2f/namespacepbpt_1_1math.html#a5a04e35d2cc90aa660f0eba9f4c5554e", null ],
+    [ "cos", "d1/d2f/namespacepbpt_1_1math.html#a59dd9ad375f49bcf5fb88c346b582975", null ],
     [ "deg2rad", "d1/d2f/namespacepbpt_1_1math.html#a05a5131345f66d70d7064e984f62f988", null ],
     [ "mid_point", "d1/d2f/namespacepbpt_1_1math.html#a1948ec5bd690920ce61af922b9daeac0", null ],
     [ "operator*", "d1/d2f/namespacepbpt_1_1math.html#ac3f2f8fb5939db8c824b02892f01d606", null ],
@@ -49,5 +52,7 @@ var namespacepbpt_1_1math =
     [ "operator<<", "d1/d2f/namespacepbpt_1_1math.html#a7df58ce134b09bb099883a86236409fa", null ],
     [ "operator<<", "d1/d2f/namespacepbpt_1_1math.html#a7668639bf71479c4913e2fc09c9b4c08", null ],
     [ "rad2deg", "d1/d2f/namespacepbpt_1_1math.html#a009ac6aa50e01d2e6d23b46f923dcea3", null ],
-    [ "sqrt", "d1/d2f/namespacepbpt_1_1math.html#a05c90d3b8d7543103db19c3638a4105f", null ]
+    [ "sin", "d1/d2f/namespacepbpt_1_1math.html#a8360e161354ea507f91b4afe9bd12576", null ],
+    [ "sqrt", "d1/d2f/namespacepbpt_1_1math.html#a05c90d3b8d7543103db19c3638a4105f", null ],
+    [ "tan", "d1/d2f/namespacepbpt_1_1math.html#acbeffe5a1fdc4e17af1b073d30ea0ff2", null ]
 ];

@@ -91,6 +91,11 @@ $(function(){initNavTree('d5/dfd/classpbpt_1_1math_1_1_vector.html','../../','df
   <div class="headertitle"><div class="title">pbpt::math::Vector&lt; T, N &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A template class for N-dimensional mathematical vectors.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/d16/vector_8hpp_source.html">vector.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -161,7 +166,17 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aee57af43f38373460a8ebcde847cd36a" id="r_aee57af43f38373460a8ebcde847cd36a"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee57af43f38373460a8ebcde847cd36a">ones</a> () noexcept</td></tr>
 <tr class="memdesc:aee57af43f38373460a8ebcde847cd36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a vector with all components set to one.  <br /></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T, int N&gt;<br />
+class pbpt::math::Vector&lt; T, N &gt;</div><p>A template class for N-dimensional mathematical vectors. </p>
+<p>This class provides a generic, fixed-size vector implementation suitable for various mathematical and geometric calculations. It is designed to be highly performant and flexible, with extensive use of <span class="tt">constexpr</span> for compile-time computations. The vector's underlying type is constrained to floating-point types, and its dimension must be positive. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The underlying floating-point type of the vector's components (e.g., float, double). </td></tr>
+    <tr><td class="paramname">N</td><td>The number of dimensions of the vector. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a212c9f0c8a3a83b9059bf5edec790b81" name="a212c9f0c8a3a83b9059bf5edec790b81"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a212c9f0c8a3a83b9059bf5edec790b81">&#9670;&#160;</a></span>Vector()</h2>
 
@@ -191,7 +206,7 @@ requires (sizeof...(args) == N)</div>
 </div><div class="memdoc">
 
 <p>Constructs a vector from a list of individual components. </p>
-<p>This constructor allows for initialization like <span class="tt"><a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a>&lt;float, 3&gt;(1.0f, 2.0f, 3.0f)</span>. The number of arguments must exactly match the vector's dimension N. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>This constructor allows for initialization like <span class="tt">Vec&lt;float, 3&gt;(1.0f, 2.0f, 3.0f)</span>. The number of arguments must exactly match the vector's dimension N. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Args</td><td>A parameter pack of types convertible to T. </td></tr>
   </table>
@@ -512,7 +527,7 @@ template&lt;typename T, int N&gt; </div>
 </div><div class="memdoc">
 
 <p>Creates a vector with all components set to one. </p>
-<dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a> instance with all components initialized to 1.0. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A new Vec instance with all components initialized to 1.0. </dd></dl>
 
 </div>
 </div>
@@ -941,7 +956,7 @@ template&lt;typename T, int N&gt; </div>
 </div><div class="memdoc">
 
 <p>Creates a vector with all components set to zero. </p>
-<dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a> instance with all components initialized to 0.0. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A new Vec instance with all components initialized to 0.0. </dd></dl>
 
 </div>
 </div>

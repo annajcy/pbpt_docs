@@ -91,6 +91,11 @@ $(function(){initNavTree('d8/d13/classpbpt_1_1math_1_1_homogeneous.html','../../
   <div class="headertitle"><div class="title">pbpt::math::Homogeneous&lt; T, N &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A template class for an N-dimensional homogeneous coordinate.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d7/d28/homogeneous_8hpp_source.html">homogeneous.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -99,7 +104,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7d9265551a7fcbf644169d8f529224f6" id="r_a7d9265551a7fcbf644169d8f529224f6"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d9265551a7fcbf644169d8f529224f6">Homogeneous</a> (const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt; &amp;p) noexcept</td></tr>
 <tr class="memdesc:a7d9265551a7fcbf644169d8f529224f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a homogeneous coordinate from a <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a>.  <br /></td></tr>
 <tr class="memitem:a1292434e768d3c1681e54a24b51c4c3d" id="r_a1292434e768d3c1681e54a24b51c4c3d"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1292434e768d3c1681e54a24b51c4c3d">Homogeneous</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;v) noexcept</td></tr>
-<tr class="memdesc:a1292434e768d3c1681e54a24b51c4c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a homogeneous coordinate from a <a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a> (vector).  <br /></td></tr>
+<tr class="memdesc:a1292434e768d3c1681e54a24b51c4c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a homogeneous coordinate from a Vec (vector).  <br /></td></tr>
 <tr class="memitem:aacf08c978596238abd63b0e0eadfe1b7" id="r_aacf08c978596238abd63b0e0eadfe1b7"><td class="memTemplParams" colspan="2">template&lt;std::convertible_to&lt; T &gt;... Vals&gt; <br />
 requires (sizeof...(Vals) == N + 1)</td></tr>
 <tr class="memitem:aacf08c978596238abd63b0e0eadfe1b7 template"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacf08c978596238abd63b0e0eadfe1b7">Homogeneous</a> (Vals... vals) noexcept</td></tr>
@@ -113,7 +118,7 @@ requires (sizeof...(Vals) == N + 1)</td></tr>
 <tr class="memitem:afd8045a3a3ec424d6ef49720a06016ad" id="r_afd8045a3a3ec424d6ef49720a06016ad"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd8045a3a3ec424d6ef49720a06016ad">to_point</a> () const</td></tr>
 <tr class="memdesc:afd8045a3a3ec424d6ef49720a06016ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the homogeneous coordinate back to a <span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>.  <br /></td></tr>
 <tr class="memitem:a450453282af4c6158902e878de518e2b" id="r_a450453282af4c6158902e878de518e2b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a450453282af4c6158902e878de518e2b">to_vector</a> () const</td></tr>
-<tr class="memdesc:a450453282af4c6158902e878de518e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the homogeneous coordinate back to a <span class="tt"><a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a></span>.  <br /></td></tr>
+<tr class="memdesc:a450453282af4c6158902e878de518e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the homogeneous coordinate back to a <span class="tt">Vec</span>.  <br /></td></tr>
 <tr class="memitem:a0032ce29b1d029319c28d19b656e63a0" id="r_a0032ce29b1d029319c28d19b656e63a0"><td class="memItemLeft" align="right" valign="top">constexpr const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N+1 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0032ce29b1d029319c28d19b656e63a0">raw</a> () const noexcept</td></tr>
 <tr class="memdesc:a0032ce29b1d029319c28d19b656e63a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides read-only access to the underlying raw (N+1)-dimensional vector.  <br /></td></tr>
 <tr class="memitem:a87be0b20d242dd17b894f935ccb18415" id="r_a87be0b20d242dd17b894f935ccb18415"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N+1 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87be0b20d242dd17b894f935ccb18415">raw</a> () noexcept</td></tr>
@@ -124,7 +129,28 @@ Friends</h2></td></tr>
 <tr class="memitem:a5d32c96cde6b99b87ed054ac6350d40e" id="r_a5d32c96cde6b99b87ed054ac6350d40e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d32c96cde6b99b87ed054ac6350d40e">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="../../d8/d13/classpbpt_1_1math_1_1_homogeneous.html">Homogeneous</a> &amp;h)</td></tr>
 <tr class="memdesc:a5d32c96cde6b99b87ed054ac6350d40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream insertion operator for printing the homogeneous coordinate.  <br /></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T, int N&gt;<br />
+class pbpt::math::Homogeneous&lt; T, N &gt;</div><p>A template class for an N-dimensional homogeneous coordinate. </p>
+<p>This class unifies the mathematical treatment of points and vectors for use in projective geometry, particularly for 3D transformations. It internally stores an (N+1)-dimensional vector.</p>
+<p>The distinction between a point and a vector is encoded in the last component, <span class="tt">w</span>:</p><ul>
+<li>A <b><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></b> <span class="tt">(x, y, z)</span> is represented in homogeneous coordinates as <span class="tt">(x, y, z, 1)</span>.</li>
+<li>A <b><a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="A template class for N-dimensional mathematical vectors.">Vector</a></b> <span class="tt">(vx, vy, vz)</span> is represented as <span class="tt">(vx, vy, vz, 0)</span>.</li>
+</ul>
+<p>This class provides a type-safe way to create these coordinates from <span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span> and <span class="tt">Vec</span> objects, and to convert them back, including performing the necessary perspective divide for points.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The underlying floating-point type of the coordinate's components. </td></tr>
+    <tr><td class="paramname">N</td><td>The original number of dimensions (e.g., 3 for 3D space). The internal storage will have N+1 dimensions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> </dd>
+<dd>
+Vec </dd>
+<dd>
+<a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> </dd></dl>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac435ee47f9538c71f33d46f63168f94d" name="ac435ee47f9538c71f33d46f63168f94d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac435ee47f9538c71f33d46f63168f94d">&#9670;&#160;</a></span>Homogeneous() <span class="overload">[1/5]</span></h2>
 
@@ -215,7 +241,7 @@ template&lt;typename T, int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a homogeneous coordinate from a <a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a> (vector). </p>
+<p>Constructs a homogeneous coordinate from a Vec (vector). </p>
 <p>Copies the vector's components and sets the w-component to 0. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>The vector to convert. </td></tr>
@@ -297,7 +323,7 @@ template&lt;typename T, int N&gt; </div>
 <p>Explicitly constructs from a raw (N+1)-dimensional vector. </p>
 <p>This is an advanced constructor, primarily used internally after a matrix transformation has produced a new raw homogeneous coordinate vector. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>The raw <span class="tt"><a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a>&lt;T, N + 1&gt;</span> of homogeneous coordinates. </td></tr>
+    <tr><td class="paramname">data</td><td>The raw <span class="tt">Vec&lt;T, N + 1&gt;</span> of homogeneous coordinates. </td></tr>
   </table>
   </dd>
 </dl>
@@ -392,7 +418,7 @@ template&lt;typename T, int N&gt; </div>
 </div><div class="memdoc">
 
 <p>Provides read-only access to the underlying raw (N+1)-dimensional vector. </p>
-<dl class="section return"><dt>Returns</dt><dd>A const reference to the internal <span class="tt"><a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a>&lt;T, N + 1&gt;</span>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A const reference to the internal <span class="tt">Vec&lt;T, N + 1&gt;</span>. </dd></dl>
 
 </div>
 </div>
@@ -422,7 +448,7 @@ template&lt;typename T, int N&gt; </div>
 </div><div class="memdoc">
 
 <p>Provides mutable access to the underlying raw (N+1)-dimensional vector. </p>
-<dl class="section return"><dt>Returns</dt><dd>A mutable reference to the internal <span class="tt"><a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a>&lt;T, N + 1&gt;</span>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A mutable reference to the internal <span class="tt">Vec&lt;T, N + 1&gt;</span>. </dd></dl>
 
 </div>
 </div>
@@ -488,8 +514,8 @@ template&lt;typename T, int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Converts the homogeneous coordinate back to a <span class="tt"><a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a></span>. </p>
-<p>This method returns the first N components, assuming w is 0. </p><dl class="section return"><dt>Returns</dt><dd>The resulting <span class="tt"><a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a>&lt;T, N&gt;</span> in Cartesian space. </dd></dl>
+<p>Converts the homogeneous coordinate back to a <span class="tt">Vec</span>. </p>
+<p>This method returns the first N components, assuming w is 0. </p><dl class="section return"><dt>Returns</dt><dd>The resulting <span class="tt">Vec&lt;T, N&gt;</span> in Cartesian space. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::runtime_error</td><td>Throws at runtime if this coordinate represents a point (w!=0), as this usually indicates a logical error in a transformation pipeline. </td></tr>
@@ -534,7 +560,7 @@ template&lt;typename T, int N&gt; </div>
 <p>Prints a <span class="tt">[P]</span> or <span class="tt">[V]</span> tag to distinguish points from vectors, followed by the raw underlying vector data. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">os</td><td>The output stream. </td></tr>
-    <tr><td class="paramname">h</td><td>The <span class="tt"><a class="el" href="../../d6/d17/class_homo.html" title="A template class for an N-dimensional homogeneous coordinate.">Homo</a></span> object to print. </td></tr>
+    <tr><td class="paramname">h</td><td>The <span class="tt">Homo</span> object to print. </td></tr>
   </table>
   </dd>
 </dl>

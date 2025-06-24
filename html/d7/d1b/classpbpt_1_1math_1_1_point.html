@@ -142,8 +142,8 @@ constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a602372370d186835d26fd04057210e79" id="r_a602372370d186835d26fd04057210e79"><td class="memItemLeft" align="right" valign="top"><a id="a602372370d186835d26fd04057210e79" name="a602372370d186835d26fd04057210e79"></a>
-static constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><b>filled</b> (T value) noexcept</td></tr>
+<tr class="memitem:a602372370d186835d26fd04057210e79" id="r_a602372370d186835d26fd04057210e79"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a602372370d186835d26fd04057210e79">filled</a> (T value) noexcept</td></tr>
+<tr class="memdesc:a602372370d186835d26fd04057210e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a point filled with a specified value.  <br /></td></tr>
 <tr class="memitem:a58d9bf368655f509c11d4b836a216e08" id="r_a58d9bf368655f509c11d4b836a216e08"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58d9bf368655f509c11d4b836a216e08">zeros</a> () noexcept</td></tr>
 <tr class="memdesc:a58d9bf368655f509c11d4b836a216e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a point at the origin (0, 0, ...).  <br /></td></tr>
 <tr class="memitem:ab52bc7e44a54b3ea1d87f45afbb4c049" id="r_ab52bc7e44a54b3ea1d87f45afbb4c049"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab52bc7e44a54b3ea1d87f45afbb4c049">ones</a> () noexcept</td></tr>
@@ -157,10 +157,10 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, int N&gt;<br />
 class pbpt::math::Point&lt; T, N &gt;</div><p>A template class for an N-dimensional point in space. </p>
-<p>Represents a specific location in an N-dimensional affine space. Unlike a <span class="tt"><a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a></span>, which represents direction and magnitude (a displacement), a <span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span> represents a coordinate.</p>
+<p>Represents a specific location in an N-dimensional affine space. Unlike a <span class="tt">Vec</span>, which represents direction and magnitude (a displacement), a <span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span> represents a coordinate.</p>
 <p>The class's interface enforces these geometric distinctions through its operator overloads:</p><ul>
-<li>You can subtract two points to get the vector between them (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> - <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> = <a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a></span>).</li>
-<li>You can add or subtract a vector to a point to get a new, translated point (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> +/- <a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>).</li>
+<li>You can subtract two points to get the vector between them (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> - <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> = Vec</span>).</li>
+<li>You can add or subtract a vector to a point to get a new, translated point (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> +/- Vec = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>).</li>
 <li>Operations like adding two points are deliberately not defined, as they are geometrically meaningless in most contexts.</li>
 </ul>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -170,7 +170,7 @@ class pbpt::math::Point&lt; T, N &gt;</div><p>A template class for an N-dimensio
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>Vec </dd></dl>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa7e55f0d6663d2156fc228be2786b381" name="aa7e55f0d6663d2156fc228be2786b381"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7e55f0d6663d2156fc228be2786b381">&#9670;&#160;</a></span>Point() <span class="overload">[1/2]</span></h2>
@@ -253,6 +253,42 @@ requires (sizeof...(args) == N)</div>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a602372370d186835d26fd04057210e79" name="a602372370d186835d26fd04057210e79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a602372370d186835d26fd04057210e79">&#9670;&#160;</a></span>filled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">pbpt::math::Point</a>&lt; T, N &gt;::filled </td>
+          <td>(</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a point filled with a specified value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The value to fill all coordinates with. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> instance filled with the given value. </dd></dl>
+
+</div>
+</div>
 <a id="ab52bc7e44a54b3ea1d87f45afbb4c049" name="ab52bc7e44a54b3ea1d87f45afbb4c049"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab52bc7e44a54b3ea1d87f45afbb4c049">&#9670;&#160;</a></span>ones()</h2>
 
@@ -309,7 +345,7 @@ template&lt;typename T, int N&gt; </div>
 </div><div class="memdoc">
 
 <p>Explicitly converts the point to its underlying coordinate vector. </p>
-<p>This allows a point to be treated as a vector from the origin when an explicit cast is used. </p><dl class="section return"><dt>Returns</dt><dd>The <span class="tt"><a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a>&lt;T, N&gt;</span> representing the point's coordinates. </dd></dl>
+<p>This allows a point to be treated as a vector from the origin when an explicit cast is used. </p><dl class="section return"><dt>Returns</dt><dd>The <span class="tt">Vec&lt;T, N&gt;</span> representing the point's coordinates. </dd></dl>
 
 </div>
 </div>

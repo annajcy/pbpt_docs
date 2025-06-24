@@ -1,5 +1,11 @@
 var NAVTREEINDEX1 =
 {
+"da/d16/classpbpt_1_1math_1_1_matrix.html#a5c8897d2bb9b06ada7c9fcb48d6a1656":[0,0,0,0,4,8],
+"da/d16/classpbpt_1_1math_1_1_matrix.html#a5c8897d2bb9b06ada7c9fcb48d6a1656":[1,0,0,0,3,8],
+"da/d16/classpbpt_1_1math_1_1_matrix.html#a631c80a196b2955609d8608f5a2d813e":[0,0,0,0,4,2],
+"da/d16/classpbpt_1_1math_1_1_matrix.html#a631c80a196b2955609d8608f5a2d813e":[1,0,0,0,3,2],
+"da/d16/classpbpt_1_1math_1_1_matrix.html#a6ed134f57905f5197d1354ffe2c7a03d":[0,0,0,0,4,21],
+"da/d16/classpbpt_1_1math_1_1_matrix.html#a6ed134f57905f5197d1354ffe2c7a03d":[1,0,0,0,3,21],
 "da/d16/classpbpt_1_1math_1_1_matrix.html#a6fac9e89dcdd3cba8485605a08aabe46":[0,0,0,0,4,7],
 "da/d16/classpbpt_1_1math_1_1_matrix.html#a6fac9e89dcdd3cba8485605a08aabe46":[1,0,0,0,3,7],
 "da/d16/classpbpt_1_1math_1_1_matrix.html#a761770d83ff5c525a8664a50171247c5":[0,0,0,0,4,12],
@@ -26,7 +32,6 @@ var NAVTREEINDEX1 =
 "da/d16/vector_8hpp_source.html":[2,0,0,0,7],
 "db/d1d/ray_8hpp.html":[2,0,0,0,4],
 "db/d1d/ray_8hpp_source.html":[2,0,0,0,4],
-"db/d64/class_vec.html":[1,0,2],
 "de/d7d/classpbpt_1_1math_1_1_ray.html":[0,0,0,0,7],
 "de/d7d/classpbpt_1_1math_1_1_ray.html":[1,0,0,0,6],
 "de/d7d/classpbpt_1_1math_1_1_ray.html#a300bb51582991822458ab5d298fa5a4a":[0,0,0,0,7,2],
@@ -53,6 +58,8 @@ var NAVTREEINDEX1 =
 "functions_rela.html":[1,3,4],
 "functions_type.html":[1,3,3],
 "functions_vars.html":[1,3,2],
+"globals.html":[2,1,0],
+"globals_defs.html":[2,1,1],
 "hierarchy.html":[1,2],
 "index.html":[],
 "namespacemembers.html":[0,1,0],

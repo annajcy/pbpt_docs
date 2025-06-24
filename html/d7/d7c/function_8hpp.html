@@ -111,12 +111,19 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:ae71449b1cc6e6250b91f539153a7a0d3" id="r_ae71449b1cc6e6250b91f539153a7a0d3"><td class="memItemLeft" align="right" valign="top"><a id="ae71449b1cc6e6250b91f539153a7a0d3" name="ae71449b1cc6e6250b91f539153a7a0d3"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>M_PI</b>&#160;&#160;&#160;3.14159265358979323846</td></tr>
+<tr class="memdesc:ae71449b1cc6e6250b91f539153a7a0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define _USE_MATH_DEFINES for M_PI on MSVC, or just define pi ourselves for portability. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a498e700b59ce33ea68c0cc819c7ef070" id="r_a498e700b59ce33ea68c0cc819c7ef070"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a498e700b59ce33ea68c0cc819c7ef070 template"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d30/namespacepbpt_1_1math_1_1detail.html#a498e700b59ce33ea68c0cc819c7ef070">pbpt::math::detail::sqrt_newton_raphson</a> (T x, T curr, T prev)</td></tr>
 <tr class="memdesc:a498e700b59ce33ea68c0cc819c7ef070"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <span class="tt">constexpr</span> implementation of the square root function using the Newton-Raphson method.  <br /></td></tr>
+<tr class="memitem:a6ba889adf576d5ed3476787ac53a434a" id="r_a6ba889adf576d5ed3476787ac53a434a"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a6ba889adf576d5ed3476787ac53a434a template"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d30/namespacepbpt_1_1math_1_1detail.html#a6ba889adf576d5ed3476787ac53a434a">pbpt::math::detail::sin_taylor</a> (T x)</td></tr>
+<tr class="memdesc:a6ba889adf576d5ed3476787ac53a434a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constexpr implementation of the sine function using a Taylor series expansion.  <br /></td></tr>
+<tr class="memitem:aed0624710722b0f143b162cf2fb41260" id="r_aed0624710722b0f143b162cf2fb41260"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:aed0624710722b0f143b162cf2fb41260 template"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d30/namespacepbpt_1_1math_1_1detail.html#aed0624710722b0f143b162cf2fb41260">pbpt::math::detail::cos_taylor</a> (T x)</td></tr>
+<tr class="memdesc:aed0624710722b0f143b162cf2fb41260"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constexpr implementation of the cosine function using a Taylor series expansion.  <br /></td></tr>
 <tr class="memitem:a5a04e35d2cc90aa660f0eba9f4c5554e" id="r_a5a04e35d2cc90aa660f0eba9f4c5554e"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a5a04e35d2cc90aa660f0eba9f4c5554e template"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a5a04e35d2cc90aa660f0eba9f4c5554e">pbpt::math::abs</a> (T x)</td></tr>
 <tr class="memdesc:a5a04e35d2cc90aa660f0eba9f4c5554e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <span class="tt">constexpr</span> implementation of the absolute value function.  <br /></td></tr>
@@ -131,6 +138,18 @@ requires std::is_floating_point_v&lt;T&gt;</td></tr>
 <tr class="memitem:a05c90d3b8d7543103db19c3638a4105f" id="r_a05c90d3b8d7543103db19c3638a4105f"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a05c90d3b8d7543103db19c3638a4105f template"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a05c90d3b8d7543103db19c3638a4105f">pbpt::math::sqrt</a> (T x)</td></tr>
 <tr class="memdesc:a05c90d3b8d7543103db19c3638a4105f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the square root of a number with <span class="tt">constexpr</span> support.  <br /></td></tr>
+<tr class="memitem:a8360e161354ea507f91b4afe9bd12576" id="r_a8360e161354ea507f91b4afe9bd12576"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; <br />
+requires std::is_floating_point_v&lt;T&gt;</td></tr>
+<tr class="memitem:a8360e161354ea507f91b4afe9bd12576 template"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a8360e161354ea507f91b4afe9bd12576">pbpt::math::sin</a> (T x)</td></tr>
+<tr class="memdesc:a8360e161354ea507f91b4afe9bd12576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the sine of an angle with <span class="tt">constexpr</span> support.  <br /></td></tr>
+<tr class="memitem:a59dd9ad375f49bcf5fb88c346b582975" id="r_a59dd9ad375f49bcf5fb88c346b582975"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; <br />
+requires std::is_floating_point_v&lt;T&gt;</td></tr>
+<tr class="memitem:a59dd9ad375f49bcf5fb88c346b582975 template"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a59dd9ad375f49bcf5fb88c346b582975">pbpt::math::cos</a> (T x)</td></tr>
+<tr class="memdesc:a59dd9ad375f49bcf5fb88c346b582975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the cosine of an angle with <span class="tt">constexpr</span> support.  <br /></td></tr>
+<tr class="memitem:acbeffe5a1fdc4e17af1b073d30ea0ff2" id="r_acbeffe5a1fdc4e17af1b073d30ea0ff2"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; <br />
+requires std::is_floating_point_v&lt;T&gt;</td></tr>
+<tr class="memitem:acbeffe5a1fdc4e17af1b073d30ea0ff2 template"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#acbeffe5a1fdc4e17af1b073d30ea0ff2">pbpt::math::tan</a> (T x)</td></tr>
+<tr class="memdesc:acbeffe5a1fdc4e17af1b073d30ea0ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the tangent of an angle with <span class="tt">constexpr</span> support.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides basic, constexpr-aware mathematical functions. </p>

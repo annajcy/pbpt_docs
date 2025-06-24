@@ -107,6 +107,7 @@ Classes</h2></td></tr>
 <tr class="memitem:ConstVectorView" id="r_ConstVectorView"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d08/classpbpt_1_1math_1_1_const_vector_view.html">ConstVectorView</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A non-owning, read-only view/proxy of vector-like data (e.g., a matrix row/column).  <a href="../../d9/d08/classpbpt_1_1math_1_1_const_vector_view.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Homogeneous" id="r_Homogeneous"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d13/classpbpt_1_1math_1_1_homogeneous.html">Homogeneous</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template class for an N-dimensional homogeneous coordinate.  <a href="../../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Matrix" id="r_Matrix"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template class for RxC dimensional mathematical matrices.  <a href="../../da/d16/classpbpt_1_1math_1_1_matrix.html#details">More...</a><br /></td></tr>
 <tr class="memitem:MatrixView" id="r_MatrixView"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d31/classpbpt_1_1math_1_1_matrix_view.html">MatrixView</a></td></tr>
@@ -118,6 +119,7 @@ Classes</h2></td></tr>
 <tr class="memitem:Transform" id="r_Transform"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/classpbpt_1_1math_1_1_transform.html">Transform</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace for 3D transformation factory functions.  <a href="../../d0/d29/classpbpt_1_1math_1_1_transform.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Vector" id="r_Vector"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template class for N-dimensional mathematical vectors.  <a href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html#details">More...</a><br /></td></tr>
 <tr class="memitem:VectorView" id="r_VectorView"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A non-owning, mutable view/proxy of vector-like data.  <a href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
@@ -183,6 +185,18 @@ requires std::is_floating_point_v&lt;T&gt;</td></tr>
 <tr class="memitem:a05c90d3b8d7543103db19c3638a4105f" id="r_a05c90d3b8d7543103db19c3638a4105f"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a05c90d3b8d7543103db19c3638a4105f template"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05c90d3b8d7543103db19c3638a4105f">sqrt</a> (T x)</td></tr>
 <tr class="memdesc:a05c90d3b8d7543103db19c3638a4105f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the square root of a number with <span class="tt">constexpr</span> support.  <br /></td></tr>
+<tr class="memitem:a8360e161354ea507f91b4afe9bd12576" id="r_a8360e161354ea507f91b4afe9bd12576"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; <br />
+requires std::is_floating_point_v&lt;T&gt;</td></tr>
+<tr class="memitem:a8360e161354ea507f91b4afe9bd12576 template"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8360e161354ea507f91b4afe9bd12576">sin</a> (T x)</td></tr>
+<tr class="memdesc:a8360e161354ea507f91b4afe9bd12576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the sine of an angle with <span class="tt">constexpr</span> support.  <br /></td></tr>
+<tr class="memitem:a59dd9ad375f49bcf5fb88c346b582975" id="r_a59dd9ad375f49bcf5fb88c346b582975"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; <br />
+requires std::is_floating_point_v&lt;T&gt;</td></tr>
+<tr class="memitem:a59dd9ad375f49bcf5fb88c346b582975 template"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59dd9ad375f49bcf5fb88c346b582975">cos</a> (T x)</td></tr>
+<tr class="memdesc:a59dd9ad375f49bcf5fb88c346b582975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the cosine of an angle with <span class="tt">constexpr</span> support.  <br /></td></tr>
+<tr class="memitem:acbeffe5a1fdc4e17af1b073d30ea0ff2" id="r_acbeffe5a1fdc4e17af1b073d30ea0ff2"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; <br />
+requires std::is_floating_point_v&lt;T&gt;</td></tr>
+<tr class="memitem:acbeffe5a1fdc4e17af1b073d30ea0ff2 template"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbeffe5a1fdc4e17af1b073d30ea0ff2">tan</a> (T x)</td></tr>
+<tr class="memdesc:acbeffe5a1fdc4e17af1b073d30ea0ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the tangent of an angle with <span class="tt">constexpr</span> support.  <br /></td></tr>
 <tr class="memitem:ab04cf6ab3a840fd9cb14aa3e95832913" id="r_ab04cf6ab3a840fd9cb14aa3e95832913"><td class="memTemplParams" colspan="2">template&lt;typename T, int R, int C&gt; </td></tr>
 <tr class="memitem:ab04cf6ab3a840fd9cb14aa3e95832913 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, C &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab04cf6ab3a840fd9cb14aa3e95832913">operator+</a> (const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, C &gt; &amp;lhs, const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, C &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:ab04cf6ab3a840fd9cb14aa3e95832913"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> addition.  <br /></td></tr>
@@ -209,13 +223,13 @@ requires std::is_floating_point_v&lt;T&gt;</td></tr>
 <tr class="memdesc:a7df58ce134b09bb099883a86236409fa"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> stream output.  <br /></td></tr>
 <tr class="memitem:ae5b82187f34eb7864e9020f2bab5aff6" id="r_ae5b82187f34eb7864e9020f2bab5aff6"><td class="memTemplParams" colspan="2">template&lt;typename T, int N&gt; </td></tr>
 <tr class="memitem:ae5b82187f34eb7864e9020f2bab5aff6 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5b82187f34eb7864e9020f2bab5aff6">operator-</a> (const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt; &amp;lhs, const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:ae5b82187f34eb7864e9020f2bab5aff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rule 1: Calculates the displacement vector between two points (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> - <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a></span>).  <br /></td></tr>
+<tr class="memdesc:ae5b82187f34eb7864e9020f2bab5aff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rule 1: Calculates the displacement vector between two points (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> - <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="A template class for N-dimensional mathematical vectors.">Vector</a></span>).  <br /></td></tr>
 <tr class="memitem:a1617e96f022ed6e19e7648f0e8fbe9be" id="r_a1617e96f022ed6e19e7648f0e8fbe9be"><td class="memTemplParams" colspan="2">template&lt;typename T, int N&gt; </td></tr>
 <tr class="memitem:a1617e96f022ed6e19e7648f0e8fbe9be template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1617e96f022ed6e19e7648f0e8fbe9be">operator+</a> (const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt; &amp;lhs, const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:a1617e96f022ed6e19e7648f0e8fbe9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rule 2: Translates a point by a vector, resulting in a new point (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> + <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>).  <br /></td></tr>
+<tr class="memdesc:a1617e96f022ed6e19e7648f0e8fbe9be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rule 2: Translates a point by a vector, resulting in a new point (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> + <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="A template class for N-dimensional mathematical vectors.">Vector</a> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>).  <br /></td></tr>
 <tr class="memitem:a71a67ed2f551f03140513de70a5dce76" id="r_a71a67ed2f551f03140513de70a5dce76"><td class="memTemplParams" colspan="2">template&lt;typename T, int N&gt; </td></tr>
 <tr class="memitem:a71a67ed2f551f03140513de70a5dce76 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71a67ed2f551f03140513de70a5dce76">operator-</a> (const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt; &amp;lhs, const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:a71a67ed2f551f03140513de70a5dce76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rule 3: Translates a point by the negative of a vector (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> - <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>).  <br /></td></tr>
+<tr class="memdesc:a71a67ed2f551f03140513de70a5dce76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rule 3: Translates a point by the negative of a vector (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> - <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="A template class for N-dimensional mathematical vectors.">Vector</a> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>).  <br /></td></tr>
 <tr class="memitem:a1948ec5bd690920ce61af922b9daeac0" id="r_a1948ec5bd690920ce61af922b9daeac0"><td class="memTemplParams" colspan="2">template&lt;typename T, int N&gt; </td></tr>
 <tr class="memitem:a1948ec5bd690920ce61af922b9daeac0 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1948ec5bd690920ce61af922b9daeac0">mid_point</a> (const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt; &amp;lhs, const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:a1948ec5bd690920ce61af922b9daeac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the midpoint between two points.  <br /></td></tr>
@@ -279,7 +293,7 @@ template&lt;typename T, int N, std::convertible_to&lt; T &gt; U&gt; </td></tr>
 </div><div class="memdoc">
 
 <p>A 3-dimensional homogeneous coordinate using the library's default <span class="tt"><a class="el" href="#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a></span> type. </p>
-<p>This is a convenient alias for <span class="tt"><a class="el" href="../../d6/d17/class_homo.html" title="A template class for an N-dimensional homogeneous coordinate.">Homo</a>&lt;<a class="el" href="#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a>, 3&gt;</span>, which internally uses a <span class="tt"><a class="el" href="#aafbc6d0fb7dd77bd0648c4f436f35697" title="A 4-dimensional vector of type Float.">Vec4</a></span>. </p>
+<p>This is a convenient alias for <span class="tt">Homo&lt;<a class="el" href="#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a>, 3&gt;</span>, which internally uses a <span class="tt"><a class="el" href="#aafbc6d0fb7dd77bd0648c4f436f35697" title="A 4-dimensional vector of type Float.">Vec4</a></span>. </p>
 
 </div>
 </div>
@@ -323,6 +337,49 @@ template&lt;typename T&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The absolute value of <span class="tt">x</span>. </dd></dl>
+
+</div>
+</div>
+<a id="a59dd9ad375f49bcf5fb88c346b582975" name="a59dd9ad375f49bcf5fb88c346b582975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59dd9ad375f49bcf5fb88c346b582975">&#9670;&#160;</a></span>cos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; <br />
+requires std::is_floating_point_v&lt;T&gt;</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T pbpt::math::cos </td>
+          <td>(</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the cosine of an angle with <span class="tt">constexpr</span> support. </p>
+<p>At compile-time, uses a Taylor series. At runtime, calls <span class="tt">std::cos</span>. It can be implemented efficiently by shifting the angle and calling <span class="tt"><a class="el" href="#a8360e161354ea507f91b4afe9bd12576" title="Calculates the sine of an angle with constexpr support.">pbpt::math::sin</a></span>. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Floating-point type of the angle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The angle in radians. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The cosine of <span class="tt">x</span>. </dd></dl>
 
 </div>
 </div>
@@ -455,7 +512,7 @@ template&lt;typename T, int N&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="../../d6/d17/class_homo.html" title="A template class for an N-dimensional homogeneous coordinate.">Homo&lt;T, N&gt;</a> representing the transformed coordinate. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A new Homo&lt;T, N&gt; representing the transformed coordinate. </dd></dl>
 </li>
 </ul>
 
@@ -491,7 +548,7 @@ template&lt;typename T, int R, int C&gt; </div>
 </div><div class="memdoc">
 
 <p>Matrix-Vector multiplication. </p>
-<p>Transforms a column vector by a matrix. Result is a new column vector. </p><dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec&lt;T, R&gt;</a> </dd></dl>
+<p>Transforms a column vector by a matrix. Result is a new column vector. </p><dl class="section return"><dt>Returns</dt><dd>A new Vec&lt;T, R&gt; </dd></dl>
 
 </div>
 </div>
@@ -694,7 +751,7 @@ template&lt;typename T, int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Rule 2: Translates a point by a vector, resulting in a new point (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> + <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>). </p>
+<p>Rule 2: Translates a point by a vector, resulting in a new point (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> + <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="A template class for N-dimensional mathematical vectors.">Vector</a> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lhs</td><td>The starting point. </td></tr>
@@ -769,7 +826,7 @@ template&lt;typename T, int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Rule 1: Calculates the displacement vector between two points (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> - <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a></span>). </p>
+<p>Rule 1: Calculates the displacement vector between two points (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> - <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="A template class for N-dimensional mathematical vectors.">Vector</a></span>). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lhs</td><td>The destination point. </td></tr>
@@ -777,7 +834,7 @@ template&lt;typename T, int N&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The <span class="tt"><a class="el" href="../../db/d64/class_vec.html" title="A template class for N-dimensional mathematical vectors.">Vec</a>&lt;T, N&gt;</span> that goes from <span class="tt">rhs</span> to <span class="tt">lhs</span>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The <span class="tt">Vec&lt;T, N&gt;</span> that goes from <span class="tt">rhs</span> to <span class="tt">lhs</span>. </dd></dl>
 
 </div>
 </div>
@@ -810,7 +867,7 @@ template&lt;typename T, int N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Rule 3: Translates a point by the negative of a vector (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> - <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>). </p>
+<p>Rule 3: Translates a point by the negative of a vector (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> - <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="A template class for N-dimensional mathematical vectors.">Vector</a> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lhs</td><td>The starting point. </td></tr>
@@ -939,6 +996,49 @@ requires std::is_floating_point_v&lt;T&gt;</div>
 
 </div>
 </div>
+<a id="a8360e161354ea507f91b4afe9bd12576" name="a8360e161354ea507f91b4afe9bd12576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8360e161354ea507f91b4afe9bd12576">&#9670;&#160;</a></span>sin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; <br />
+requires std::is_floating_point_v&lt;T&gt;</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T pbpt::math::sin </td>
+          <td>(</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the sine of an angle with <span class="tt">constexpr</span> support. </p>
+<p>At compile-time, uses a Taylor series. At runtime, calls <span class="tt">std::sin</span>. The compile-time version performs range reduction to maintain precision. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Floating-point type of the angle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The angle in radians. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sine of <span class="tt">x</span>. </dd></dl>
+
+</div>
+</div>
 <a id="a05c90d3b8d7543103db19c3638a4105f" name="a05c90d3b8d7543103db19c3638a4105f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a05c90d3b8d7543103db19c3638a4105f">&#9670;&#160;</a></span>sqrt()</h2>
 
@@ -990,6 +1090,49 @@ template&lt;typename T&gt; </div>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>Providing a negative <span class="tt">x</span> at compile-time will result in a compilation error. </dd></dl>
+
+</div>
+</div>
+<a id="acbeffe5a1fdc4e17af1b073d30ea0ff2" name="acbeffe5a1fdc4e17af1b073d30ea0ff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbeffe5a1fdc4e17af1b073d30ea0ff2">&#9670;&#160;</a></span>tan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; <br />
+requires std::is_floating_point_v&lt;T&gt;</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T pbpt::math::tan </td>
+          <td>(</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the tangent of an angle with <span class="tt">constexpr</span> support. </p>
+<p>This function is implemented as sin(x) / cos(x), automatically leveraging their context-aware constexpr behavior. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Floating-point type of the angle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The angle in radians. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The tangent of <span class="tt">x</span>. </dd></dl>
 
 </div>
 </div>

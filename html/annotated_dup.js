@@ -13,7 +13,5 @@ var annotated_dup =
         [ "Vector", "d5/dfd/classpbpt_1_1math_1_1_vector.html", "d5/dfd/classpbpt_1_1math_1_1_vector" ],
         [ "VectorView", "d9/d17/classpbpt_1_1math_1_1_vector_view.html", "d9/d17/classpbpt_1_1math_1_1_vector_view" ]
       ] ]
-    ] ],
-    [ "Homo", "d6/d17/class_homo.html", null ],
-    [ "Vec", "db/d64/class_vec.html", null ]
+    ] ]
 ];
