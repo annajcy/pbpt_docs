@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['normalize_0',['normalize',['../dd/da3/classpbpt_1_1math_1_1_vec.html#aab206f1160a2462893bfc0f7e8feb741',1,'pbpt::math::Vec']]],
-  ['normalized_1',['normalized',['../dd/da3/classpbpt_1_1math_1_1_vec.html#a54834a510587ed50e222428de36f40c9',1,'pbpt::math::Vec']]]
+  ['matrix_0',['Matrix',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a631c80a196b2955609d8608f5a2d813e',1,'pbpt::math::Matrix::Matrix() noexcept=default'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a01671601f07b87ef9a1f7b65aa21391d',1,'pbpt::math::Matrix::Matrix(Vecs &amp;&amp;... rows) noexcept']]],
+  ['mid_5fpoint_1',['mid_point',['../d1/d2f/namespacepbpt_1_1math.html#a1948ec5bd690920ce61af922b9daeac0',1,'pbpt::math']]]
 ];

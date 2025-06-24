@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_0',['x',['../d7/d1b/classpbpt_1_1math_1_1_point.html#a1cfb9a4e59b6f220cd78cc9a38f3bb4a',1,'pbpt::math::Point::x() noexcept'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#a1b5534483cdf79ce32eb4443435425b4',1,'pbpt::math::Point::x() const noexcept'],['../dd/da3/classpbpt_1_1math_1_1_vec.html#aeacace5c1b38a5ecd4227c8b29d8d8b7',1,'pbpt::math::Vec::x() noexcept'],['../dd/da3/classpbpt_1_1math_1_1_vec.html#ab739a849eb5acc16fa6b18fb1a9d6c26',1,'pbpt::math::Vec::x() const noexcept']]]
+  ['w_0',['w',['../d7/d1b/classpbpt_1_1math_1_1_point.html#a54aa3ddeb39416171570ad7eb61eb357',1,'pbpt::math::Point::w() noexcept'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#a00d44c9202df1807b2cf35cb9180de05',1,'pbpt::math::Point::w() const noexcept'],['../dd/da3/classpbpt_1_1math_1_1_vec.html#a83133eb4f037b8e9e9a5e5a6c9d6b1f2',1,'pbpt::math::Vec::w() noexcept'],['../dd/da3/classpbpt_1_1math_1_1_vec.html#a9d57aad3cdda01641f3342a4dcf1101b',1,'pbpt::math::Vec::w() const noexcept']]]
 ];

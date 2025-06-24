@@ -3,6 +3,7 @@ var classpbpt_1_1math_1_1_vec =
     [ "Vec", "dd/da3/classpbpt_1_1math_1_1_vec.html#a2bb9417f5cdf55126aed8a2fefdb2844", null ],
     [ "Vec", "dd/da3/classpbpt_1_1math_1_1_vec.html#ae7a371e9e8463907ef23a0a7cf694372", null ],
     [ "Vec", "dd/da3/classpbpt_1_1math_1_1_vec.html#a5681de95dc0d7c9a64092e7eca0b4f82", null ],
+    [ "apply", "dd/da3/classpbpt_1_1math_1_1_vec.html#a193a14f6a2f7335674d56e3944c3ba4b", null ],
     [ "cross", "dd/da3/classpbpt_1_1math_1_1_vec.html#a846f97e7a00b678eaab712a683aeb0f0", null ],
     [ "dims", "dd/da3/classpbpt_1_1math_1_1_vec.html#a4f360198770d13bf2d8633ee8ad79e8c", null ],
     [ "dot", "dd/da3/classpbpt_1_1math_1_1_vec.html#ac8143d0b212e2f733124fe200d99fa9c", null ],
@@ -10,6 +11,7 @@ var classpbpt_1_1math_1_1_vec =
     [ "length_squared", "dd/da3/classpbpt_1_1math_1_1_vec.html#a67730865097a2236d6ac8d8d5fbb13ae", null ],
     [ "normalize", "dd/da3/classpbpt_1_1math_1_1_vec.html#aab206f1160a2462893bfc0f7e8feb741", null ],
     [ "normalized", "dd/da3/classpbpt_1_1math_1_1_vec.html#a54834a510587ed50e222428de36f40c9", null ],
+    [ "operator()", "dd/da3/classpbpt_1_1math_1_1_vec.html#ae5af833ff15fc901219234d33b79610c", null ],
     [ "operator*=", "dd/da3/classpbpt_1_1math_1_1_vec.html#aeee5412f82478b6cd23852d9c6009dca", null ],
     [ "operator+=", "dd/da3/classpbpt_1_1math_1_1_vec.html#a45f8da1a2861f3ffc101e9dbf188ce39", null ],
     [ "operator-", "dd/da3/classpbpt_1_1math_1_1_vec.html#a866bb0d71493f1fc8054a8a6c830148f", null ],
@@ -23,6 +25,5 @@ var classpbpt_1_1math_1_1_vec =
     [ "y", "dd/da3/classpbpt_1_1math_1_1_vec.html#ad0d337288669ee16584d6319b4d118c0", null ],
     [ "y", "dd/da3/classpbpt_1_1math_1_1_vec.html#aefc9b35faa6c15b39ada805fdcb5cd53", null ],
     [ "z", "dd/da3/classpbpt_1_1math_1_1_vec.html#ae53220db05651d0e5d1dacbe23ff7e72", null ],
-    [ "z", "dd/da3/classpbpt_1_1math_1_1_vec.html#ad7850e13af605e5394665f93f2a0b584", null ],
-    [ "operator<<", "dd/da3/classpbpt_1_1math_1_1_vec.html#acbefb4a101f8c046ab1ce7508bacb649", null ]
+    [ "z", "dd/da3/classpbpt_1_1math_1_1_vec.html#ad7850e13af605e5394665f93f2a0b584", null ]
 ];
