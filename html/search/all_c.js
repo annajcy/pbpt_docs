@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['scale_0',['scale',['../d0/d29/classpbpt_1_1math_1_1_transform.html#ade5c9327561b66ed05e51d365ac9c53f',1,'pbpt::math::Transform::scale(Float s) noexcept'],['../d0/d29/classpbpt_1_1math_1_1_transform.html#af254a033dbb093a4a16f7170ad1cb6e2',1,'pbpt::math::Transform::scale(const Vec3 &amp;s) noexcept']]],
-  ['sin_1',['sin',['../d1/d2f/namespacepbpt_1_1math.html#a8360e161354ea507f91b4afe9bd12576',1,'pbpt::math']]],
-  ['sin_5ftaylor_2',['sin_taylor',['../d1/d30/namespacepbpt_1_1math_1_1detail.html#a6ba889adf576d5ed3476787ac53a434a',1,'pbpt::math::detail']]],
-  ['sqrt_3',['sqrt',['../d1/d2f/namespacepbpt_1_1math.html#a05c90d3b8d7543103db19c3638a4105f',1,'pbpt::math']]],
-  ['sqrt_5fnewton_5fraphson_4',['sqrt_newton_raphson',['../d1/d30/namespacepbpt_1_1math_1_1detail.html#a498e700b59ce33ea68c0cc819c7ef070',1,'pbpt::math::detail']]],
-  ['submatrix_5',['submatrix',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a80ac452045b8dad7cf27f2929ade21f8',1,'pbpt::math::Matrix']]]
+  ['pbpt_3a_3amath_0',['math',['../d1/d2f/namespacepbpt_1_1math.html',1,'pbpt']]],
+  ['pbpt_3a_3amath_3a_3adetail_1',['detail',['../d1/d30/namespacepbpt_1_1math_1_1detail.html',1,'pbpt::math']]],
+  ['perspective_2',['perspective',['../d0/d29/classpbpt_1_1math_1_1_transform.html#a0375131d4af2fa60405eea227f83a3e8',1,'pbpt::math::Transform']]],
+  ['point_3',['Point',['../d7/d1b/classpbpt_1_1math_1_1_point.html',1,'pbpt::math::Point&lt; T, N &gt;'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#a349654edbf4ca320a4a267ede35e377d',1,'pbpt::math::Point::Point() noexcept'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#aa7e55f0d6663d2156fc228be2786b381',1,'pbpt::math::Point::Point(const Vector&lt; T, N &gt; &amp;vec) noexcept'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#ab7c4e8ad30190b66daba4a1e1f4ca914',1,'pbpt::math::Point::Point(Args &amp;&amp;... args) noexcept']]],
+  ['point_2ehpp_4',['point.hpp',['../d0/de4/point_8hpp.html',1,'']]],
+  ['point_3c_20float_2c_202_20_3e_5',['Point&lt; Float, 2 &gt;',['../d7/d1b/classpbpt_1_1math_1_1_point.html',1,'pbpt::math']]],
+  ['point_3c_20float_2c_203_20_3e_6',['Point&lt; Float, 3 &gt;',['../d7/d1b/classpbpt_1_1math_1_1_point.html',1,'pbpt::math']]],
+  ['point_3c_20float_2c_204_20_3e_7',['Point&lt; Float, 4 &gt;',['../d7/d1b/classpbpt_1_1math_1_1_point.html',1,'pbpt::math']]],
+  ['pt2_8',['Pt2',['../d1/d2f/namespacepbpt_1_1math.html#a38aae464f14d90a8e81f2d6720070838',1,'pbpt::math']]],
+  ['pt3_9',['Pt3',['../d1/d2f/namespacepbpt_1_1math.html#a6571acadeb280b710b17c16897d14a64',1,'pbpt::math']]],
+  ['pt4_10',['Pt4',['../d1/d2f/namespacepbpt_1_1math.html#ac602f90f05b18e9ece16a922e79afc2e',1,'pbpt::math']]]
 ];

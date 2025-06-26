@@ -168,6 +168,22 @@ template&lt;std::convertible_to&lt; T &gt; U&gt; </td></tr>
 <tr class="memdesc:a63102c38f119353b978924b51aa59f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the cross product of this vector and another.  <br /></td></tr>
 <tr class="memitem:afc0de631a7e9bb422bfe69a5d0004385" id="r_afc0de631a7e9bb422bfe69a5d0004385"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc0de631a7e9bb422bfe69a5d0004385">apply</a> (const std::function&lt; void(T &amp;, int)&gt; &amp;func)</td></tr>
 <tr class="memdesc:afc0de631a7e9bb422bfe69a5d0004385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a function to each element of the vector.  <br /></td></tr>
+<tr class="memitem:ae4c2c5ccd91c57cf396a9671fc8f17dc" id="r_ae4c2c5ccd91c57cf396a9671fc8f17dc"><td class="memItemLeft" align="right" valign="top"><a id="ae4c2c5ccd91c57cf396a9671fc8f17dc" name="ae4c2c5ccd91c57cf396a9671fc8f17dc"></a>
+constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) const noexcept</td></tr>
+<tr class="memdesc:ae4c2c5ccd91c57cf396a9671fc8f17dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds two vectors component-wise. <br /></td></tr>
+<tr class="memitem:a03f52cba12bfbbf7cacad99cee006840" id="r_a03f52cba12bfbbf7cacad99cee006840"><td class="memItemLeft" align="right" valign="top"><a id="a03f52cba12bfbbf7cacad99cee006840" name="a03f52cba12bfbbf7cacad99cee006840"></a>
+constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) const noexcept</td></tr>
+<tr class="memdesc:a03f52cba12bfbbf7cacad99cee006840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts one vector from another component-wise. <br /></td></tr>
+<tr class="memitem:a2690778be34ece6f32445a6b861a6af8" id="r_a2690778be34ece6f32445a6b861a6af8"><td class="memTemplParams" colspan="2"><a id="a2690778be34ece6f32445a6b861a6af8" name="a2690778be34ece6f32445a6b861a6af8"></a>
+template&lt;std::convertible_to&lt; T &gt; U&gt; </td></tr>
+<tr class="memitem:a2690778be34ece6f32445a6b861a6af8 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (U value) const noexcept</td></tr>
+<tr class="memdesc:a2690778be34ece6f32445a6b861a6af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a vector by a scalar. <br /></td></tr>
+<tr class="memitem:add04ae2b7cf91c537d196934feb6c898" id="r_add04ae2b7cf91c537d196934feb6c898"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add04ae2b7cf91c537d196934feb6c898">operator*</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) const noexcept</td></tr>
+<tr class="memdesc:add04ae2b7cf91c537d196934feb6c898"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies two vectors component-wise (Hadamard product).  <br /></td></tr>
+<tr class="memitem:abe85abc0e094215a67db3962d7c15e2e" id="r_abe85abc0e094215a67db3962d7c15e2e"><td class="memTemplParams" colspan="2"><a id="abe85abc0e094215a67db3962d7c15e2e" name="abe85abc0e094215a67db3962d7c15e2e"></a>
+template&lt;std::convertible_to&lt; T &gt; U&gt; </td></tr>
+<tr class="memitem:abe85abc0e094215a67db3962d7c15e2e template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (U rhs) const</td></tr>
+<tr class="memdesc:abe85abc0e094215a67db3962d7c15e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides a vector by a scalar. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -177,6 +193,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a177911195392f69c89b2069572cbfe70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a vector with all components set to zero.  <br /></td></tr>
 <tr class="memitem:aee57af43f38373460a8ebcde847cd36a" id="r_aee57af43f38373460a8ebcde847cd36a"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee57af43f38373460a8ebcde847cd36a">ones</a> () noexcept</td></tr>
 <tr class="memdesc:aee57af43f38373460a8ebcde847cd36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a vector with all components set to one.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aa8b9670babd1f8f20524e9011aea5665" id="r_aa8b9670babd1f8f20524e9011aea5665"><td class="memTemplParams" colspan="2"><a id="aa8b9670babd1f8f20524e9011aea5665" name="aa8b9670babd1f8f20524e9011aea5665"></a>
+template&lt;std::convertible_to&lt; T &gt; U&gt; </td></tr>
+<tr class="memitem:aa8b9670babd1f8f20524e9011aea5665 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (U lhs, const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
+<tr class="memdesc:aa8b9670babd1f8f20524e9011aea5665"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a scalar by a vector. <br /></td></tr>
+<tr class="memitem:a5403bc2589d8df21ebe05bbdc347e5ef" id="r_a5403bc2589d8df21ebe05bbdc347e5ef"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5403bc2589d8df21ebe05bbdc347e5ef">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a> &amp;vec)</td></tr>
+<tr class="memdesc:a5403bc2589d8df21ebe05bbdc347e5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream insertion operator for printing the vector.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, int N&gt;<br />
@@ -618,6 +643,36 @@ template&lt;typename T, int N&gt; </div>
 
 </div>
 </div>
+<a id="add04ae2b7cf91c537d196934feb6c898" name="add04ae2b7cf91c537d196934feb6c898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add04ae2b7cf91c537d196934feb6c898">&#9670;&#160;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a> <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">pbpt::math::Vector</a>&lt; T, N &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Multiplies two vectors component-wise (Hadamard product). </p>
+<p>*</p><dl class="section warning"><dt>Warning</dt><dd>This is NOT a dot product or cross product. </dd></dl>
+
+</div>
+</div>
 <a id="a874ec882e4050b1fa75d4ab77b12c329" name="a874ec882e4050b1fa75d4ab77b12c329"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a874ec882e4050b1fa75d4ab77b12c329">&#9670;&#160;</a></span>operator-()</h2>
 
@@ -1001,6 +1056,48 @@ template&lt;typename T, int N&gt; </div>
 
 <p>Creates a vector with all components set to zero. </p>
 <dl class="section return"><dt>Returns</dt><dd>A new Vec instance with all components initialized to 0.0. </dd></dl>
+
+</div>
+</div>
+<a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a5403bc2589d8df21ebe05bbdc347e5ef" name="a5403bc2589d8df21ebe05bbdc347e5ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5403bc2589d8df21ebe05bbdc347e5ef">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>os</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vec</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stream insertion operator for printing the vector. </p>
+<p>Prints the vector in the format (c1, c2, ..., cN). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>The output stream. </td></tr>
+    <tr><td class="paramname">vec</td><td>The vector to print. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the output stream. </dd></dl>
 
 </div>
 </div>

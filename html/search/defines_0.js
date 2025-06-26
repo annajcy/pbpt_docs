@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['m_5fpi_0',['M_PI',['../d7/d7c/function_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3',1,'function.hpp']]]
+  ['epsilon_0',['EPSILON',['../d9/d3a/global_8hpp.html#a002b2f4894492820fe708b1b7e7c5e70',1,'global.hpp']]]
 ];

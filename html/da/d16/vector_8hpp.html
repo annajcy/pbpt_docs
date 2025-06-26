@@ -100,7 +100,7 @@ $(function(){initNavTree('da/d16/vector_8hpp.html','../../',''); });
 <code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
-<code>#include &quot;global.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d3a/global_8hpp_source.html">global.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d7/d7c/function_8hpp_source.html">function.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../da/d16/vector_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -126,35 +126,6 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Vec3</b>
 <tr class="memitem:aafbc6d0fb7dd77bd0648c4f436f35697" id="r_aafbc6d0fb7dd77bd0648c4f436f35697"><td class="memItemLeft" align="right" valign="top"><a id="aafbc6d0fb7dd77bd0648c4f436f35697" name="aafbc6d0fb7dd77bd0648c4f436f35697"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Vec4</b> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 4&gt;</td></tr>
 <tr class="memdesc:aafbc6d0fb7dd77bd0648c4f436f35697"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 4-dimensional vector of type <span class="tt"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a></span>. <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a19797a6a2d03a32159d6ec54ab17d68a" id="r_a19797a6a2d03a32159d6ec54ab17d68a"><td class="memTemplParams" colspan="2"><a id="a19797a6a2d03a32159d6ec54ab17d68a" name="a19797a6a2d03a32159d6ec54ab17d68a"></a>
-template&lt;typename T, int N&gt; </td></tr>
-<tr class="memitem:a19797a6a2d03a32159d6ec54ab17d68a template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::operator+</b> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;lhs, const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:a19797a6a2d03a32159d6ec54ab17d68a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds two vectors component-wise. <br /></td></tr>
-<tr class="memitem:aff71c16801a3c5ee6f5ce5b872cb2339" id="r_aff71c16801a3c5ee6f5ce5b872cb2339"><td class="memTemplParams" colspan="2"><a id="aff71c16801a3c5ee6f5ce5b872cb2339" name="aff71c16801a3c5ee6f5ce5b872cb2339"></a>
-template&lt;typename T, int N&gt; </td></tr>
-<tr class="memitem:aff71c16801a3c5ee6f5ce5b872cb2339 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::operator-</b> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;lhs, const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:aff71c16801a3c5ee6f5ce5b872cb2339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts one vector from another component-wise. <br /></td></tr>
-<tr class="memitem:ae6861ea7a062934dd0e75fe105830b65" id="r_ae6861ea7a062934dd0e75fe105830b65"><td class="memTemplParams" colspan="2"><a id="ae6861ea7a062934dd0e75fe105830b65" name="ae6861ea7a062934dd0e75fe105830b65"></a>
-template&lt;typename T, int N, std::convertible_to&lt; T &gt; U&gt; </td></tr>
-<tr class="memitem:ae6861ea7a062934dd0e75fe105830b65 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::operator*</b> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;lhs, U rhs) noexcept</td></tr>
-<tr class="memdesc:ae6861ea7a062934dd0e75fe105830b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a vector by a scalar. <br /></td></tr>
-<tr class="memitem:a7ffb142a15f3798dc1c35f428091ffb5" id="r_a7ffb142a15f3798dc1c35f428091ffb5"><td class="memTemplParams" colspan="2"><a id="a7ffb142a15f3798dc1c35f428091ffb5" name="a7ffb142a15f3798dc1c35f428091ffb5"></a>
-template&lt;typename T, int N, std::convertible_to&lt; T &gt; U&gt; </td></tr>
-<tr class="memitem:a7ffb142a15f3798dc1c35f428091ffb5 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::operator*</b> (U lhs, const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:a7ffb142a15f3798dc1c35f428091ffb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies a scalar by a vector. <br /></td></tr>
-<tr class="memitem:a4f29092e6a61ecd67ca39b1fc1bd0b4f" id="r_a4f29092e6a61ecd67ca39b1fc1bd0b4f"><td class="memTemplParams" colspan="2">template&lt;typename T, int N&gt; </td></tr>
-<tr class="memitem:a4f29092e6a61ecd67ca39b1fc1bd0b4f template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a4f29092e6a61ecd67ca39b1fc1bd0b4f">pbpt::math::operator*</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;lhs, const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
-<tr class="memdesc:a4f29092e6a61ecd67ca39b1fc1bd0b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies two vectors component-wise (Hadamard product).  <br /></td></tr>
-<tr class="memitem:a6c8a4b1f2c7090446c293a300379e5c6" id="r_a6c8a4b1f2c7090446c293a300379e5c6"><td class="memTemplParams" colspan="2"><a id="a6c8a4b1f2c7090446c293a300379e5c6" name="a6c8a4b1f2c7090446c293a300379e5c6"></a>
-template&lt;typename T, int N, std::convertible_to&lt; T &gt; U&gt; </td></tr>
-<tr class="memitem:a6c8a4b1f2c7090446c293a300379e5c6 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::operator/</b> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;lhs, U rhs)</td></tr>
-<tr class="memdesc:a6c8a4b1f2c7090446c293a300379e5c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides a vector by a scalar. <br /></td></tr>
-<tr class="memitem:a7668639bf71479c4913e2fc09c9b4c08" id="r_a7668639bf71479c4913e2fc09c9b4c08"><td class="memTemplParams" colspan="2">template&lt;typename T, int N&gt; </td></tr>
-<tr class="memitem:a7668639bf71479c4913e2fc09c9b4c08 template"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a7668639bf71479c4913e2fc09c9b4c08">pbpt::math::operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;vec)</td></tr>
-<tr class="memdesc:a7668639bf71479c4913e2fc09c9b4c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stream insertion operator for printing the vector.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines a generic, N-dimensional, constexpr-friendly vector class. </p>

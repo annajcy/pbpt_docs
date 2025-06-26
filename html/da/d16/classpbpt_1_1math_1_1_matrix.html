@@ -174,6 +174,19 @@ constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>col_dims</b>
 <tr class="memdesc:a06f5deb23342ce99f4cb038c1425fd07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a non-owning, read-only view into a sub-region of this const matrix.  <br /></td></tr>
 <tr class="memitem:a80ac452045b8dad7cf27f2929ade21f8" id="r_a80ac452045b8dad7cf27f2929ade21f8"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80ac452045b8dad7cf27f2929ade21f8">submatrix</a> (int row_to_remove, int col_to_remove) const</td></tr>
 <tr class="memdesc:a80ac452045b8dad7cf27f2929ade21f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a submatrix by removing a specified row and column.  <br /></td></tr>
+<tr class="memitem:ae2c0d4285bcde6353a27ec3e7ec37e35" id="r_ae2c0d4285bcde6353a27ec3e7ec37e35"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2c0d4285bcde6353a27ec3e7ec37e35">operator+</a> (const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a> &amp;rhs) const noexcept</td></tr>
+<tr class="memdesc:ae2c0d4285bcde6353a27ec3e7ec37e35"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> addition.  <br /></td></tr>
+<tr class="memitem:a09f6ef65836cf27ebacb0449b6650cc3" id="r_a09f6ef65836cf27ebacb0449b6650cc3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09f6ef65836cf27ebacb0449b6650cc3">operator-</a> (const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a> &amp;rhs) const noexcept</td></tr>
+<tr class="memdesc:a09f6ef65836cf27ebacb0449b6650cc3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> subtraction.  <br /></td></tr>
+<tr class="memitem:adbf6610820565bc0dfe9a75a745a1c06" id="r_adbf6610820565bc0dfe9a75a745a1c06"><td class="memTemplParams" colspan="2">template&lt;std::convertible_to&lt; T &gt; U&gt; </td></tr>
+<tr class="memitem:adbf6610820565bc0dfe9a75a745a1c06 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbf6610820565bc0dfe9a75a745a1c06">operator*</a> (U scalar) const noexcept</td></tr>
+<tr class="memdesc:adbf6610820565bc0dfe9a75a745a1c06"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> multiplication by a scalar.  <br /></td></tr>
+<tr class="memitem:a89c512cc60b52b6554a3b906c514616e" id="r_a89c512cc60b52b6554a3b906c514616e"><td class="memItemLeft" align="right" valign="top"><a id="a89c512cc60b52b6554a3b906c514616e" name="a89c512cc60b52b6554a3b906c514616e"></a>
+constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, R &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, R &gt; &amp;rhs) const noexcept</td></tr>
+<tr class="memdesc:a89c512cc60b52b6554a3b906c514616e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix-Vector multiplication. <br /></td></tr>
+<tr class="memitem:a74f2fccb5fa98cbe51e515f49502349f" id="r_a74f2fccb5fa98cbe51e515f49502349f"><td class="memTemplParams" colspan="2">template&lt;int M&gt; </td></tr>
+<tr class="memitem:a74f2fccb5fa98cbe51e515f49502349f template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, M &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74f2fccb5fa98cbe51e515f49502349f">operator*</a> (const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, C, M &gt; &amp;rhs) const noexcept</td></tr>
+<tr class="memdesc:a74f2fccb5fa98cbe51e515f49502349f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix-Matrix multiplication.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -182,6 +195,14 @@ static constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.h
 <tr class="memdesc:a161d27a0db009a7324d8fe870f0232d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix with all components set to zero. <br /></td></tr>
 <tr class="memitem:acd1080391d4ce48ff76a609c1ef5bc95" id="r_acd1080391d4ce48ff76a609c1ef5bc95"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd1080391d4ce48ff76a609c1ef5bc95">identity</a> () noexcept</td></tr>
 <tr class="memdesc:acd1080391d4ce48ff76a609c1ef5bc95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an identity matrix.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a57f7c9332e8e7913dee5261ef67c06a8" id="r_a57f7c9332e8e7913dee5261ef67c06a8"><td class="memTemplParams" colspan="2">template&lt;std::convertible_to&lt; T &gt; U&gt; </td></tr>
+<tr class="memitem:a57f7c9332e8e7913dee5261ef67c06a8 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57f7c9332e8e7913dee5261ef67c06a8">operator*</a> (U scalar, const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, C &gt; &amp;mat) noexcept</td></tr>
+<tr class="memdesc:a57f7c9332e8e7913dee5261ef67c06a8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> multiplication by a scalar.  <br /></td></tr>
+<tr class="memitem:a132daa73f413c767a3e5a9ca615fc714" id="r_a132daa73f413c767a3e5a9ca615fc714"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a132daa73f413c767a3e5a9ca615fc714">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, C &gt; &amp;mat)</td></tr>
+<tr class="memdesc:a132daa73f413c767a3e5a9ca615fc714"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> stream output.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, int R, int C&gt;<br />
@@ -548,6 +569,70 @@ template&lt;typename T, int R, int C&gt; </div>
 
 </div>
 </div>
+<a id="a74f2fccb5fa98cbe51e515f49502349f" name="a74f2fccb5fa98cbe51e515f49502349f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f2fccb5fa98cbe51e515f49502349f">&#9670;&#160;</a></span>operator*() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int R, int C&gt; </div>
+<div class="memtemplate">
+template&lt;int M&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, M &gt; <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">pbpt::math::Matrix</a>&lt; T, R, C &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, C, M &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Matrix-Matrix multiplication. </p>
+<p>The number of columns in the left matrix must equal the number of rows in the right matrix. </p><dl class="section return"><dt>Returns</dt><dd>A new Matrix&lt;T, R, M&gt; </dd></dl>
+
+</div>
+</div>
+<a id="adbf6610820565bc0dfe9a75a745a1c06" name="adbf6610820565bc0dfe9a75a745a1c06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbf6610820565bc0dfe9a75a745a1c06">&#9670;&#160;</a></span>operator*() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int R, int C&gt; </div>
+<div class="memtemplate">
+template&lt;std::convertible_to&lt; T &gt; U&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a> <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">pbpt::math::Matrix</a>&lt; T, R, C &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramtype">U</td>          <td class="paramname"><span class="paramname"><em>scalar</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> multiplication by a scalar. </p>
+<p>Multiplies each element of the matrix by the scalar. </p><dl class="section return"><dt>Returns</dt><dd>A new Matrix&lt;T, R, C&gt; </dd></dl>
+
+</div>
+</div>
 <a id="a926064568bac32d5098fe291a96eea95" name="a926064568bac32d5098fe291a96eea95"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a926064568bac32d5098fe291a96eea95">&#9670;&#160;</a></span>operator*=()</h2>
 
@@ -584,6 +669,36 @@ template&lt;typename T, int R, int C&gt; </div>
 
 </div>
 </div>
+<a id="ae2c0d4285bcde6353a27ec3e7ec37e35" name="ae2c0d4285bcde6353a27ec3e7ec37e35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2c0d4285bcde6353a27ec3e7ec37e35">&#9670;&#160;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int R, int C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a> <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">pbpt::math::Matrix</a>&lt; T, R, C &gt;::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, C &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> addition. </p>
+<p>Element-wise addition of two matrices. </p><dl class="section return"><dt>Returns</dt><dd>A new Matrix&lt;T, R, C&gt; </dd></dl>
+
+</div>
+</div>
 <a id="a48d55c4e8ac0191dd115ab293248d078" name="a48d55c4e8ac0191dd115ab293248d078"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48d55c4e8ac0191dd115ab293248d078">&#9670;&#160;</a></span>operator+=()</h2>
 
@@ -617,6 +732,36 @@ template&lt;typename T, int R, int C&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to this matrix. </dd></dl>
+
+</div>
+</div>
+<a id="a09f6ef65836cf27ebacb0449b6650cc3" name="a09f6ef65836cf27ebacb0449b6650cc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09f6ef65836cf27ebacb0449b6650cc3">&#9670;&#160;</a></span>operator-()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int R, int C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a> <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">pbpt::math::Matrix</a>&lt; T, R, C &gt;::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, C &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> subtraction. </p>
+<p>Element-wise subtraction of two matrices. </p><dl class="section return"><dt>Returns</dt><dd>A new Matrix&lt;T, R, C&gt; </dd></dl>
 
 </div>
 </div>
@@ -853,6 +998,92 @@ template&lt;int ViewR, int ViewC&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A ConstMatrixView object that refers to a part of this matrix. </dd></dl>
+
+</div>
+</div>
+<a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a57f7c9332e8e7913dee5261ef67c06a8" name="a57f7c9332e8e7913dee5261ef67c06a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57f7c9332e8e7913dee5261ef67c06a8">&#9670;&#160;</a></span>operator*</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int R, int C&gt; </div>
+<div class="memtemplate">
+template&lt;std::convertible_to&lt; T &gt; U&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">U</td>          <td class="paramname"><span class="paramname"><em>scalar</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, C &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>mat</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> multiplication by a scalar. </p>
+<p>Multiplies each element of the matrix by the scalar. </p><dl class="section return"><dt>Returns</dt><dd>A new Matrix&lt;T, R, C&gt; </dd></dl>
+
+</div>
+</div>
+<a id="a132daa73f413c767a3e5a9ca615fc714" name="a132daa73f413c767a3e5a9ca615fc714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a132daa73f413c767a3e5a9ca615fc714">&#9670;&#160;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int R, int C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>os</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, C &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>mat</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> stream output. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The matrix element type. </td></tr>
+    <tr><td class="paramname">R</td><td>The number of rows in the matrix. </td></tr>
+    <tr><td class="paramname">C</td><td>The number of columns in the matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>The output stream. </td></tr>
+    <tr><td class="paramname">mat</td><td>The matrix to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>std::ostream&amp; The output stream. </dd></dl>
 
 </div>
 </div>

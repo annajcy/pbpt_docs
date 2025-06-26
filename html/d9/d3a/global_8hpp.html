@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pbpt: /Users/jinceyang/Desktop/codebase/pbpt/engine/math/transform.hpp File Reference</title>
+<title>pbpt: /Users/jinceyang/Desktop/codebase/pbpt/engine/math/global.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('d6/deb/transform_8hpp.html','../../',''); });
+$(function(){initNavTree('d9/d3a/global_8hpp.html','../../',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -88,31 +88,52 @@ $(function(){initNavTree('d6/deb/transform_8hpp.html','../../',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">transform.hpp File Reference</div></div>
+  <div class="headertitle"><div class="title">global.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Provides factory functions for creating common 3D transformation matrices.  
+<p>Defines the primary floating-point type alias for the math library.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/de4/point_8hpp_source.html">point.hpp</a>&quot;</code><br />
-</div>
-<p><a href="../../d6/deb/transform_8hpp_source.html">Go to the source code of this file.</a></p>
+
+<p><a href="../../d9/d3a/global_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:pbpt_3A_3Amath_3A_3ATransform" id="r_pbpt_3A_3Amath_3A_3ATransform"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/classpbpt_1_1math_1_1_transform.html">pbpt::math::Transform</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace for 3D transformation factory functions.  <a href="../../d0/d29/classpbpt_1_1math_1_1_transform.html#details">More...</a><br /></td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:pbpt_3A_3Amath" id="r_pbpt_3A_3Amath"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html">pbpt::math</a></td></tr>
 <tr class="memdesc:d1/d2f/namespacepbpt_1_1math"><td class="mdescLeft">&#160;</td><td class="mdescRight">The namespace for math library implementation. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a002b2f4894492820fe708b1b7e7c5e70" id="r_a002b2f4894492820fe708b1b7e7c5e70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a>&#160;&#160;&#160;1e-6</td></tr>
+<tr class="memdesc:a002b2f4894492820fe708b1b7e7c5e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">The epsilon value used for floating-point comparisons.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a1bde309b06d14a6ec4176c4308f2fe6e" id="r_a1bde309b06d14a6ec4176c4308f2fe6e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">pbpt::math::Float</a> = float</td></tr>
+<tr class="memdesc:a1bde309b06d14a6ec4176c4308f2fe6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The primary floating-point type used throughout the math library.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides factory functions for creating common 3D transformation matrices. </p>
-<p>This file contains functions to generate matrices for translation, rotation, scaling, camera viewing (look-at), and projection (perspective/orthographic). These are the fundamental building blocks of a Model-View-Projection (MVP) pipeline. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Defines the primary floating-point type alias for the math library. </p>
+<p>This header centralizes the floating-point precision for the entire <a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html" title="The namespace for math library implementation.">pbpt::math</a> namespace. By changing the definition here (or by defining FLOAT_64BIT in the build system), the precision of all calculations (in vectors, points, rays, etc.) can be switched between single and double precision. </p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="a002b2f4894492820fe708b1b7e7c5e70" name="a002b2f4894492820fe708b1b7e7c5e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a002b2f4894492820fe708b1b7e7c5e70">&#9670;&#160;</a></span>EPSILON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EPSILON&#160;&#160;&#160;1e-6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The epsilon value used for floating-point comparisons. </p>
+<p>This value is used to determine the precision of floating-point comparisons. It is set to a small value (e.g., 1e-6) to account for floating-point precision issues. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>
@@ -125,7 +146,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="../../dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a href="../../dir_6092418e369ca819ce866d11ef016080.html">math</a></li><li class="navelem"><a href="../../d6/deb/transform_8hpp.html">transform.hpp</a></li>
+    <li class="navelem"><a href="../../dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a href="../../dir_6092418e369ca819ce866d11ef016080.html">math</a></li><li class="navelem"><a href="../../d9/d3a/global_8hpp.html">global.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

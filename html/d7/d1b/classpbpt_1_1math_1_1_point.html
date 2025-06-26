@@ -135,12 +135,21 @@ constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator
 <tr class="memdesc:ab15d2501d80f3bc107c464c9fd536ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides mutable access to the point's coordinates by index. <br /></td></tr>
 <tr class="memitem:adfa4a62db3be5e281946840fe1e416d6" id="r_adfa4a62db3be5e281946840fe1e416d6"><td class="memItemLeft" align="right" valign="top"><a id="adfa4a62db3be5e281946840fe1e416d6" name="adfa4a62db3be5e281946840fe1e416d6"></a>
 constexpr const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (int index) const</td></tr>
+<tr class="memdesc:adfa4a62db3be5e281946840fe1e416d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides safe const access to the point's coordinates by index. <br /></td></tr>
 <tr class="memitem:a9db2b823196c4665238d65d74f56d2cb" id="r_a9db2b823196c4665238d65d74f56d2cb"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9db2b823196c4665238d65d74f56d2cb">to_vector</a> () const noexcept</td></tr>
 <tr class="memdesc:a9db2b823196c4665238d65d74f56d2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly converts the point to its underlying coordinate vector.  <br /></td></tr>
 <tr class="memitem:a0f1525192e0297f0ee247a90817c4931" id="r_a0f1525192e0297f0ee247a90817c4931"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f1525192e0297f0ee247a90817c4931">operator+=</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:a0f1525192e0297f0ee247a90817c4931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the point by adding a vector.  <br /></td></tr>
 <tr class="memitem:af74830daa85f1c333490a8c645cb765d" id="r_af74830daa85f1c333490a8c645cb765d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af74830daa85f1c333490a8c645cb765d">operator-=</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:af74830daa85f1c333490a8c645cb765d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the point by subtracting a vector.  <br /></td></tr>
+<tr class="memitem:a4ec0cb873538030e430e89b141ebee4a" id="r_a4ec0cb873538030e430e89b141ebee4a"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ec0cb873538030e430e89b141ebee4a">operator-</a> (const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> &amp;rhs) const noexcept</td></tr>
+<tr class="memdesc:a4ec0cb873538030e430e89b141ebee4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rule 1: Calculates the displacement vector between two points (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> - <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="A template class for N-dimensional mathematical vectors.">Vector</a></span>).  <br /></td></tr>
+<tr class="memitem:a11d5451fa2977e8f1b8a8310175c4328" id="r_a11d5451fa2977e8f1b8a8310175c4328"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11d5451fa2977e8f1b8a8310175c4328">operator+</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) const noexcept</td></tr>
+<tr class="memdesc:a11d5451fa2977e8f1b8a8310175c4328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rule 2: Translates a point by a vector, resulting in a new point (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> + <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="A template class for N-dimensional mathematical vectors.">Vector</a> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>).  <br /></td></tr>
+<tr class="memitem:a884d0adef5431b514917eea7170da832" id="r_a884d0adef5431b514917eea7170da832"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a884d0adef5431b514917eea7170da832">operator-</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) const noexcept</td></tr>
+<tr class="memdesc:a884d0adef5431b514917eea7170da832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rule 3: Translates a point by the negative of a vector (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> - <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="A template class for N-dimensional mathematical vectors.">Vector</a> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>).  <br /></td></tr>
+<tr class="memitem:a03a56303a51f8112b88bbbcf35a4bce3" id="r_a03a56303a51f8112b88bbbcf35a4bce3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03a56303a51f8112b88bbbcf35a4bce3">mid</a> (const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt; &amp;rhs) const noexcept</td></tr>
+<tr class="memdesc:a03a56303a51f8112b88bbbcf35a4bce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the midpoint between two points.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -291,6 +300,42 @@ template&lt;typename T, int N&gt; </div>
 
 </div>
 </div>
+<a id="a03a56303a51f8112b88bbbcf35a4bce3" name="a03a56303a51f8112b88bbbcf35a4bce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a56303a51f8112b88bbbcf35a4bce3">&#9670;&#160;</a></span>mid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">pbpt::math::Point</a>&lt; T, N &gt;::mid </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the midpoint between two points. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rhs</td><td>The second point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The point that lies exactly halfway between <span class="tt">lhs</span> and <span class="tt">rhs</span>. </dd></dl>
+
+</div>
+</div>
 <a id="ab52bc7e44a54b3ea1d87f45afbb4c049" name="ab52bc7e44a54b3ea1d87f45afbb4c049"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab52bc7e44a54b3ea1d87f45afbb4c049">&#9670;&#160;</a></span>ones()</h2>
 
@@ -318,6 +363,42 @@ template&lt;typename T, int N&gt; </div>
 
 <p>Creates a point with all coordinates set to one. </p>
 <dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> instance with all coordinates set to 1.0. </dd></dl>
+
+</div>
+</div>
+<a id="a11d5451fa2977e8f1b8a8310175c4328" name="a11d5451fa2977e8f1b8a8310175c4328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11d5451fa2977e8f1b8a8310175c4328">&#9670;&#160;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">pbpt::math::Point</a>&lt; T, N &gt;::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rule 2: Translates a point by a vector, resulting in a new point (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> + <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="A template class for N-dimensional mathematical vectors.">Vector</a> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rhs</td><td>The displacement vector. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new, translated point. </dd></dl>
 
 </div>
 </div>
@@ -354,6 +435,78 @@ template&lt;typename T, int N&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the modified point. </dd></dl>
+
+</div>
+</div>
+<a id="a4ec0cb873538030e430e89b141ebee4a" name="a4ec0cb873538030e430e89b141ebee4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ec0cb873538030e430e89b141ebee4a">&#9670;&#160;</a></span>operator-() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">pbpt::math::Point</a>&lt; T, N &gt;::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rule 1: Calculates the displacement vector between two points (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> - <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="A template class for N-dimensional mathematical vectors.">Vector</a></span>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rhs</td><td>The starting point. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The <span class="tt">Vec&lt;T, N&gt;</span> that goes from <span class="tt">rhs</span> to <span class="tt">lhs</span>. </dd></dl>
+
+</div>
+</div>
+<a id="a884d0adef5431b514917eea7170da832" name="a884d0adef5431b514917eea7170da832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a884d0adef5431b514917eea7170da832">&#9670;&#160;</a></span>operator-() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">pbpt::math::Point</a>&lt; T, N &gt;::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Rule 3: Translates a point by the negative of a vector (<span class="tt"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a> - <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="A template class for N-dimensional mathematical vectors.">Vector</a> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html" title="A template class for an N-dimensional point in space.">Point</a></span>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rhs</td><td>The displacement vector to subtract. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new, translated point. </dd></dl>
 
 </div>
 </div>

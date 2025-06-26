@@ -13,8 +13,13 @@ var classpbpt_1_1math_1_1_matrix =
     [ "determinant", "da/d16/classpbpt_1_1math_1_1_matrix.html#a490a55f28d501c9b834064c7f29657a9", null ],
     [ "inversed", "da/d16/classpbpt_1_1math_1_1_matrix.html#a59502c0541b88f3f7de7e9ae0fa4ee9f", null ],
     [ "operator!=", "da/d16/classpbpt_1_1math_1_1_matrix.html#ae0fbab3d4532cc46f5449396ffd5bdf5", null ],
+    [ "operator*", "da/d16/classpbpt_1_1math_1_1_matrix.html#a74f2fccb5fa98cbe51e515f49502349f", null ],
+    [ "operator*", "da/d16/classpbpt_1_1math_1_1_matrix.html#a89c512cc60b52b6554a3b906c514616e", null ],
+    [ "operator*", "da/d16/classpbpt_1_1math_1_1_matrix.html#adbf6610820565bc0dfe9a75a745a1c06", null ],
     [ "operator*=", "da/d16/classpbpt_1_1math_1_1_matrix.html#a926064568bac32d5098fe291a96eea95", null ],
+    [ "operator+", "da/d16/classpbpt_1_1math_1_1_matrix.html#ae2c0d4285bcde6353a27ec3e7ec37e35", null ],
     [ "operator+=", "da/d16/classpbpt_1_1math_1_1_matrix.html#a48d55c4e8ac0191dd115ab293248d078", null ],
+    [ "operator-", "da/d16/classpbpt_1_1math_1_1_matrix.html#a09f6ef65836cf27ebacb0449b6650cc3", null ],
     [ "operator-=", "da/d16/classpbpt_1_1math_1_1_matrix.html#ada10ade05690965ebb489abea0895e80", null ],
     [ "operator==", "da/d16/classpbpt_1_1math_1_1_matrix.html#a11fa148db0546f2587a1991cc9b8d1e3", null ],
     [ "operator[]", "da/d16/classpbpt_1_1math_1_1_matrix.html#afa50e88f4d5d791b9e96cc3ae955ce22", null ],
@@ -25,5 +30,7 @@ var classpbpt_1_1math_1_1_matrix =
     [ "submatrix", "da/d16/classpbpt_1_1math_1_1_matrix.html#a80ac452045b8dad7cf27f2929ade21f8", null ],
     [ "transpose", "da/d16/classpbpt_1_1math_1_1_matrix.html#a08615df203db96831e4fff1c92a450db", null ],
     [ "view", "da/d16/classpbpt_1_1math_1_1_matrix.html#a09a1ef7345cad8e42bc9ff78c1b6ceea", null ],
-    [ "view", "da/d16/classpbpt_1_1math_1_1_matrix.html#a06f5deb23342ce99f4cb038c1425fd07", null ]
+    [ "view", "da/d16/classpbpt_1_1math_1_1_matrix.html#a06f5deb23342ce99f4cb038c1425fd07", null ],
+    [ "operator*", "da/d16/classpbpt_1_1math_1_1_matrix.html#a57f7c9332e8e7913dee5261ef67c06a8", null ],
+    [ "operator<<", "da/d16/classpbpt_1_1math_1_1_matrix.html#a132daa73f413c767a3e5a9ca615fc714", null ]
 ];

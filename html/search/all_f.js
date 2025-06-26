@@ -1,4 +1,11 @@
 var searchData=
 [
-  ['w_0',['w',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a28ef7b3eb56e320d4996e6e90c45d986',1,'pbpt::math::Homogeneous::w() const'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a7634ad4d1739745155c339e4631e918c',1,'pbpt::math::Homogeneous::w()'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#a54aa3ddeb39416171570ad7eb61eb357',1,'pbpt::math::Point::w() noexcept'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#a00d44c9202df1807b2cf35cb9180de05',1,'pbpt::math::Point::w() const noexcept'],['../d5/dfd/classpbpt_1_1math_1_1_vector.html#a4985ad07e85f599a9752e93f2c164808',1,'pbpt::math::Vector::w() noexcept'],['../d5/dfd/classpbpt_1_1math_1_1_vector.html#af57a86e65e9f7793f7a579e8dcba81ae',1,'pbpt::math::Vector::w() const noexcept']]]
+  ['tan_0',['tan',['../d1/d2f/namespacepbpt_1_1math.html#acbeffe5a1fdc4e17af1b073d30ea0ff2',1,'pbpt::math']]],
+  ['to_5fmatrix_1',['to_matrix',['../d3/d31/classpbpt_1_1math_1_1_matrix_view.html#a9d9e89939c284a1a6b0dddb2e5c86ebc',1,'pbpt::math::MatrixView']]],
+  ['to_5fpoint_2',['to_point',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#afd8045a3a3ec424d6ef49720a06016ad',1,'pbpt::math::Homogeneous']]],
+  ['to_5fvector_3',['to_vector',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a450453282af4c6158902e878de518e2b',1,'pbpt::math::Homogeneous::to_vector()'],['../d9/d17/classpbpt_1_1math_1_1_vector_view.html#a41fc53c4d80a764a872a95264db7d0de',1,'pbpt::math::VectorView::to_vector()'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#a9db2b823196c4665238d65d74f56d2cb',1,'pbpt::math::Point::to_vector()']]],
+  ['transform_4',['Transform',['../d0/d29/classpbpt_1_1math_1_1_transform.html',1,'pbpt::math']]],
+  ['transform_2ehpp_5',['transform.hpp',['../d6/deb/transform_8hpp.html',1,'']]],
+  ['translate_6',['translate',['../d0/d29/classpbpt_1_1math_1_1_transform.html#a837b608293a2849b526cfdd762c784db',1,'pbpt::math::Transform']]],
+  ['transpose_7',['transpose',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a08615df203db96831e4fff1c92a450db',1,'pbpt::math::Matrix']]]
 ];

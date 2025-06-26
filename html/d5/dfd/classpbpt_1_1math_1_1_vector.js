@@ -13,10 +13,15 @@ var classpbpt_1_1math_1_1_vector =
     [ "normalize", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a4663121507e46b9461eed59cbf93e2e4", null ],
     [ "normalized", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a65880bc72f2cb71a0128598ccbf1b388", null ],
     [ "operator!=", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a26e64ca7ae2eb62c058ec955e67d304b", null ],
+    [ "operator*", "d5/dfd/classpbpt_1_1math_1_1_vector.html#add04ae2b7cf91c537d196934feb6c898", null ],
+    [ "operator*", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a2690778be34ece6f32445a6b861a6af8", null ],
     [ "operator*=", "d5/dfd/classpbpt_1_1math_1_1_vector.html#ace5519f72604979da321699bc338eb34", null ],
+    [ "operator+", "d5/dfd/classpbpt_1_1math_1_1_vector.html#ae4c2c5ccd91c57cf396a9671fc8f17dc", null ],
     [ "operator+=", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a2fbf2b9a9b5ad94d20f3f6c128adbe9e", null ],
     [ "operator-", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a874ec882e4050b1fa75d4ab77b12c329", null ],
+    [ "operator-", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a03f52cba12bfbbf7cacad99cee006840", null ],
     [ "operator-=", "d5/dfd/classpbpt_1_1math_1_1_vector.html#ac72d81b65b918755e7db9a8508aef408", null ],
+    [ "operator/", "d5/dfd/classpbpt_1_1math_1_1_vector.html#abe85abc0e094215a67db3962d7c15e2e", null ],
     [ "operator/=", "d5/dfd/classpbpt_1_1math_1_1_vector.html#aa74baaf4ee08f2fb103caf3a41c9beaa", null ],
     [ "operator==", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a58c735e203b37144679886d30bc8a1c8", null ],
     [ "operator[]", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a0090fd3036494a5687f5627c14b17198", null ],
@@ -28,5 +33,7 @@ var classpbpt_1_1math_1_1_vector =
     [ "y", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a9314642c62d762717d100ac52a1de012", null ],
     [ "y", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a991d0530b083065a5104216113903d5f", null ],
     [ "z", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a9abebca9f7170145ad2d082a090c643e", null ],
-    [ "z", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a397646a60a1ce5b6977da7f92b7cbca9", null ]
+    [ "z", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a397646a60a1ce5b6977da7f92b7cbca9", null ],
+    [ "operator*", "d5/dfd/classpbpt_1_1math_1_1_vector.html#aa8b9670babd1f8f20524e9011aea5665", null ],
+    [ "operator<<", "d5/dfd/classpbpt_1_1math_1_1_vector.html#a5403bc2589d8df21ebe05bbdc347e5ef", null ]
 ];
