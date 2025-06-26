@@ -127,14 +127,16 @@ requires (sizeof...(args) == N)</td></tr>
 <tr class="memitem:acd4ffe984be2e39cdbb9be22ffbff73e" id="r_acd4ffe984be2e39cdbb9be22ffbff73e"><td class="memItemLeft" align="right" valign="top"><a id="acd4ffe984be2e39cdbb9be22ffbff73e" name="acd4ffe984be2e39cdbb9be22ffbff73e"></a>
 constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>dims</b> () const noexcept</td></tr>
 <tr class="memdesc:acd4ffe984be2e39cdbb9be22ffbff73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of dimensions of the point. <br /></td></tr>
-<tr class="memitem:ae1e3f9e30bf930167e5e48a3abf6630b" id="r_ae1e3f9e30bf930167e5e48a3abf6630b"><td class="memItemLeft" align="right" valign="top"><a id="ae1e3f9e30bf930167e5e48a3abf6630b" name="ae1e3f9e30bf930167e5e48a3abf6630b"></a>
-constexpr T&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int index) const</td></tr>
-<tr class="memdesc:ae1e3f9e30bf930167e5e48a3abf6630b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides const access to the point's coordinates by index. <br /></td></tr>
+<tr class="memitem:aafa90cb1c6600f7dd6648c5d84b4a598" id="r_aafa90cb1c6600f7dd6648c5d84b4a598"><td class="memItemLeft" align="right" valign="top"><a id="aafa90cb1c6600f7dd6648c5d84b4a598" name="aafa90cb1c6600f7dd6648c5d84b4a598"></a>
+constexpr const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int index) const</td></tr>
+<tr class="memdesc:aafa90cb1c6600f7dd6648c5d84b4a598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides const access to the point's coordinates by index. <br /></td></tr>
 <tr class="memitem:ab15d2501d80f3bc107c464c9fd536ee1" id="r_ab15d2501d80f3bc107c464c9fd536ee1"><td class="memItemLeft" align="right" valign="top"><a id="ab15d2501d80f3bc107c464c9fd536ee1" name="ab15d2501d80f3bc107c464c9fd536ee1"></a>
 constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int index)</td></tr>
 <tr class="memdesc:ab15d2501d80f3bc107c464c9fd536ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides mutable access to the point's coordinates by index. <br /></td></tr>
-<tr class="memitem:ab56d100528a6c23ccde5884859e03764" id="r_ab56d100528a6c23ccde5884859e03764"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab56d100528a6c23ccde5884859e03764">operator Vector&lt; T, N &gt;</a> () const noexcept</td></tr>
-<tr class="memdesc:ab56d100528a6c23ccde5884859e03764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly converts the point to its underlying coordinate vector.  <br /></td></tr>
+<tr class="memitem:adfa4a62db3be5e281946840fe1e416d6" id="r_adfa4a62db3be5e281946840fe1e416d6"><td class="memItemLeft" align="right" valign="top"><a id="adfa4a62db3be5e281946840fe1e416d6" name="adfa4a62db3be5e281946840fe1e416d6"></a>
+constexpr const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (int index) const</td></tr>
+<tr class="memitem:a9db2b823196c4665238d65d74f56d2cb" id="r_a9db2b823196c4665238d65d74f56d2cb"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9db2b823196c4665238d65d74f56d2cb">to_vector</a> () const noexcept</td></tr>
+<tr class="memdesc:a9db2b823196c4665238d65d74f56d2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly converts the point to its underlying coordinate vector.  <br /></td></tr>
 <tr class="memitem:a0f1525192e0297f0ee247a90817c4931" id="r_a0f1525192e0297f0ee247a90817c4931"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f1525192e0297f0ee247a90817c4931">operator+=</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:a0f1525192e0297f0ee247a90817c4931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the point by adding a vector.  <br /></td></tr>
 <tr class="memitem:af74830daa85f1c333490a8c645cb765d" id="r_af74830daa85f1c333490a8c645cb765d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af74830daa85f1c333490a8c645cb765d">operator-=</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
@@ -319,36 +321,6 @@ template&lt;typename T, int N&gt; </div>
 
 </div>
 </div>
-<a id="ab56d100528a6c23ccde5884859e03764" name="ab56d100528a6c23ccde5884859e03764"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab56d100528a6c23ccde5884859e03764">&#9670;&#160;</a></span>operator Vector&lt; T, N &gt;()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">pbpt::math::Point</a>&lt; T, N &gt;::operator <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Explicitly converts the point to its underlying coordinate vector. </p>
-<p>This allows a point to be treated as a vector from the origin when an explicit cast is used. </p><dl class="section return"><dt>Returns</dt><dd>The <span class="tt">Vec&lt;T, N&gt;</span> representing the point's coordinates. </dd></dl>
-
-</div>
-</div>
 <a id="a0f1525192e0297f0ee247a90817c4931" name="a0f1525192e0297f0ee247a90817c4931"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f1525192e0297f0ee247a90817c4931">&#9670;&#160;</a></span>operator+=()</h2>
 
@@ -418,6 +390,36 @@ template&lt;typename T, int N&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the modified point. </dd></dl>
+
+</div>
+</div>
+<a id="a9db2b823196c4665238d65d74f56d2cb" name="a9db2b823196c4665238d65d74f56d2cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9db2b823196c4665238d65d74f56d2cb">&#9670;&#160;</a></span>to_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">pbpt::math::Point</a>&lt; T, N &gt;::to_vector </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Explicitly converts the point to its underlying coordinate vector. </p>
+<p>This allows a point to be treated as a vector from the origin when an explicit cast is used. </p><dl class="section return"><dt>Returns</dt><dd>The <span class="tt">Vec&lt;T, N&gt;</span> representing the point's coordinates. </dd></dl>
 
 </div>
 </div>

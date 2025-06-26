@@ -8,10 +8,11 @@ var searchData=
   ['ray3_5',['Ray3',['../d1/d2f/namespacepbpt_1_1math.html#a71dc4e1dcf7601243cfee5970695b0b8',1,'pbpt::math']]],
   ['ray_3c_20float_2c_202_20_3e_6',['Ray&lt; Float, 2 &gt;',['../de/d7d/classpbpt_1_1math_1_1_ray.html',1,'pbpt::math']]],
   ['ray_3c_20float_2c_203_20_3e_7',['Ray&lt; Float, 3 &gt;',['../de/d7d/classpbpt_1_1math_1_1_ray.html',1,'pbpt::math']]],
-  ['rotate_8',['rotate',['../d0/d29/classpbpt_1_1math_1_1_transform.html#a2dba439a38d8e96d99c7b9ae3fc210a6',1,'pbpt::math::Transform']]],
-  ['rotate_5fx_9',['rotate_x',['../d0/d29/classpbpt_1_1math_1_1_transform.html#a8eb7dde1371784497dedf989c8fcd9ce',1,'pbpt::math::Transform']]],
-  ['rotate_5fy_10',['rotate_y',['../d0/d29/classpbpt_1_1math_1_1_transform.html#a020922ce8086ae6b10c083cc248cdddb',1,'pbpt::math::Transform']]],
-  ['rotate_5fz_11',['rotate_z',['../d0/d29/classpbpt_1_1math_1_1_transform.html#aa4d1a495e987df5dcc29b9f5a8635183',1,'pbpt::math::Transform']]],
-  ['row_12',['row',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a9222b93d18058b70a3cd52f42fd8a5f7',1,'pbpt::math::Matrix::row(int r)'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a0d51378ea4ee899dc501f7e9bb593a18',1,'pbpt::math::Matrix::row(int r) const']]],
-  ['row_5fdims_13',['row_dims',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a240731ddbc168e28cbf20f6bbb926304',1,'pbpt::math::Matrix']]]
+  ['raydifferential_8',['RayDifferential',['../d7/df2/classpbpt_1_1math_1_1_ray_differential.html',1,'pbpt::math']]],
+  ['rotate_9',['rotate',['../d0/d29/classpbpt_1_1math_1_1_transform.html#a2dba439a38d8e96d99c7b9ae3fc210a6',1,'pbpt::math::Transform']]],
+  ['rotate_5fx_10',['rotate_x',['../d0/d29/classpbpt_1_1math_1_1_transform.html#a8eb7dde1371784497dedf989c8fcd9ce',1,'pbpt::math::Transform']]],
+  ['rotate_5fy_11',['rotate_y',['../d0/d29/classpbpt_1_1math_1_1_transform.html#a020922ce8086ae6b10c083cc248cdddb',1,'pbpt::math::Transform']]],
+  ['rotate_5fz_12',['rotate_z',['../d0/d29/classpbpt_1_1math_1_1_transform.html#aa4d1a495e987df5dcc29b9f5a8635183',1,'pbpt::math::Transform']]],
+  ['row_13',['row',['../d3/d31/classpbpt_1_1math_1_1_matrix_view.html#a3743273667b512ff5c556451ac12b90e',1,'pbpt::math::MatrixView::row()'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a419990acecd580e32db2ad9e84c158b1',1,'pbpt::math::Matrix::row(int r)'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a20fb011cca464d230a1cf946fb45c8aa',1,'pbpt::math::Matrix::row(int r) const']]],
+  ['row_5fdims_14',['row_dims',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a240731ddbc168e28cbf20f6bbb926304',1,'pbpt::math::Matrix']]]
 ];

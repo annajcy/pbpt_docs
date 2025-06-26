@@ -111,6 +111,18 @@ requires (sizeof...(Vals) == N + 1)</td></tr>
 <tr class="memdesc:aacf08c978596238abd63b0e0eadfe1b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a homogeneous coordinate from a list of values.  <br /></td></tr>
 <tr class="memitem:ad6bf50d307c5fb7e5d9a083ff4c78cce" id="r_ad6bf50d307c5fb7e5d9a083ff4c78cce"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6bf50d307c5fb7e5d9a083ff4c78cce">Homogeneous</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N+1 &gt; &amp;data) noexcept</td></tr>
 <tr class="memdesc:ad6bf50d307c5fb7e5d9a083ff4c78cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly constructs from a raw (N+1)-dimensional vector.  <br /></td></tr>
+<tr class="memitem:a28ef7b3eb56e320d4996e6e90c45d986" id="r_a28ef7b3eb56e320d4996e6e90c45d986"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28ef7b3eb56e320d4996e6e90c45d986">w</a> () const</td></tr>
+<tr class="memdesc:a28ef7b3eb56e320d4996e6e90c45d986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the w-component of the homogeneous coordinate.  <br /></td></tr>
+<tr class="memitem:a7634ad4d1739745155c339e4631e918c" id="r_a7634ad4d1739745155c339e4631e918c"><td class="memItemLeft" align="right" valign="top">constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7634ad4d1739745155c339e4631e918c">w</a> ()</td></tr>
+<tr class="memdesc:a7634ad4d1739745155c339e4631e918c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the w-component of the homogeneous coordinate.  <br /></td></tr>
+<tr class="memitem:af128dd611ac845d58e88a9f883b5491c" id="r_af128dd611ac845d58e88a9f883b5491c"><td class="memItemLeft" align="right" valign="top"><a id="af128dd611ac845d58e88a9f883b5491c" name="af128dd611ac845d58e88a9f883b5491c"></a>
+constexpr T&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int index) const</td></tr>
+<tr class="memitem:a5885c220f57b661ff8c73a0a5c06b7e7" id="r_a5885c220f57b661ff8c73a0a5c06b7e7"><td class="memItemLeft" align="right" valign="top"><a id="a5885c220f57b661ff8c73a0a5c06b7e7" name="a5885c220f57b661ff8c73a0a5c06b7e7"></a>
+constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int index)</td></tr>
+<tr class="memitem:a498d4306d3c00bdb1654314589fceb05" id="r_a498d4306d3c00bdb1654314589fceb05"><td class="memItemLeft" align="right" valign="top"><a id="a498d4306d3c00bdb1654314589fceb05" name="a498d4306d3c00bdb1654314589fceb05"></a>
+constexpr T&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (int index) const</td></tr>
+<tr class="memitem:ad5dc124f760408ba15aeaf21acfb00b3" id="r_ad5dc124f760408ba15aeaf21acfb00b3"><td class="memItemLeft" align="right" valign="top"><a id="ad5dc124f760408ba15aeaf21acfb00b3" name="ad5dc124f760408ba15aeaf21acfb00b3"></a>
+constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (int index)</td></tr>
 <tr class="memitem:a9e99341dc533d059b32f74aefc947128" id="r_a9e99341dc533d059b32f74aefc947128"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e99341dc533d059b32f74aefc947128">is_point</a> () const noexcept</td></tr>
 <tr class="memdesc:a9e99341dc533d059b32f74aefc947128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this homogeneous coordinate represents a point.  <br /></td></tr>
 <tr class="memitem:a559dd8593f04e9acae755d92b457e9fd" id="r_a559dd8593f04e9acae755d92b457e9fd"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a559dd8593f04e9acae755d92b457e9fd">is_vector</a> () const noexcept</td></tr>
@@ -523,6 +535,66 @@ template&lt;typename T, int N&gt; </div>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>In a <span class="tt">constexpr</span> context, an invalid conversion will result in a compile-time error. </dd></dl>
+
+</div>
+</div>
+<a id="a7634ad4d1739745155c339e4631e918c" name="a7634ad4d1739745155c339e4631e918c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7634ad4d1739745155c339e4631e918c">&#9670;&#160;</a></span>w() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; <a class="el" href="../../d8/d13/classpbpt_1_1math_1_1_homogeneous.html">pbpt::math::Homogeneous</a>&lt; T, N &gt;::w </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to the w-component of the homogeneous coordinate. </p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the w-component, which can be used to modify it. </dd></dl>
+
+</div>
+</div>
+<a id="a28ef7b3eb56e320d4996e6e90c45d986" name="a28ef7b3eb56e320d4996e6e90c45d986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ef7b3eb56e320d4996e6e90c45d986">&#9670;&#160;</a></span>w() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="../../d8/d13/classpbpt_1_1math_1_1_homogeneous.html">pbpt::math::Homogeneous</a>&lt; T, N &gt;::w </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the w-component of the homogeneous coordinate. </p>
+<dl class="section return"><dt>Returns</dt><dd>The w-component, which is 1 for points and 0 for vectors. </dd></dl>
 
 </div>
 </div>

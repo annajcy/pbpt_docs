@@ -7,6 +7,6 @@ var searchData=
   ['rotate_5fx_4',['rotate_x',['../d0/d29/classpbpt_1_1math_1_1_transform.html#a8eb7dde1371784497dedf989c8fcd9ce',1,'pbpt::math::Transform']]],
   ['rotate_5fy_5',['rotate_y',['../d0/d29/classpbpt_1_1math_1_1_transform.html#a020922ce8086ae6b10c083cc248cdddb',1,'pbpt::math::Transform']]],
   ['rotate_5fz_6',['rotate_z',['../d0/d29/classpbpt_1_1math_1_1_transform.html#aa4d1a495e987df5dcc29b9f5a8635183',1,'pbpt::math::Transform']]],
-  ['row_7',['row',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a9222b93d18058b70a3cd52f42fd8a5f7',1,'pbpt::math::Matrix::row(int r)'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a0d51378ea4ee899dc501f7e9bb593a18',1,'pbpt::math::Matrix::row(int r) const']]],
+  ['row_7',['row',['../d3/d31/classpbpt_1_1math_1_1_matrix_view.html#a3743273667b512ff5c556451ac12b90e',1,'pbpt::math::MatrixView::row()'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a419990acecd580e32db2ad9e84c158b1',1,'pbpt::math::Matrix::row(int r)'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a20fb011cca464d230a1cf946fb45c8aa',1,'pbpt::math::Matrix::row(int r) const']]],
   ['row_5fdims_8',['row_dims',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a240731ddbc168e28cbf20f6bbb926304',1,'pbpt::math::Matrix']]]
 ];

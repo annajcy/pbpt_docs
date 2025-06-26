@@ -11,5 +11,7 @@ var classpbpt_1_1math_1_1_homogeneous =
     [ "raw", "d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a87be0b20d242dd17b894f935ccb18415", null ],
     [ "to_point", "d8/d13/classpbpt_1_1math_1_1_homogeneous.html#afd8045a3a3ec424d6ef49720a06016ad", null ],
     [ "to_vector", "d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a450453282af4c6158902e878de518e2b", null ],
+    [ "w", "d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a7634ad4d1739745155c339e4631e918c", null ],
+    [ "w", "d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a28ef7b3eb56e320d4996e6e90c45d986", null ],
     [ "operator<<", "d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a5d32c96cde6b99b87ed054ac6350d40e", null ]
 ];

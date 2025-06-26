@@ -9,5 +9,6 @@ var vector_8hpp =
     [ "pbpt::math::operator*", "d1/d2f/namespacepbpt_1_1math.html#a7ffb142a15f3798dc1c35f428091ffb5", null ],
     [ "pbpt::math::operator+", "d1/d2f/namespacepbpt_1_1math.html#a19797a6a2d03a32159d6ec54ab17d68a", null ],
     [ "pbpt::math::operator-", "d1/d2f/namespacepbpt_1_1math.html#aff71c16801a3c5ee6f5ce5b872cb2339", null ],
+    [ "pbpt::math::operator/", "d1/d2f/namespacepbpt_1_1math.html#a6c8a4b1f2c7090446c293a300379e5c6", null ],
     [ "pbpt::math::operator<<", "d1/d2f/namespacepbpt_1_1math.html#a7668639bf71479c4913e2fc09c9b4c08", null ]
 ];

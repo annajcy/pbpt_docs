@@ -9,7 +9,10 @@ var searchData=
   ['vector_3c_20float_2c_203_20_3e_6',['Vector&lt; Float, 3 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
   ['vector_3c_20float_2c_204_20_3e_7',['Vector&lt; Float, 4 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
   ['vector_3c_20t_2c_20n_2b1_20_3e_8',['Vector&lt; T, N+1 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vectorview_9',['VectorView',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
-  ['view_10',['View',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a1e70253ac626aa55ae9e5545c8637e31',1,'pbpt::math::Matrix']]],
-  ['view_11',['view',['../da/d16/classpbpt_1_1math_1_1_matrix.html#ad6f73bcf87199b74d3ca296dd6e7a7e1',1,'pbpt::math::Matrix::view(int row_start, int col_start)'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a11e644510f47ad17d1060779edd6d64d',1,'pbpt::math::Matrix::view(int row_start, int col_start) const']]]
+  ['vectorview_9',['VectorView',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math::VectorView&lt; T, N &gt;'],['../d9/d17/classpbpt_1_1math_1_1_vector_view.html#a4c01e1bfb4335b0d6d5e0f07863f52ae',1,'pbpt::math::VectorView::VectorView()']]],
+  ['vectorview_3c_20t_2c_20c_20_3e_10',['VectorView&lt; T, C &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
+  ['vectorview_3c_20t_2c_20r_20_3e_11',['VectorView&lt; T, R &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
+  ['vectorview_3c_20t_2c_20viewc_20_3e_12',['VectorView&lt; T, ViewC &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
+  ['vectorview_3c_20t_2c_20viewr_20_3e_13',['VectorView&lt; T, ViewR &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
+  ['view_14',['view',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a09a1ef7345cad8e42bc9ff78c1b6ceea',1,'pbpt::math::Matrix::view(int row_start, int col_start)'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a06f5deb23342ce99f4cb038c1425fd07',1,'pbpt::math::Matrix::view(int row_start, int col_start) const']]]
 ];

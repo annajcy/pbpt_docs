@@ -1,8 +1,6 @@
 var matrix_8hpp =
 [
-    [ "pbpt::math::ConstVectorView< T, N >", "d9/d08/classpbpt_1_1math_1_1_const_vector_view.html", "d9/d08/classpbpt_1_1math_1_1_const_vector_view" ],
     [ "pbpt::math::VectorView< T, N >", "d9/d17/classpbpt_1_1math_1_1_vector_view.html", "d9/d17/classpbpt_1_1math_1_1_vector_view" ],
-    [ "pbpt::math::ConstMatrixView< T, R, C, ViewR, ViewC >", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view.html", "d7/d22/classpbpt_1_1math_1_1_const_matrix_view" ],
     [ "pbpt::math::MatrixView< T, R, C, ViewR, ViewC >", "d3/d31/classpbpt_1_1math_1_1_matrix_view.html", "d3/d31/classpbpt_1_1math_1_1_matrix_view" ],
     [ "pbpt::math::Matrix< T, R, C >", "da/d16/classpbpt_1_1math_1_1_matrix.html", "da/d16/classpbpt_1_1math_1_1_matrix" ],
     [ "pbpt::math::Mat2", "d1/d2f/namespacepbpt_1_1math.html#a841232a865a3f99256040f881826e543", null ],
