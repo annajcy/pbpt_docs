@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['ray2_0',['Ray2',['../d1/d2f/namespacepbpt_1_1math.html#a6da443c22d4090c6371cbb9d9c83f62e',1,'pbpt::math']]],
-  ['ray3_1',['Ray3',['../d1/d2f/namespacepbpt_1_1math.html#a71dc4e1dcf7601243cfee5970695b0b8',1,'pbpt::math']]]
+  ['normal2_0',['Normal2',['../d1/d2f/namespacepbpt_1_1math.html#a379dc54592693e3b32e277eeaa3e8966',1,'pbpt::math']]],
+  ['normal3_1',['Normal3',['../d1/d2f/namespacepbpt_1_1math.html#a6fc44734490a283e150f416a86195d49',1,'pbpt::math']]],
+  ['normal4_2',['Normal4',['../d1/d2f/namespacepbpt_1_1math.html#a91a945104e6b82176ab7861b2cf89e29',1,'pbpt::math']]]
 ];

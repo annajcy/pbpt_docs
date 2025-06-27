@@ -96,16 +96,28 @@ $(function(){initNavTree('d5/dfd/classpbpt_1_1math_1_1_vector.html','../../','df
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../da/d16/vector_8hpp_source.html">vector.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for pbpt::math::Vector&lt; T, N &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d5/dfd/classpbpt_1_1math_1_1_vector.png" usemap="#pbpt_3A_3Amath_3A_3AVector_3C_20T_2C_20N_20_3E_map" alt=""/>
+  <map id="pbpt_3A_3Amath_3A_3AVector_3C_20T_2C_20N_20_3E_map" name="pbpt_3A_3Amath_3A_3AVector_3C_20T_2C_20N_20_3E_map">
+<area href="../../d8/dd5/classpbpt_1_1math_1_1_normal.html" alt="pbpt::math::Normal&lt; Float, 2 &gt;" shape="rect" coords="0,56,182,80"/>
+<area href="../../d8/dd5/classpbpt_1_1math_1_1_normal.html" alt="pbpt::math::Normal&lt; Float, 3 &gt;" shape="rect" coords="192,56,374,80"/>
+<area href="../../d8/dd5/classpbpt_1_1math_1_1_normal.html" alt="pbpt::math::Normal&lt; Float, 4 &gt;" shape="rect" coords="384,56,566,80"/>
+<area href="../../d8/dd5/classpbpt_1_1math_1_1_normal.html" alt="pbpt::math::Normal&lt; T, N &gt;" shape="rect" coords="576,56,758,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c93df7a367a2c6786f812e1289b8c7d" id="r_a4c93df7a367a2c6786f812e1289b8c7d"><td class="memItemLeft" align="right" valign="top"><a id="a4c93df7a367a2c6786f812e1289b8c7d" name="a4c93df7a367a2c6786f812e1289b8c7d"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>Vector</b> () noexcept=default</td></tr>
 <tr class="memdesc:a4c93df7a367a2c6786f812e1289b8c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. Initializes all components to zero. <br /></td></tr>
-<tr class="memitem:a212c9f0c8a3a83b9059bf5edec790b81" id="r_a212c9f0c8a3a83b9059bf5edec790b81"><td class="memTemplParams" colspan="2">template&lt;std::convertible_to&lt; T &gt;... Args&gt; <br />
-requires (sizeof...(args) == N)</td></tr>
-<tr class="memitem:a212c9f0c8a3a83b9059bf5edec790b81 template"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a212c9f0c8a3a83b9059bf5edec790b81">Vector</a> (Args &amp;&amp;... args) noexcept</td></tr>
-<tr class="memdesc:a212c9f0c8a3a83b9059bf5edec790b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a vector from a list of individual components.  <br /></td></tr>
+<tr class="memitem:a32c11b5c45cdc3afd9cde9e873013d3b" id="r_a32c11b5c45cdc3afd9cde9e873013d3b"><td class="memTemplParams" colspan="2">template&lt;std::convertible_to&lt; T &gt;... Args&gt; <br />
+requires (sizeof...(Args) == N)</td></tr>
+<tr class="memitem:a32c11b5c45cdc3afd9cde9e873013d3b template"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32c11b5c45cdc3afd9cde9e873013d3b">Vector</a> (Args &amp;&amp;... args) noexcept</td></tr>
+<tr class="memdesc:a32c11b5c45cdc3afd9cde9e873013d3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a vector from a list of individual components.  <br /></td></tr>
 <tr class="memitem:a281c3d5d156a03291c1f6307c8756651" id="r_a281c3d5d156a03291c1f6307c8756651"><td class="memItemLeft" align="right" valign="top">constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a281c3d5d156a03291c1f6307c8756651">x</a> () noexcept</td></tr>
 <tr class="memdesc:a281c3d5d156a03291c1f6307c8756651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesses the first component (x-axis).  <br /></td></tr>
 <tr class="memitem:a991d0530b083065a5104216113903d5f" id="r_a991d0530b083065a5104216113903d5f"><td class="memItemLeft" align="right" valign="top">constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a991d0530b083065a5104216113903d5f">y</a> () noexcept</td></tr>
@@ -148,6 +160,10 @@ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==<
 <tr class="memitem:a26e64ca7ae2eb62c058ec955e67d304b" id="r_a26e64ca7ae2eb62c058ec955e67d304b"><td class="memItemLeft" align="right" valign="top"><a id="a26e64ca7ae2eb62c058ec955e67d304b" name="a26e64ca7ae2eb62c058ec955e67d304b"></a>
 constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a> &amp;rhs) const noexcept</td></tr>
 <tr class="memdesc:a26e64ca7ae2eb62c058ec955e67d304b"><td class="mdescLeft">&#160;</td><td class="mdescRight">operator!= <br /></td></tr>
+<tr class="memitem:a5b2a3c6dcedb75a21471b148ca7329be" id="r_a5b2a3c6dcedb75a21471b148ca7329be"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b2a3c6dcedb75a21471b148ca7329be">is_normalized</a> () const</td></tr>
+<tr class="memdesc:a5b2a3c6dcedb75a21471b148ca7329be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the vector is normalized.  <br /></td></tr>
+<tr class="memitem:ac2f3f4badded9066d4d6e672dbd8f22e" id="r_ac2f3f4badded9066d4d6e672dbd8f22e"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2f3f4badded9066d4d6e672dbd8f22e">is_zero</a> () const</td></tr>
+<tr class="memdesc:ac2f3f4badded9066d4d6e672dbd8f22e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if all components of the vector are zero.  <br /></td></tr>
 <tr class="memitem:ae063c9fbc8d8f24d873109a565183af1" id="r_ae063c9fbc8d8f24d873109a565183af1"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae063c9fbc8d8f24d873109a565183af1">has_nan</a> () const</td></tr>
 <tr class="memdesc:ae063c9fbc8d8f24d873109a565183af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if any component of the vector is NaN (Not a Number).  <br /></td></tr>
 <tr class="memitem:aa74baaf4ee08f2fb103caf3a41c9beaa" id="r_aa74baaf4ee08f2fb103caf3a41c9beaa"><td class="memTemplParams" colspan="2"><a id="aa74baaf4ee08f2fb103caf3a41c9beaa" name="aa74baaf4ee08f2fb103caf3a41c9beaa"></a>
@@ -166,6 +182,8 @@ template&lt;std::convertible_to&lt; T &gt; U&gt; </td></tr>
 <tr class="memdesc:a607b75efea07153205a733df83858f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the dot product of this vector and another.  <br /></td></tr>
 <tr class="memitem:a63102c38f119353b978924b51aa59f8e" id="r_a63102c38f119353b978924b51aa59f8e"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63102c38f119353b978924b51aa59f8e">cross</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a> &amp;rhs) const noexcept</td></tr>
 <tr class="memdesc:a63102c38f119353b978924b51aa59f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the cross product of this vector and another.  <br /></td></tr>
+<tr class="memitem:af95fa3612cf453571a72e6a591b85924" id="r_af95fa3612cf453571a72e6a591b85924"><td class="memItemLeft" align="right" valign="top"><a id="af95fa3612cf453571a72e6a591b85924" name="af95fa3612cf453571a72e6a591b85924"></a>
+constexpr T&#160;</td><td class="memItemRight" valign="bottom"><b>product</b> () const noexcept</td></tr>
 <tr class="memitem:afc0de631a7e9bb422bfe69a5d0004385" id="r_afc0de631a7e9bb422bfe69a5d0004385"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc0de631a7e9bb422bfe69a5d0004385">apply</a> (const std::function&lt; void(T &amp;, int)&gt; &amp;func)</td></tr>
 <tr class="memdesc:afc0de631a7e9bb422bfe69a5d0004385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a function to each element of the vector.  <br /></td></tr>
 <tr class="memitem:ae4c2c5ccd91c57cf396a9671fc8f17dc" id="r_ae4c2c5ccd91c57cf396a9671fc8f17dc"><td class="memItemLeft" align="right" valign="top"><a id="ae4c2c5ccd91c57cf396a9671fc8f17dc" name="ae4c2c5ccd91c57cf396a9671fc8f17dc"></a>
@@ -184,6 +202,22 @@ template&lt;std::convertible_to&lt; T &gt; U&gt; </td></tr>
 template&lt;std::convertible_to&lt; T &gt; U&gt; </td></tr>
 <tr class="memitem:abe85abc0e094215a67db3962d7c15e2e template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (U rhs) const</td></tr>
 <tr class="memdesc:abe85abc0e094215a67db3962d7c15e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides a vector by a scalar. <br /></td></tr>
+<tr class="memitem:a05313565ddb1d55c096fc0ea9299fab4" id="r_a05313565ddb1d55c096fc0ea9299fab4"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05313565ddb1d55c096fc0ea9299fab4">max_dim</a> () const</td></tr>
+<tr class="memdesc:a05313565ddb1d55c096fc0ea9299fab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the dimension with the maximum value.  <br /></td></tr>
+<tr class="memitem:af1204a79469b7219cc1c6b8f396c3bcb" id="r_af1204a79469b7219cc1c6b8f396c3bcb"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1204a79469b7219cc1c6b8f396c3bcb">max</a> () const</td></tr>
+<tr class="memdesc:af1204a79469b7219cc1c6b8f396c3bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum value in the vector.  <br /></td></tr>
+<tr class="memitem:af88e173786b511bbceed3424b4787a97" id="r_af88e173786b511bbceed3424b4787a97"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af88e173786b511bbceed3424b4787a97">min_dim</a> () const</td></tr>
+<tr class="memdesc:af88e173786b511bbceed3424b4787a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the dimension with the minimum value.  <br /></td></tr>
+<tr class="memitem:a94ef06951da79236cdee094754f5a102" id="r_a94ef06951da79236cdee094754f5a102"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94ef06951da79236cdee094754f5a102">min</a> () const</td></tr>
+<tr class="memdesc:a94ef06951da79236cdee094754f5a102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum value in the vector.  <br /></td></tr>
+<tr class="memitem:ab825cb02d6e147496ec55d6fafad4c7b" id="r_ab825cb02d6e147496ec55d6fafad4c7b"><td class="memTemplParams" colspan="2">template&lt;typename ... Args&gt; <br />
+requires (sizeof...(Args) == N)</td></tr>
+<tr class="memitem:ab825cb02d6e147496ec55d6fafad4c7b template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab825cb02d6e147496ec55d6fafad4c7b">permuted</a> (Args ...args) const</td></tr>
+<tr class="memdesc:ab825cb02d6e147496ec55d6fafad4c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a new vector with the specified dimensions permuted.  <br /></td></tr>
+<tr class="memitem:afe65f79a854beb8a44828a2192032c93" id="r_afe65f79a854beb8a44828a2192032c93"><td class="memTemplParams" colspan="2">template&lt;typename ... Args&gt; <br />
+requires (sizeof...(Args) == N)</td></tr>
+<tr class="memitem:afe65f79a854beb8a44828a2192032c93 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe65f79a854beb8a44828a2192032c93">permute</a> (Args ...args)</td></tr>
+<tr class="memdesc:afe65f79a854beb8a44828a2192032c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permutes the dimensions of the vector.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -205,6 +239,7 @@ template&lt;std::convertible_to&lt; T &gt; U&gt; </td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, int N&gt;<br />
+requires (N &gt; 0) &amp;&amp; std::is_floating_point_v&lt;T&gt;<br />
 class pbpt::math::Vector&lt; T, N &gt;</div><p>A template class for N-dimensional mathematical vectors. </p>
 <p>This class provides a generic, fixed-size vector implementation suitable for various mathematical and geometric calculations. It is designed to be highly performant and flexible, with extensive use of <span class="tt">constexpr</span> for compile-time computations. The vector's underlying type is constrained to floating-point types, and its dimension must be positive. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -214,8 +249,8 @@ class pbpt::math::Vector&lt; T, N &gt;</div><p>A template class for N-dimensiona
   </dd>
 </dl>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a212c9f0c8a3a83b9059bf5edec790b81" name="a212c9f0c8a3a83b9059bf5edec790b81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a212c9f0c8a3a83b9059bf5edec790b81">&#9670;&#160;</a></span>Vector()</h2>
+<a id="a32c11b5c45cdc3afd9cde9e873013d3b" name="a32c11b5c45cdc3afd9cde9e873013d3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c11b5c45cdc3afd9cde9e873013d3b">&#9670;&#160;</a></span>Vector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,7 +258,7 @@ class pbpt::math::Vector&lt; T, N &gt;</div><p>A template class for N-dimensiona
 template&lt;typename T, int N&gt; </div>
 <div class="memtemplate">
 template&lt;std::convertible_to&lt; T &gt;... Args&gt; <br />
-requires (sizeof...(args) == N)</div>
+requires (sizeof...(Args) == N)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -478,6 +513,70 @@ false If no component is NaN. </dd></dl>
 
 </div>
 </div>
+<a id="a5b2a3c6dcedb75a21471b148ca7329be" name="a5b2a3c6dcedb75a21471b148ca7329be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b2a3c6dcedb75a21471b148ca7329be">&#9670;&#160;</a></span>is_normalized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">pbpt::math::Vector</a>&lt; T, N &gt;::is_normalized </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the vector is normalized. </p>
+<p>A normalized vector has a length of 1.0. </p><dl class="section return"><dt>Returns</dt><dd>true If the vector is normalized. </dd>
+<dd>
+false If the vector is not normalized. </dd></dl>
+
+</div>
+</div>
+<a id="ac2f3f4badded9066d4d6e672dbd8f22e" name="ac2f3f4badded9066d4d6e672dbd8f22e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2f3f4badded9066d4d6e672dbd8f22e">&#9670;&#160;</a></span>is_zero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">pbpt::math::Vector</a>&lt; T, N &gt;::is_zero </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if all components of the vector are zero. </p>
+<dl class="section return"><dt>Returns</dt><dd>true If all components are zero. </dd>
+<dd>
+false If any component is non-zero. </dd></dl>
+
+</div>
+</div>
 <a id="a7010d7e5f2383c5174009b1176e3ece0" name="a7010d7e5f2383c5174009b1176e3ece0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7010d7e5f2383c5174009b1176e3ece0">&#9670;&#160;</a></span>length()</h2>
 
@@ -536,6 +635,126 @@ template&lt;typename T, int N&gt; </div>
 
 <p>Calculates the squared length (magnitude) of the vector. </p>
 <p>This is faster than <span class="tt"><a class="el" href="#a7010d7e5f2383c5174009b1176e3ece0" title="Calculates the length (Euclidean norm) of the vector.">length()</a></span> as it avoids a square root. It is often sufficient for comparing vector lengths. </p><dl class="section return"><dt>Returns</dt><dd>The squared length of the vector. </dd></dl>
+
+</div>
+</div>
+<a id="af1204a79469b7219cc1c6b8f396c3bcb" name="af1204a79469b7219cc1c6b8f396c3bcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1204a79469b7219cc1c6b8f396c3bcb">&#9670;&#160;</a></span>max()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">pbpt::math::Vector</a>&lt; T, N &gt;::max </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the maximum value in the vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>The maximum value. </dd></dl>
+
+</div>
+</div>
+<a id="a05313565ddb1d55c096fc0ea9299fab4" name="a05313565ddb1d55c096fc0ea9299fab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05313565ddb1d55c096fc0ea9299fab4">&#9670;&#160;</a></span>max_dim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">pbpt::math::Vector</a>&lt; T, N &gt;::max_dim </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the dimension with the maximum value. </p>
+<dl class="section return"><dt>Returns</dt><dd>The dimension index with the maximum value. </dd></dl>
+
+</div>
+</div>
+<a id="a94ef06951da79236cdee094754f5a102" name="a94ef06951da79236cdee094754f5a102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94ef06951da79236cdee094754f5a102">&#9670;&#160;</a></span>min()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">pbpt::math::Vector</a>&lt; T, N &gt;::min </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the minimum value in the vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>The minimum value. </dd></dl>
+
+</div>
+</div>
+<a id="af88e173786b511bbceed3424b4787a97" name="af88e173786b511bbceed3424b4787a97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af88e173786b511bbceed3424b4787a97">&#9670;&#160;</a></span>min_dim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">pbpt::math::Vector</a>&lt; T, N &gt;::min_dim </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the dimension with the minimum value. </p>
+<dl class="section return"><dt>Returns</dt><dd>The dimension index with the minimum value. </dd></dl>
 
 </div>
 </div>
@@ -786,6 +1005,84 @@ template&lt;typename T, int N&gt; </div>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>In a <span class="tt">constexpr</span> context, out-of-bounds access will result in a compile-time error. </dd></dl>
+
+</div>
+</div>
+<a id="afe65f79a854beb8a44828a2192032c93" name="afe65f79a854beb8a44828a2192032c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe65f79a854beb8a44828a2192032c93">&#9670;&#160;</a></span>permute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<div class="memtemplate">
+template&lt;typename ... Args&gt; <br />
+requires (sizeof...(Args) == N)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a> &amp; <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">pbpt::math::Vector</a>&lt; T, N &gt;::permute </td>
+          <td>(</td>
+          <td class="paramtype">Args ...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Permutes the dimensions of the vector. </p>
+<p>The dimensions are specified by their indices, starting from 0. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Args</td><td>The dimension indices to permute. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to this vector with the dimensions permuted. </dd></dl>
+
+</div>
+</div>
+<a id="ab825cb02d6e147496ec55d6fafad4c7b" name="ab825cb02d6e147496ec55d6fafad4c7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab825cb02d6e147496ec55d6fafad4c7b">&#9670;&#160;</a></span>permuted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<div class="memtemplate">
+template&lt;typename ... Args&gt; <br />
+requires (sizeof...(Args) == N)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a> <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">pbpt::math::Vector</a>&lt; T, N &gt;::permuted </td>
+          <td>(</td>
+          <td class="paramtype">Args ...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a new vector with the specified dimensions permuted. </p>
+<p>The dimensions are specified by their indices, starting from 0. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Args</td><td>The dimension indices to permute. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A new vector with the specified dimensions permuted. </dd></dl>
 
 </div>
 </div>

@@ -2,7 +2,7 @@ var classpbpt_1_1math_1_1_point =
 [
     [ "Point", "d7/d1b/classpbpt_1_1math_1_1_point.html#a349654edbf4ca320a4a267ede35e377d", null ],
     [ "Point", "d7/d1b/classpbpt_1_1math_1_1_point.html#aa7e55f0d6663d2156fc228be2786b381", null ],
-    [ "Point", "d7/d1b/classpbpt_1_1math_1_1_point.html#ab7c4e8ad30190b66daba4a1e1f4ca914", null ],
+    [ "Point", "d7/d1b/classpbpt_1_1math_1_1_point.html#ace24f1064ceee84d01fcb3fbfba184bf", null ],
     [ "at", "d7/d1b/classpbpt_1_1math_1_1_point.html#adfa4a62db3be5e281946840fe1e416d6", null ],
     [ "dims", "d7/d1b/classpbpt_1_1math_1_1_point.html#acd4ffe984be2e39cdbb9be22ffbff73e", null ],
     [ "mid", "d7/d1b/classpbpt_1_1math_1_1_point.html#a03a56303a51f8112b88bbbcf35a4bce3", null ],
@@ -11,6 +11,9 @@ var classpbpt_1_1math_1_1_point =
     [ "operator-", "d7/d1b/classpbpt_1_1math_1_1_point.html#a4ec0cb873538030e430e89b141ebee4a", null ],
     [ "operator-", "d7/d1b/classpbpt_1_1math_1_1_point.html#a884d0adef5431b514917eea7170da832", null ],
     [ "operator-=", "d7/d1b/classpbpt_1_1math_1_1_point.html#af74830daa85f1c333490a8c645cb765d", null ],
+    [ "operator==", "d7/d1b/classpbpt_1_1math_1_1_point.html#a079b38c63a171534585ec88176217a6f", null ],
+    [ "operator>", "d7/d1b/classpbpt_1_1math_1_1_point.html#adc2b7250380e2fdd62e85c7d8cecf001", null ],
+    [ "operator>=", "d7/d1b/classpbpt_1_1math_1_1_point.html#a1312f964cfea9dfc135fca47d9fc644e", null ],
     [ "operator[]", "d7/d1b/classpbpt_1_1math_1_1_point.html#ab15d2501d80f3bc107c464c9fd536ee1", null ],
     [ "operator[]", "d7/d1b/classpbpt_1_1math_1_1_point.html#aafa90cb1c6600f7dd6648c5d84b4a598", null ],
     [ "to_vector", "d7/d1b/classpbpt_1_1math_1_1_point.html#a9db2b823196c4665238d65d74f56d2cb", null ],

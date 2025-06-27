@@ -1,4 +1,19 @@
 var searchData=
 [
-  ['w_0',['w',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a28ef7b3eb56e320d4996e6e90c45d986',1,'pbpt::math::Homogeneous::w() const'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a7634ad4d1739745155c339e4631e918c',1,'pbpt::math::Homogeneous::w()'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#a54aa3ddeb39416171570ad7eb61eb357',1,'pbpt::math::Point::w() noexcept'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#a00d44c9202df1807b2cf35cb9180de05',1,'pbpt::math::Point::w() const noexcept'],['../d5/dfd/classpbpt_1_1math_1_1_vector.html#a4985ad07e85f599a9752e93f2c164808',1,'pbpt::math::Vector::w() noexcept'],['../d5/dfd/classpbpt_1_1math_1_1_vector.html#af57a86e65e9f7793f7a579e8dcba81ae',1,'pbpt::math::Vector::w() const noexcept']]]
+  ['vec2_0',['Vec2',['../d1/d2f/namespacepbpt_1_1math.html#a4a5543941e34f57c206edd8c10a95d46',1,'pbpt::math']]],
+  ['vec3_1',['Vec3',['../d1/d2f/namespacepbpt_1_1math.html#a3cbdb553bfd2e6f9afc2d72be6ed15da',1,'pbpt::math']]],
+  ['vec4_2',['Vec4',['../d1/d2f/namespacepbpt_1_1math.html#aafbc6d0fb7dd77bd0648c4f436f35697',1,'pbpt::math']]],
+  ['vector_3',['Vector',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math::Vector&lt; T, N &gt;'],['../d5/dfd/classpbpt_1_1math_1_1_vector.html#a4c93df7a367a2c6786f812e1289b8c7d',1,'pbpt::math::Vector::Vector() noexcept=default'],['../d5/dfd/classpbpt_1_1math_1_1_vector.html#a32c11b5c45cdc3afd9cde9e873013d3b',1,'pbpt::math::Vector::Vector(Args &amp;&amp;... args) noexcept']]],
+  ['vector_2ehpp_4',['vector.hpp',['../da/d16/vector_8hpp.html',1,'']]],
+  ['vector_3c_20float_2c_202_20_3e_5',['Vector&lt; Float, 2 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
+  ['vector_3c_20float_2c_203_20_3e_6',['Vector&lt; Float, 3 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
+  ['vector_3c_20float_2c_204_20_3e_7',['Vector&lt; Float, 4 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
+  ['vector_3c_20t_2c_20n_2b1_20_3e_8',['Vector&lt; T, N+1 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
+  ['vectorview_9',['VectorView',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math::VectorView&lt; T, N &gt;'],['../d9/d17/classpbpt_1_1math_1_1_vector_view.html#a4c01e1bfb4335b0d6d5e0f07863f52ae',1,'pbpt::math::VectorView::VectorView()']]],
+  ['vectorview_3c_20t_2c_20c_20_3e_10',['VectorView&lt; T, C &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
+  ['vectorview_3c_20t_2c_20r_20_3e_11',['VectorView&lt; T, R &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
+  ['vectorview_3c_20t_2c_20viewc_20_3e_12',['VectorView&lt; T, ViewC &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
+  ['vectorview_3c_20t_2c_20viewr_20_3e_13',['VectorView&lt; T, ViewR &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
+  ['view_14',['view',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a09a1ef7345cad8e42bc9ff78c1b6ceea',1,'pbpt::math::Matrix::view(int row_start, int col_start)'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a06f5deb23342ce99f4cb038c1425fd07',1,'pbpt::math::Matrix::view(int row_start, int col_start) const']]],
+  ['volume_15',['volume',['../d2/d67/classpbpt_1_1math_1_1_bounding_box.html#afb72680dc3033ae243fc1b68039b96f3',1,'pbpt::math::BoundingBox']]]
 ];

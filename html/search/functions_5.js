@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['identity_0',['identity',['../da/d16/classpbpt_1_1math_1_1_matrix.html#acd1080391d4ce48ff76a609c1ef5bc95',1,'pbpt::math::Matrix']]],
-  ['inversed_1',['inversed',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a59502c0541b88f3f7de7e9ae0fa4ee9f',1,'pbpt::math::Matrix']]],
-  ['is_5fequal_2',['is_equal',['../d1/d2f/namespacepbpt_1_1math.html#a6612e3accd98eb6dfb22f6e8412d17f2',1,'pbpt::math']]],
-  ['is_5fpoint_3',['is_point',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a9e99341dc533d059b32f74aefc947128',1,'pbpt::math::Homogeneous']]],
-  ['is_5fvector_4',['is_vector',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a559dd8593f04e9acae755d92b457e9fd',1,'pbpt::math::Homogeneous']]]
+  ['has_5fnan_0',['has_nan',['../da/d16/classpbpt_1_1math_1_1_matrix.html#ac2dce47ab78cd6dd6fddbfd01d9a818c',1,'pbpt::math::Matrix::has_nan()'],['../d5/dfd/classpbpt_1_1math_1_1_vector.html#ae063c9fbc8d8f24d873109a565183af1',1,'pbpt::math::Vector::has_nan()']]],
+  ['homogeneous_1',['Homogeneous',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#ac435ee47f9538c71f33d46f63168f94d',1,'pbpt::math::Homogeneous::Homogeneous() noexcept'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a7d9265551a7fcbf644169d8f529224f6',1,'pbpt::math::Homogeneous::Homogeneous(const Point&lt; T, N &gt; &amp;p) noexcept'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a1292434e768d3c1681e54a24b51c4c3d',1,'pbpt::math::Homogeneous::Homogeneous(const Vector&lt; T, N &gt; &amp;v) noexcept'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#aacf08c978596238abd63b0e0eadfe1b7',1,'pbpt::math::Homogeneous::Homogeneous(Vals... vals) noexcept'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#ad6bf50d307c5fb7e5d9a083ff4c78cce',1,'pbpt::math::Homogeneous::Homogeneous(const Vector&lt; T, N+1 &gt; &amp;data) noexcept']]]
 ];

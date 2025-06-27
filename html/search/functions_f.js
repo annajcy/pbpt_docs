@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['w_0',['w',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a28ef7b3eb56e320d4996e6e90c45d986',1,'pbpt::math::Homogeneous::w() const'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a7634ad4d1739745155c339e4631e918c',1,'pbpt::math::Homogeneous::w()'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#a54aa3ddeb39416171570ad7eb61eb357',1,'pbpt::math::Point::w() noexcept'],['../d7/d1b/classpbpt_1_1math_1_1_point.html#a00d44c9202df1807b2cf35cb9180de05',1,'pbpt::math::Point::w() const noexcept'],['../d5/dfd/classpbpt_1_1math_1_1_vector.html#a4985ad07e85f599a9752e93f2c164808',1,'pbpt::math::Vector::w() noexcept'],['../d5/dfd/classpbpt_1_1math_1_1_vector.html#af57a86e65e9f7793f7a579e8dcba81ae',1,'pbpt::math::Vector::w() const noexcept']]]
+  ['vector_0',['Vector',['../d5/dfd/classpbpt_1_1math_1_1_vector.html#a4c93df7a367a2c6786f812e1289b8c7d',1,'pbpt::math::Vector::Vector() noexcept=default'],['../d5/dfd/classpbpt_1_1math_1_1_vector.html#a32c11b5c45cdc3afd9cde9e873013d3b',1,'pbpt::math::Vector::Vector(Args &amp;&amp;... args) noexcept']]],
+  ['vectorview_1',['VectorView',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html#a4c01e1bfb4335b0d6d5e0f07863f52ae',1,'pbpt::math::VectorView']]],
+  ['view_2',['view',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a09a1ef7345cad8e42bc9ff78c1b6ceea',1,'pbpt::math::Matrix::view(int row_start, int col_start)'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a06f5deb23342ce99f4cb038c1425fd07',1,'pbpt::math::Matrix::view(int row_start, int col_start) const']]],
+  ['volume_3',['volume',['../d2/d67/classpbpt_1_1math_1_1_bounding_box.html#afb72680dc3033ae243fc1b68039b96f3',1,'pbpt::math::BoundingBox']]]
 ];

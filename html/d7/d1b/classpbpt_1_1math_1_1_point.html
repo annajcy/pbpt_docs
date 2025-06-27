@@ -104,10 +104,10 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>Point</b> () noe
 <tr class="memdesc:a349654edbf4ca320a4a267ede35e377d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. Initializes the point at the origin. <br /></td></tr>
 <tr class="memitem:aa7e55f0d6663d2156fc228be2786b381" id="r_aa7e55f0d6663d2156fc228be2786b381"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7e55f0d6663d2156fc228be2786b381">Point</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;vec) noexcept</td></tr>
 <tr class="memdesc:aa7e55f0d6663d2156fc228be2786b381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a point from a coordinate vector.  <br /></td></tr>
-<tr class="memitem:ab7c4e8ad30190b66daba4a1e1f4ca914" id="r_ab7c4e8ad30190b66daba4a1e1f4ca914"><td class="memTemplParams" colspan="2">template&lt;std::convertible_to&lt; T &gt;... Args&gt; <br />
-requires (sizeof...(args) == N)</td></tr>
-<tr class="memitem:ab7c4e8ad30190b66daba4a1e1f4ca914 template"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7c4e8ad30190b66daba4a1e1f4ca914">Point</a> (Args &amp;&amp;... args) noexcept</td></tr>
-<tr class="memdesc:ab7c4e8ad30190b66daba4a1e1f4ca914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a point from a list of individual coordinate values.  <br /></td></tr>
+<tr class="memitem:ace24f1064ceee84d01fcb3fbfba184bf" id="r_ace24f1064ceee84d01fcb3fbfba184bf"><td class="memTemplParams" colspan="2">template&lt;std::convertible_to&lt; T &gt;... Args&gt; <br />
+requires (sizeof...(Args) == N)</td></tr>
+<tr class="memitem:ace24f1064ceee84d01fcb3fbfba184bf template"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace24f1064ceee84d01fcb3fbfba184bf">Point</a> (Args &amp;&amp;... args) noexcept</td></tr>
+<tr class="memdesc:ace24f1064ceee84d01fcb3fbfba184bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a point from a list of individual coordinate values.  <br /></td></tr>
 <tr class="memitem:a1cfb9a4e59b6f220cd78cc9a38f3bb4a" id="r_a1cfb9a4e59b6f220cd78cc9a38f3bb4a"><td class="memItemLeft" align="right" valign="top">constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cfb9a4e59b6f220cd78cc9a38f3bb4a">x</a> () noexcept</td></tr>
 <tr class="memdesc:a1cfb9a4e59b6f220cd78cc9a38f3bb4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesses the first coordinate (x-axis).  <br /></td></tr>
 <tr class="memitem:afa273dd9cf7e3041215d497d96d0a36d" id="r_afa273dd9cf7e3041215d497d96d0a36d"><td class="memItemLeft" align="right" valign="top">constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa273dd9cf7e3041215d497d96d0a36d">y</a> () noexcept</td></tr>
@@ -140,6 +140,18 @@ constexpr const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>at
 <tr class="memdesc:a9db2b823196c4665238d65d74f56d2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicitly converts the point to its underlying coordinate vector.  <br /></td></tr>
 <tr class="memitem:a0f1525192e0297f0ee247a90817c4931" id="r_a0f1525192e0297f0ee247a90817c4931"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f1525192e0297f0ee247a90817c4931">operator+=</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:a0f1525192e0297f0ee247a90817c4931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the point by adding a vector.  <br /></td></tr>
+<tr class="memitem:ada456ec560f37a592d626050d23097a5" id="r_ada456ec560f37a592d626050d23097a5"><td class="memItemLeft" align="right" valign="top"><a id="ada456ec560f37a592d626050d23097a5" name="ada456ec560f37a592d626050d23097a5"></a>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> &amp;rhs) const</td></tr>
+<tr class="memitem:a1459a1880362130d5d6976c83d251e0f" id="r_a1459a1880362130d5d6976c83d251e0f"><td class="memItemLeft" align="right" valign="top"><a id="a1459a1880362130d5d6976c83d251e0f" name="a1459a1880362130d5d6976c83d251e0f"></a>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> &amp;rhs) const</td></tr>
+<tr class="memitem:adc2b7250380e2fdd62e85c7d8cecf001" id="r_adc2b7250380e2fdd62e85c7d8cecf001"><td class="memItemLeft" align="right" valign="top"><a id="adc2b7250380e2fdd62e85c7d8cecf001" name="adc2b7250380e2fdd62e85c7d8cecf001"></a>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;</b> (const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:adc2b7250380e2fdd62e85c7d8cecf001"><td class="mdescLeft">&#160;</td><td class="mdescRight">greater than <br /></td></tr>
+<tr class="memitem:a1312f964cfea9dfc135fca47d9fc644e" id="r_a1312f964cfea9dfc135fca47d9fc644e"><td class="memItemLeft" align="right" valign="top"><a id="a1312f964cfea9dfc135fca47d9fc644e" name="a1312f964cfea9dfc135fca47d9fc644e"></a>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;=</b> (const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a1312f964cfea9dfc135fca47d9fc644e"><td class="mdescLeft">&#160;</td><td class="mdescRight">greater than or equal <br /></td></tr>
+<tr class="memitem:a079b38c63a171534585ec88176217a6f" id="r_a079b38c63a171534585ec88176217a6f"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a079b38c63a171534585ec88176217a6f">operator==</a> (const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a079b38c63a171534585ec88176217a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">equal  <br /></td></tr>
 <tr class="memitem:af74830daa85f1c333490a8c645cb765d" id="r_af74830daa85f1c333490a8c645cb765d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af74830daa85f1c333490a8c645cb765d">operator-=</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) noexcept</td></tr>
 <tr class="memdesc:af74830daa85f1c333490a8c645cb765d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates the point by subtracting a vector.  <br /></td></tr>
 <tr class="memitem:a4ec0cb873538030e430e89b141ebee4a" id="r_a4ec0cb873538030e430e89b141ebee4a"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ec0cb873538030e430e89b141ebee4a">operator-</a> (const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a> &amp;rhs) const noexcept</td></tr>
@@ -218,8 +230,8 @@ template&lt;typename T, int N&gt; </div>
 
 </div>
 </div>
-<a id="ab7c4e8ad30190b66daba4a1e1f4ca914" name="ab7c4e8ad30190b66daba4a1e1f4ca914"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7c4e8ad30190b66daba4a1e1f4ca914">&#9670;&#160;</a></span>Point() <span class="overload">[2/2]</span></h2>
+<a id="ace24f1064ceee84d01fcb3fbfba184bf" name="ace24f1064ceee84d01fcb3fbfba184bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace24f1064ceee84d01fcb3fbfba184bf">&#9670;&#160;</a></span>Point() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,7 +239,7 @@ template&lt;typename T, int N&gt; </div>
 template&lt;typename T, int N&gt; </div>
 <div class="memtemplate">
 template&lt;std::convertible_to&lt; T &gt;... Args&gt; <br />
-requires (sizeof...(args) == N)</div>
+requires (sizeof...(Args) == N)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -543,6 +555,44 @@ template&lt;typename T, int N&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the modified point. </dd></dl>
+
+</div>
+</div>
+<a id="a079b38c63a171534585ec88176217a6f" name="a079b38c63a171534585ec88176217a6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a079b38c63a171534585ec88176217a6f">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">pbpt::math::Point</a>&lt; T, N &gt;::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>equal </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rhs</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
 
 </div>
 </div>

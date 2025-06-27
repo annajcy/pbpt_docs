@@ -160,12 +160,16 @@ constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>col_dims</b>
 <tr class="memdesc:ada10ade05690965ebb489abea0895e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts the elements of another matrix from this matrix.  <br /></td></tr>
 <tr class="memitem:a926064568bac32d5098fe291a96eea95" id="r_a926064568bac32d5098fe291a96eea95"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a926064568bac32d5098fe291a96eea95">operator*=</a> (T scalar) noexcept</td></tr>
 <tr class="memdesc:a926064568bac32d5098fe291a96eea95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies this matrix by a scalar.  <br /></td></tr>
-<tr class="memitem:a08615df203db96831e4fff1c92a450db" id="r_a08615df203db96831e4fff1c92a450db"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, C, R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08615df203db96831e4fff1c92a450db">transpose</a> () const noexcept</td></tr>
-<tr class="memdesc:a08615df203db96831e4fff1c92a450db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the transpose of this matrix.  <br /></td></tr>
+<tr class="memitem:aefe7a1af57055989cc768715ff4318f1" id="r_aefe7a1af57055989cc768715ff4318f1"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, C, R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefe7a1af57055989cc768715ff4318f1">transposed</a> () const noexcept</td></tr>
+<tr class="memdesc:aefe7a1af57055989cc768715ff4318f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the transpose of this matrix.  <br /></td></tr>
+<tr class="memitem:a9a299d114efd8f32cf8ca7e02cbea6da" id="r_a9a299d114efd8f32cf8ca7e02cbea6da"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, C, R &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a299d114efd8f32cf8ca7e02cbea6da">transpose</a> () noexcept</td></tr>
+<tr class="memdesc:a9a299d114efd8f32cf8ca7e02cbea6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the transpose of this matrix.  <br /></td></tr>
 <tr class="memitem:a490a55f28d501c9b834064c7f29657a9" id="r_a490a55f28d501c9b834064c7f29657a9"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a490a55f28d501c9b834064c7f29657a9">determinant</a> () const</td></tr>
 <tr class="memdesc:a490a55f28d501c9b834064c7f29657a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the determinant of the matrix.  <br /></td></tr>
 <tr class="memitem:a59502c0541b88f3f7de7e9ae0fa4ee9f" id="r_a59502c0541b88f3f7de7e9ae0fa4ee9f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59502c0541b88f3f7de7e9ae0fa4ee9f">inversed</a> () const</td></tr>
 <tr class="memdesc:a59502c0541b88f3f7de7e9ae0fa4ee9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the inverse of the matrix.  <br /></td></tr>
+<tr class="memitem:a9f192915bf715055f09d026378f446d3" id="r_a9f192915bf715055f09d026378f446d3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f192915bf715055f09d026378f446d3">inverse</a> ()</td></tr>
+<tr class="memdesc:a9f192915bf715055f09d026378f446d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the inverse of the matrix.  <br /></td></tr>
 <tr class="memitem:a09a1ef7345cad8e42bc9ff78c1b6ceea" id="r_a09a1ef7345cad8e42bc9ff78c1b6ceea"><td class="memTemplParams" colspan="2">template&lt;int ViewR, int ViewC&gt; </td></tr>
 <tr class="memitem:a09a1ef7345cad8e42bc9ff78c1b6ceea template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="#a0881217192f52ebc29a88874c4f8b77d">Matrix::MatView</a>&lt; ViewR, ViewC &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09a1ef7345cad8e42bc9ff78c1b6ceea">view</a> (int row_start, int col_start)</td></tr>
 <tr class="memdesc:a09a1ef7345cad8e42bc9ff78c1b6ceea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a mutable, non-owning view into a sub-region of this matrix.  <br /></td></tr>
@@ -187,6 +191,12 @@ constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Ve
 <tr class="memitem:a74f2fccb5fa98cbe51e515f49502349f" id="r_a74f2fccb5fa98cbe51e515f49502349f"><td class="memTemplParams" colspan="2">template&lt;int M&gt; </td></tr>
 <tr class="memitem:a74f2fccb5fa98cbe51e515f49502349f template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, M &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74f2fccb5fa98cbe51e515f49502349f">operator*</a> (const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, C, M &gt; &amp;rhs) const noexcept</td></tr>
 <tr class="memdesc:a74f2fccb5fa98cbe51e515f49502349f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix-Matrix multiplication.  <br /></td></tr>
+<tr class="memitem:a5ce170f91ca33c3a19f38fda8f990822" id="r_a5ce170f91ca33c3a19f38fda8f990822"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ce170f91ca33c3a19f38fda8f990822">is_zero</a> () const</td></tr>
+<tr class="memdesc:a5ce170f91ca33c3a19f38fda8f990822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the matrix is zero.  <br /></td></tr>
+<tr class="memitem:aef433f5d3da296d97cf7004a0efe80a6" id="r_aef433f5d3da296d97cf7004a0efe80a6"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef433f5d3da296d97cf7004a0efe80a6">is_identity</a> () const</td></tr>
+<tr class="memdesc:aef433f5d3da296d97cf7004a0efe80a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the matrix is identity.  <br /></td></tr>
+<tr class="memitem:ac2dce47ab78cd6dd6fddbfd01d9a818c" id="r_ac2dce47ab78cd6dd6fddbfd01d9a818c"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2dce47ab78cd6dd6fddbfd01d9a818c">has_nan</a> () const</td></tr>
+<tr class="memdesc:ac2dce47ab78cd6dd6fddbfd01d9a818c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the matrix has NaN values.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -467,6 +477,38 @@ template&lt;typename T, int R, int C&gt; </div>
 
 </div>
 </div>
+<a id="ac2dce47ab78cd6dd6fddbfd01d9a818c" name="ac2dce47ab78cd6dd6fddbfd01d9a818c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2dce47ab78cd6dd6fddbfd01d9a818c">&#9670;&#160;</a></span>has_nan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int R, int C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">pbpt::math::Matrix</a>&lt; T, R, C &gt;::has_nan </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the matrix has NaN values. </p>
+<dl class="section return"><dt>Returns</dt><dd>true If any element is NaN. </dd>
+<dd>
+false Otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="acd1080391d4ce48ff76a609c1ef5bc95" name="acd1080391d4ce48ff76a609c1ef5bc95"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd1080391d4ce48ff76a609c1ef5bc95">&#9670;&#160;</a></span>identity()</h2>
 
@@ -494,6 +536,42 @@ template&lt;typename T, int R, int C&gt; </div>
 
 <p>Creates an identity matrix. </p>
 <dl class="section note"><dt>Note</dt><dd>Only available for square matrices (R == C). </dd></dl>
+
+</div>
+</div>
+<a id="a9f192915bf715055f09d026378f446d3" name="a9f192915bf715055f09d026378f446d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f192915bf715055f09d026378f446d3">&#9670;&#160;</a></span>inverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int R, int C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a> &amp; <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">pbpt::math::Matrix</a>&lt; T, R, C &gt;::inverse </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the inverse of the matrix. </p>
+<dl class="section note"><dt>Note</dt><dd>Only available for square matrices. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if the matrix is singular (determinant is zero). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -530,6 +608,70 @@ template&lt;typename T, int R, int C&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aef433f5d3da296d97cf7004a0efe80a6" name="aef433f5d3da296d97cf7004a0efe80a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef433f5d3da296d97cf7004a0efe80a6">&#9670;&#160;</a></span>is_identity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int R, int C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">pbpt::math::Matrix</a>&lt; T, R, C &gt;::is_identity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the matrix is identity. </p>
+<dl class="section return"><dt>Returns</dt><dd>true If the matrix is an identity matrix. </dd>
+<dd>
+false Otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a5ce170f91ca33c3a19f38fda8f990822" name="a5ce170f91ca33c3a19f38fda8f990822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ce170f91ca33c3a19f38fda8f990822">&#9670;&#160;</a></span>is_zero()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int R, int C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">pbpt::math::Matrix</a>&lt; T, R, C &gt;::is_zero </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the matrix is zero. </p>
+<dl class="section return"><dt>Returns</dt><dd>true If all elements are zero. </dd>
+<dd>
+false Otherwise. </dd></dl>
 
 </div>
 </div>
@@ -871,8 +1013,8 @@ template&lt;typename T, int R, int C&gt; </div>
 
 </div>
 </div>
-<a id="a08615df203db96831e4fff1c92a450db" name="a08615df203db96831e4fff1c92a450db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08615df203db96831e4fff1c92a450db">&#9670;&#160;</a></span>transpose()</h2>
+<a id="a9a299d114efd8f32cf8ca7e02cbea6da" name="a9a299d114efd8f32cf8ca7e02cbea6da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a299d114efd8f32cf8ca7e02cbea6da">&#9670;&#160;</a></span>transpose()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -883,7 +1025,37 @@ template&lt;typename T, int R, int C&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, C, R &gt; <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">pbpt::math::Matrix</a>&lt; T, R, C &gt;::transpose </td>
+          <td class="memname"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, C, R &gt; &amp; <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">pbpt::math::Matrix</a>&lt; T, R, C &gt;::transpose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the transpose of this matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>A new Matrix&lt;T, C, R&gt; that is the transpose. </dd></dl>
+
+</div>
+</div>
+<a id="aefe7a1af57055989cc768715ff4318f1" name="aefe7a1af57055989cc768715ff4318f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe7a1af57055989cc768715ff4318f1">&#9670;&#160;</a></span>transposed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, int R, int C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, C, R &gt; <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">pbpt::math::Matrix</a>&lt; T, R, C &gt;::transposed </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
