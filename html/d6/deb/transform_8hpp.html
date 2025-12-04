@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pbpt: /Users/jinceyang/Desktop/codebase/pbpt/engine/math/transform.hpp File Reference</title>
+<title>pbpt: /Users/jinceyang/Desktop/codebase/graphics/pbpt/src/geometry/transform.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,31 +92,82 @@ $(function(){initNavTree('d6/deb/transform_8hpp.html','../../',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Provides factory functions for creating common 3D transformation matrices.  
+<p>Rigid and projective transforms and fast decomposition utilities.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/d28/homogeneous_8hpp_source.html">homogeneous.hpp</a>&quot;</code><br />
-<code>#include &quot;math/bounding_box.hpp&quot;</code><br />
+<div class="textblock"><code>#include &lt;utility&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/dfa/interaction_8hpp_source.html">geometry/interaction.hpp</a>&quot;</code><br />
+<code>#include &quot;math/homogeneous.hpp&quot;</code><br />
+<code>#include &quot;math/type_alias.hpp&quot;</code><br />
+<code>#include &quot;math/matrix.hpp&quot;</code><br />
+<code>#include &quot;math/normal.hpp&quot;</code><br />
+<code>#include &quot;math/point.hpp&quot;</code><br />
+<code>#include &quot;math/vector.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d97/bounds_8hpp_source.html">bounds.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d1d/ray_8hpp_source.html">ray.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/d16/vector_8hpp_source.html">vector.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d0/de4/point_8hpp_source.html">point.hpp</a>&quot;</code><br />
+<code>#include &quot;math/format.hpp&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div>
 <p><a href="../../d6/deb/transform_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:pbpt_3A_3Amath_3A_3ATransform" id="r_pbpt_3A_3Amath_3A_3ATransform"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/classpbpt_1_1math_1_1_transform.html">pbpt::math::Transform</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace for 3D transformation factory functions.  <a href="../../d0/d29/classpbpt_1_1math_1_1_transform.html#details">More...</a><br /></td></tr>
+<tr class="memitem:pbpt_3A_3Ageometry_3A_3ATransform_3C_20T_20_3E" id="r_pbpt_3A_3Ageometry_3A_3ATransform_3C_20T_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d63/classpbpt_1_1geometry_1_1_transform.html">pbpt::geometry::Transform&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">4×4 homogeneous transform with cached inverse.  <a href="../../d5/d63/classpbpt_1_1geometry_1_1_transform.html#details">More...</a><br /></td></tr>
+<tr class="memitem:pbpt_3A_3Ageometry_3A_3ATransformDecompositionResult_3C_20T_20_3E" id="r_pbpt_3A_3Ageometry_3A_3ATransformDecompositionResult_3C_20T_20_3E"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d89/structpbpt_1_1geometry_1_1_transform_decomposition_result.html">pbpt::geometry::TransformDecompositionResult&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of decomposing a transform into translation, rotation and scale.  <a href="../../d0/d89/structpbpt_1_1geometry_1_1_transform_decomposition_result.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:pbpt_3A_3Amath" id="r_pbpt_3A_3Amath"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html">pbpt::math</a></td></tr>
-<tr class="memdesc:d1/d2f/namespacepbpt_1_1math"><td class="mdescLeft">&#160;</td><td class="mdescRight">The namespace for math library implementation. <br /></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a55aa2e64f67928c353ba92dc965419d9" id="r_a55aa2e64f67928c353ba92dc965419d9"><td class="memItemLeft" align="right" valign="top"><a id="a55aa2e64f67928c353ba92dc965419d9" name="a55aa2e64f67928c353ba92dc965419d9"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::geometry::Trans</b> = <a class="el" href="../../d5/d63/classpbpt_1_1geometry_1_1_transform.html">Transform</a>&lt;Float&gt;</td></tr>
+<tr class="memdesc:a55aa2e64f67928c353ba92dc965419d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common alias for a float-based transform. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ade10f4417169cbd65bfc14653ec589fd" id="r_ade10f4417169cbd65bfc14653ec589fd"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:ade10f4417169cbd65bfc14653ec589fd template"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d89/structpbpt_1_1geometry_1_1_transform_decomposition_result.html">TransformDecompositionResult</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade10f4417169cbd65bfc14653ec589fd">pbpt::geometry::fast_decompose_transform</a> (const <a class="el" href="../../d5/d63/classpbpt_1_1geometry_1_1_transform.html">Transform</a>&lt; T &gt; &amp;transform)</td></tr>
+<tr class="memdesc:ade10f4417169cbd65bfc14653ec589fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast decomposition of a transform into translation, rotation and scale.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides factory functions for creating common 3D transformation matrices. </p>
-<p>This file contains functions to generate matrices for translation, rotation, scaling, camera viewing (look-at), and projection (perspective/orthographic). These are the fundamental building blocks of a Model-View-Projection (MVP) pipeline. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Rigid and projective transforms and fast decomposition utilities. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="ade10f4417169cbd65bfc14653ec589fd" name="ade10f4417169cbd65bfc14653ec589fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade10f4417169cbd65bfc14653ec589fd">&#9670;&#160;</a></span>fast_decompose_transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">TransformDecompositionResult&lt; T &gt; pbpt::geometry::fast_decompose_transform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d63/classpbpt_1_1geometry_1_1_transform.html">Transform</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>transform</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fast decomposition of a transform into translation, rotation and scale. </p>
+<p>Assumes the matrix has no shear and can be written as M = T * R * S where T is translation, R is a rotation matrix, and S is a diagonal scaling matrix. The algorithm:</p><ol type="1">
+<li>Extract translation from the last column.</li>
+<li>Extract the upper-left 3×3 block A = R * S.</li>
+<li>Compute column norms of A as scale factors.</li>
+<li>Divide columns of A by these scales to obtain R.</li>
+<li>Optionally apply Gram–Schmidt to improve orthogonality.</li>
+<li>Fix handedness if det(R) &lt; 0 by flipping one axis.</li>
+</ol>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transform</td><td>Transform to decompose. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Translation, rotation and scale components as transforms. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>
@@ -129,7 +180,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="../../dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a href="../../dir_6092418e369ca819ce866d11ef016080.html">math</a></li><li class="navelem"><a href="../../d6/deb/transform_8hpp.html">transform.hpp</a></li>
+    <li class="navelem"><a href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="../../dir_405fd32de3649961a5f009c7a3fe84df.html">geometry</a></li><li class="navelem"><a href="../../d6/deb/transform_8hpp.html">transform.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

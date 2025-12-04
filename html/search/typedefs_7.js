@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['vec2_0',['Vec2',['../d1/d2f/namespacepbpt_1_1math.html#a4a5543941e34f57c206edd8c10a95d46',1,'pbpt::math']]],
-  ['vec3_1',['Vec3',['../d1/d2f/namespacepbpt_1_1math.html#a3cbdb553bfd2e6f9afc2d72be6ed15da',1,'pbpt::math']]],
-  ['vec4_2',['Vec4',['../d1/d2f/namespacepbpt_1_1math.html#aafbc6d0fb7dd77bd0648c4f436f35697',1,'pbpt::math']]]
+  ['original_5ftag_5ftype_0',['original_tag_type',['../dd/d2c/structpbpt_1_1radiometry_1_1_tag_trait_3_01_spectral_tag_3_01_tag_01_4_01_4.html#a2cc3b6239923050410ba9a14f82157bb',1,'pbpt::radiometry::TagTrait&lt; SpectralTag&lt; Tag &gt; &gt;']]],
+  ['originaltag_1',['OriginalTag',['../d4/dee/structpbpt_1_1radiometry_1_1_spectral_tag.html#a7804d246fa2e310d59fb2fbaa51883d8',1,'pbpt::radiometry::SpectralTag']]]
 ];

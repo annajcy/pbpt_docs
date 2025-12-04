@@ -1,13 +1,15 @@
 var searchData=
 [
-  ['vector_0',['Vector',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20float_2c_202_20_3e_1',['Vector&lt; Float, 2 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20float_2c_203_20_3e_2',['Vector&lt; Float, 3 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20float_2c_204_20_3e_3',['Vector&lt; Float, 4 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20t_2c_20n_2b1_20_3e_4',['Vector&lt; T, N+1 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vectorview_5',['VectorView',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
-  ['vectorview_3c_20t_2c_20c_20_3e_6',['VectorView&lt; T, C &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
-  ['vectorview_3c_20t_2c_20r_20_3e_7',['VectorView&lt; T, R &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
-  ['vectorview_3c_20t_2c_20viewc_20_3e_8',['VectorView&lt; T, ViewC &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
-  ['vectorview_3c_20t_2c_20viewr_20_3e_9',['VectorView&lt; T, ViewR &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]]
+  ['integrabledomain_0',['IntegrableDomain',['../dc/ddf/classpbpt_1_1radiometry_1_1_integrable_domain.html',1,'pbpt::radiometry']]],
+  ['integrabledomain_3c_20parallelogramareadomain_3c_20t_20_3e_2c_20t_20_3e_1',['IntegrableDomain&lt; ParallelogramAreaDomain&lt; T &gt;, T &gt;',['../dc/ddf/classpbpt_1_1radiometry_1_1_integrable_domain.html',1,'pbpt::radiometry']]],
+  ['integrabledomain_3c_20projectedhemispheredomain_3c_20t_20_3e_2c_20t_20_3e_2',['IntegrableDomain&lt; ProjectedHemisphereDomain&lt; T &gt;, T &gt;',['../dc/ddf/classpbpt_1_1radiometry_1_1_integrable_domain.html',1,'pbpt::radiometry']]],
+  ['integrabledomain_3c_20uniformdiskdomain_3c_20t_20_3e_2c_20t_20_3e_3',['IntegrableDomain&lt; UniformDiskDomain&lt; T &gt;, T &gt;',['../dc/ddf/classpbpt_1_1radiometry_1_1_integrable_domain.html',1,'pbpt::radiometry']]],
+  ['integrabledomain_3c_20uniformhemispheredomain_3c_20t_20_3e_2c_20t_20_3e_4',['IntegrableDomain&lt; UniformHemisphereDomain&lt; T &gt;, T &gt;',['../dc/ddf/classpbpt_1_1radiometry_1_1_integrable_domain.html',1,'pbpt::radiometry']]],
+  ['integrator_5',['Integrator',['../d2/d0f/classpbpt_1_1integrator_1_1_integrator.html',1,'pbpt::integrator']]],
+  ['integrator_3c_201_20_3e_6',['Integrator&lt; 1 &gt;',['../d2/d0f/classpbpt_1_1integrator_1_1_integrator.html',1,'pbpt::integrator']]],
+  ['intensitytag_7',['IntensityTag',['../d4/d52/structpbpt_1_1radiometry_1_1_intensity_tag.html',1,'pbpt::radiometry']]],
+  ['interaction_8',['Interaction',['../df/dbc/classpbpt_1_1geometry_1_1_interaction.html',1,'pbpt::geometry']]],
+  ['interaction_3c_20t_2c_20surfaceinteraction_3c_20t_20_3e_20_3e_9',['Interaction&lt; T, SurfaceInteraction&lt; T &gt; &gt;',['../df/dbc/classpbpt_1_1geometry_1_1_interaction.html',1,'pbpt::geometry']]],
+  ['intersectionresult_10',['IntersectionResult',['../d7/d49/structpbpt_1_1shape_1_1_sphere_1_1_intersection_result.html',1,'pbpt::shape::Sphere']]],
+  ['irradiancetag_11',['IrradianceTag',['../db/d25/structpbpt_1_1radiometry_1_1_irradiance_tag.html',1,'pbpt::radiometry']]]
 ];

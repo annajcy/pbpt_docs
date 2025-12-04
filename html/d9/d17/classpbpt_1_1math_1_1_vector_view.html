@@ -92,7 +92,7 @@ $(function(){initNavTree('d9/d17/classpbpt_1_1math_1_1_vector_view.html','../../
 </div><!--header-->
 <div class="contents">
 
-<p>A non-owning, mutable view/proxy of vector-like data.  
+<p>Non-owning strided view over a contiguous vector of elements.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&gt;</code></p>
@@ -100,44 +100,66 @@ $(function(){initNavTree('d9/d17/classpbpt_1_1math_1_1_vector_view.html','../../
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c01e1bfb4335b0d6d5e0f07863f52ae" id="r_a4c01e1bfb4335b0d6d5e0f07863f52ae"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c01e1bfb4335b0d6d5e0f07863f52ae">VectorView</a> (const T *start, int stride)</td></tr>
-<tr class="memdesc:a4c01e1bfb4335b0d6d5e0f07863f52ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a read-only vector view.  <br /></td></tr>
-<tr class="memitem:ad35466fd0bdc2bceef5ad0fadf30824f" id="r_ad35466fd0bdc2bceef5ad0fadf30824f"><td class="memItemLeft" align="right" valign="top">constexpr const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad35466fd0bdc2bceef5ad0fadf30824f">operator[]</a> (int i) const</td></tr>
-<tr class="memdesc:ad35466fd0bdc2bceef5ad0fadf30824f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides read-only access to an element of the view.  <br /></td></tr>
-<tr class="memitem:aebe809ec6659503833545e79e0a67b7d" id="r_aebe809ec6659503833545e79e0a67b7d"><td class="memItemLeft" align="right" valign="top">constexpr const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebe809ec6659503833545e79e0a67b7d">at</a> (int i) const</td></tr>
-<tr class="memdesc:aebe809ec6659503833545e79e0a67b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides read-only access to an element of the view.  <br /></td></tr>
+<tr class="memdesc:a4c01e1bfb4335b0d6d5e0f07863f52ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a non-owning view of data elements with specified stride.  <br /></td></tr>
+<tr class="memitem:ad35466fd0bdc2bceef5ad0fadf30824f" id="r_ad35466fd0bdc2bceef5ad0fadf30824f"><td class="memItemLeft" align="right" valign="top"><a id="ad35466fd0bdc2bceef5ad0fadf30824f" name="ad35466fd0bdc2bceef5ad0fadf30824f"></a>
+constexpr const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int i) const</td></tr>
+<tr class="memdesc:ad35466fd0bdc2bceef5ad0fadf30824f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns element <code class="param">i</code> without bounds checking. <br /></td></tr>
+<tr class="memitem:a9ee5c96281dddb95858e414f9c7c2e2f" id="r_a9ee5c96281dddb95858e414f9c7c2e2f"><td class="memItemLeft" align="right" valign="top"><a id="a9ee5c96281dddb95858e414f9c7c2e2f" name="a9ee5c96281dddb95858e414f9c7c2e2f"></a>
+constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int i)</td></tr>
+<tr class="memdesc:a9ee5c96281dddb95858e414f9c7c2e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns element <code class="param">i</code> without bounds checking (mutable). <br /></td></tr>
+<tr class="memitem:aebe809ec6659503833545e79e0a67b7d" id="r_aebe809ec6659503833545e79e0a67b7d"><td class="memItemLeft" align="right" valign="top"><a id="aebe809ec6659503833545e79e0a67b7d" name="aebe809ec6659503833545e79e0a67b7d"></a>
+constexpr const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (int i) const</td></tr>
+<tr class="memdesc:aebe809ec6659503833545e79e0a67b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns element <code class="param">i</code> (same as operator[]). <br /></td></tr>
+<tr class="memitem:a9cac1ad5b7ceab248667cc2a2e16363f" id="r_a9cac1ad5b7ceab248667cc2a2e16363f"><td class="memItemLeft" align="right" valign="top"><a id="a9cac1ad5b7ceab248667cc2a2e16363f" name="a9cac1ad5b7ceab248667cc2a2e16363f"></a>
+constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (int i)</td></tr>
+<tr class="memdesc:a9cac1ad5b7ceab248667cc2a2e16363f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns element <code class="param">i</code> (same as operator[]; mutable). <br /></td></tr>
 <tr class="memitem:a8ba95c1410910a4c5a566512019bfee7" id="r_a8ba95c1410910a4c5a566512019bfee7"><td class="memItemLeft" align="right" valign="top"><a id="a8ba95c1410910a4c5a566512019bfee7" name="a8ba95c1410910a4c5a566512019bfee7"></a>
 constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>dims</b> () const noexcept</td></tr>
-<tr class="memdesc:a8ba95c1410910a4c5a566512019bfee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of dimensions of the view. <br /></td></tr>
-<tr class="memitem:a4e95020b2613450e5c6a2c45e9ffc3f5" id="r_a4e95020b2613450e5c6a2c45e9ffc3f5"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e95020b2613450e5c6a2c45e9ffc3f5">dot</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) const</td></tr>
-<tr class="memdesc:a4e95020b2613450e5c6a2c45e9ffc3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the dot product with an owning vector.  <br /></td></tr>
-<tr class="memitem:a8370a90ec4938f5e071398f965244773" id="r_a8370a90ec4938f5e071398f965244773"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8370a90ec4938f5e071398f965244773">dot</a> (const <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a>&lt; T, N &gt; &amp;rhs) const</td></tr>
-<tr class="memdesc:a8370a90ec4938f5e071398f965244773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the dot product with another vector view.  <br /></td></tr>
-<tr class="memitem:a41fc53c4d80a764a872a95264db7d0de" id="r_a41fc53c4d80a764a872a95264db7d0de"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41fc53c4d80a764a872a95264db7d0de">to_vector</a> () const</td></tr>
-<tr class="memdesc:a41fc53c4d80a764a872a95264db7d0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the view into a new, owning Vec instance.  <br /></td></tr>
-<tr class="memitem:a9ee5c96281dddb95858e414f9c7c2e2f" id="r_a9ee5c96281dddb95858e414f9c7c2e2f"><td class="memItemLeft" align="right" valign="top">constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ee5c96281dddb95858e414f9c7c2e2f">operator[]</a> (int i)</td></tr>
-<tr class="memdesc:a9ee5c96281dddb95858e414f9c7c2e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides mutable access to an element of the view.  <br /></td></tr>
-<tr class="memitem:a9cac1ad5b7ceab248667cc2a2e16363f" id="r_a9cac1ad5b7ceab248667cc2a2e16363f"><td class="memItemLeft" align="right" valign="top">constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cac1ad5b7ceab248667cc2a2e16363f">at</a> (int i)</td></tr>
-<tr class="memdesc:a9cac1ad5b7ceab248667cc2a2e16363f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides mutable access to an element of the view.  <br /></td></tr>
-<tr class="memitem:a0a5180bfa55c2307267f18af7de23c2d" id="r_a0a5180bfa55c2307267f18af7de23c2d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a5180bfa55c2307267f18af7de23c2d">operator=</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;other)</td></tr>
-<tr class="memdesc:a0a5180bfa55c2307267f18af7de23c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns an owning vector's content to the region represented by this view.  <br /></td></tr>
-<tr class="memitem:a62c116397e040bb600d4853ad6c94ee3" id="r_a62c116397e040bb600d4853ad6c94ee3"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62c116397e040bb600d4853ad6c94ee3">operator=</a> (const <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a>&lt; T, N &gt; &amp;other)</td></tr>
-<tr class="memdesc:a62c116397e040bb600d4853ad6c94ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns another vector view's content to the region represented by this view.  <br /></td></tr>
-<tr class="memitem:aac83ed215671ec266e5e9c9f9ff58811" id="r_aac83ed215671ec266e5e9c9f9ff58811"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac83ed215671ec266e5e9c9f9ff58811">apply</a> (const std::function&lt; void(T &amp;, int)&gt; &amp;func)</td></tr>
-<tr class="memdesc:aac83ed215671ec266e5e9c9f9ff58811"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a function to each element of the view.  <br /></td></tr>
+<tr class="memdesc:a8ba95c1410910a4c5a566512019bfee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of elements in the view. <br /></td></tr>
+<tr class="memitem:a4e95020b2613450e5c6a2c45e9ffc3f5" id="r_a4e95020b2613450e5c6a2c45e9ffc3f5"><td class="memItemLeft" align="right" valign="top"><a id="a4e95020b2613450e5c6a2c45e9ffc3f5" name="a4e95020b2613450e5c6a2c45e9ffc3f5"></a>
+constexpr T&#160;</td><td class="memItemRight" valign="bottom"><b>dot</b> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a4e95020b2613450e5c6a2c45e9ffc3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dot product between this view and a full vector. <br /></td></tr>
+<tr class="memitem:a8370a90ec4938f5e071398f965244773" id="r_a8370a90ec4938f5e071398f965244773"><td class="memItemLeft" align="right" valign="top"><a id="a8370a90ec4938f5e071398f965244773" name="a8370a90ec4938f5e071398f965244773"></a>
+constexpr T&#160;</td><td class="memItemRight" valign="bottom"><b>dot</b> (const <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a>&lt; T, N &gt; &amp;rhs) const</td></tr>
+<tr class="memdesc:a8370a90ec4938f5e071398f965244773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dot product between two views. <br /></td></tr>
+<tr class="memitem:a41fc53c4d80a764a872a95264db7d0de" id="r_a41fc53c4d80a764a872a95264db7d0de"><td class="memItemLeft" align="right" valign="top"><a id="a41fc53c4d80a764a872a95264db7d0de" name="a41fc53c4d80a764a872a95264db7d0de"></a>
+constexpr <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>to_vector</b> () const</td></tr>
+<tr class="memdesc:a41fc53c4d80a764a872a95264db7d0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the view contents into an owning <span class="tt"><a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="Fixed-size mathematical vector with arithmetic operations.">Vector</a>&lt;T,N&gt;</span>. <br /></td></tr>
+<tr class="memitem:a0a5180bfa55c2307267f18af7de23c2d" id="r_a0a5180bfa55c2307267f18af7de23c2d"><td class="memItemLeft" align="right" valign="top"><a id="a0a5180bfa55c2307267f18af7de23c2d" name="a0a5180bfa55c2307267f18af7de23c2d"></a>
+constexpr <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;other)</td></tr>
+<tr class="memdesc:a0a5180bfa55c2307267f18af7de23c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns from an owning vector. <br /></td></tr>
+<tr class="memitem:a62c116397e040bb600d4853ad6c94ee3" id="r_a62c116397e040bb600d4853ad6c94ee3"><td class="memItemLeft" align="right" valign="top"><a id="a62c116397e040bb600d4853ad6c94ee3" name="a62c116397e040bb600d4853ad6c94ee3"></a>
+constexpr <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a>&lt; T, N &gt; &amp;other)</td></tr>
+<tr class="memdesc:a62c116397e040bb600d4853ad6c94ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns from another view with the same layout. <br /></td></tr>
+<tr class="memitem:a02ee86543fc9f12d93a3e6257f013435" id="r_a02ee86543fc9f12d93a3e6257f013435"><td class="memTemplParams" colspan="2"><a id="a02ee86543fc9f12d93a3e6257f013435" name="a02ee86543fc9f12d93a3e6257f013435"></a>
+template&lt;std::invocable&lt; const T &amp;, int &gt; F&gt; </td></tr>
+<tr class="memitem:a02ee86543fc9f12d93a3e6257f013435 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><b>visit</b> (F func) const</td></tr>
+<tr class="memdesc:a02ee86543fc9f12d93a3e6257f013435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visits each element with its index (const). <br /></td></tr>
+<tr class="memitem:a7e808a3be5cb54b171a119f45394ddac" id="r_a7e808a3be5cb54b171a119f45394ddac"><td class="memTemplParams" colspan="2"><a id="a7e808a3be5cb54b171a119f45394ddac" name="a7e808a3be5cb54b171a119f45394ddac"></a>
+template&lt;std::invocable&lt; T &amp;, int &gt; F&gt; </td></tr>
+<tr class="memitem:a7e808a3be5cb54b171a119f45394ddac template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><b>visit</b> (F func)</td></tr>
+<tr class="memdesc:a7e808a3be5cb54b171a119f45394ddac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visits each element with its index (mutable). <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a31c705ad4c05dc53b50cc66771586fbc" id="r_a31c705ad4c05dc53b50cc66771586fbc"><td class="memItemLeft" align="right" valign="top"><a id="a31c705ad4c05dc53b50cc66771586fbc" name="a31c705ad4c05dc53b50cc66771586fbc"></a>
 const T *&#160;</td><td class="memItemRight" valign="bottom"><b>m_start_ptr</b></td></tr>
-<tr class="memdesc:a31c705ad4c05dc53b50cc66771586fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the first element of the viewed data. <br /></td></tr>
+<tr class="memdesc:a31c705ad4c05dc53b50cc66771586fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the first element in the underlying storage. <br /></td></tr>
 <tr class="memitem:a25cc317df71b840f7b90f1d44f2d0be1" id="r_a25cc317df71b840f7b90f1d44f2d0be1"><td class="memItemLeft" align="right" valign="top"><a id="a25cc317df71b840f7b90f1d44f2d0be1" name="a25cc317df71b840f7b90f1d44f2d0be1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_stride</b></td></tr>
-<tr class="memdesc:a25cc317df71b840f7b90f1d44f2d0be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The distance (in number of elements) between consecutive elements in the view. <br /></td></tr>
+<tr class="memdesc:a25cc317df71b840f7b90f1d44f2d0be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stride (in elements) between consecutive entries. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, int N&gt;<br />
-class pbpt::math::VectorView&lt; T, N &gt;</div><p>A non-owning, mutable view/proxy of vector-like data. </p>
-<p>Extends ConstVectorView to allow modification of the underlying data. </p>
+class pbpt::math::VectorView&lt; T, N &gt;</div><p>Non-owning strided view over a contiguous vector of elements. </p>
+<p>A <span class="tt"><a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html" title="Non-owning strided view over a contiguous vector of elements.">VectorView</a></span> behaves like a fixed-size <span class="tt"><a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html" title="Fixed-size mathematical vector with arithmetic operations.">Vector</a>&lt;T,N&gt;</span> but only stores a pointer and a stride; it never allocates or owns memory. It is typically used to expose rows or columns of a matrix.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Element type. </td></tr>
+    <tr><td class="paramname">N</td><td>Number of elements visible through the view. </td></tr>
+  </table>
+  </dd>
+</dl>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4c01e1bfb4335b0d6d5e0f07863f52ae" name="a4c01e1bfb4335b0d6d5e0f07863f52ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4c01e1bfb4335b0d6d5e0f07863f52ae">&#9670;&#160;</a></span>VectorView()</h2>
@@ -163,378 +185,27 @@ template&lt;typename T, int N&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span><span class="mlabel constexpr">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a read-only vector view. </p>
+<p>Creates a non-owning view of data elements with specified stride. </p>
+<dl class="section warning"><dt>Warning</dt><dd>The caller must ensure that the referenced data remains valid for the lifetime of this view. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">start</td><td>Pointer to the first element. </td></tr>
-    <tr><td class="paramname">stride</td><td>The step size to move between elements. For a row view, this is 1. For a column view, this is the column count of the source matrix. </td></tr>
+    <tr><td class="paramname">start</td><td>Pointer to the first element (must not be nullptr) </td></tr>
+    <tr><td class="paramname">stride</td><td>Distance between consecutive elements in the view</td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="aac83ed215671ec266e5e9c9f9ff58811" name="aac83ed215671ec266e5e9c9f9ff58811"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac83ed215671ec266e5e9c9f9ff58811">&#9670;&#160;</a></span>apply()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">pbpt::math::VectorView</a>&lt; T, N &gt;::apply </td>
-          <td>(</td>
-          <td class="paramtype">const std::function&lt; void(T &amp;, int)&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>func</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Applies a function to each element of the view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">func</td><td>The function to apply. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a9cac1ad5b7ceab248667cc2a2e16363f" name="a9cac1ad5b7ceab248667cc2a2e16363f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cac1ad5b7ceab248667cc2a2e16363f">&#9670;&#160;</a></span>at() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T &amp; <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">pbpt::math::VectorView</a>&lt; T, N &gt;::at </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Provides mutable access to an element of the view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i</td><td>The index of the element. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mutable reference to the element in the original data source. </dd></dl>
-
-</div>
-</div>
-<a id="aebe809ec6659503833545e79e0a67b7d" name="aebe809ec6659503833545e79e0a67b7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebe809ec6659503833545e79e0a67b7d">&#9670;&#160;</a></span>at() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const T &amp; <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">pbpt::math::VectorView</a>&lt; T, N &gt;::at </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Provides read-only access to an element of the view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i</td><td>The index of the element. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A const reference to the element in the original data source. </dd></dl>
-
-</div>
-</div>
-<a id="a4e95020b2613450e5c6a2c45e9ffc3f5" name="a4e95020b2613450e5c6a2c45e9ffc3f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e95020b2613450e5c6a2c45e9ffc3f5">&#9670;&#160;</a></span>dot() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">pbpt::math::VectorView</a>&lt; T, N &gt;::dot </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Calculates the dot product with an owning vector. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rhs</td><td>The other vector. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The scalar dot product. </dd></dl>
-
-</div>
-</div>
-<a id="a8370a90ec4938f5e071398f965244773" name="a8370a90ec4938f5e071398f965244773"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8370a90ec4938f5e071398f965244773">&#9670;&#160;</a></span>dot() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">pbpt::math::VectorView</a>&lt; T, N &gt;::dot </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a>&lt; T, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Calculates the dot product with another vector view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rhs</td><td>The other vector view. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The scalar dot product. </dd></dl>
-
-</div>
-</div>
-<a id="a0a5180bfa55c2307267f18af7de23c2d" name="a0a5180bfa55c2307267f18af7de23c2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a5180bfa55c2307267f18af7de23c2d">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a> &amp; <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">pbpt::math::VectorView</a>&lt; T, N &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Assigns an owning vector's content to the region represented by this view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">other</td><td>The vector to copy from. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference to this view. </dd></dl>
-
-</div>
-</div>
-<a id="a62c116397e040bb600d4853ad6c94ee3" name="a62c116397e040bb600d4853ad6c94ee3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62c116397e040bb600d4853ad6c94ee3">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a> &amp; <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">pbpt::math::VectorView</a>&lt; T, N &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a>&lt; T, N &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Assigns another vector view's content to the region represented by this view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">other</td><td>The vector view to copy from. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference to this view. </dd></dl>
-
-</div>
-</div>
-<a id="a9ee5c96281dddb95858e414f9c7c2e2f" name="a9ee5c96281dddb95858e414f9c7c2e2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ee5c96281dddb95858e414f9c7c2e2f">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T &amp; <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">pbpt::math::VectorView</a>&lt; T, N &gt;::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Provides mutable access to an element of the view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i</td><td>The index of the element. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mutable reference to the element in the original data source. </dd></dl>
-
-</div>
-</div>
-<a id="ad35466fd0bdc2bceef5ad0fadf30824f" name="ad35466fd0bdc2bceef5ad0fadf30824f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad35466fd0bdc2bceef5ad0fadf30824f">&#9670;&#160;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const T &amp; <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">pbpt::math::VectorView</a>&lt; T, N &gt;::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Provides read-only access to an element of the view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i</td><td>The index of the element. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A const reference to the element in the original data source. </dd></dl>
-
-</div>
-</div>
-<a id="a41fc53c4d80a764a872a95264db7d0de" name="a41fc53c4d80a764a872a95264db7d0de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41fc53c4d80a764a872a95264db7d0de">&#9670;&#160;</a></span>to_vector()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int N&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">pbpt::math::VectorView</a>&lt; T, N &gt;::to_vector </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Converts the view into a new, owning Vec instance. </p>
-<p>This performs a copy of the elements from the viewed region. </p>
+<p>Constructs a view from a start pointer and stride.</p>
+<p>The caller is responsible for ensuring the lifetime of the underlying data, and that at least N elements are addressable with the given stride. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/jinceyang/Desktop/codebase/pbpt/engine/math/<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a></li>
+<li>/Users/jinceyang/Desktop/codebase/graphics/pbpt/src/math/<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -549,7 +220,7 @@ template&lt;typename T, int N&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>pbpt</b></li><li class="navelem"><a href="../../d1/d2f/namespacepbpt_1_1math.html">math</a></li><li class="navelem"><a href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a></li>
+    <li class="navelem"><b>pbpt</b></li><li class="navelem"><b>math</b></li><li class="navelem"><a href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

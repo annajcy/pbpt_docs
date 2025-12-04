@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['get_5forthogonal_5fbases_0',['get_orthogonal_bases',['../d1/d2f/namespacepbpt_1_1math.html#ab5f1c82d4fde8d58865fe88895e40758',1,'pbpt::math::get_orthogonal_bases(const Vector&lt; T, N &gt; &amp;base)'],['../d1/d2f/namespacepbpt_1_1math.html#a1496c805d125727ea45aaf1dd1c14a5f',1,'pbpt::math::get_orthogonal_bases(const Vector&lt; T, 2 &gt; &amp;base)'],['../d1/d2f/namespacepbpt_1_1math.html#a095afabeccf891a67919c9ef6cd0ff6f',1,'pbpt::math::get_orthogonal_bases(const Vector&lt; T, 3 &gt; &amp;base)']]]
+  ['encode_5fto_5fnonlinear_5fsrgb_0',['encode_to_nonlinear_srgb',['../d6/dfd/color_8hpp.html#a78394164a80fa7069f300b3f191ee78e',1,'pbpt::radiometry']]],
+  ['encode_5fto_5fnonlinear_5fsrgb_5fchannel_1',['encode_to_nonlinear_srgb_channel',['../d6/dfd/color_8hpp.html#a2f226298b4be06e53e47747a8057a892',1,'pbpt::radiometry']]],
+  ['entire_5fsphere_2',['entire_sphere',['../d0/d71/classpbpt_1_1geometry_1_1_directional_cone.html#a37c89404de3e5c9944302ed0ff6d492c',1,'pbpt::geometry::DirectionalCone']]],
+  ['equal_5farea_5fsquare_5fto_5fsphere_3',['equal_area_square_to_sphere',['../dc/d1f/spherical_8hpp.html#a18603fd7b97c8e64fa3c316b0257fff6',1,'pbpt::geometry']]],
+  ['evaluate_4',['evaluate',['../da/dac/classpbpt_1_1math_1_1_polynomial.html#a93b95dbcfb1b23f657dc8e65b0024f06',1,'pbpt::math::Polynomial::evaluate(T x, C c)'],['../da/dac/classpbpt_1_1math_1_1_polynomial.html#aa5728c57e131a8e9269937f54cff6846',1,'pbpt::math::Polynomial::evaluate(T x, C c, Cs... cs)']]]
 ];

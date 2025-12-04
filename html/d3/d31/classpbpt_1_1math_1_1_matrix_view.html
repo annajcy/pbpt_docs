@@ -92,7 +92,7 @@ $(function(){initNavTree('d3/d31/classpbpt_1_1math_1_1_matrix_view.html','../../
 </div><!--header-->
 <div class="contents">
 
-<p>A non-owning, mutable view/proxy into a sub-region of another <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a>.  
+<p>Non-owning rectangular view into a matrix.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&gt;</code></p>
@@ -101,284 +101,67 @@ $(function(){initNavTree('d3/d31/classpbpt_1_1math_1_1_matrix_view.html','../../
 Public Types</h2></td></tr>
 <tr class="memitem:a463acda721061d90dd64f34bfd0fde67" id="r_a463acda721061d90dd64f34bfd0fde67"><td class="memItemLeft" align="right" valign="top"><a id="a463acda721061d90dd64f34bfd0fde67" name="a463acda721061d90dd64f34bfd0fde67"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>RowView</b> = <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a>&lt;T, ViewC&gt;</td></tr>
+<tr class="memdesc:a463acda721061d90dd64f34bfd0fde67"><td class="mdescLeft">&#160;</td><td class="mdescRight">View type for a row inside the submatrix. <br /></td></tr>
 <tr class="memitem:a8adc2745e7ca2ff2e5da76cef047a1cb" id="r_a8adc2745e7ca2ff2e5da76cef047a1cb"><td class="memItemLeft" align="right" valign="top"><a id="a8adc2745e7ca2ff2e5da76cef047a1cb" name="a8adc2745e7ca2ff2e5da76cef047a1cb"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ColView</b> = <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">VectorView</a>&lt;T, ViewR&gt;</td></tr>
+<tr class="memdesc:a8adc2745e7ca2ff2e5da76cef047a1cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">View type for a column inside the submatrix. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a53e21454dcab2fe36fc280df975963f2" id="r_a53e21454dcab2fe36fc280df975963f2"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53e21454dcab2fe36fc280df975963f2">MatrixView</a> (const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, C &gt; &amp;original, int row_start, int col_start)</td></tr>
-<tr class="memdesc:a53e21454dcab2fe36fc280df975963f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a view from a <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> instance.  <br /></td></tr>
-<tr class="memitem:a368f7d16a8937c51e323b14d2afe81c9" id="r_a368f7d16a8937c51e323b14d2afe81c9"><td class="memItemLeft" align="right" valign="top">constexpr const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a368f7d16a8937c51e323b14d2afe81c9">at</a> (int r, int c) const</td></tr>
-<tr class="memdesc:a368f7d16a8937c51e323b14d2afe81c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides read-only access to an element of the view.  <br /></td></tr>
+<tr class="memitem:a53e21454dcab2fe36fc280df975963f2" id="r_a53e21454dcab2fe36fc280df975963f2"><td class="memItemLeft" align="right" valign="top"><a id="a53e21454dcab2fe36fc280df975963f2" name="a53e21454dcab2fe36fc280df975963f2"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixView</b> (const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, C &gt; &amp;original, int row_start, int col_start)</td></tr>
+<tr class="memdesc:a53e21454dcab2fe36fc280df975963f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a view at the given row/column offset in the original. <br /></td></tr>
+<tr class="memitem:a368f7d16a8937c51e323b14d2afe81c9" id="r_a368f7d16a8937c51e323b14d2afe81c9"><td class="memItemLeft" align="right" valign="top"><a id="a368f7d16a8937c51e323b14d2afe81c9" name="a368f7d16a8937c51e323b14d2afe81c9"></a>
+constexpr const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (int r, int c) const</td></tr>
+<tr class="memdesc:a368f7d16a8937c51e323b14d2afe81c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the element at (r, c) inside the view (const). <br /></td></tr>
 <tr class="memitem:a5ff533d661d86223e937c952e230fdbe" id="r_a5ff533d661d86223e937c952e230fdbe"><td class="memItemLeft" align="right" valign="top"><a id="a5ff533d661d86223e937c952e230fdbe" name="a5ff533d661d86223e937c952e230fdbe"></a>
-constexpr const <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">RowView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int r) const</td></tr>
-<tr class="memdesc:a5ff533d661d86223e937c952e230fdbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a non-owning, read-only view of a row. <br /></td></tr>
+constexpr const <a class="el" href="#a463acda721061d90dd64f34bfd0fde67">RowView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int r) const</td></tr>
+<tr class="memdesc:a5ff533d661d86223e937c952e230fdbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a row-view for row r (const). <br /></td></tr>
 <tr class="memitem:a41b935b48690fae16da64c0ec15719ae" id="r_a41b935b48690fae16da64c0ec15719ae"><td class="memItemLeft" align="right" valign="top"><a id="a41b935b48690fae16da64c0ec15719ae" name="a41b935b48690fae16da64c0ec15719ae"></a>
-constexpr <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">RowView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int r)</td></tr>
-<tr class="memdesc:a41b935b48690fae16da64c0ec15719ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a non-owning, read-only view of a row. <br /></td></tr>
+constexpr <a class="el" href="#a463acda721061d90dd64f34bfd0fde67">RowView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int r)</td></tr>
+<tr class="memdesc:a41b935b48690fae16da64c0ec15719ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a row-view for row r (mutable). <br /></td></tr>
 <tr class="memitem:a3743273667b512ff5c556451ac12b90e" id="r_a3743273667b512ff5c556451ac12b90e"><td class="memItemLeft" align="right" valign="top"><a id="a3743273667b512ff5c556451ac12b90e" name="a3743273667b512ff5c556451ac12b90e"></a>
-constexpr const <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">RowView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>row</b> (int r) const</td></tr>
-<tr class="memdesc:a3743273667b512ff5c556451ac12b90e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a non-owning, read-only view of a row. <br /></td></tr>
+constexpr const <a class="el" href="#a463acda721061d90dd64f34bfd0fde67">RowView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>row</b> (int r) const</td></tr>
+<tr class="memdesc:a3743273667b512ff5c556451ac12b90e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a row-view for row r (const). <br /></td></tr>
 <tr class="memitem:a3bb71d09a1048377e71453c7f8d223da" id="r_a3bb71d09a1048377e71453c7f8d223da"><td class="memItemLeft" align="right" valign="top"><a id="a3bb71d09a1048377e71453c7f8d223da" name="a3bb71d09a1048377e71453c7f8d223da"></a>
-constexpr <a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html">ColView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>col</b> (int c)</td></tr>
-<tr class="memdesc:a3bb71d09a1048377e71453c7f8d223da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a non-owning, mutable view of a column. <br /></td></tr>
-<tr class="memitem:a9d9e89939c284a1a6b0dddb2e5c86ebc" id="r_a9d9e89939c284a1a6b0dddb2e5c86ebc"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, ViewR, ViewC &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d9e89939c284a1a6b0dddb2e5c86ebc">to_matrix</a> () const</td></tr>
-<tr class="memdesc:a9d9e89939c284a1a6b0dddb2e5c86ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the view into a new, owning <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> instance.  <br /></td></tr>
-<tr class="memitem:a2b6d41463e1ba9b1371fb51c5ff2ea22" id="r_a2b6d41463e1ba9b1371fb51c5ff2ea22"><td class="memItemLeft" align="right" valign="top">constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b6d41463e1ba9b1371fb51c5ff2ea22">at</a> (int r, int c)</td></tr>
-<tr class="memdesc:a2b6d41463e1ba9b1371fb51c5ff2ea22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides mutable access to an element of the view.  <br /></td></tr>
-<tr class="memitem:ada2977a66789cfeda3c06f7fcc2444ec" id="r_ada2977a66789cfeda3c06f7fcc2444ec"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d3/d31/classpbpt_1_1math_1_1_matrix_view.html">MatrixView</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada2977a66789cfeda3c06f7fcc2444ec">operator=</a> (const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, ViewR, ViewC &gt; &amp;other)</td></tr>
-<tr class="memdesc:ada2977a66789cfeda3c06f7fcc2444ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns another matrix's content to the region represented by this view.  <br /></td></tr>
-<tr class="memitem:aa5a6656a16d9d0d7dcd274c5a87cf4d9" id="r_aa5a6656a16d9d0d7dcd274c5a87cf4d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5a6656a16d9d0d7dcd274c5a87cf4d9">apply</a> (const std::function&lt; void(T &amp;, int, int)&gt; &amp;func)</td></tr>
-<tr class="memdesc:aa5a6656a16d9d0d7dcd274c5a87cf4d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a function to each element of the matrix.  <br /></td></tr>
+constexpr <a class="el" href="#a8adc2745e7ca2ff2e5da76cef047a1cb">ColView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>col</b> (int c)</td></tr>
+<tr class="memdesc:a3bb71d09a1048377e71453c7f8d223da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a column-view for column c (mutable). <br /></td></tr>
+<tr class="memitem:a9d9e89939c284a1a6b0dddb2e5c86ebc" id="r_a9d9e89939c284a1a6b0dddb2e5c86ebc"><td class="memItemLeft" align="right" valign="top"><a id="a9d9e89939c284a1a6b0dddb2e5c86ebc" name="a9d9e89939c284a1a6b0dddb2e5c86ebc"></a>
+constexpr <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, ViewR, ViewC &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>to_matrix</b> () const</td></tr>
+<tr class="memdesc:a9d9e89939c284a1a6b0dddb2e5c86ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the view contents into an owning matrix of size ViewR x ViewC. <br /></td></tr>
+<tr class="memitem:a2b6d41463e1ba9b1371fb51c5ff2ea22" id="r_a2b6d41463e1ba9b1371fb51c5ff2ea22"><td class="memItemLeft" align="right" valign="top"><a id="a2b6d41463e1ba9b1371fb51c5ff2ea22" name="a2b6d41463e1ba9b1371fb51c5ff2ea22"></a>
+constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (int r, int c)</td></tr>
+<tr class="memdesc:a2b6d41463e1ba9b1371fb51c5ff2ea22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a mutable reference to the element at (r, c). <br /></td></tr>
+<tr class="memitem:ada2977a66789cfeda3c06f7fcc2444ec" id="r_ada2977a66789cfeda3c06f7fcc2444ec"><td class="memItemLeft" align="right" valign="top"><a id="ada2977a66789cfeda3c06f7fcc2444ec" name="ada2977a66789cfeda3c06f7fcc2444ec"></a>
+constexpr <a class="el" href="../../d3/d31/classpbpt_1_1math_1_1_matrix_view.html">MatrixView</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, ViewR, ViewC &gt; &amp;other)</td></tr>
+<tr class="memdesc:ada2977a66789cfeda3c06f7fcc2444ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns from another matrix of the same view size. <br /></td></tr>
+<tr class="memitem:a4ac6605e1821c56e74ab864d3c0fc309" id="r_a4ac6605e1821c56e74ab864d3c0fc309"><td class="memTemplParams" colspan="2"><a id="a4ac6605e1821c56e74ab864d3c0fc309" name="a4ac6605e1821c56e74ab864d3c0fc309"></a>
+template&lt;std::invocable&lt; T &amp;, int, int &gt; F&gt; </td></tr>
+<tr class="memitem:a4ac6605e1821c56e74ab864d3c0fc309 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><b>visit</b> (F func)</td></tr>
+<tr class="memdesc:a4ac6605e1821c56e74ab864d3c0fc309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visits all elements in the view (mutable). <br /></td></tr>
+<tr class="memitem:a3bcf9142d4970d643977f3c75dc502d4" id="r_a3bcf9142d4970d643977f3c75dc502d4"><td class="memTemplParams" colspan="2"><a id="a3bcf9142d4970d643977f3c75dc502d4" name="a3bcf9142d4970d643977f3c75dc502d4"></a>
+template&lt;std::invocable&lt; const T &amp;, int, int &gt; F&gt; </td></tr>
+<tr class="memitem:a3bcf9142d4970d643977f3c75dc502d4 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><b>visit</b> (F func) const</td></tr>
+<tr class="memdesc:a3bcf9142d4970d643977f3c75dc502d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visits all elements in the view (const). <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a91d369aad87c7ba1c14aa776533e5f1b" id="r_a91d369aad87c7ba1c14aa776533e5f1b"><td class="memItemLeft" align="right" valign="top"><a id="a91d369aad87c7ba1c14aa776533e5f1b" name="a91d369aad87c7ba1c14aa776533e5f1b"></a>
 const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, C &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_original</b></td></tr>
-<tr class="memdesc:a91d369aad87c7ba1c14aa776533e5f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A const reference to the original matrix. <br /></td></tr>
+<tr class="memdesc:a91d369aad87c7ba1c14aa776533e5f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to the original matrix that owns the data. <br /></td></tr>
 <tr class="memitem:a91358361e5475b7ad25ff6ff8885807e" id="r_a91358361e5475b7ad25ff6ff8885807e"><td class="memItemLeft" align="right" valign="top"><a id="a91358361e5475b7ad25ff6ff8885807e" name="a91358361e5475b7ad25ff6ff8885807e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_row_start</b> {}</td></tr>
-<tr class="memdesc:a91358361e5475b7ad25ff6ff8885807e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The starting row of the view in the original matrix's coordinate system. <br /></td></tr>
+<tr class="memdesc:a91358361e5475b7ad25ff6ff8885807e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Row index of the top-left element of the view. <br /></td></tr>
 <tr class="memitem:a125291aff8064eb8e51adb65f4938f7c" id="r_a125291aff8064eb8e51adb65f4938f7c"><td class="memItemLeft" align="right" valign="top"><a id="a125291aff8064eb8e51adb65f4938f7c" name="a125291aff8064eb8e51adb65f4938f7c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_col_start</b> {}</td></tr>
-<tr class="memdesc:a125291aff8064eb8e51adb65f4938f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The starting column of the view in the original matrix's coordinate system. <br /></td></tr>
+<tr class="memdesc:a125291aff8064eb8e51adb65f4938f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Column index of the top-left element of the view. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, int R, int C, int ViewR, int ViewC&gt;<br />
-class pbpt::math::MatrixView&lt; T, R, C, ViewR, ViewC &gt;</div><p>A non-owning, mutable view/proxy into a sub-region of another <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a>. </p>
-</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a53e21454dcab2fe36fc280df975963f2" name="a53e21454dcab2fe36fc280df975963f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53e21454dcab2fe36fc280df975963f2">&#9670;&#160;</a></span>MatrixView()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int R, int C, int ViewR, int ViewC&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d3/d31/classpbpt_1_1math_1_1_matrix_view.html">pbpt::math::MatrixView</a>&lt; T, R, C, ViewR, ViewC &gt;::MatrixView </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, R, C &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>original</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>row_start</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>col_start</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Constructs a view from a <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> instance. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">original</td><td>The matrix to view. </td></tr>
-    <tr><td class="paramname">row_start</td><td>The starting row index of the view. </td></tr>
-    <tr><td class="paramname">col_start</td><td>The starting column index of the view. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="aa5a6656a16d9d0d7dcd274c5a87cf4d9" name="aa5a6656a16d9d0d7dcd274c5a87cf4d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5a6656a16d9d0d7dcd274c5a87cf4d9">&#9670;&#160;</a></span>apply()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int R, int C, int ViewR, int ViewC&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="../../d3/d31/classpbpt_1_1math_1_1_matrix_view.html">pbpt::math::MatrixView</a>&lt; T, R, C, ViewR, ViewC &gt;::apply </td>
-          <td>(</td>
-          <td class="paramtype">const std::function&lt; void(T &amp;, int, int)&gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>func</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Applies a function to each element of the matrix. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">func</td><td>The function to apply. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2b6d41463e1ba9b1371fb51c5ff2ea22" name="a2b6d41463e1ba9b1371fb51c5ff2ea22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b6d41463e1ba9b1371fb51c5ff2ea22">&#9670;&#160;</a></span>at() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int R, int C, int ViewR, int ViewC&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T &amp; <a class="el" href="../../d3/d31/classpbpt_1_1math_1_1_matrix_view.html">pbpt::math::MatrixView</a>&lt; T, R, C, ViewR, ViewC &gt;::at </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>c</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Provides mutable access to an element of the view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">r</td><td>The row index relative to the view. </td></tr>
-    <tr><td class="paramname">c</td><td>The column index relative to the view. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mutable reference to the element in the original matrix. </dd></dl>
-
-</div>
-</div>
-<a id="a368f7d16a8937c51e323b14d2afe81c9" name="a368f7d16a8937c51e323b14d2afe81c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a368f7d16a8937c51e323b14d2afe81c9">&#9670;&#160;</a></span>at() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int R, int C, int ViewR, int ViewC&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const T &amp; <a class="el" href="../../d3/d31/classpbpt_1_1math_1_1_matrix_view.html">pbpt::math::MatrixView</a>&lt; T, R, C, ViewR, ViewC &gt;::at </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>c</em></span>&#160;) const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Provides read-only access to an element of the view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">r</td><td>The row index relative to the view. </td></tr>
-    <tr><td class="paramname">c</td><td>The column index relative to the view. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A const reference to the element in the original matrix. </dd></dl>
-
-</div>
-</div>
-<a id="ada2977a66789cfeda3c06f7fcc2444ec" name="ada2977a66789cfeda3c06f7fcc2444ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada2977a66789cfeda3c06f7fcc2444ec">&#9670;&#160;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int R, int C, int ViewR, int ViewC&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d3/d31/classpbpt_1_1math_1_1_matrix_view.html">MatrixView</a> &amp; <a class="el" href="../../d3/d31/classpbpt_1_1math_1_1_matrix_view.html">pbpt::math::MatrixView</a>&lt; T, R, C, ViewR, ViewC &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, ViewR, ViewC &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Assigns another matrix's content to the region represented by this view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">other</td><td>The matrix to copy from. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference to this view. </dd></dl>
-
-</div>
-</div>
-<a id="a9d9e89939c284a1a6b0dddb2e5c86ebc" name="a9d9e89939c284a1a6b0dddb2e5c86ebc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d9e89939c284a1a6b0dddb2e5c86ebc">&#9670;&#160;</a></span>to_matrix()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T, int R, int C, int ViewR, int ViewC&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html">Matrix</a>&lt; T, ViewR, ViewC &gt; <a class="el" href="../../d3/d31/classpbpt_1_1math_1_1_matrix_view.html">pbpt::math::MatrixView</a>&lt; T, R, C, ViewR, ViewC &gt;::to_matrix </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Converts the view into a new, owning <a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="A template class for RxC dimensional mathematical matrices.">Matrix</a> instance. </p>
-<p>This performs a copy of the elements from the viewed region. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/jinceyang/Desktop/codebase/pbpt/engine/math/<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a></li>
+class pbpt::math::MatrixView&lt; T, R, C, ViewR, ViewC &gt;</div><p>Non-owning rectangular view into a matrix. </p>
+<p>Provides a window of size ViewR x ViewC into an existing <span class="tt"><a class="el" href="../../da/d16/classpbpt_1_1math_1_1_matrix.html" title="Forward declaration of a fixed-size dense matrix.">Matrix</a>&lt;T,R,C&gt;</span>, exposing rows and columns as <span class="tt"><a class="el" href="../../d9/d17/classpbpt_1_1math_1_1_vector_view.html" title="Non-owning strided view over a contiguous vector of elements.">VectorView</a></span>s. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>/Users/jinceyang/Desktop/codebase/graphics/pbpt/src/math/<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -393,7 +176,7 @@ template&lt;typename T, int R, int C, int ViewR, int ViewC&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>pbpt</b></li><li class="navelem"><a href="../../d1/d2f/namespacepbpt_1_1math.html">math</a></li><li class="navelem"><a href="../../d3/d31/classpbpt_1_1math_1_1_matrix_view.html">MatrixView</a></li>
+    <li class="navelem"><b>pbpt</b></li><li class="navelem"><b>math</b></li><li class="navelem"><a href="../../d3/d31/classpbpt_1_1math_1_1_matrix_view.html">MatrixView</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

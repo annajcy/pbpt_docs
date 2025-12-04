@@ -1,17 +1,13 @@
 var searchData=
 [
-  ['identity_0',['identity',['../da/d16/classpbpt_1_1math_1_1_matrix.html#acd1080391d4ce48ff76a609c1ef5bc95',1,'pbpt::math::Matrix']]],
-  ['inverse_1',['inverse',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a9f192915bf715055f09d026378f446d3',1,'pbpt::math::Matrix']]],
-  ['inversed_2',['inversed',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a59502c0541b88f3f7de7e9ae0fa4ee9f',1,'pbpt::math::Matrix']]],
-  ['is_5fequal_3',['is_equal',['../d1/d2f/namespacepbpt_1_1math.html#a6612e3accd98eb6dfb22f6e8412d17f2',1,'pbpt::math']]],
-  ['is_5fgreater_4',['is_greater',['../d1/d2f/namespacepbpt_1_1math.html#a53477e2c7ac9d8d533cf074200cc2169',1,'pbpt::math']]],
-  ['is_5fgreater_5fequal_5',['is_greater_equal',['../d1/d2f/namespacepbpt_1_1math.html#a38449e4b201cbcdb670b24d2a793bc53',1,'pbpt::math']]],
-  ['is_5fidentity_6',['is_identity',['../da/d16/classpbpt_1_1math_1_1_matrix.html#aef433f5d3da296d97cf7004a0efe80a6',1,'pbpt::math::Matrix']]],
-  ['is_5fless_7',['is_less',['../d1/d2f/namespacepbpt_1_1math.html#aba46669c480fa601c07f61e46373d7c3',1,'pbpt::math']]],
-  ['is_5fless_5fequal_8',['is_less_equal',['../d1/d2f/namespacepbpt_1_1math.html#a5d08dc72892e6d909d8a2ed3729e7890',1,'pbpt::math']]],
-  ['is_5fnormalized_9',['is_normalized',['../d5/dfd/classpbpt_1_1math_1_1_vector.html#a5b2a3c6dcedb75a21471b148ca7329be',1,'pbpt::math::Vector']]],
-  ['is_5foverlapped_10',['is_overlapped',['../d2/d67/classpbpt_1_1math_1_1_bounding_box.html#a9ddab2a57c3ba950f2af601a908d5a03',1,'pbpt::math::BoundingBox']]],
-  ['is_5fpoint_11',['is_point',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a9e99341dc533d059b32f74aefc947128',1,'pbpt::math::Homogeneous']]],
-  ['is_5fvector_12',['is_vector',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a559dd8593f04e9acae755d92b457e9fd',1,'pbpt::math::Homogeneous']]],
-  ['is_5fzero_13',['is_zero',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a5ce170f91ca33c3a19f38fda8f990822',1,'pbpt::math::Matrix::is_zero()'],['../d5/dfd/classpbpt_1_1math_1_1_vector.html#ac2f3f4badded9066d4d6e672dbd8f22e',1,'pbpt::math::Vector::is_zero()']]]
+  ['g_0',['g',['../dc/d82/classpbpt_1_1radiometry_1_1_response_spectrum.html#a515b035d27e2229f5b68c31772c294d1',1,'pbpt::radiometry::ResponseSpectrum::g()'],['../d8/d62/classpbpt_1_1radiometry_1_1_r_g_b.html#a5627adddb475539f1dc88ca1a4429fcd',1,'pbpt::radiometry::RGB::g() const'],['../d8/d62/classpbpt_1_1radiometry_1_1_r_g_b.html#a3d448d9bee3c46c586563f5101eafa80',1,'pbpt::radiometry::RGB::g()']]],
+  ['g_5fxy_1',['g_xy',['../d6/d05/classpbpt_1_1radiometry_1_1_r_g_b_color_space.html#a02d4c7c55c3f04fd2bc81937ec37c4c5',1,'pbpt::radiometry::RGBColorSpace']]],
+  ['generate_5fdifferential_5fray_2',['generate_differential_ray',['../d0/d55/classpbpt_1_1camera_1_1_camera.html#ad5813251df3aa20d08e088f705438faf',1,'pbpt::camera::Camera']]],
+  ['generate_5fnormal_3',['generate_normal',['../d9/d9e/classpbpt_1_1math_1_1_random_generator.html#a1837ed12685546317907d2de8ca43be4',1,'pbpt::math::RandomGenerator']]],
+  ['generate_5fray_4',['generate_ray',['../d0/d55/classpbpt_1_1camera_1_1_camera.html#a9b4c5b8e5d05e1a3635b25ebfb63a112',1,'pbpt::camera::Camera']]],
+  ['generate_5funiform_5',['generate_uniform',['../d9/d9e/classpbpt_1_1math_1_1_random_generator.html#a7cb31ceb90affc0ce3f9b39c70300334',1,'pbpt::math::RandomGenerator']]],
+  ['get_6',['get',['../db/df0/structpbpt_1_1radiometry_1_1_hold.html#a544e9680ce5a944d93726ac21bcd00b0',1,'pbpt::radiometry::Hold']]],
+  ['get_5fcamera_5fsamples_7',['get_camera_samples',['../d6/d55/classpbpt_1_1camera_1_1_pixel_filter.html#ad32da279a2bf44e90699072720fd710e',1,'pbpt::camera::PixelFilter']]],
+  ['get_5fpixel_5frgb_8',['get_pixel_rgb',['../d9/d35/classpbpt_1_1camera_1_1_r_g_b_film.html#a19314f4b69060ab2465ddce43536874a',1,'pbpt::camera::RGBFilm']]],
+  ['get_5fuv_5fsamples_9',['get_uv_samples',['../d6/d55/classpbpt_1_1camera_1_1_pixel_filter.html#a3b3ad63906586627b3c2239b91b21455',1,'pbpt::camera::PixelFilter']]]
 ];

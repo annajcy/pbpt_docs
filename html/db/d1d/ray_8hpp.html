@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pbpt: /Users/jinceyang/Desktop/codebase/pbpt/engine/math/ray.hpp File Reference</title>
+<title>pbpt: /Users/jinceyang/Desktop/codebase/graphics/pbpt/src/geometry/ray.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,41 +92,79 @@ $(function(){initNavTree('db/d1d/ray_8hpp.html','../../',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Defines a generic, N-dimensional geometric Ray class.  
+<p>Ray and ray-differential primitives used throughout the renderer.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d0/de4/point_8hpp_source.html">point.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/d3a/global_8hpp_source.html">global.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/d16/vector_8hpp_source.html">vector.hpp</a>&quot;</code><br />
-<code>#include &lt;array&gt;</code><br />
+<div class="textblock"><code>#include &lt;array&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &quot;math/function.hpp&quot;</code><br />
+<code>#include &quot;math/utils.hpp&quot;</code><br />
+<code>#include &quot;math/point.hpp&quot;</code><br />
+<code>#include &quot;math/vector.hpp&quot;</code><br />
 </div>
 <p><a href="../../db/d1d/ray_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:pbpt_3A_3Amath_3A_3ARay_3C_20T_2C_20N_20_3E" id="r_pbpt_3A_3Amath_3A_3ARay_3C_20T_2C_20N_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d7d/classpbpt_1_1math_1_1_ray.html">pbpt::math::Ray&lt; T, N &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template class for an N-dimensional geometric ray.  <a href="../../de/d7d/classpbpt_1_1math_1_1_ray.html#details">More...</a><br /></td></tr>
-<tr class="memitem:pbpt_3A_3Amath_3A_3ARayDifferential_3C_20T_2C_20N_20_3E" id="r_pbpt_3A_3Amath_3A_3ARayDifferential_3C_20T_2C_20N_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df2/classpbpt_1_1math_1_1_ray_differential.html">pbpt::math::RayDifferential&lt; T, N &gt;</a></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:pbpt_3A_3Amath" id="r_pbpt_3A_3Amath"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html">pbpt::math</a></td></tr>
-<tr class="memdesc:d1/d2f/namespacepbpt_1_1math"><td class="mdescLeft">&#160;</td><td class="mdescRight">The namespace for math library implementation. <br /></td></tr>
+<tr class="memitem:pbpt_3A_3Ageometry_3A_3ARay_3C_20T_2C_20N_20_3E" id="r_pbpt_3A_3Ageometry_3A_3ARay_3C_20T_2C_20N_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7f/classpbpt_1_1geometry_1_1_ray.html">pbpt::geometry::Ray&lt; T, N &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Geometric ray with a normalized direction and parameter range.  <a href="../../df/d7f/classpbpt_1_1geometry_1_1_ray.html#details">More...</a><br /></td></tr>
+<tr class="memitem:pbpt_3A_3Ageometry_3A_3ARayDifferential_3C_20T_2C_20N_20_3E" id="r_pbpt_3A_3Ageometry_3A_3ARayDifferential_3C_20T_2C_20N_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d25/classpbpt_1_1geometry_1_1_ray_differential.html">pbpt::geometry::RayDifferential&lt; T, N &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../df/d7f/classpbpt_1_1geometry_1_1_ray.html" title="Geometric ray with a normalized direction and parameter range.">Ray</a> together with differentials describing small perturbations.  <a href="../../dd/d25/classpbpt_1_1geometry_1_1_ray_differential.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a71dc4e1dcf7601243cfee5970695b0b8" id="r_a71dc4e1dcf7601243cfee5970695b0b8"><td class="memItemLeft" align="right" valign="top"><a id="a71dc4e1dcf7601243cfee5970695b0b8" name="a71dc4e1dcf7601243cfee5970695b0b8"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Ray3</b> = <a class="el" href="../../de/d7d/classpbpt_1_1math_1_1_ray.html">Ray</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 3&gt;</td></tr>
-<tr class="memdesc:a71dc4e1dcf7601243cfee5970695b0b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 3-dimensional ray of type <span class="tt"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a></span>, commonly used in 3D graphics. <br /></td></tr>
-<tr class="memitem:a6da443c22d4090c6371cbb9d9c83f62e" id="r_a6da443c22d4090c6371cbb9d9c83f62e"><td class="memItemLeft" align="right" valign="top"><a id="a6da443c22d4090c6371cbb9d9c83f62e" name="a6da443c22d4090c6371cbb9d9c83f62e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Ray2</b> = <a class="el" href="../../de/d7d/classpbpt_1_1math_1_1_ray.html">Ray</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 2&gt;</td></tr>
-<tr class="memdesc:a6da443c22d4090c6371cbb9d9c83f62e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2-dimensional ray of type <span class="tt"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a></span>. <br /></td></tr>
-<tr class="memitem:a173ce64a92b2cf209d529e67f5f50f1d" id="r_a173ce64a92b2cf209d529e67f5f50f1d"><td class="memItemLeft" align="right" valign="top"><a id="a173ce64a92b2cf209d529e67f5f50f1d" name="a173ce64a92b2cf209d529e67f5f50f1d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::RayDiff3</b> = <a class="el" href="../../d7/df2/classpbpt_1_1math_1_1_ray_differential.html">RayDifferential</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 3&gt;</td></tr>
+<tr class="memitem:a3bdca197783b7e98b9a1005d6800cf90" id="r_a3bdca197783b7e98b9a1005d6800cf90"><td class="memItemLeft" align="right" valign="top"><a id="a3bdca197783b7e98b9a1005d6800cf90" name="a3bdca197783b7e98b9a1005d6800cf90"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::geometry::Ray3</b> = <a class="el" href="../../df/d7f/classpbpt_1_1geometry_1_1_ray.html">Ray</a>&lt;double, 3&gt;</td></tr>
+<tr class="memdesc:a3bdca197783b7e98b9a1005d6800cf90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double-precision 3D ray. <br /></td></tr>
+<tr class="memitem:a3e67b3672577a5a097bc1a8635bdbf0d" id="r_a3e67b3672577a5a097bc1a8635bdbf0d"><td class="memItemLeft" align="right" valign="top"><a id="a3e67b3672577a5a097bc1a8635bdbf0d" name="a3e67b3672577a5a097bc1a8635bdbf0d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::geometry::Ray2</b> = <a class="el" href="../../df/d7f/classpbpt_1_1geometry_1_1_ray.html">Ray</a>&lt;double, 2&gt;</td></tr>
+<tr class="memdesc:a3e67b3672577a5a097bc1a8635bdbf0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double-precision 2D ray. <br /></td></tr>
+<tr class="memitem:ab7f1d096605e0fd95ab130bc582549c2" id="r_ab7f1d096605e0fd95ab130bc582549c2"><td class="memItemLeft" align="right" valign="top"><a id="ab7f1d096605e0fd95ab130bc582549c2" name="ab7f1d096605e0fd95ab130bc582549c2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::geometry::RayDiff2</b> = <a class="el" href="../../dd/d25/classpbpt_1_1geometry_1_1_ray_differential.html">RayDifferential</a>&lt;double, 2&gt;</td></tr>
+<tr class="memdesc:ab7f1d096605e0fd95ab130bc582549c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double-precision 2D ray differential. <br /></td></tr>
+<tr class="memitem:a2d6d6b5d698d7858be288a63fe920f4b" id="r_a2d6d6b5d698d7858be288a63fe920f4b"><td class="memItemLeft" align="right" valign="top"><a id="a2d6d6b5d698d7858be288a63fe920f4b" name="a2d6d6b5d698d7858be288a63fe920f4b"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::geometry::RayDiff3</b> = <a class="el" href="../../dd/d25/classpbpt_1_1geometry_1_1_ray_differential.html">RayDifferential</a>&lt;double, 3&gt;</td></tr>
+<tr class="memdesc:a2d6d6b5d698d7858be288a63fe920f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double-precision 3D ray differential. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a834fb1ed79e422200345128a72e91564" id="r_a834fb1ed79e422200345128a72e91564"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a834fb1ed79e422200345128a72e91564 template"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a834fb1ed79e422200345128a72e91564">pbpt::geometry::safe_ray_tmax</a> (T dist)</td></tr>
+<tr class="memdesc:a834fb1ed79e422200345128a72e91564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a conservative t_max for a ray of length <code class="param">dist</code>.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines a generic, N-dimensional geometric Ray class. </p>
-<p>This file provides a <span class="tt">Ray</span> class, a fundamental component in ray tracing and other computer graphics algorithms. A ray is defined by an origin point and a direction vector. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Ray and ray-differential primitives used throughout the renderer. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a834fb1ed79e422200345128a72e91564" name="a834fb1ed79e422200345128a72e91564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834fb1ed79e422200345128a72e91564">&#9670;&#160;</a></span>safe_ray_tmax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T pbpt::geometry::safe_ray_tmax </td>
+          <td>(</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>dist</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute a conservative t_max for a ray of length <code class="param">dist</code>. </p>
+<p>The returned value is slightly smaller than <code class="param">dist</code> by an amount proportional to a small gamma factor, which helps avoid "overshooting" due to floating-point error when tracing to a known distance. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>
@@ -139,7 +177,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::RayDiff3
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="../../dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a href="../../dir_6092418e369ca819ce866d11ef016080.html">math</a></li><li class="navelem"><a href="../../db/d1d/ray_8hpp.html">ray.hpp</a></li>
+    <li class="navelem"><a href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="../../dir_405fd32de3649961a5f009c7a3fe84df.html">geometry</a></li><li class="navelem"><a href="../../db/d1d/ray_8hpp.html">ray.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

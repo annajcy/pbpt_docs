@@ -1,9 +1,13 @@
 var searchData=
 [
-  ['has_5fnan_0',['has_nan',['../da/d16/classpbpt_1_1math_1_1_matrix.html#ac2dce47ab78cd6dd6fddbfd01d9a818c',1,'pbpt::math::Matrix::has_nan()'],['../d5/dfd/classpbpt_1_1math_1_1_vector.html#ae063c9fbc8d8f24d873109a565183af1',1,'pbpt::math::Vector::has_nan()']]],
-  ['homo3_1',['Homo3',['../d1/d2f/namespacepbpt_1_1math.html#a3ff9c806ca0a99e5adcda8a50f74d4b6',1,'pbpt::math']]],
-  ['homogeneous_2',['Homogeneous',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html',1,'pbpt::math::Homogeneous&lt; T, N &gt;'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#ac435ee47f9538c71f33d46f63168f94d',1,'pbpt::math::Homogeneous::Homogeneous() noexcept'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a7d9265551a7fcbf644169d8f529224f6',1,'pbpt::math::Homogeneous::Homogeneous(const Point&lt; T, N &gt; &amp;p) noexcept'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a1292434e768d3c1681e54a24b51c4c3d',1,'pbpt::math::Homogeneous::Homogeneous(const Vector&lt; T, N &gt; &amp;v) noexcept'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#aacf08c978596238abd63b0e0eadfe1b7',1,'pbpt::math::Homogeneous::Homogeneous(Vals... vals) noexcept'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#ad6bf50d307c5fb7e5d9a083ff4c78cce',1,'pbpt::math::Homogeneous::Homogeneous(const Vector&lt; T, N+1 &gt; &amp;data) noexcept']]],
-  ['homogeneous_2ehpp_3',['homogeneous.hpp',['../d7/d28/homogeneous_8hpp.html',1,'']]],
-  ['homogeneous_3c_20float_2c_202_20_3e_4',['Homogeneous&lt; Float, 2 &gt;',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html',1,'pbpt::math']]],
-  ['homogeneous_3c_20float_2c_203_20_3e_5',['Homogeneous&lt; Float, 3 &gt;',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html',1,'pbpt::math']]]
+  ['has_5fnan_0',['has_nan',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a3465e80657a92da5df9c1647bb33470b',1,'pbpt::math::Matrix::has_nan() const noexcept'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#ac2dce47ab78cd6dd6fddbfd01d9a818c',1,'pbpt::math::Matrix::has_nan() const'],['../de/d5c/classpbpt_1_1math_1_1_tuple.html#ade336b55d4fe4b5eeff32470ce82a7bf',1,'pbpt::math::Tuple::has_nan()']]],
+  ['has_5fscale_1',['has_scale',['../d5/d63/classpbpt_1_1geometry_1_1_transform.html#a122d203a3b7c013d6c67be1ff560f92c',1,'pbpt::geometry::Transform']]],
+  ['hemisphere_2',['hemisphere',['../d0/d71/classpbpt_1_1geometry_1_1_directional_cone.html#ae2a6191f8d7e40d3b7e648e2d2282eeb',1,'pbpt::geometry::DirectionalCone']]],
+  ['hemisphere_5fsr_3',['hemisphere_sr',['../dc/da5/radiometry__units_8hpp.html#aff2ef7809ed61c5c9491ac57981a778c',1,'pbpt::radiometry']]],
+  ['hold_4',['Hold',['../db/df0/structpbpt_1_1radiometry_1_1_hold.html',1,'pbpt::radiometry::Hold&lt; S &gt;'],['../db/df0/structpbpt_1_1radiometry_1_1_hold.html#a58a498ef80e92e9d9e1a8c7cc14a3401',1,'pbpt::radiometry::Hold::Hold(const S &amp;s)'],['../db/df0/structpbpt_1_1radiometry_1_1_hold.html#ac8f5b0e8e1a8d811d1e0524d69278b29',1,'pbpt::radiometry::Hold::Hold(S &amp;&amp;s)']]],
+  ['hold_3c_20d1_20_3e_5',['Hold&lt; D1 &gt;',['../db/df0/structpbpt_1_1radiometry_1_1_hold.html',1,'pbpt::radiometry']]],
+  ['hold_3c_20d2_20_3e_6',['Hold&lt; D2 &gt;',['../db/df0/structpbpt_1_1radiometry_1_1_hold.html',1,'pbpt::radiometry']]],
+  ['homogeneous_7',['Homogeneous',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html',1,'pbpt::math']]],
+  ['homogeneous_3c_20float_2c_203_20_3e_8',['Homogeneous&lt; Float, 3 &gt;',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html',1,'pbpt::math']]],
+  ['homogeneous_3c_20float_2c_204_20_3e_9',['Homogeneous&lt; Float, 4 &gt;',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html',1,'pbpt::math']]]
 ];

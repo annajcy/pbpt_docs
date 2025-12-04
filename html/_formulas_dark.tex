@@ -1,0 +1,114 @@
+\documentclass{article}
+\usepackage{iftex}
+\usepackage{ifthen}
+\usepackage{epsfig}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\color{white}
+\pagecolor{black}
+\ifPDFTeX
+\usepackage{newunicodechar}
+  \makeatletter
+    \def\doxynewunicodechar#1#2{%
+    \@tempswafalse
+    \edef\nuc@tempa{\detokenize{#1}}%
+    \if\relax\nuc@tempa\relax
+      \nuc@emptyargerr
+    \else
+      \edef\@tempb{\expandafter\@car\nuc@tempa\@nil}%
+      \nuc@check
+      \if@tempswa
+        \@namedef{u8:\nuc@tempa}{#2}%
+      \fi
+    \fi
+  }
+  \makeatother
+  \doxynewunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \doxynewunicodechar{²}{${}^{2}$}% Superscript two
+  \doxynewunicodechar{³}{${}^{3}$}% Superscript three
+
+\fi
+\pagestyle{empty}
+\begin{document}
+$c$
+\pagebreak
+
+\[  s_c = \int_\lambda L(\lambda)\,E_{\text{scene}}(\lambda)\,R_c(\lambda)\,d\lambda,
+\]
+\pagebreak
+
+$L(\lambda)$
+\pagebreak
+
+$E_{\text{scene}}(\lambda)$
+\pagebreak
+
+$R_c(\lambda)$
+\pagebreak
+
+$i$
+\pagebreak
+
+\[  \mathbf{r}_i = \int_\lambda R_i(\lambda)\,
+                 E_{\text{scene}}(\lambda)\,
+                 \mathbf{S}(\lambda)\,d\lambda,
+\]
+\pagebreak
+
+\[  \mathbf{x}_i = \int_\lambda R_i(\lambda)\,
+                 E_{\text{std}}(\lambda)\,
+                 \mathbf{\bar{X}Y\!Z}(\lambda)\,d\lambda.
+\]
+\pagebreak
+
+$\mathbf{M}$
+\pagebreak
+
+\[  \sum_i \left\|\mathbf{M}\,\mathbf{r}_i - \mathbf{x}_i\right\|^2.
+\]
+\pagebreak
+
+\[  \mathbf{M} = \mathbf{M}_{\text{dest}}^{-1}\,
+               \mathbf{D}\,
+               \mathbf{M}_{\text{src}},
+\]
+\pagebreak
+
+$\mathbf{D}$
+\pagebreak
+
+\[  \mathbf{x} = \mathbf{M}\,\mathbf{r},\quad \mathbf{M} = \mathbf{I}_3.
+\]
+\pagebreak
+
+\[  \mathbf{r} = \int_\lambda L(\lambda)\,
+              E_{\text{scene}}(\lambda)\,
+              \mathbf{S}(\lambda)\,d\lambda,
+\]
+\pagebreak
+
+$\mathbf{S}(\lambda)$
+\pagebreak
+
+$\lambda_i$
+\pagebreak
+
+$p(\lambda)$
+\pagebreak
+
+\[  \mathbf{r} \approx \frac{1}{N} \sum_{i=1}^N
+  \frac{L(\lambda_i)\,E_{\text{scene}}(\lambda_i)\,
+        \mathbf{S}(\lambda_i)}{p(\lambda_i)}.
+\]
+\pagebreak
+
+\[  \mathbf{x} = \mathbf{M}\,\mathbf{r}.
+\]
+\pagebreak
+
+\[  \mathbf{c}_{\text{RGB}} =
+  \text{RGBColorSpace}(\mathbf{XYZ}(\mathbf{r})).
+\]
+\pagebreak
+
+\end{document}

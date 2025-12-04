@@ -1,19 +1,14 @@
 var searchData=
 [
-  ['vec2_0',['Vec2',['../d1/d2f/namespacepbpt_1_1math.html#a4a5543941e34f57c206edd8c10a95d46',1,'pbpt::math']]],
-  ['vec3_1',['Vec3',['../d1/d2f/namespacepbpt_1_1math.html#a3cbdb553bfd2e6f9afc2d72be6ed15da',1,'pbpt::math']]],
-  ['vec4_2',['Vec4',['../d1/d2f/namespacepbpt_1_1math.html#aafbc6d0fb7dd77bd0648c4f436f35697',1,'pbpt::math']]],
-  ['vector_3',['Vector',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math::Vector&lt; T, N &gt;'],['../d5/dfd/classpbpt_1_1math_1_1_vector.html#a4c93df7a367a2c6786f812e1289b8c7d',1,'pbpt::math::Vector::Vector() noexcept=default'],['../d5/dfd/classpbpt_1_1math_1_1_vector.html#a32c11b5c45cdc3afd9cde9e873013d3b',1,'pbpt::math::Vector::Vector(Args &amp;&amp;... args) noexcept']]],
-  ['vector_2ehpp_4',['vector.hpp',['../da/d16/vector_8hpp.html',1,'']]],
-  ['vector_3c_20float_2c_202_20_3e_5',['Vector&lt; Float, 2 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20float_2c_203_20_3e_6',['Vector&lt; Float, 3 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20float_2c_204_20_3e_7',['Vector&lt; Float, 4 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20t_2c_20n_2b1_20_3e_8',['Vector&lt; T, N+1 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vectorview_9',['VectorView',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math::VectorView&lt; T, N &gt;'],['../d9/d17/classpbpt_1_1math_1_1_vector_view.html#a4c01e1bfb4335b0d6d5e0f07863f52ae',1,'pbpt::math::VectorView::VectorView()']]],
-  ['vectorview_3c_20t_2c_20c_20_3e_10',['VectorView&lt; T, C &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
-  ['vectorview_3c_20t_2c_20r_20_3e_11',['VectorView&lt; T, R &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
-  ['vectorview_3c_20t_2c_20viewc_20_3e_12',['VectorView&lt; T, ViewC &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
-  ['vectorview_3c_20t_2c_20viewr_20_3e_13',['VectorView&lt; T, ViewR &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
-  ['view_14',['view',['../da/d16/classpbpt_1_1math_1_1_matrix.html#a09a1ef7345cad8e42bc9ff78c1b6ceea',1,'pbpt::math::Matrix::view(int row_start, int col_start)'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#a06f5deb23342ce99f4cb038c1425fd07',1,'pbpt::math::Matrix::view(int row_start, int col_start) const']]],
-  ['volume_15',['volume',['../d2/d67/classpbpt_1_1math_1_1_bounding_box.html#afb72680dc3033ae243fc1b68039b96f3',1,'pbpt::math::BoundingBox']]]
+  ['uniformdiskdomain_0',['UniformDiskDomain',['../d3/dd0/classpbpt_1_1radiometry_1_1_uniform_disk_domain.html',1,'pbpt::radiometry']]],
+  ['uniformdistribution1d_1',['UniformDistribution1D',['../d9/de0/classpbpt_1_1integrator_1_1_uniform_distribution1_d.html',1,'pbpt::integrator']]],
+  ['uniformdistributionnd_2',['UniformDistributionND',['../d5/d63/classpbpt_1_1integrator_1_1_uniform_distribution_n_d.html',1,'pbpt::integrator']]],
+  ['uniformhemispheredomain_3',['UniformHemisphereDomain',['../d2/dea/classpbpt_1_1radiometry_1_1_uniform_hemisphere_domain.html',1,'pbpt::radiometry']]],
+  ['uniformsampler_4',['UniformSampler',['../d1/da5/classpbpt_1_1integrator_1_1_uniform_sampler.html',1,'pbpt::integrator']]],
+  ['unit_5ftag_5',['unit_tag',['../de/d82/classpbpt_1_1radiometry_1_1_radiometry_unit.html#afda524df1391ad88e39b05cf1d5b74d5',1,'pbpt::radiometry::RadiometryUnit']]],
+  ['unite_6',['unite',['../d9/dc0/classpbpt_1_1geometry_1_1_bounds.html#a2824fd588c6d6fff8f1f98b99ff02d81',1,'pbpt::geometry::Bounds::unite(const Point&lt; T, N &gt; &amp;point)'],['../d9/dc0/classpbpt_1_1geometry_1_1_bounds.html#a8ac237974bc46921585de9eec13d193d',1,'pbpt::geometry::Bounds::unite(const Bounds&lt; T, N &gt; &amp;box)']]],
+  ['united_7',['united',['../d9/dc0/classpbpt_1_1geometry_1_1_bounds.html#a32b957e2fc564d0a785f4b8a25e36645',1,'pbpt::geometry::Bounds::united(const Point&lt; T, N &gt; &amp;point) const'],['../d9/dc0/classpbpt_1_1geometry_1_1_bounds.html#abec8ce5db435bc7105d336860fb0d863',1,'pbpt::geometry::Bounds::united(const Bounds&lt; T, N &gt; &amp;box) const'],['../d0/d71/classpbpt_1_1geometry_1_1_directional_cone.html#af11f858b212f3d8fb50ccc8361ae9556',1,'pbpt::geometry::DirectionalCone::united()']]],
+  ['update_8',['update',['../db/d4d/classpbpt_1_1utils_1_1_progress_bar.html#ad62a754b5da912619572426dc6301834',1,'pbpt::utils::ProgressBar']]],
+  ['update_5ftransform_9',['update_transform',['../d5/d84/classpbpt_1_1shape_1_1_transformed_shape.html#ae787cbc0b3826f2b65c2979b6584ff68',1,'pbpt::shape::TransformedShape']]],
+  ['uv_10',['uv',['../d7/d12/structpbpt_1_1shape_1_1_shape_sample.html#a562db45a29067b02d18088229bc823da',1,'pbpt::shape::ShapeSample::uv'],['../dd/d8c/classpbpt_1_1geometry_1_1_surface_interaction.html#aa3506ed4fdc5673be474be5797b955b7',1,'pbpt::geometry::SurfaceInteraction::uv() const'],['../dd/d8c/classpbpt_1_1geometry_1_1_surface_interaction.html#ab18d46cb1f8d8c89a0bf8802b9e91fcc',1,'pbpt::geometry::SurfaceInteraction::uv()']]]
 ];

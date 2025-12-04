@@ -1,0 +1,27 @@
+var color_8hpp =
+[
+    [ "pbpt::radiometry::ResponseSpectrum< ResponseSpectrumType >", "dc/d82/classpbpt_1_1radiometry_1_1_response_spectrum.html", "dc/d82/classpbpt_1_1radiometry_1_1_response_spectrum" ],
+    [ "pbpt::radiometry::XYZ< T >", "d6/d64/classpbpt_1_1radiometry_1_1_x_y_z.html", "d6/d64/classpbpt_1_1radiometry_1_1_x_y_z" ],
+    [ "pbpt::radiometry::LMS< T >", "de/df6/classpbpt_1_1radiometry_1_1_l_m_s.html", "de/df6/classpbpt_1_1radiometry_1_1_l_m_s" ],
+    [ "pbpt::radiometry::LAB< T >", "d3/da8/classpbpt_1_1radiometry_1_1_l_a_b.html", "d3/da8/classpbpt_1_1radiometry_1_1_l_a_b" ],
+    [ "pbpt::radiometry::RGB< T >", "d8/d62/classpbpt_1_1radiometry_1_1_r_g_b.html", "d8/d62/classpbpt_1_1radiometry_1_1_r_g_b" ],
+    [ "pbpt::radiometry::decode_from_nonlinear_srgb", "d6/dfd/color_8hpp.html#aab0d386f00cc6e2acfbefdbb746ee926", null ],
+    [ "pbpt::radiometry::decode_from_nonlinear_srgb_channel", "d6/dfd/color_8hpp.html#ae3bb18e80cfba82fac838a554a1640ee", null ],
+    [ "pbpt::radiometry::encode_to_nonlinear_srgb", "d6/dfd/color_8hpp.html#a78394164a80fa7069f300b3f191ee78e", null ],
+    [ "pbpt::radiometry::encode_to_nonlinear_srgb_channel", "d6/dfd/color_8hpp.html#a2f226298b4be06e53e47747a8057a892", null ],
+    [ "pbpt::radiometry::operator<<", "d6/dfd/color_8hpp.html#a1621926b9ce364c622a74d945f1b4a0d", null ],
+    [ "pbpt::radiometry::operator<<", "d6/dfd/color_8hpp.html#aaff44055c69516b35d7818b716d131ff", null ],
+    [ "pbpt::radiometry::operator<<", "d6/dfd/color_8hpp.html#a9fc35765ca52939d5c42fcf419510322", null ],
+    [ "pbpt::radiometry::project_emission", "d6/dfd/color_8hpp.html#a22510d4864f67ad517fdfeec97ba12e0", null ],
+    [ "pbpt::radiometry::project_illuminant", "d6/dfd/color_8hpp.html#a24b4558b1970ff6d26989553b03fefb6", null ],
+    [ "pbpt::radiometry::project_reflectance", "d6/dfd/color_8hpp.html#aa2f025919e0108dcda6377cc00f745b9", null ],
+    [ "pbpt::radiometry::project_sampled_emission", "d6/dfd/color_8hpp.html#aa08dda1d1e3f87a3f892c5564087c482", null ],
+    [ "pbpt::radiometry::project_sampled_illuminant", "d6/dfd/color_8hpp.html#a588c0d8f0711df801acc6391a741a7bc", null ],
+    [ "pbpt::radiometry::project_sampled_reflectance", "d6/dfd/color_8hpp.html#af908bfb4c2192da064139ea904d56804", null ],
+    [ "pbpt::radiometry::project_sampled_spectrum", "d6/dfd/color_8hpp.html#a0ed3f55424d0ff9b105fadec94ccd867", null ],
+    [ "pbpt::radiometry::project_spectrum", "d6/dfd/color_8hpp.html#a5babce69b6aa3c7db3c70922b8141ec5", null ],
+    [ "pbpt::radiometry::to_string", "d6/dfd/color_8hpp.html#abc9046093d850a5ce296f9f18b62b3b1", null ],
+    [ "pbpt::radiometry::to_string", "d6/dfd/color_8hpp.html#ad347706227929a15a5f30cd62954f10e", null ],
+    [ "pbpt::radiometry::to_string", "d6/dfd/color_8hpp.html#a0ad9d9790d3d13df839cbbbab1e233bc", null ],
+    [ "pbpt::radiometry::white_balance", "d6/dfd/color_8hpp.html#a7aaf36fd5bfc4e100a5e572de68623d1", null ]
+];

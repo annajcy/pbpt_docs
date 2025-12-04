@@ -1,6 +1,17 @@
 var searchData=
 [
-  ['length_0',['length',['../d5/dfd/classpbpt_1_1math_1_1_vector.html#a7010d7e5f2383c5174009b1176e3ece0',1,'pbpt::math::Vector']]],
-  ['length_5fsquared_1',['length_squared',['../d5/dfd/classpbpt_1_1math_1_1_vector.html#a78a8bab6c394bc5253f6b1f26e962465',1,'pbpt::math::Vector']]],
-  ['look_5fat_2',['look_at',['../d0/d29/classpbpt_1_1math_1_1_transform.html#acc114dec8c2da303004a9a07cf3e2a2f',1,'pbpt::math::Transform']]]
+  ['l_0',['L',['../d3/da8/classpbpt_1_1radiometry_1_1_l_a_b.html#abc7569bedc3950115c08bfb64a67df14',1,'pbpt::radiometry::LAB']]],
+  ['l_1',['l',['../de/df6/classpbpt_1_1radiometry_1_1_l_m_s.html#acb01971ad9b7594eef2245da1348785a',1,'pbpt::radiometry::LMS']]],
+  ['lab_2',['LAB',['../d3/da8/classpbpt_1_1radiometry_1_1_l_a_b.html',1,'pbpt::radiometry::LAB&lt; T &gt;'],['../d3/da8/classpbpt_1_1radiometry_1_1_l_a_b.html#af37b70296ec7067a93e806f298794893',1,'pbpt::radiometry::LAB::LAB()'],['../d3/da8/classpbpt_1_1radiometry_1_1_l_a_b.html#a55eb0038404897895dbb1b5825ff3c4c',1,'pbpt::radiometry::LAB::LAB(T L, T a, T b)'],['../d3/da8/classpbpt_1_1radiometry_1_1_l_a_b.html#a046c9126340f4883c721cb38363e01ba',1,'pbpt::radiometry::LAB::LAB(const math::Vector&lt; T, 3 &gt; &amp;vec)']]],
+  ['lambda_5fmax_3',['lambda_max',['../d0/d20/classpbpt_1_1radiometry_1_1_tabular_spectrum_distribution.html#a5fd04058fcec499a87905c55222edc2e',1,'pbpt::radiometry::TabularSpectrumDistribution::lambda_max()'],['../d4/dbe/spectrum__distribution_8hpp.html#a388a368a1cbe72d2480a2d2529e6e4dd',1,'pbpt::radiometry::lambda_max']]],
+  ['lambda_5fmin_4',['lambda_min',['../d0/d20/classpbpt_1_1radiometry_1_1_tabular_spectrum_distribution.html#a88a77088c7d802a0c5e3efbeaaec5a4e',1,'pbpt::radiometry::TabularSpectrumDistribution::lambda_min()'],['../d4/dbe/spectrum__distribution_8hpp.html#a73caefd82be4fc616ccf647ee2e39677',1,'pbpt::radiometry::lambda_min']]],
+  ['length_5',['length',['../de/d3d/classpbpt_1_1math_1_1_vector_ops.html#a979763ab90fe85e0f76f2a9721c7c345',1,'pbpt::math::VectorOps']]],
+  ['length_5fsquared_6',['length_squared',['../de/d3d/classpbpt_1_1math_1_1_vector_ops.html#af2608d7d8ce5ed19cb6d63c24279a1db',1,'pbpt::math::VectorOps']]],
+  ['lmaxvalue_7',['LMaxValue',['../d0/d1d/structpbpt_1_1radiometry_1_1_tabular_spectrum_range.html#a67b8127a437fa26d030d95a08260ff38',1,'pbpt::radiometry::TabularSpectrumRange']]],
+  ['lminvalue_8',['LMinValue',['../d0/d1d/structpbpt_1_1radiometry_1_1_tabular_spectrum_range.html#a040273f676db416817f09d18f940f43a',1,'pbpt::radiometry::TabularSpectrumRange']]],
+  ['lms_9',['LMS',['../de/df6/classpbpt_1_1radiometry_1_1_l_m_s.html',1,'pbpt::radiometry::LMS&lt; T &gt;'],['../de/df6/classpbpt_1_1radiometry_1_1_l_m_s.html#a2bcaa10ef42e402b2907b0fc2ed8009b',1,'pbpt::radiometry::LMS::LMS()'],['../de/df6/classpbpt_1_1radiometry_1_1_l_m_s.html#a47fe633550b3112417697e34ed162b76',1,'pbpt::radiometry::LMS::LMS(T l, T m, T s)'],['../de/df6/classpbpt_1_1radiometry_1_1_l_m_s.html#a4cb737c29f22e2bdd7956357fe9bb9f0',1,'pbpt::radiometry::LMS::LMS(const math::Vector&lt; T, 3 &gt; &amp;vec)']]],
+  ['lms_5fto_5fxyz_5fmatrix_10',['lms_to_xyz_matrix',['../de/df6/classpbpt_1_1radiometry_1_1_l_m_s.html#a9bf502a9e8afb5652f9d79c751fafad4',1,'pbpt::radiometry::LMS']]],
+  ['load_5fdata_11',['load_data',['../d6/dbb/classpbpt_1_1radiometry_1_1_csv_spectrum_data_source.html#ae2616308c95ca9486e9beca8adeca332',1,'pbpt::radiometry::CsvSpectrumDataSource']]],
+  ['local_5fto_5fworld_12',['local_to_world',['../df/dce/classpbpt_1_1geometry_1_1_frame.html#a51f46c8510a945d6de9aeb2d066ca2f4',1,'pbpt::geometry::Frame']]],
+  ['look_5fat_13',['look_at',['../d5/d63/classpbpt_1_1geometry_1_1_transform.html#af8f76ea5a8d640bca8aea735eb12ad40',1,'pbpt::geometry::Transform']]]
 ];

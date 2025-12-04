@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['m_5fcol_5fstart_0',['m_col_start',['../d3/d31/classpbpt_1_1math_1_1_matrix_view.html#a125291aff8064eb8e51adb65f4938f7c',1,'pbpt::math::MatrixView']]],
-  ['m_5foriginal_1',['m_original',['../d3/d31/classpbpt_1_1math_1_1_matrix_view.html#a91d369aad87c7ba1c14aa776533e5f1b',1,'pbpt::math::MatrixView']]],
-  ['m_5frow_5fstart_2',['m_row_start',['../d3/d31/classpbpt_1_1math_1_1_matrix_view.html#a91358361e5475b7ad25ff6ff8885807e',1,'pbpt::math::MatrixView']]],
-  ['m_5fstart_5fptr_3',['m_start_ptr',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html#a31c705ad4c05dc53b50cc66771586fbc',1,'pbpt::math::VectorView']]],
-  ['m_5fstride_4',['m_stride',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html#a25cc317df71b840f7b90f1d44f2d0be1',1,'pbpt::math::VectorView']]]
+  ['c0_0',['c0',['../d4/ddd/structpbpt_1_1radiometry_1_1_r_g_b_sigmoid_polynomial.html#a75f40969b66de0abd9b94ec9a4ca55ed',1,'pbpt::radiometry::RGBSigmoidPolynomial::c0'],['../d6/d19/structpbpt_1_1radiometry_1_1_r_g_b_sigmoid_polynomial_normalized.html#a2ae6a85e21a9a8f43354c4c65fdd2ef7',1,'pbpt::radiometry::RGBSigmoidPolynomialNormalized::c0']]],
+  ['c1_1',['c1',['../d4/ddd/structpbpt_1_1radiometry_1_1_r_g_b_sigmoid_polynomial.html#a586790dc7c7b8a814b247ee55f597ead',1,'pbpt::radiometry::RGBSigmoidPolynomial::c1'],['../d6/d19/structpbpt_1_1radiometry_1_1_r_g_b_sigmoid_polynomial_normalized.html#ad5d5c047f3587e3dd3a46b55c1404ab1',1,'pbpt::radiometry::RGBSigmoidPolynomialNormalized::c1']]],
+  ['c2_2',['c2',['../d4/ddd/structpbpt_1_1radiometry_1_1_r_g_b_sigmoid_polynomial.html#ad5d3c3b7916f6bd9faa90ecf1f28c741',1,'pbpt::radiometry::RGBSigmoidPolynomial::c2'],['../d6/d19/structpbpt_1_1radiometry_1_1_r_g_b_sigmoid_polynomial_normalized.html#a73d4bf936a714b28e359a05002349cb3',1,'pbpt::radiometry::RGBSigmoidPolynomialNormalized::c2']]],
+  ['count_3',['Count',['../d0/d1d/structpbpt_1_1radiometry_1_1_tabular_spectrum_range.html#aaf778b265624eaff12b0402e7306290a',1,'pbpt::radiometry::TabularSpectrumRange']]]
 ];
