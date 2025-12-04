@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pbpt: /Users/jinceyang/Desktop/codebase/pbpt/engine/math/point.hpp File Reference</title>
+<title>pbpt: /Users/jinceyang/Desktop/codebase/graphics/pbpt/src/math/point.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,9 +92,14 @@ $(function(){initNavTree('d0/de4/point_8hpp.html','../../',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Defines a generic, N-dimensional Point class and its geometric operations.  
+<p>Geometric point type built on top of Tuple and Vector.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/d7c/function_8hpp_source.html">math/function.hpp</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;array&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d5b/type__alias_8hpp_source.html">type_alias.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d6f/tuple_8hpp_source.html">tuple.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d16/vector_8hpp_source.html">vector.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../d0/de4/point_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -102,28 +107,45 @@ $(function(){initNavTree('d0/de4/point_8hpp.html','../../',''); });
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:pbpt_3A_3Amath_3A_3APoint_3C_20T_2C_20N_20_3E" id="r_pbpt_3A_3Amath_3A_3APoint_3C_20T_2C_20N_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">pbpt::math::Point&lt; T, N &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template class for an N-dimensional point in space.  <a href="../../d7/d1b/classpbpt_1_1math_1_1_point.html#details">More...</a><br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:pbpt_3A_3Amath" id="r_pbpt_3A_3Amath"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html">pbpt::math</a></td></tr>
-<tr class="memdesc:d1/d2f/namespacepbpt_1_1math"><td class="mdescLeft">&#160;</td><td class="mdescRight">The namespace for math library implementation. <br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Geometric point in N-dimensional space.  <a href="../../d7/d1b/classpbpt_1_1math_1_1_point.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a2e006dcb35d9461e792ef8ccd4bf7de4" id="r_a2e006dcb35d9461e792ef8ccd4bf7de4"><td class="memItemLeft" align="right" valign="top"><a id="a2e006dcb35d9461e792ef8ccd4bf7de4" name="a2e006dcb35d9461e792ef8ccd4bf7de4"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Pt1</b> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 1&gt;</td></tr>
+<tr class="memdesc:a2e006dcb35d9461e792ef8ccd4bf7de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">1D point using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="Default floating-point type (float unless PBPT_FLOAT_64BIT is defined).">Float</a> type. <br /></td></tr>
 <tr class="memitem:a38aae464f14d90a8e81f2d6720070838" id="r_a38aae464f14d90a8e81f2d6720070838"><td class="memItemLeft" align="right" valign="top"><a id="a38aae464f14d90a8e81f2d6720070838" name="a38aae464f14d90a8e81f2d6720070838"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Pt2</b> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 2&gt;</td></tr>
-<tr class="memdesc:a38aae464f14d90a8e81f2d6720070838"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2-dimensional point of type <span class="tt"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a></span>. <br /></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Pt2</b> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 2&gt;</td></tr>
+<tr class="memdesc:a38aae464f14d90a8e81f2d6720070838"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D point using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="Default floating-point type (float unless PBPT_FLOAT_64BIT is defined).">Float</a> type. <br /></td></tr>
 <tr class="memitem:a6571acadeb280b710b17c16897d14a64" id="r_a6571acadeb280b710b17c16897d14a64"><td class="memItemLeft" align="right" valign="top"><a id="a6571acadeb280b710b17c16897d14a64" name="a6571acadeb280b710b17c16897d14a64"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Pt3</b> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 3&gt;</td></tr>
-<tr class="memdesc:a6571acadeb280b710b17c16897d14a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 3-dimensional point of type <span class="tt"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a></span>. <br /></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Pt3</b> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 3&gt;</td></tr>
+<tr class="memdesc:a6571acadeb280b710b17c16897d14a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D point using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="Default floating-point type (float unless PBPT_FLOAT_64BIT is defined).">Float</a> type. <br /></td></tr>
 <tr class="memitem:ac602f90f05b18e9ece16a922e79afc2e" id="r_ac602f90f05b18e9ece16a922e79afc2e"><td class="memItemLeft" align="right" valign="top"><a id="ac602f90f05b18e9ece16a922e79afc2e" name="ac602f90f05b18e9ece16a922e79afc2e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Pt4</b> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 4&gt;</td></tr>
-<tr class="memdesc:ac602f90f05b18e9ece16a922e79afc2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 4-dimensional point of type <span class="tt"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a></span>. <br /></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Pt4</b> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 4&gt;</td></tr>
+<tr class="memdesc:ac602f90f05b18e9ece16a922e79afc2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">4D point using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="Default floating-point type (float unless PBPT_FLOAT_64BIT is defined).">Float</a> type. <br /></td></tr>
+<tr class="memitem:a9e0df1390289d981a1b7f7c15e53e269" id="r_a9e0df1390289d981a1b7f7c15e53e269"><td class="memItemLeft" align="right" valign="top"><a id="a9e0df1390289d981a1b7f7c15e53e269" name="a9e0df1390289d981a1b7f7c15e53e269"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Pt1i</b> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81">Int</a>, 1&gt;</td></tr>
+<tr class="memdesc:a9e0df1390289d981a1b7f7c15e53e269"><td class="mdescLeft">&#160;</td><td class="mdescRight">1D point using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81" title="Signed integer type for math utilities (defaults to 32-bit).">Int</a> type. <br /></td></tr>
+<tr class="memitem:ae1a172679be4f5d53ad1ff7172b680e7" id="r_ae1a172679be4f5d53ad1ff7172b680e7"><td class="memItemLeft" align="right" valign="top"><a id="ae1a172679be4f5d53ad1ff7172b680e7" name="ae1a172679be4f5d53ad1ff7172b680e7"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Pt2i</b> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81">Int</a>, 2&gt;</td></tr>
+<tr class="memdesc:ae1a172679be4f5d53ad1ff7172b680e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D point using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81" title="Signed integer type for math utilities (defaults to 32-bit).">Int</a> type. <br /></td></tr>
+<tr class="memitem:aa90f5992ffa52d497a4b5a0b66e83cf2" id="r_aa90f5992ffa52d497a4b5a0b66e83cf2"><td class="memItemLeft" align="right" valign="top"><a id="aa90f5992ffa52d497a4b5a0b66e83cf2" name="aa90f5992ffa52d497a4b5a0b66e83cf2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Pt3i</b> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81">Int</a>, 3&gt;</td></tr>
+<tr class="memdesc:aa90f5992ffa52d497a4b5a0b66e83cf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D point using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81" title="Signed integer type for math utilities (defaults to 32-bit).">Int</a> type. <br /></td></tr>
+<tr class="memitem:abb5b8cb5c9ecae20252f8b5cb50a378f" id="r_abb5b8cb5c9ecae20252f8b5cb50a378f"><td class="memItemLeft" align="right" valign="top"><a id="abb5b8cb5c9ecae20252f8b5cb50a378f" name="abb5b8cb5c9ecae20252f8b5cb50a378f"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Pt4i</b> = <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81">Int</a>, 4&gt;</td></tr>
+<tr class="memdesc:abb5b8cb5c9ecae20252f8b5cb50a378f"><td class="mdescLeft">&#160;</td><td class="mdescRight">4D point using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81" title="Signed integer type for math utilities (defaults to 32-bit).">Int</a> type. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad3db23adc8e450af977af0fe616dafb1" id="r_ad3db23adc8e450af977af0fe616dafb1"><td class="memTemplParams" colspan="2"><a id="ad3db23adc8e450af977af0fe616dafb1" name="ad3db23adc8e450af977af0fe616dafb1"></a>
+template&lt;typename U, typename T, int N&gt; <br />
+requires (N &gt; 0)</td></tr>
+<tr class="memitem:ad3db23adc8e450af977af0fe616dafb1 template"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::operator+</b> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; U, N &gt; &amp;v, const <a class="el" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">Point</a>&lt; T, N &gt; &amp;p)</td></tr>
+<tr class="memdesc:ad3db23adc8e450af977af0fe616dafb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate a point by a vector. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines a generic, N-dimensional Point class and its geometric operations. </p>
-<p>This file provides a <span class="tt">Point</span> class that represents a location in N-dimensional space. It is designed to work in tandem with the <span class="tt">Vec</span> class, enforcing a strict conceptual separation between points (locations) and vectors (displacements). The operators are overloaded to reflect valid affine geometry operations, such as <span class="tt">Point - Point = Vector</span> and <span class="tt">Point + Vector = Point</span>. </p>
+<div class="textblock"><p>Geometric point type built on top of Tuple and Vector. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
@@ -137,7 +159,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Pt4</b> 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="../../dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a href="../../dir_6092418e369ca819ce866d11ef016080.html">math</a></li><li class="navelem"><a href="../../d0/de4/point_8hpp.html">point.hpp</a></li>
+    <li class="navelem"><a href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="../../dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li><li class="navelem"><a href="../../d0/de4/point_8hpp.html">point.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

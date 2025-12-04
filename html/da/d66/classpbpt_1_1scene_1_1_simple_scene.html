@@ -91,18 +91,109 @@ $(function(){initNavTree('da/d66/classpbpt_1_1scene_1_1_simple_scene.html','../.
   <div class="headertitle"><div class="title">pbpt::scene::SimpleScene&lt; T &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Minimal sphere-based scene with spectral rendering support.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d5/d9b/scene_8hpp_source.html">scene.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:SceneObject" id="r_SceneObject"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d51/structpbpt_1_1scene_1_1_simple_scene_1_1_scene_object.html">SceneObject</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renderable scene primitive consisting of a sphere and an albedo.  <a href="../../d6/d51/structpbpt_1_1scene_1_1_simple_scene_1_1_scene_object.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aadc5e94eeea3f124f37d7bed96f49979" id="r_aadc5e94eeea3f124f37d7bed96f49979"><td class="memItemLeft" align="right" valign="top"><a id="aadc5e94eeea3f124f37d7bed96f49979" name="aadc5e94eeea3f124f37d7bed96f49979"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SimpleScene</b> (const <a class="el" href="../../d5/dbe/classpbpt_1_1camera_1_1_thin_lens_perspective_camera.html">camera::ThinLensPerspectiveCamera</a>&lt; T &gt; &amp;camera, const std::vector&lt; <a class="el" href="../../d6/d51/structpbpt_1_1scene_1_1_simple_scene_1_1_scene_object.html">SceneObject</a> &gt; &amp;scene_objects, radiometry::constant::SwatchReflectance background_reflectance=radiometry::constant::SwatchReflectance::Cyan, <a class="el" href="../../dd/dbc/classpbpt_1_1camera_1_1_tent_filter.html">PixelFilterType</a> pixel_filter=<a class="el" href="../../dd/dbc/classpbpt_1_1camera_1_1_tent_filter.html">PixelFilterType</a>{})</td></tr>
-<tr class="memitem:abdfbb045116375ef994b925352c4639b" id="r_abdfbb045116375ef994b925352c4639b"><td class="memItemLeft" align="right" valign="top"><a id="abdfbb045116375ef994b925352c4639b" name="abdfbb045116375ef994b925352c4639b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (const std::filesystem::path &amp;output_path=std::filesystem::path(&quot;scene.exr&quot;)) const</td></tr>
+<tr class="memitem:aadc5e94eeea3f124f37d7bed96f49979" id="r_aadc5e94eeea3f124f37d7bed96f49979"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadc5e94eeea3f124f37d7bed96f49979">SimpleScene</a> (const <a class="el" href="../../d5/dbe/classpbpt_1_1camera_1_1_thin_lens_perspective_camera.html">camera::ThinLensPerspectiveCamera</a>&lt; T &gt; &amp;camera, const std::vector&lt; <a class="el" href="../../d6/d51/structpbpt_1_1scene_1_1_simple_scene_1_1_scene_object.html">SceneObject</a> &gt; &amp;scene_objects, radiometry::constant::SwatchReflectance background_reflectance=radiometry::constant::SwatchReflectance::Cyan, <a class="el" href="../../dd/dbc/classpbpt_1_1camera_1_1_tent_filter.html">PixelFilterType</a> pixel_filter=<a class="el" href="../../dd/dbc/classpbpt_1_1camera_1_1_tent_filter.html">PixelFilterType</a>{})</td></tr>
+<tr class="memdesc:aadc5e94eeea3f124f37d7bed96f49979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a simple scene with a camera and a set of spheres.  <br /></td></tr>
+<tr class="memitem:abdfbb045116375ef994b925352c4639b" id="r_abdfbb045116375ef994b925352c4639b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdfbb045116375ef994b925352c4639b">render</a> (const std::filesystem::path &amp;output_path=std::filesystem::path(&quot;scene.exr&quot;)) const</td></tr>
+<tr class="memdesc:abdfbb045116375ef994b925352c4639b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the scene to an EXR file.  <br /></td></tr>
 </table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
+class pbpt::scene::SimpleScene&lt; T &gt;</div><p>Minimal sphere-based scene with spectral rendering support. </p>
+<p>Provides a helper to set up a thin-lens camera, simple objects, and render them to an EXR image using the project's radiometric pipeline. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aadc5e94eeea3f124f37d7bed96f49979" name="aadc5e94eeea3f124f37d7bed96f49979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadc5e94eeea3f124f37d7bed96f49979">&#9670;&#160;</a></span>SimpleScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d66/classpbpt_1_1scene_1_1_simple_scene.html">pbpt::scene::SimpleScene</a>&lt; T &gt;::SimpleScene </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/dbe/classpbpt_1_1camera_1_1_thin_lens_perspective_camera.html">camera::ThinLensPerspectiveCamera</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>camera</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d6/d51/structpbpt_1_1scene_1_1_simple_scene_1_1_scene_object.html">SceneObject</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>scene_objects</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">radiometry::constant::SwatchReflectance</td>          <td class="paramname"><span class="paramname"><em>background_reflectance</em></span><span class="paramdefsep"> = </span><span class="paramdefval">radiometry::constant::SwatchReflectance::Cyan</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/dbc/classpbpt_1_1camera_1_1_tent_filter.html">PixelFilterType</a></td>          <td class="paramname"><span class="paramname"><em>pixel_filter</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../dd/dbc/classpbpt_1_1camera_1_1_tent_filter.html">PixelFilterType</a>{}</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a simple scene with a camera and a set of spheres. </p>
+<p>Precomputes spectral albedo distributions for each scene object. </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="abdfbb045116375ef994b925352c4639b" name="abdfbb045116375ef994b925352c4639b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdfbb045116375ef994b925352c4639b">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../da/d66/classpbpt_1_1scene_1_1_simple_scene.html">pbpt::scene::SimpleScene</a>&lt; T &gt;::render </td>
+          <td>(</td>
+          <td class="paramtype">const std::filesystem::path &amp;</td>          <td class="paramname"><span class="paramname"><em>output_path</em></span><span class="paramdefsep"> = </span><span class="paramdefval">std::filesystem::path(&quot;scene.exr&quot;)</span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Render the scene to an EXR file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output_path</td><td>Destination path (default: <span class="tt">scene.exr</span>). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/Users/jinceyang/Desktop/codebase/graphics/pbpt/src/scene/<a class="el" href="../../d5/d9b/scene_8hpp_source.html">scene.hpp</a></li>
 </ul>

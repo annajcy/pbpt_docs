@@ -31,20 +31,6 @@ var annotated_dup =
         [ "Transform", "d5/d63/classpbpt_1_1geometry_1_1_transform.html", "d5/d63/classpbpt_1_1geometry_1_1_transform" ],
         [ "TransformDecompositionResult", "d0/d89/structpbpt_1_1geometry_1_1_transform_decomposition_result.html", "d0/d89/structpbpt_1_1geometry_1_1_transform_decomposition_result" ]
       ] ],
-      [ "integrator", null, [
-        [ "Distribution", "d4/d53/classpbpt_1_1integrator_1_1_distribution.html", null ],
-        [ "Integrator", "d2/d0f/classpbpt_1_1integrator_1_1_integrator.html", null ],
-        [ "MCUniformSampler", "dc/d6d/classpbpt_1_1integrator_1_1_m_c_uniform_sampler.html", null ],
-        [ "MonteCarloIntegrator1D", "dc/d15/classpbpt_1_1integrator_1_1_monte_carlo_integrator1_d.html", null ],
-        [ "MonteCarloIntegratorND", "dd/d3b/classpbpt_1_1integrator_1_1_monte_carlo_integrator_n_d.html", null ],
-        [ "NormalDistribution1D", "d2/d88/classpbpt_1_1integrator_1_1_normal_distribution1_d.html", null ],
-        [ "Sampler", "d2/d68/classpbpt_1_1integrator_1_1_sampler.html", null ],
-        [ "SamplerEvaluator", "d4/df9/classpbpt_1_1integrator_1_1_sampler_evaluator.html", "d4/df9/classpbpt_1_1integrator_1_1_sampler_evaluator" ],
-        [ "StratifiedSampler", "d2/dee/classpbpt_1_1integrator_1_1_stratified_sampler.html", null ],
-        [ "UniformDistribution1D", "d9/de0/classpbpt_1_1integrator_1_1_uniform_distribution1_d.html", null ],
-        [ "UniformDistributionND", "d5/d63/classpbpt_1_1integrator_1_1_uniform_distribution_n_d.html", null ],
-        [ "UniformSampler", "d1/da5/classpbpt_1_1integrator_1_1_uniform_sampler.html", null ]
-      ] ],
       [ "math", null, [
         [ "Homogeneous", "d8/d13/classpbpt_1_1math_1_1_homogeneous.html", "d8/d13/classpbpt_1_1math_1_1_homogeneous" ],
         [ "Matrix", "da/d16/classpbpt_1_1math_1_1_matrix.html", "da/d16/classpbpt_1_1math_1_1_matrix" ],

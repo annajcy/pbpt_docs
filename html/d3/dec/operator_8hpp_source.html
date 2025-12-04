@@ -91,60 +91,82 @@ $(function(){initNavTree('d3/dec/operator_8hpp_source.html','../../',''); });
   <div class="headertitle"><div class="title">operator.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;function.hpp&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>pbpt::math {</div>
+<a href="../../d3/dec/operator_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> A, <span class="keyword">typename</span> B&gt;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> is_equal(A a, B b) {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">using </span>T = std::common_type_t&lt;A, B&gt;;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_floating_point_v&lt;T&gt;) {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keywordflow">return</span> pbpt::math::abs(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(a) - <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(b)) &lt; epsilon_v&lt;T&gt;;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordflow">return</span> a == b;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    }</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> A, <span class="keyword">typename</span> B&gt;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> is_not_equal(A a, B b) {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">return</span> !is_equal(a, b);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> A, <span class="keyword">typename</span> B&gt;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> is_greater(A a, B b) {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">using </span>T = std::common_type_t&lt;A, B&gt;;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_floating_point_v&lt;T&gt;) {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(a) - <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(b) &gt; epsilon_v&lt;T&gt;;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">return</span> a &gt; b;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> A, <span class="keyword">typename</span> B&gt;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> is_less(A a, B b) {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> is_greater(b, a);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> A, <span class="keyword">typename</span> B&gt;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> is_less_equal(A a, B b) {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">return</span> !is_greater(a, b);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> A, <span class="keyword">typename</span> B&gt;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> is_greater_equal(A a, B b) {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> !is_less(a, b);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}  <span class="comment">// namespace pbpt::math</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="../../db/d9d/math_2function_8hpp.html">function.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>pbpt::math {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> A, <span class="keyword">typename</span> B&gt;</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d3/dec/operator_8hpp.html#a98ac5e6f8a5743707dbda881fd9c1e19">   15</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/dec/operator_8hpp.html#a98ac5e6f8a5743707dbda881fd9c1e19">is_equal</a>(A a, B b) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">using </span>T = std::common_type_t&lt;A, B&gt;;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_floating_point_v&lt;T&gt;) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#a5a04e35d2cc90aa660f0eba9f4c5554e">pbpt::math::abs</a>(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(a) - <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(b)) &lt; <a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a84521be51f7b4c1aa7bec84b0f034d0a">epsilon_v&lt;T&gt;</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">return</span> a == b;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> A, <span class="keyword">typename</span> B&gt;</div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d3/dec/operator_8hpp.html#ac49708cc95db7590bb0dfa6ef90a796b">   26</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/dec/operator_8hpp.html#ac49708cc95db7590bb0dfa6ef90a796b">is_not_equal</a>(A a, B b) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">return</span> !<a class="code hl_function" href="../../d3/dec/operator_8hpp.html#a98ac5e6f8a5743707dbda881fd9c1e19">is_equal</a>(a, b);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> A, <span class="keyword">typename</span> B&gt;</div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d3/dec/operator_8hpp.html#ae1e457db7f393ed62f99f3b916478488">   34</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/dec/operator_8hpp.html#ae1e457db7f393ed62f99f3b916478488">is_greater</a>(A a, B b) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">using </span>T = std::common_type_t&lt;A, B&gt;;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_floating_point_v&lt;T&gt;) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(a) - <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(b) &gt; <a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a84521be51f7b4c1aa7bec84b0f034d0a">epsilon_v&lt;T&gt;</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> a &gt; b;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> A, <span class="keyword">typename</span> B&gt;</div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d3/dec/operator_8hpp.html#ac41e32dbfbc28f02ab7ad6c5de6b5bea">   45</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/dec/operator_8hpp.html#ac41e32dbfbc28f02ab7ad6c5de6b5bea">is_less</a>(A a, B b) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d3/dec/operator_8hpp.html#ae1e457db7f393ed62f99f3b916478488">is_greater</a>(b, a);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> A, <span class="keyword">typename</span> B&gt;</div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d3/dec/operator_8hpp.html#a00de20922c7f75525a0ec55fdd25e23f">   51</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/dec/operator_8hpp.html#a00de20922c7f75525a0ec55fdd25e23f">is_less_equal</a>(A a, B b) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">return</span> !<a class="code hl_function" href="../../d3/dec/operator_8hpp.html#ae1e457db7f393ed62f99f3b916478488">is_greater</a>(a, b);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> A, <span class="keyword">typename</span> B&gt;</div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d3/dec/operator_8hpp.html#a497fc3297424ed6997c30ef4fa6dfa5a">   57</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/dec/operator_8hpp.html#a497fc3297424ed6997c30ef4fa6dfa5a">is_greater_equal</a>(A a, B b) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> !<a class="code hl_function" href="../../d3/dec/operator_8hpp.html#ac41e32dbfbc28f02ab7ad6c5de6b5bea">is_less</a>(a, b);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}  <span class="comment">// namespace pbpt::math</span></div>
+<div class="ttc" id="amath_2function_8hpp_html"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html">function.hpp</a></div><div class="ttdoc">Scalar math constants and utility functions (epsilon, pi, gamma, abs, comparisons).</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_a5a04e35d2cc90aa660f0eba9f4c5554e"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#a5a04e35d2cc90aa660f0eba9f4c5554e">pbpt::math::abs</a></div><div class="ttdeci">constexpr T abs(T x)</div><div class="ttdoc">Absolute value that works for signed integers and floats.</div><div class="ttdef"><b>Definition</b> function.hpp:50</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_a84521be51f7b4c1aa7bec84b0f034d0a"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#a84521be51f7b4c1aa7bec84b0f034d0a">pbpt::math::epsilon_v</a></div><div class="ttdeci">constexpr T epsilon_v</div><div class="ttdoc">Machine epsilon used for floating-point comparisons.</div><div class="ttdef"><b>Definition</b> function.hpp:21</div></div>
+<div class="ttc" id="aoperator_8hpp_html_a00de20922c7f75525a0ec55fdd25e23f"><div class="ttname"><a href="../../d3/dec/operator_8hpp.html#a00de20922c7f75525a0ec55fdd25e23f">pbpt::math::is_less_equal</a></div><div class="ttdeci">constexpr bool is_less_equal(A a, B b)</div><div class="ttdoc">Less-or-equal comparison aware of floating-point epsilon.</div><div class="ttdef"><b>Definition</b> operator.hpp:51</div></div>
+<div class="ttc" id="aoperator_8hpp_html_a497fc3297424ed6997c30ef4fa6dfa5a"><div class="ttname"><a href="../../d3/dec/operator_8hpp.html#a497fc3297424ed6997c30ef4fa6dfa5a">pbpt::math::is_greater_equal</a></div><div class="ttdeci">constexpr bool is_greater_equal(A a, B b)</div><div class="ttdoc">Greater-or-equal comparison aware of floating-point epsilon.</div><div class="ttdef"><b>Definition</b> operator.hpp:57</div></div>
+<div class="ttc" id="aoperator_8hpp_html_a98ac5e6f8a5743707dbda881fd9c1e19"><div class="ttname"><a href="../../d3/dec/operator_8hpp.html#a98ac5e6f8a5743707dbda881fd9c1e19">pbpt::math::is_equal</a></div><div class="ttdeci">constexpr bool is_equal(A a, B b)</div><div class="ttdoc">Equality comparison with epsilon tolerance for floats.</div><div class="ttdef"><b>Definition</b> operator.hpp:15</div></div>
+<div class="ttc" id="aoperator_8hpp_html_ac41e32dbfbc28f02ab7ad6c5de6b5bea"><div class="ttname"><a href="../../d3/dec/operator_8hpp.html#ac41e32dbfbc28f02ab7ad6c5de6b5bea">pbpt::math::is_less</a></div><div class="ttdeci">constexpr bool is_less(A a, B b)</div><div class="ttdoc">Less-than comparison aware of floating-point epsilon.</div><div class="ttdef"><b>Definition</b> operator.hpp:45</div></div>
+<div class="ttc" id="aoperator_8hpp_html_ac49708cc95db7590bb0dfa6ef90a796b"><div class="ttname"><a href="../../d3/dec/operator_8hpp.html#ac49708cc95db7590bb0dfa6ef90a796b">pbpt::math::is_not_equal</a></div><div class="ttdeci">constexpr bool is_not_equal(A a, B b)</div><div class="ttdoc">Negation of is_equal.</div><div class="ttdef"><b>Definition</b> operator.hpp:26</div></div>
+<div class="ttc" id="aoperator_8hpp_html_ae1e457db7f393ed62f99f3b916478488"><div class="ttname"><a href="../../d3/dec/operator_8hpp.html#ae1e457db7f393ed62f99f3b916478488">pbpt::math::is_greater</a></div><div class="ttdeci">constexpr bool is_greater(A a, B b)</div><div class="ttdoc">Greater-than comparison aware of floating-point epsilon.</div><div class="ttdef"><b>Definition</b> operator.hpp:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="../../dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li><li class="navelem"><b>operator.hpp</b></li>
+    <li class="navelem"><a href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="../../dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li><li class="navelem"><a href="../../d3/dec/operator_8hpp.html">operator.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

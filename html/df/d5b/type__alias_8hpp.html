@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pbpt: /Users/jinceyang/Desktop/codebase/pbpt/engine/math/type_alias.hpp File Reference</title>
+<title>pbpt: /Users/jinceyang/Desktop/codebase/graphics/pbpt/src/math/type_alias.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,24 +92,37 @@ $(function(){initNavTree('df/d5b/type__alias_8hpp.html','../../',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Defines the primary floating-point type alias for the math library.  
+<p>Fundamental math type aliases (Float, Int) and numeric constants.  
 <a href="#details">More...</a></p>
 
 <p><a href="../../df/d5b/type__alias_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:pbpt_3A_3Amath" id="r_pbpt_3A_3Amath"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html">pbpt::math</a></td></tr>
-<tr class="memdesc:d1/d2f/namespacepbpt_1_1math"><td class="mdescLeft">&#160;</td><td class="mdescRight">The namespace for math library implementation. <br /></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aed65897bc877635b104e2ce04397f5c5" id="r_aed65897bc877635b104e2ce04397f5c5"><td class="memItemLeft" align="right" valign="top"><a id="aed65897bc877635b104e2ce04397f5c5" name="aed65897bc877635b104e2ce04397f5c5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>DOUBLE_EPS</b>&#160;&#160;&#160;1e-10</td></tr>
+<tr class="memdesc:aed65897bc877635b104e2ce04397f5c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Epsilon threshold for double precision operations. <br /></td></tr>
+<tr class="memitem:a1c645040f39653d8ed49157cda21617e" id="r_a1c645040f39653d8ed49157cda21617e"><td class="memItemLeft" align="right" valign="top"><a id="a1c645040f39653d8ed49157cda21617e" name="a1c645040f39653d8ed49157cda21617e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>FLOAT_EPS</b>&#160;&#160;&#160;1e-5</td></tr>
+<tr class="memdesc:a1c645040f39653d8ed49157cda21617e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Epsilon threshold for single precision operations. <br /></td></tr>
+<tr class="memitem:ae71449b1cc6e6250b91f539153a7a0d3" id="r_ae71449b1cc6e6250b91f539153a7a0d3"><td class="memItemLeft" align="right" valign="top"><a id="ae71449b1cc6e6250b91f539153a7a0d3" name="ae71449b1cc6e6250b91f539153a7a0d3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>M_PI</b>&#160;&#160;&#160;3.14159265358979323846</td></tr>
+<tr class="memdesc:ae71449b1cc6e6250b91f539153a7a0d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">π constant used when the platform does not provide it. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a1bde309b06d14a6ec4176c4308f2fe6e" id="r_a1bde309b06d14a6ec4176c4308f2fe6e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">pbpt::math::Float</a> = float</td></tr>
-<tr class="memdesc:a1bde309b06d14a6ec4176c4308f2fe6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The primary floating-point type used throughout the math library.  <br /></td></tr>
+<tr class="memitem:a1bde309b06d14a6ec4176c4308f2fe6e" id="r_a1bde309b06d14a6ec4176c4308f2fe6e"><td class="memItemLeft" align="right" valign="top"><a id="a1bde309b06d14a6ec4176c4308f2fe6e" name="a1bde309b06d14a6ec4176c4308f2fe6e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Float</b> = float</td></tr>
+<tr class="memdesc:a1bde309b06d14a6ec4176c4308f2fe6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default floating-point type (float unless PBPT_FLOAT_64BIT is defined). <br /></td></tr>
+<tr class="memitem:a717f7b49e38efee39c9e77c8378baf81" id="r_a717f7b49e38efee39c9e77c8378baf81"><td class="memItemLeft" align="right" valign="top"><a id="a717f7b49e38efee39c9e77c8378baf81" name="a717f7b49e38efee39c9e77c8378baf81"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Int</b> = int</td></tr>
+<tr class="memdesc:a717f7b49e38efee39c9e77c8378baf81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signed integer type for math utilities (defaults to 32-bit). <br /></td></tr>
+<tr class="memitem:ac14c74d05edcc01130b66805e8e601f3" id="r_ac14c74d05edcc01130b66805e8e601f3"><td class="memItemLeft" align="right" valign="top"><a id="ac14c74d05edcc01130b66805e8e601f3" name="ac14c74d05edcc01130b66805e8e601f3"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::UInt</b> = unsigned int</td></tr>
+<tr class="memdesc:ac14c74d05edcc01130b66805e8e601f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsigned integer type for math utilities (defaults to 32-bit). <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines the primary floating-point type alias for the math library. </p>
-<p>This header centralizes the floating-point precision for the entire <a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html" title="The namespace for math library implementation.">pbpt::math</a> namespace. By changing the definition here (or by defining FLOAT_64BIT in the build system), the precision of all calculations (in vectors, points, rays, etc.) can be switched between single and double precision. </p>
+<div class="textblock"><p>Fundamental math type aliases (Float, Int) and numeric constants. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
@@ -123,7 +136,7 @@ Typedefs</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="../../dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a href="../../dir_6092418e369ca819ce866d11ef016080.html">math</a></li><li class="navelem"><a href="../../df/d5b/type__alias_8hpp.html">type_alias.hpp</a></li>
+    <li class="navelem"><a href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="../../dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li><li class="navelem"><a href="../../df/d5b/type__alias_8hpp.html">type_alias.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

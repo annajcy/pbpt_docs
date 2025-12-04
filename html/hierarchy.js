@@ -31,15 +31,7 @@ var hierarchy =
     [ "pbpt::camera::CameraSample< T >", "d6/dfe/structpbpt_1_1camera_1_1_camera_sample.html", null ],
     [ "pbpt::radiometry::CsvSpectrumDataSource< T >", "d6/dbb/classpbpt_1_1radiometry_1_1_csv_spectrum_data_source.html", null ],
     [ "pbpt::geometry::DirectionalCone< T >", "d0/d71/classpbpt_1_1geometry_1_1_directional_cone.html", null ],
-    [ "pbpt::integrator::Distribution< N >", "d4/d53/classpbpt_1_1integrator_1_1_distribution.html", [
-      [ "pbpt::integrator::UniformDistributionND< N >", "d5/d63/classpbpt_1_1integrator_1_1_uniform_distribution_n_d.html", null ]
-    ] ],
-    [ "pbpt::integrator::Distribution< 1 >", "d4/d53/classpbpt_1_1integrator_1_1_distribution.html", [
-      [ "pbpt::integrator::NormalDistribution1D", "d2/d88/classpbpt_1_1integrator_1_1_normal_distribution1_d.html", null ],
-      [ "pbpt::integrator::UniformDistribution1D", "d9/de0/classpbpt_1_1integrator_1_1_uniform_distribution1_d.html", null ]
-    ] ],
     [ "pbpt::math::Matrix< T, R, C >::EchelonResult", "d9/db7/structpbpt_1_1math_1_1_matrix_1_1_echelon_result.html", null ],
-    [ "pbpt::integrator::SamplerEvaluator< N >::EvaluationResult", "df/d3d/structpbpt_1_1integrator_1_1_sampler_evaluator_1_1_evaluation_result.html", null ],
     [ "pbpt::camera::Film< Derived, T >", "d9/dad/classpbpt_1_1camera_1_1_film.html", null ],
     [ "pbpt::camera::Film< RGBFilm< T, PixelSensorType >, T >", "d9/dad/classpbpt_1_1camera_1_1_film.html", [
       [ "pbpt::camera::RGBFilm< T, PixelSensorType >", "d9/d35/classpbpt_1_1camera_1_1_r_g_b_film.html", null ]
@@ -60,12 +52,6 @@ var hierarchy =
     [ "pbpt::radiometry::IntegrableDomain< UniformHemisphereDomain< T >, T >", "dc/ddf/classpbpt_1_1radiometry_1_1_integrable_domain.html", [
       [ "pbpt::radiometry::UniformHemisphereDomain< T >", "d2/dea/classpbpt_1_1radiometry_1_1_uniform_hemisphere_domain.html", null ]
     ] ],
-    [ "pbpt::integrator::Integrator< N >", "d2/d0f/classpbpt_1_1integrator_1_1_integrator.html", [
-      [ "pbpt::integrator::MonteCarloIntegratorND< N >", "dd/d3b/classpbpt_1_1integrator_1_1_monte_carlo_integrator_n_d.html", null ]
-    ] ],
-    [ "pbpt::integrator::Integrator< 1 >", "d2/d0f/classpbpt_1_1integrator_1_1_integrator.html", [
-      [ "pbpt::integrator::MonteCarloIntegrator1D", "dc/d15/classpbpt_1_1integrator_1_1_monte_carlo_integrator1_d.html", null ]
-    ] ],
     [ "pbpt::geometry::Interaction< T, Derived >", "df/dbc/classpbpt_1_1geometry_1_1_interaction.html", null ],
     [ "pbpt::geometry::Interaction< T, SurfaceInteraction< T > >", "df/dbc/classpbpt_1_1geometry_1_1_interaction.html", [
       [ "pbpt::geometry::SurfaceInteraction< T >", "dd/d8c/classpbpt_1_1geometry_1_1_surface_interaction.html", null ]
@@ -73,7 +59,6 @@ var hierarchy =
     [ "pbpt::shape::Sphere< T >::IntersectionResult< U >", "d7/d49/structpbpt_1_1shape_1_1_sphere_1_1_intersection_result.html", null ],
     [ "pbpt::math::Matrix< T, R, C >", "da/d16/classpbpt_1_1math_1_1_matrix.html", null ],
     [ "pbpt::math::MatrixView< T, R, C, ViewR, ViewC >", "d3/d31/classpbpt_1_1math_1_1_matrix_view.html", null ],
-    [ "pbpt::integrator::MCUniformSampler", "dc/d6d/classpbpt_1_1integrator_1_1_m_c_uniform_sampler.html", null ],
     [ "pbpt::math::OctahedralVector< T >", "d5/d6d/classpbpt_1_1math_1_1_octahedral_vector.html", null ],
     [ "pbpt::camera::RGBFilm< T, PixelSensorType >::Pixel", "d2/d39/structpbpt_1_1camera_1_1_r_g_b_film_1_1_pixel.html", null ],
     [ "pbpt::camera::PixelFilter< T, Derived >", "d6/d55/classpbpt_1_1camera_1_1_pixel_filter.html", null ],
@@ -98,11 +83,6 @@ var hierarchy =
     [ "pbpt::radiometry::RGBSigmoidPolynomial< T >", "d4/ddd/structpbpt_1_1radiometry_1_1_r_g_b_sigmoid_polynomial.html", null ],
     [ "pbpt::radiometry::RGBSigmoidPolynomialNormalized< T >", "d6/d19/structpbpt_1_1radiometry_1_1_r_g_b_sigmoid_polynomial_normalized.html", null ],
     [ "pbpt::radiometry::RGBSigmoidPolynomialOptimizationResult< T >", "d0/d37/structpbpt_1_1radiometry_1_1_r_g_b_sigmoid_polynomial_optimization_result.html", null ],
-    [ "pbpt::integrator::Sampler< N >", "d2/d68/classpbpt_1_1integrator_1_1_sampler.html", [
-      [ "pbpt::integrator::StratifiedSampler< N >", "d2/dee/classpbpt_1_1integrator_1_1_stratified_sampler.html", null ],
-      [ "pbpt::integrator::UniformSampler< N >", "d1/da5/classpbpt_1_1integrator_1_1_uniform_sampler.html", null ]
-    ] ],
-    [ "pbpt::integrator::SamplerEvaluator< N >", "d4/df9/classpbpt_1_1integrator_1_1_sampler_evaluator.html", null ],
     [ "pbpt::radiometry::ScaledRGB< T >", "d9/d0c/structpbpt_1_1radiometry_1_1_scaled_r_g_b.html", null ],
     [ "pbpt::scene::SimpleScene< T >::SceneObject", "d6/d51/structpbpt_1_1scene_1_1_simple_scene_1_1_scene_object.html", null ],
     [ "pbpt::shape::Shape< Derived, T >", "d8/d97/classpbpt_1_1shape_1_1_shape.html", null ],
@@ -154,6 +134,10 @@ var hierarchy =
     [ "pbpt::geometry::Transform< T >", "d5/d63/classpbpt_1_1geometry_1_1_transform.html", null ],
     [ "pbpt::geometry::TransformDecompositionResult< T >", "d0/d89/structpbpt_1_1geometry_1_1_transform_decomposition_result.html", null ],
     [ "pbpt::math::Tuple< Derived, T, N >", "de/d5c/classpbpt_1_1math_1_1_tuple.html", [
+      [ "pbpt::math::Point< Float, 1 >", "d7/d1b/classpbpt_1_1math_1_1_point.html", null ],
+      [ "pbpt::math::Point< Float, 2 >", "d7/d1b/classpbpt_1_1math_1_1_point.html", null ],
+      [ "pbpt::math::Point< Float, 3 >", "d7/d1b/classpbpt_1_1math_1_1_point.html", null ],
+      [ "pbpt::math::Point< Float, 4 >", "d7/d1b/classpbpt_1_1math_1_1_point.html", null ],
       [ "pbpt::math::Point< Int, 1 >", "d7/d1b/classpbpt_1_1math_1_1_point.html", null ],
       [ "pbpt::math::Point< Int, 2 >", "d7/d1b/classpbpt_1_1math_1_1_point.html", null ],
       [ "pbpt::math::Point< Int, 3 >", "d7/d1b/classpbpt_1_1math_1_1_point.html", null ],
@@ -198,13 +182,6 @@ var hierarchy =
         [ "pbpt::math::Vector< Int, 3 >", "d5/dfd/classpbpt_1_1math_1_1_vector.html", null ],
         [ "pbpt::math::Vector< Int, 4 >", "d5/dfd/classpbpt_1_1math_1_1_vector.html", null ]
       ] ]
-    ] ],
-    [ "pbpt::math::Tuple< Point, Float, N >", "de/d5c/classpbpt_1_1math_1_1_tuple.html", [
-      [ "pbpt::math::Point< Float, 1 >", "d7/d1b/classpbpt_1_1math_1_1_point.html", null ],
-      [ "pbpt::math::Point< Float, 2 >", "d7/d1b/classpbpt_1_1math_1_1_point.html", null ],
-      [ "pbpt::math::Point< Float, 3 >", "d7/d1b/classpbpt_1_1math_1_1_point.html", null ],
-      [ "pbpt::math::Point< Float, 4 >", "d7/d1b/classpbpt_1_1math_1_1_point.html", null ],
-      [ "pbpt::math::Point< Float, N >", "d7/d1b/classpbpt_1_1math_1_1_point.html", null ]
     ] ],
     [ "pbpt::math::Tuple< Point, T, N >", "de/d5c/classpbpt_1_1math_1_1_tuple.html", [
       [ "pbpt::math::Point< T, 2 >", "d7/d1b/classpbpt_1_1math_1_1_point.html", null ],

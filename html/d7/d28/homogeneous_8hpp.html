@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pbpt: /Users/jinceyang/Desktop/codebase/pbpt/engine/math/homogeneous.hpp File Reference</title>
+<title>pbpt: /Users/jinceyang/Desktop/codebase/graphics/pbpt/src/math/homogeneous.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,38 +92,35 @@ $(function(){initNavTree('d7/d28/homogeneous_8hpp.html','../../',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Defines a class for N-dimensional homogeneous coordinates.  
+<p>Homogeneous coordinate type built on top of vector operations.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d0/de4/point_8hpp_source.html">point.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../df/dce/matrix_8hpp_source.html">matrix.hpp</a>&quot;</code><br />
-<code>#include &lt;concepts&gt;</code><br />
-<code>#include &lt;stdexcept&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../db/d9d/math_2function_8hpp_source.html">function.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/dec/operator_8hpp_source.html">operator.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/de4/point_8hpp_source.html">point.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d93/utils_8hpp_source.html">utils.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d16/vector_8hpp_source.html">vector.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d95/vector__ops_8hpp_source.html">vector_ops.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../d7/d28/homogeneous_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:pbpt_3A_3Amath_3A_3AHomogeneous_3C_20T_2C_20N_20_3E" id="r_pbpt_3A_3Amath_3A_3AHomogeneous_3C_20T_2C_20N_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d13/classpbpt_1_1math_1_1_homogeneous.html">pbpt::math::Homogeneous&lt; T, N &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template class for an N-dimensional homogeneous coordinate.  <a href="../../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#details">More...</a><br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:pbpt_3A_3Amath" id="r_pbpt_3A_3Amath"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html">pbpt::math</a></td></tr>
-<tr class="memdesc:d1/d2f/namespacepbpt_1_1math"><td class="mdescLeft">&#160;</td><td class="mdescRight">The namespace for math library implementation. <br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d8/d13/classpbpt_1_1math_1_1_homogeneous.html" title="Homogeneous coordinates built on top of a vector.">Homogeneous</a> coordinates built on top of a vector.  <a href="../../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a28d113d550c5ac180b78d79c352d7db5" id="r_a28d113d550c5ac180b78d79c352d7db5"><td class="memItemLeft" align="right" valign="top"><a id="a28d113d550c5ac180b78d79c352d7db5" name="a28d113d550c5ac180b78d79c352d7db5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Homo4</b> = <a class="el" href="../../d8/d13/classpbpt_1_1math_1_1_homogeneous.html">Homogeneous</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 4&gt;</td></tr>
+<tr class="memdesc:a28d113d550c5ac180b78d79c352d7db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">4D homogeneous coordinate using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="Default floating-point type (float unless PBPT_FLOAT_64BIT is defined).">Float</a>. <br /></td></tr>
 <tr class="memitem:a3ff9c806ca0a99e5adcda8a50f74d4b6" id="r_a3ff9c806ca0a99e5adcda8a50f74d4b6"><td class="memItemLeft" align="right" valign="top"><a id="a3ff9c806ca0a99e5adcda8a50f74d4b6" name="a3ff9c806ca0a99e5adcda8a50f74d4b6"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Homo3</b> = <a class="el" href="../../d8/d13/classpbpt_1_1math_1_1_homogeneous.html">Homogeneous</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 3&gt;</td></tr>
-<tr class="memdesc:a3ff9c806ca0a99e5adcda8a50f74d4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 3-dimensional homogeneous coordinate using the library's default <span class="tt"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a></span> type. <br /></td></tr>
-<tr class="memitem:a930bc5001b7bc56fb4779c0b0a26ef01" id="r_a930bc5001b7bc56fb4779c0b0a26ef01"><td class="memItemLeft" align="right" valign="top"><a id="a930bc5001b7bc56fb4779c0b0a26ef01" name="a930bc5001b7bc56fb4779c0b0a26ef01"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Homo2</b> = <a class="el" href="../../d8/d13/classpbpt_1_1math_1_1_homogeneous.html">Homogeneous</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 2&gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Homo3</b> = <a class="el" href="../../d8/d13/classpbpt_1_1math_1_1_homogeneous.html">Homogeneous</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 3&gt;</td></tr>
+<tr class="memdesc:a3ff9c806ca0a99e5adcda8a50f74d4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D homogeneous coordinate using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="Default floating-point type (float unless PBPT_FLOAT_64BIT is defined).">Float</a>. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines a class for N-dimensional homogeneous coordinates. </p>
-<p>This file provides the <span class="tt">Homo</span> class, which is essential for performing 3D transformations in a unified manner. It allows points and vectors to be treated consistently when multiplied by transformation matrices. The key idea is to represent an N-dimensional concept using an (N+1)-dimensional vector. </p>
+<div class="textblock"><p>Homogeneous coordinate type built on top of vector operations. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
@@ -137,7 +134,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Homo2</b
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="../../dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a href="../../dir_6092418e369ca819ce866d11ef016080.html">math</a></li><li class="navelem"><a href="../../d7/d28/homogeneous_8hpp.html">homogeneous.hpp</a></li>
+    <li class="navelem"><a href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="../../dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li><li class="navelem"><a href="../../d7/d28/homogeneous_8hpp.html">homogeneous.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

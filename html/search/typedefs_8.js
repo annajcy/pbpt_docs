@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['radiance_0',['Radiance',['../dc/da5/radiometry__units_8hpp.html#a2e86b1617cb849b40e8b917b4868ce0e',1,'pbpt::radiometry']]],
-  ['ray2_1',['Ray2',['../db/d1d/ray_8hpp.html#a3e67b3672577a5a097bc1a8635bdbf0d',1,'pbpt::geometry']]],
-  ['ray3_2',['Ray3',['../db/d1d/ray_8hpp.html#a3bdca197783b7e98b9a1005d6800cf90',1,'pbpt::geometry']]],
-  ['raydiff2_3',['RayDiff2',['../db/d1d/ray_8hpp.html#ab7f1d096605e0fd95ab130bc582549c2',1,'pbpt::geometry']]],
-  ['raydiff3_4',['RayDiff3',['../db/d1d/ray_8hpp.html#a2d6d6b5d698d7858be288a63fe920f4b',1,'pbpt::geometry']]],
-  ['rowview_5',['RowView',['../d3/d31/classpbpt_1_1math_1_1_matrix_view.html#a463acda721061d90dd64f34bfd0fde67',1,'pbpt::math::MatrixView::RowView'],['../da/d16/classpbpt_1_1math_1_1_matrix.html#aa07ec5b76a50d69f4a0249434e47a2c5',1,'pbpt::math::Matrix::RowView']]]
+  ['promote_5fint_5fto_5ffloat_5ft_0',['promote_int_to_float_t',['../df/d93/utils_8hpp.html#a24a6bccff99271e274d6c8c417a4a397',1,'pbpt::math']]],
+  ['pt1_1',['Pt1',['../d0/de4/point_8hpp.html#a2e006dcb35d9461e792ef8ccd4bf7de4',1,'pbpt::math']]],
+  ['pt1i_2',['Pt1i',['../d0/de4/point_8hpp.html#a9e0df1390289d981a1b7f7c15e53e269',1,'pbpt::math']]],
+  ['pt2_3',['Pt2',['../d0/de4/point_8hpp.html#a38aae464f14d90a8e81f2d6720070838',1,'pbpt::math']]],
+  ['pt2i_4',['Pt2i',['../d0/de4/point_8hpp.html#ae1a172679be4f5d53ad1ff7172b680e7',1,'pbpt::math']]],
+  ['pt3_5',['Pt3',['../d0/de4/point_8hpp.html#a6571acadeb280b710b17c16897d14a64',1,'pbpt::math']]],
+  ['pt3i_6',['Pt3i',['../d0/de4/point_8hpp.html#aa90f5992ffa52d497a4b5a0b66e83cf2',1,'pbpt::math']]],
+  ['pt4_7',['Pt4',['../d0/de4/point_8hpp.html#ac602f90f05b18e9ece16a922e79afc2e',1,'pbpt::math']]],
+  ['pt4i_8',['Pt4i',['../d0/de4/point_8hpp.html#abb5b8cb5c9ecae20252f8b5cb50a378f',1,'pbpt::math']]]
 ];

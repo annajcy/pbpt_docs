@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['epsilon_0',['EPSILON',['../d9/d3a/global_8hpp.html#a002b2f4894492820fe708b1b7e7c5e70',1,'global.hpp']]]
+  ['double_5feps_0',['DOUBLE_EPS',['../df/d5b/type__alias_8hpp.html#aed65897bc877635b104e2ce04397f5c5',1,'type_alias.hpp']]]
 ];

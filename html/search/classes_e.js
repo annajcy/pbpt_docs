@@ -15,8 +15,7 @@ var searchData=
   ['transformedshape_12',['TransformedShape',['../d5/d84/classpbpt_1_1shape_1_1_transformed_shape.html',1,'pbpt::shape']]],
   ['transformedshape_3c_20t_2c_20pbpt_3a_3ashape_3a_3asphere_20_3e_13',['TransformedShape&lt; T, pbpt::shape::Sphere &gt;',['../d5/d84/classpbpt_1_1shape_1_1_transformed_shape.html',1,'pbpt::shape']]],
   ['tuple_14',['Tuple',['../de/d5c/classpbpt_1_1math_1_1_tuple.html',1,'pbpt::math']]],
-  ['tuple_3c_20point_2c_20float_2c_20n_20_3e_15',['Tuple&lt; Point, Float, N &gt;',['../de/d5c/classpbpt_1_1math_1_1_tuple.html',1,'pbpt::math']]],
-  ['tuple_3c_20point_2c_20t_2c_20n_20_3e_16',['Tuple&lt; Point, T, N &gt;',['../de/d5c/classpbpt_1_1math_1_1_tuple.html',1,'pbpt::math']]],
-  ['tuple_3c_20point_2c_20u_2c_20n_20_3e_17',['Tuple&lt; Point, U, N &gt;',['../de/d5c/classpbpt_1_1math_1_1_tuple.html',1,'pbpt::math']]],
-  ['tuple_3c_20vector_2c_20int_2c_20n_20_3e_18',['Tuple&lt; Vector, int, N &gt;',['../de/d5c/classpbpt_1_1math_1_1_tuple.html',1,'pbpt::math']]]
+  ['tuple_3c_20point_2c_20t_2c_20n_20_3e_15',['Tuple&lt; Point, T, N &gt;',['../de/d5c/classpbpt_1_1math_1_1_tuple.html',1,'pbpt::math']]],
+  ['tuple_3c_20point_2c_20u_2c_20n_20_3e_16',['Tuple&lt; Point, U, N &gt;',['../de/d5c/classpbpt_1_1math_1_1_tuple.html',1,'pbpt::math']]],
+  ['tuple_3c_20vector_2c_20int_2c_20n_20_3e_17',['Tuple&lt; Vector, int, N &gt;',['../de/d5c/classpbpt_1_1math_1_1_tuple.html',1,'pbpt::math']]]
 ];

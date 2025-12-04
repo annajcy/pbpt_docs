@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>pbpt: /Users/jinceyang/Desktop/codebase/pbpt/engine/math/vector.hpp File Reference</title>
+<title>pbpt: /Users/jinceyang/Desktop/codebase/graphics/pbpt/src/math/vector.hpp File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,68 +92,130 @@ $(function(){initNavTree('da/d16/vector_8hpp.html','../../',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Defines a generic, N-dimensional, constexpr-friendly vector class.  
+<p>Fixed-size vector type and geometric helpers (cross product, bases).  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;array&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../db/d9d/math_2function_8hpp_source.html">function.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d6f/tuple_8hpp_source.html">tuple.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d95/vector__ops_8hpp_source.html">vector_ops.hpp</a>&quot;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;concepts&gt;</code><br />
-<code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/d3a/global_8hpp_source.html">global.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/d7c/function_8hpp_source.html">function.hpp</a>&quot;</code><br />
 </div>
 <p><a href="../../da/d16/vector_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:pbpt_3A_3Amath_3A_3AVector_3C_20T_2C_20N_20_3E" id="r_pbpt_3A_3Amath_3A_3AVector_3C_20T_2C_20N_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">pbpt::math::Vector&lt; T, N &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A template class for N-dimensional mathematical vectors.  <a href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html#details">More...</a><br /></td></tr>
-<tr class="memitem:pbpt_3A_3Amath_3A_3ANormal_3C_20T_2C_20N_20_3E" id="r_pbpt_3A_3Amath_3A_3ANormal_3C_20T_2C_20N_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd5/classpbpt_1_1math_1_1_normal.html">pbpt::math::Normal&lt; T, N &gt;</a></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:pbpt_3A_3Amath" id="r_pbpt_3A_3Amath"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html">pbpt::math</a></td></tr>
-<tr class="memdesc:d1/d2f/namespacepbpt_1_1math"><td class="mdescLeft">&#160;</td><td class="mdescRight">The namespace for math library implementation. <br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed-size mathematical vector with arithmetic operations.  <a href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:aec6c7f1682c0689a3c5f8f9e92cdaba1" id="r_aec6c7f1682c0689a3c5f8f9e92cdaba1"><td class="memItemLeft" align="right" valign="top"><a id="aec6c7f1682c0689a3c5f8f9e92cdaba1" name="aec6c7f1682c0689a3c5f8f9e92cdaba1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Vec1</b> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 1&gt;</td></tr>
+<tr class="memdesc:aec6c7f1682c0689a3c5f8f9e92cdaba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">1D vector using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="Default floating-point type (float unless PBPT_FLOAT_64BIT is defined).">Float</a> type. <br /></td></tr>
 <tr class="memitem:a4a5543941e34f57c206edd8c10a95d46" id="r_a4a5543941e34f57c206edd8c10a95d46"><td class="memItemLeft" align="right" valign="top"><a id="a4a5543941e34f57c206edd8c10a95d46" name="a4a5543941e34f57c206edd8c10a95d46"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Vec2</b> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 2&gt;</td></tr>
-<tr class="memdesc:a4a5543941e34f57c206edd8c10a95d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2-dimensional vector of type <span class="tt"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a></span>. <br /></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Vec2</b> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 2&gt;</td></tr>
+<tr class="memdesc:a4a5543941e34f57c206edd8c10a95d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D vector using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="Default floating-point type (float unless PBPT_FLOAT_64BIT is defined).">Float</a> type. <br /></td></tr>
 <tr class="memitem:a3cbdb553bfd2e6f9afc2d72be6ed15da" id="r_a3cbdb553bfd2e6f9afc2d72be6ed15da"><td class="memItemLeft" align="right" valign="top"><a id="a3cbdb553bfd2e6f9afc2d72be6ed15da" name="a3cbdb553bfd2e6f9afc2d72be6ed15da"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Vec3</b> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 3&gt;</td></tr>
-<tr class="memdesc:a3cbdb553bfd2e6f9afc2d72be6ed15da"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 3-dimensional vector of type <span class="tt"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a></span>. <br /></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Vec3</b> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 3&gt;</td></tr>
+<tr class="memdesc:a3cbdb553bfd2e6f9afc2d72be6ed15da"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D vector using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="Default floating-point type (float unless PBPT_FLOAT_64BIT is defined).">Float</a> type. <br /></td></tr>
 <tr class="memitem:aafbc6d0fb7dd77bd0648c4f436f35697" id="r_aafbc6d0fb7dd77bd0648c4f436f35697"><td class="memItemLeft" align="right" valign="top"><a id="aafbc6d0fb7dd77bd0648c4f436f35697" name="aafbc6d0fb7dd77bd0648c4f436f35697"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Vec4</b> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 4&gt;</td></tr>
-<tr class="memdesc:aafbc6d0fb7dd77bd0648c4f436f35697"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 4-dimensional vector of type <span class="tt"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a></span>. <br /></td></tr>
-<tr class="memitem:a379dc54592693e3b32e277eeaa3e8966" id="r_a379dc54592693e3b32e277eeaa3e8966"><td class="memItemLeft" align="right" valign="top"><a id="a379dc54592693e3b32e277eeaa3e8966" name="a379dc54592693e3b32e277eeaa3e8966"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Normal2</b> = <a class="el" href="../../d8/dd5/classpbpt_1_1math_1_1_normal.html">Normal</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 2&gt;</td></tr>
-<tr class="memdesc:a379dc54592693e3b32e277eeaa3e8966"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2-dimensional vector of type <span class="tt"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a></span>. <br /></td></tr>
-<tr class="memitem:a6fc44734490a283e150f416a86195d49" id="r_a6fc44734490a283e150f416a86195d49"><td class="memItemLeft" align="right" valign="top"><a id="a6fc44734490a283e150f416a86195d49" name="a6fc44734490a283e150f416a86195d49"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Normal3</b> = <a class="el" href="../../d8/dd5/classpbpt_1_1math_1_1_normal.html">Normal</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 3&gt;</td></tr>
-<tr class="memdesc:a6fc44734490a283e150f416a86195d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 3-dimensional vector of type <span class="tt"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a></span>. <br /></td></tr>
-<tr class="memitem:a91a945104e6b82176ab7861b2cf89e29" id="r_a91a945104e6b82176ab7861b2cf89e29"><td class="memItemLeft" align="right" valign="top"><a id="a91a945104e6b82176ab7861b2cf89e29" name="a91a945104e6b82176ab7861b2cf89e29"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Normal4</b> = <a class="el" href="../../d8/dd5/classpbpt_1_1math_1_1_normal.html">Normal</a>&lt;<a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 4&gt;</td></tr>
-<tr class="memdesc:a91a945104e6b82176ab7861b2cf89e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 4-dimensional vector of type <span class="tt"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="The primary floating-point type used throughout the math library.">Float</a></span>. <br /></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Vec4</b> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e">Float</a>, 4&gt;</td></tr>
+<tr class="memdesc:aafbc6d0fb7dd77bd0648c4f436f35697"><td class="mdescLeft">&#160;</td><td class="mdescRight">4D vector using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a1bde309b06d14a6ec4176c4308f2fe6e" title="Default floating-point type (float unless PBPT_FLOAT_64BIT is defined).">Float</a> type. <br /></td></tr>
+<tr class="memitem:ad86db45c3b774abe3556bf32884448ba" id="r_ad86db45c3b774abe3556bf32884448ba"><td class="memItemLeft" align="right" valign="top"><a id="ad86db45c3b774abe3556bf32884448ba" name="ad86db45c3b774abe3556bf32884448ba"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Vec1i</b> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81">Int</a>, 1&gt;</td></tr>
+<tr class="memdesc:ad86db45c3b774abe3556bf32884448ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">1D vector using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81" title="Signed integer type for math utilities (defaults to 32-bit).">Int</a> type. <br /></td></tr>
+<tr class="memitem:a7d2e560273d7977dbc01df8300f7a02a" id="r_a7d2e560273d7977dbc01df8300f7a02a"><td class="memItemLeft" align="right" valign="top"><a id="a7d2e560273d7977dbc01df8300f7a02a" name="a7d2e560273d7977dbc01df8300f7a02a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Vec2i</b> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81">Int</a>, 2&gt;</td></tr>
+<tr class="memdesc:a7d2e560273d7977dbc01df8300f7a02a"><td class="mdescLeft">&#160;</td><td class="mdescRight">2D vector using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81" title="Signed integer type for math utilities (defaults to 32-bit).">Int</a> type. <br /></td></tr>
+<tr class="memitem:a5b034bf09c13b15be64aae88aba3ed92" id="r_a5b034bf09c13b15be64aae88aba3ed92"><td class="memItemLeft" align="right" valign="top"><a id="a5b034bf09c13b15be64aae88aba3ed92" name="a5b034bf09c13b15be64aae88aba3ed92"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Vec3i</b> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81">Int</a>, 3&gt;</td></tr>
+<tr class="memdesc:a5b034bf09c13b15be64aae88aba3ed92"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D vector using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81" title="Signed integer type for math utilities (defaults to 32-bit).">Int</a> type. <br /></td></tr>
+<tr class="memitem:ada2f867b781c621b52ff05d2c9ea8e7a" id="r_ada2f867b781c621b52ff05d2c9ea8e7a"><td class="memItemLeft" align="right" valign="top"><a id="ada2f867b781c621b52ff05d2c9ea8e7a" name="ada2f867b781c621b52ff05d2c9ea8e7a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::Vec4i</b> = <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt;<a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81">Int</a>, 4&gt;</td></tr>
+<tr class="memdesc:ada2f867b781c621b52ff05d2c9ea8e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">4D vector using the project's default <a class="el" href="../../df/d5b/type__alias_8hpp.html#a717f7b49e38efee39c9e77c8378baf81" title="Signed integer type for math utilities (defaults to 32-bit).">Int</a> type. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab5f1c82d4fde8d58865fe88895e40758" id="r_ab5f1c82d4fde8d58865fe88895e40758"><td class="memTemplParams" colspan="2">template&lt;typename T, int N&gt; </td></tr>
-<tr class="memitem:ab5f1c82d4fde8d58865fe88895e40758 template"><td class="memItemLeft" align="right" valign="top">constexpr std::vector&lt; <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#ab5f1c82d4fde8d58865fe88895e40758">pbpt::math::get_orthogonal_bases</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, N &gt; &amp;base)</td></tr>
-<tr class="memdesc:ab5f1c82d4fde8d58865fe88895e40758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns orthogonal bases for a given vector.  <br /></td></tr>
-<tr class="memitem:a1496c805d125727ea45aaf1dd1c14a5f" id="r_a1496c805d125727ea45aaf1dd1c14a5f"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
-<tr class="memitem:a1496c805d125727ea45aaf1dd1c14a5f template"><td class="memItemLeft" align="right" valign="top">constexpr std::vector&lt; <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, 2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a1496c805d125727ea45aaf1dd1c14a5f">pbpt::math::get_orthogonal_bases</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, 2 &gt; &amp;base)</td></tr>
-<tr class="memdesc:a1496c805d125727ea45aaf1dd1c14a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns orthogonal bases for a given vector when N == 2.  <br /></td></tr>
-<tr class="memitem:a095afabeccf891a67919c9ef6cd0ff6f" id="r_a095afabeccf891a67919c9ef6cd0ff6f"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
-<tr class="memitem:a095afabeccf891a67919c9ef6cd0ff6f template"><td class="memItemLeft" align="right" valign="top">constexpr std::vector&lt; <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, 3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2f/namespacepbpt_1_1math.html#a095afabeccf891a67919c9ef6cd0ff6f">pbpt::math::get_orthogonal_bases</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, 3 &gt; &amp;base)</td></tr>
-<tr class="memdesc:a095afabeccf891a67919c9ef6cd0ff6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns orthogonal bases for a given vector when N == 3.  <br /></td></tr>
+<tr class="memitem:a103dea877387cec7bb6f3dfc4476856d" id="r_a103dea877387cec7bb6f3dfc4476856d"><td class="memTemplParams" colspan="2"><a id="a103dea877387cec7bb6f3dfc4476856d" name="a103dea877387cec7bb6f3dfc4476856d"></a>
+template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a103dea877387cec7bb6f3dfc4476856d template"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>pbpt::math::cross</b> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, 3 &gt; &amp;lhs, const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, 3 &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:a103dea877387cec7bb6f3dfc4476856d"><td class="mdescLeft">&#160;</td><td class="mdescRight">3D cross product between two vectors. <br /></td></tr>
+<tr class="memitem:aa3d06d40bf89ca7a6bc2f679a4b47596" id="r_aa3d06d40bf89ca7a6bc2f679a4b47596"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:aa3d06d40bf89ca7a6bc2f679a4b47596 template"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../df/d93/utils_8hpp.html#a24a6bccff99271e274d6c8c417a4a397">promote_int_to_float_t</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3d06d40bf89ca7a6bc2f679a4b47596">pbpt::math::angle_between</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, 3 &gt; &amp;v1, const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, 3 &gt; &amp;v2)</td></tr>
+<tr class="memdesc:aa3d06d40bf89ca7a6bc2f679a4b47596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Angle between two normalized 3D vectors.  <br /></td></tr>
+<tr class="memitem:a73c8258cb69c8331b6623092c7ea8533" id="r_a73c8258cb69c8331b6623092c7ea8533"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:a73c8258cb69c8331b6623092c7ea8533 template"><td class="memItemLeft" align="right" valign="top">constexpr std::pair&lt; <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, 3 &gt;, <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, 3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73c8258cb69c8331b6623092c7ea8533">pbpt::math::coordinate_system</a> (const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, 3 &gt; &amp;v1)</td></tr>
+<tr class="memdesc:a73c8258cb69c8331b6623092c7ea8533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds an orthonormal basis {v2, v3} around a unit vector v1.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines a generic, N-dimensional, constexpr-friendly vector class. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Fixed-size vector type and geometric helpers (cross product, bases). </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="aa3d06d40bf89ca7a6bc2f679a4b47596" name="aa3d06d40bf89ca7a6bc2f679a4b47596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d06d40bf89ca7a6bc2f679a4b47596">&#9670;&#160;</a></span>angle_between()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">promote_int_to_float_t&lt; T &gt; pbpt::math::angle_between </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, 3 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, 3 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>v2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Angle between two normalized 3D vectors. </p>
+<p>Uses a numerically stable formulation based on the length of v1 ± v2 rather than directly calling arccos on the dot product. Both inputs must be normalized. </p>
+
+</div>
+</div>
+<a id="a73c8258cb69c8331b6623092c7ea8533" name="a73c8258cb69c8331b6623092c7ea8533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c8258cb69c8331b6623092c7ea8533">&#9670;&#160;</a></span>coordinate_system()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::floating_point T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; Vector&lt; T, 3 &gt;, Vector&lt; T, 3 &gt; &gt; pbpt::math::coordinate_system </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">Vector</a>&lt; T, 3 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>v1</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Builds an orthonormal basis {v2, v3} around a unit vector v1. </p>
+<p>Given a normalized direction v1, this function returns two perpendicular unit vectors v2 and v3 that, together with v1, form a right-handed coordinate system. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>
@@ -166,7 +228,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="../../dir_996f45160da62e1a3d7f6046fad68f51.html">engine</a></li><li class="navelem"><a href="../../dir_6092418e369ca819ce866d11ef016080.html">math</a></li><li class="navelem"><a href="../../da/d16/vector_8hpp.html">vector.hpp</a></li>
+    <li class="navelem"><a href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="../../dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li><li class="navelem"><a href="../../da/d16/vector_8hpp.html">vector.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

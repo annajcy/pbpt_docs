@@ -91,104 +91,146 @@ $(function(){initNavTree('db/d9d/math_2function_8hpp_source.html','../../',''); 
   <div class="headertitle"><div class="title">function.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<a href="../../db/d9d/math_2function_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;math/utils.hpp&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;type_alias.hpp&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>pbpt::math {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T epsilon_v = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(FLOAT_EPS);  <span class="comment">// float 默认</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> epsilon_v&lt;double&gt; = DOUBLE_EPS;  <span class="comment">// double 特化</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T pi_v = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(M_PI);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">constexpr</span> <span class="keyword">inline</span> T gamma(<span class="keywordtype">int</span> n) {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    T ε = std::numeric_limits&lt;T&gt;::epsilon();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">return</span> (n * ε) / (1 - n * ε);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">constexpr</span> T abs(T x) {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">if</span> (x &lt; 0) {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordflow">return</span> -x;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">return</span> x;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> is_zero(T a) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_floating_point_v&lt;T&gt;) {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">return</span> abs(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(a)) &lt; epsilon_v&lt;T&gt;;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span> a == 0;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">constexpr</span> T rad2deg(T rad) {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">return</span> rad * 180.0 / pi_v&lt;T&gt;;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/d93/utils_8hpp.html">math/utils.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/d5b/type__alias_8hpp.html">type_alias.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>pbpt::math {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../db/d9d/math_2function_8hpp.html#a84521be51f7b4c1aa7bec84b0f034d0a">   21</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a84521be51f7b4c1aa7bec84b0f034d0a">epsilon_v</a> = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(<a class="code hl_define" href="../../df/d5b/type__alias_8hpp.html#a1c645040f39653d8ed49157cda21617e">FLOAT_EPS</a>);  <span class="comment">// float 默认</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../db/d9d/math_2function_8hpp.html#ad66f4c9e196ffe492028f5f38e135d3b">   25</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a84521be51f7b4c1aa7bec84b0f034d0a">epsilon_v&lt;double&gt;</a> = <a class="code hl_define" href="../../df/d5b/type__alias_8hpp.html#aed65897bc877635b104e2ce04397f5c5">DOUBLE_EPS</a>;  <span class="comment">// double 特化</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">   32</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> T <a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">pi_v</a> = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(<a class="code hl_define" href="../../df/d5b/type__alias_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../db/d9d/math_2function_8hpp.html#a28c0b4c78f82e7e5c5ff916bf3278338">   41</a></span><span class="keyword">constexpr</span> <span class="keyword">inline</span> T <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#a28c0b4c78f82e7e5c5ff916bf3278338">gamma</a>(<span class="keywordtype">int</span> n) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    T ε = std::numeric_limits&lt;T&gt;::epsilon();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">return</span> (n * ε) / (1 - n * ε);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">constexpr</span> T deg2rad(T deg) {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> deg * pi_v&lt;T&gt; / 180.0;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">constexpr</span> T safe_asin(T x) {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">return</span> std::asin(std::clamp(x, T(-1), T(1)));</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">constexpr</span> T safe_acos(T x) {</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> std::acos(std::clamp(x, T(-1), T(1)));</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">constexpr</span> T pow(T x, <span class="keywordtype">int</span> n) {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">if</span> (n &lt; 0) <span class="keywordflow">return</span> 1 / pow(x, -n);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">if</span> (n == 0) <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">if</span> (n == 1) <span class="keywordflow">return</span> x;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    T half = pow(x, n / 2);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> n % 2 == 0 ? half * half : half * half * x;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">//TODO: implement fast_exp</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">constexpr</span> T fast_exp(T x) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">return</span> std::exp(x);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">constexpr</span> T sigmoid(T x) {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">return</span> 0.5 + 0.5 * x / std::sqrt(1 + x * x);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">constexpr</span> T inverse_sigmoid(T s) {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    math::assert_if(s &lt;= 0 &amp;&amp; s &gt;= 1, <span class="stringliteral">&quot;s must be in (0, 1)&quot;</span>);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">return</span> (s - 0.5) / std::sqrt(s * (1.0 - s));</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}  <span class="comment">// namespace pbpt::math</span></div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../db/d9d/math_2function_8hpp.html#a5a04e35d2cc90aa660f0eba9f4c5554e">   50</a></span><span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#a5a04e35d2cc90aa660f0eba9f4c5554e">abs</a>(T x) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">if</span> (x &lt; 0) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> -x;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> x;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../db/d9d/math_2function_8hpp.html#a6791467d7c2572ad654e7ce22e29a0c4">   61</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#a6791467d7c2572ad654e7ce22e29a0c4">is_zero</a>(T a) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_floating_point_v&lt;T&gt;) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#a5a04e35d2cc90aa660f0eba9f4c5554e">abs</a>(<span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(a)) &lt; <a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a84521be51f7b4c1aa7bec84b0f034d0a">epsilon_v&lt;T&gt;</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">return</span> a == 0;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="../../db/d9d/math_2function_8hpp.html#ad10a4bcef32627c38f92bfa7e5418920">   73</a></span><span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#ad10a4bcef32627c38f92bfa7e5418920">rad2deg</a>(T rad) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">return</span> rad * 180.0 / <a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">pi_v&lt;T&gt;</a>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../db/d9d/math_2function_8hpp.html#a0dbcb57226eb9c3fb4d3975361c9e242">   81</a></span><span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#a0dbcb57226eb9c3fb4d3975361c9e242">deg2rad</a>(T deg) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span> deg * <a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">pi_v&lt;T&gt;</a> / 180.0;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../db/d9d/math_2function_8hpp.html#aa3e7bdb2e0497750b23ffdc39779930d">   89</a></span><span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#aa3e7bdb2e0497750b23ffdc39779930d">safe_asin</a>(T x) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> std::asin(std::clamp(x, T(-1), T(1)));</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../db/d9d/math_2function_8hpp.html#ab01bdc21e156e78144ed916d54350c5b">   97</a></span><span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#ab01bdc21e156e78144ed916d54350c5b">safe_acos</a>(T x) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">return</span> std::acos(std::clamp(x, T(-1), T(1)));</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="}">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="../../db/d9d/math_2function_8hpp.html#a38802acffe4634929bf9fe12b2b861d1">  107</a></span><span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#a38802acffe4634929bf9fe12b2b861d1">pow</a>(T x, <span class="keywordtype">int</span> n) {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">if</span> (n &lt; 0) <span class="keywordflow">return</span> 1 / <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#a38802acffe4634929bf9fe12b2b861d1">pow</a>(x, -n);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">if</span> (n == 0) <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">if</span> (n == 1) <span class="keywordflow">return</span> x;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    T half = <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#a38802acffe4634929bf9fe12b2b861d1">pow</a>(x, n / 2);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">return</span> n % 2 == 0 ? half * half : half * half * x;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
+</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">//TODO: implement fast_exp</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00122" data-start="{" data-end="}">
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../db/d9d/math_2function_8hpp.html#a5ea0e88a07dd455a820d5f457f104f9d">  122</a></span><span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#a5ea0e88a07dd455a820d5f457f104f9d">fast_exp</a>(T x) {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">return</span> std::exp(x);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
+</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00130" data-start="{" data-end="}">
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="../../db/d9d/math_2function_8hpp.html#ad1b518a385f3f2036152f6491fc161b8">  130</a></span><span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#ad1b518a385f3f2036152f6491fc161b8">sigmoid</a>(T x) {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">return</span> 0.5 + 0.5 * x / std::sqrt(1 + x * x);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}</div>
+</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00138" data-start="{" data-end="}">
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="../../db/d9d/math_2function_8hpp.html#a45fd65839775cec368709c9d09eb3f0f">  138</a></span><span class="keyword">constexpr</span> T <a class="code hl_function" href="../../db/d9d/math_2function_8hpp.html#a45fd65839775cec368709c9d09eb3f0f">inverse_sigmoid</a>(T s) {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <a class="code hl_function" href="../../df/d93/utils_8hpp.html#abbf55e4d4d1814200e9767217c7ea862">math::assert_if</a>(s &lt;= 0 &amp;&amp; s &gt;= 1, <span class="stringliteral">&quot;s must be in (0, 1)&quot;</span>);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordflow">return</span> (s - 0.5) / std::sqrt(s * (1.0 - s));</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>}</div>
+</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>}  <span class="comment">// namespace pbpt::math</span></div>
+<div class="ttc" id="amath_2function_8hpp_html_a0dbcb57226eb9c3fb4d3975361c9e242"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#a0dbcb57226eb9c3fb4d3975361c9e242">pbpt::math::deg2rad</a></div><div class="ttdeci">constexpr T deg2rad(T deg)</div><div class="ttdoc">Convert degrees to radians.</div><div class="ttdef"><b>Definition</b> function.hpp:81</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_a28c0b4c78f82e7e5c5ff916bf3278338"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#a28c0b4c78f82e7e5c5ff916bf3278338">pbpt::math::gamma</a></div><div class="ttdeci">constexpr T gamma(int n)</div><div class="ttdoc">Gamma function approximation for small epsilon corrections.</div><div class="ttdef"><b>Definition</b> function.hpp:41</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_a2d075450131a401077dfa674fdfca5cb"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">pbpt::math::pi_v</a></div><div class="ttdeci">constexpr T pi_v</div><div class="ttdoc">π constant for the requested scalar type.</div><div class="ttdef"><b>Definition</b> function.hpp:32</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_a38802acffe4634929bf9fe12b2b861d1"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#a38802acffe4634929bf9fe12b2b861d1">pbpt::math::pow</a></div><div class="ttdeci">constexpr T pow(T x, int n)</div><div class="ttdoc">Integer-power exponentiation by squaring.</div><div class="ttdef"><b>Definition</b> function.hpp:107</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_a45fd65839775cec368709c9d09eb3f0f"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#a45fd65839775cec368709c9d09eb3f0f">pbpt::math::inverse_sigmoid</a></div><div class="ttdeci">constexpr T inverse_sigmoid(T s)</div><div class="ttdoc">Inverse of the stable sigmoid approximation.</div><div class="ttdef"><b>Definition</b> function.hpp:138</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_a5a04e35d2cc90aa660f0eba9f4c5554e"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#a5a04e35d2cc90aa660f0eba9f4c5554e">pbpt::math::abs</a></div><div class="ttdeci">constexpr T abs(T x)</div><div class="ttdoc">Absolute value that works for signed integers and floats.</div><div class="ttdef"><b>Definition</b> function.hpp:50</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_a5ea0e88a07dd455a820d5f457f104f9d"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#a5ea0e88a07dd455a820d5f457f104f9d">pbpt::math::fast_exp</a></div><div class="ttdeci">constexpr T fast_exp(T x)</div><div class="ttdoc">Placeholder exponential implementation.</div><div class="ttdef"><b>Definition</b> function.hpp:122</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_a6791467d7c2572ad654e7ce22e29a0c4"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#a6791467d7c2572ad654e7ce22e29a0c4">pbpt::math::is_zero</a></div><div class="ttdeci">constexpr bool is_zero(T a)</div><div class="ttdoc">Equality-to-zero check tolerant to floating-point noise.</div><div class="ttdef"><b>Definition</b> function.hpp:61</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_a84521be51f7b4c1aa7bec84b0f034d0a"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#a84521be51f7b4c1aa7bec84b0f034d0a">pbpt::math::epsilon_v</a></div><div class="ttdeci">constexpr T epsilon_v</div><div class="ttdoc">Machine epsilon used for floating-point comparisons.</div><div class="ttdef"><b>Definition</b> function.hpp:21</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_aa3e7bdb2e0497750b23ffdc39779930d"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#aa3e7bdb2e0497750b23ffdc39779930d">pbpt::math::safe_asin</a></div><div class="ttdeci">constexpr T safe_asin(T x)</div><div class="ttdoc">Clamp-safe arcsine that prevents NaN from slight overflows.</div><div class="ttdef"><b>Definition</b> function.hpp:89</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_ab01bdc21e156e78144ed916d54350c5b"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#ab01bdc21e156e78144ed916d54350c5b">pbpt::math::safe_acos</a></div><div class="ttdeci">constexpr T safe_acos(T x)</div><div class="ttdoc">Clamp-safe arccosine that prevents NaN from slight overflows.</div><div class="ttdef"><b>Definition</b> function.hpp:97</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_ad10a4bcef32627c38f92bfa7e5418920"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#ad10a4bcef32627c38f92bfa7e5418920">pbpt::math::rad2deg</a></div><div class="ttdeci">constexpr T rad2deg(T rad)</div><div class="ttdoc">Convert radians to degrees.</div><div class="ttdef"><b>Definition</b> function.hpp:73</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_ad1b518a385f3f2036152f6491fc161b8"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#ad1b518a385f3f2036152f6491fc161b8">pbpt::math::sigmoid</a></div><div class="ttdeci">constexpr T sigmoid(T x)</div><div class="ttdoc">Numerically stable sigmoid approximation.</div><div class="ttdef"><b>Definition</b> function.hpp:130</div></div>
+<div class="ttc" id="atype__alias_8hpp_html"><div class="ttname"><a href="../../df/d5b/type__alias_8hpp.html">type_alias.hpp</a></div><div class="ttdoc">Fundamental math type aliases (Float, Int) and numeric constants.</div></div>
+<div class="ttc" id="atype__alias_8hpp_html_a1c645040f39653d8ed49157cda21617e"><div class="ttname"><a href="../../df/d5b/type__alias_8hpp.html#a1c645040f39653d8ed49157cda21617e">FLOAT_EPS</a></div><div class="ttdeci">#define FLOAT_EPS</div><div class="ttdoc">Epsilon threshold for single precision operations.</div><div class="ttdef"><b>Definition</b> type_alias.hpp:32</div></div>
+<div class="ttc" id="atype__alias_8hpp_html_ae71449b1cc6e6250b91f539153a7a0d3"><div class="ttname"><a href="../../df/d5b/type__alias_8hpp.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a></div><div class="ttdeci">#define M_PI</div><div class="ttdoc">π constant used when the platform does not provide it.</div><div class="ttdef"><b>Definition</b> type_alias.hpp:36</div></div>
+<div class="ttc" id="atype__alias_8hpp_html_aed65897bc877635b104e2ce04397f5c5"><div class="ttname"><a href="../../df/d5b/type__alias_8hpp.html#aed65897bc877635b104e2ce04397f5c5">DOUBLE_EPS</a></div><div class="ttdeci">#define DOUBLE_EPS</div><div class="ttdoc">Epsilon threshold for double precision operations.</div><div class="ttdef"><b>Definition</b> type_alias.hpp:30</div></div>
+<div class="ttc" id="autils_8hpp_html"><div class="ttname"><a href="../../df/d93/utils_8hpp.html">utils.hpp</a></div><div class="ttdoc">Miscellaneous math utilities: type promotion, assert helpers and random helpers.</div></div>
+<div class="ttc" id="autils_8hpp_html_abbf55e4d4d1814200e9767217c7ea862"><div class="ttname"><a href="../../df/d93/utils_8hpp.html#abbf55e4d4d1814200e9767217c7ea862">pbpt::math::assert_if</a></div><div class="ttdeci">constexpr void assert_if(F condition_lambda, const char *message=&quot;Assertion failed&quot;)</div><div class="ttdoc">Throw when the lazy boolean predicate evaluates to true.</div><div class="ttdef"><b>Definition</b> utils.hpp:37</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="../../dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li><li class="navelem"><b>function.hpp</b></li>
+    <li class="navelem"><a href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="../../dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li><li class="navelem"><a href="../../db/d9d/math_2function_8hpp.html">function.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

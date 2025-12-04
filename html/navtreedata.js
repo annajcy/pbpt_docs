@@ -39,7 +39,11 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
@@ -48,8 +52,8 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d6/df0/classpbpt_1_1camera_1_1_camera_projection.html#a19da01724c80e3cdd8b00df207b88c50",
-"db/d31/classpbpt_1_1radiometry_1_1_parallelogram_area_domain.html#a20ee8fe15c4ff98f590cdeef951cf553",
-"df/dce/classpbpt_1_1geometry_1_1_frame.html#a51f46c8510a945d6de9aeb2d066ca2f4"
+"db/d1d/classpbpt_1_1radiometry_1_1_spectrum_distribution.html#a0c2093473bf0078a97dd1d8f437fe299",
+"df/dbc/classpbpt_1_1geometry_1_1_interaction.html#a9d7e95b673748408eb6c9143ecc7ce9a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

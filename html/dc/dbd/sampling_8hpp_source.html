@@ -91,149 +91,205 @@ $(function(){initNavTree('dc/dbd/sampling_8hpp_source.html','../../',''); });
   <div class="headertitle"><div class="title">sampling.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;point.hpp&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;vector.hpp&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>pbpt::math {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">inline</span> T sample_uniform(T u, T a = T(0), T b = T(1)) {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">return</span> a + (b - a) * u;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">inline</span> T sample_uniform_pdf(T x, T a = T(0), T b = T(1)) {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">if</span> (x &lt; a || x &gt; b) {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">return</span> T(0);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> 1.0 / (b - a);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;  </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">inline</span> math::Point&lt;T, 2&gt; sample_uniform_2d(</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">const</span> math::Point&lt;T, 2&gt;&amp; uv, </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">const</span> math::Vector&lt;T, 2&gt;&amp; x_range = math::Vector&lt;T, 2&gt;(T(0), T(1)), </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">const</span> math::Vector&lt;T, 2&gt;&amp; y_range = math::Vector&lt;T, 2&gt;(T(0), T(1))</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>) {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    T x = sample_uniform(uv.x(), x_range.x(), x_range.y());</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    T y = sample_uniform(uv.y(), y_range.x(), y_range.y());</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> math::Point&lt;T, 2&gt;(x, y);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">inline</span> T sample_uniform_2d_pdf(</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">const</span> math::Point&lt;T, 2&gt;&amp; p,</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">const</span> math::Vector&lt;T, 2&gt;&amp; x_range = math::Vector&lt;T, 2&gt;(T(0), T(1)), </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">const</span> math::Vector&lt;T, 2&gt;&amp; y_range = math::Vector&lt;T, 2&gt;(T(0), T(1))</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>) {</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">return</span> sample_uniform_pdf(p.x(), x_range.x(), x_range.y()) * sample_uniform_pdf(p.y(), y_range.x(), y_range.y());</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>} </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">inline</span> T sample_tent(T u, T r = 1.0) {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span> (u &lt; 0.5) {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">return</span> -r + r * std::sqrt(2.0 * u);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">return</span>  r - r * std::sqrt(2.0 * (1.0 - u));</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">inline</span> T sample_tent_pdf(T x, T r = 1.0) {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">if</span> (std::abs(x) &gt; r) {</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">return</span> T(0);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">return</span> 1.0 / r - std::abs(x) / (r * r);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keyword">inline</span> math::Point&lt;T, 2&gt; sample_tent_2d(<span class="keyword">const</span> math::Point&lt;T, 2&gt;&amp; uv, T rx = 1.0, T ry = 1.0) {</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    T x = sample_tent(uv.x(), rx);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    T y = sample_tent(uv.y(), ry);</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordflow">return</span> math::Point&lt;T, 2&gt;(x, y);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="keyword">inline</span> T sample_tent_2d_pdf(<span class="keyword">const</span> math::Point&lt;T, 2&gt;&amp; p, T rx = 1.0, T ry = 1.0) {</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">return</span> sample_tent_pdf(p.x(), rx) * sample_tent_pdf(p.y(), ry);</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>}</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="keyword">inline</span> math::Point&lt;T, 2&gt; sample_uniform_disk(<span class="keyword">const</span> math::Point&lt;T, 2&gt;&amp; uv, T radius = 1.0) {</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    T r = std::sqrt(uv.x()) * radius;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    T theta = 2.0 * math::pi_v&lt;T&gt; * uv.y();</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">return</span> math::Point&lt;T, 2&gt;(r * std::cos(theta), r * std::sin(theta));</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="keyword">inline</span> math::Point&lt;T, 2&gt; sample_uniform_disk_concentric(<span class="keyword">const</span> math::Point&lt;T, 2&gt;&amp; uv, T radius = 1.0) {</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    math::Point&lt;T, 2&gt; p_offset = 2.0 * uv.to_vector() - math::Vector&lt;T, 2&gt;(1, 1);</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keywordflow">if</span> (p_offset.x() == 0 &amp;&amp; p_offset.y() == 0) {</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <span class="keywordflow">return</span> math::Point&lt;T, 2&gt;(0, 0);</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    }</div>
+<a href="../../dc/dbd/sampling_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="../../d0/de4/point_8hpp.html">point.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="../../da/d16/vector_8hpp.html">vector.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>pbpt::math {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#a8f25b743ff8ab116044e3961363e4694">   21</a></span><span class="keyword">inline</span> T <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a8f25b743ff8ab116044e3961363e4694">sample_uniform</a>(T u, T a = T(0), T b = T(1)) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span> a + (b - a) * u;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#af2efa54b60978dfac9b9a60f563a399f">   35</a></span><span class="keyword">inline</span> T <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#af2efa54b60978dfac9b9a60f563a399f">sample_uniform_pdf</a>(T x, T a = T(0), T b = T(1)) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span> (x &lt; a || x &gt; b) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> T(0);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">return</span> 1.0 / (b - a);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;  </div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#a05af5fc4f5c6d74f9f851289a002afaa">   51</a></span><span class="keyword">inline</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a> <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a05af5fc4f5c6d74f9f851289a002afaa">sample_uniform_2d</a>(</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a>&amp; uv, </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">math::Vector&lt;T, 2&gt;</a>&amp; x_range = <a class="code hl_class" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">math::Vector&lt;T, 2&gt;</a>(T(0), T(1)), </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">math::Vector&lt;T, 2&gt;</a>&amp; y_range = <a class="code hl_class" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">math::Vector&lt;T, 2&gt;</a>(T(0), T(1))</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    T x = <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a8f25b743ff8ab116044e3961363e4694">sample_uniform</a>(uv.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#aaa9cfea78aaba97d8fb5afb9feadefad">x</a>(), x_range.x(), x_range.y());</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    T y = <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a8f25b743ff8ab116044e3961363e4694">sample_uniform</a>(uv.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#a76b7ef5c2bbeaf238e05015a3b85815b">y</a>(), y_range.x(), y_range.y());</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a>(x, y);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#ae437e139dbb0ed4f152da83a17998471">   71</a></span><span class="keyword">inline</span> T <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#ae437e139dbb0ed4f152da83a17998471">sample_uniform_2d_pdf</a>(</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a>&amp; p,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">math::Vector&lt;T, 2&gt;</a>&amp; x_range = <a class="code hl_class" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">math::Vector&lt;T, 2&gt;</a>(T(0), T(1)), </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">math::Vector&lt;T, 2&gt;</a>&amp; y_range = <a class="code hl_class" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">math::Vector&lt;T, 2&gt;</a>(T(0), T(1))</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#af2efa54b60978dfac9b9a60f563a399f">sample_uniform_pdf</a>(p.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#aaa9cfea78aaba97d8fb5afb9feadefad">x</a>(), x_range.x(), x_range.y()) * <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#af2efa54b60978dfac9b9a60f563a399f">sample_uniform_pdf</a>(p.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#a76b7ef5c2bbeaf238e05015a3b85815b">y</a>(), y_range.x(), y_range.y());</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>} </div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#a72587d0df4abab8c736a11693ca80e2c">   97</a></span><span class="keyword">inline</span> T <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a72587d0df4abab8c736a11693ca80e2c">sample_tent</a>(T u, T r = 1.0) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">if</span> (u &lt; 0.5) {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">return</span> -r + r * std::sqrt(2.0 * u);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">return</span>  r - r * std::sqrt(2.0 * (1.0 - u));</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
+</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00115" data-start="{" data-end="}">
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#a6c4bebf62df0502abed7e14c421f42f0">  115</a></span><span class="keyword">inline</span> T <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a6c4bebf62df0502abed7e14c421f42f0">sample_tent_pdf</a>(T x, T r = 1.0) {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">if</span> (std::abs(x) &gt; r) {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keywordflow">return</span> T(0);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordflow">return</span> 1.0 / r - std::abs(x) / (r * r);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>}</div>
+</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00131" data-start="{" data-end="}">
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#ad25687b1f41f7f002cffc0d65e74fc25">  131</a></span><span class="keyword">inline</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a> <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#ad25687b1f41f7f002cffc0d65e74fc25">sample_tent_2d</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a>&amp; uv, T rx = 1.0, T ry = 1.0) {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    T x = <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a72587d0df4abab8c736a11693ca80e2c">sample_tent</a>(uv.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#aaa9cfea78aaba97d8fb5afb9feadefad">x</a>(), rx);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    T y = <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a72587d0df4abab8c736a11693ca80e2c">sample_tent</a>(uv.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#a76b7ef5c2bbeaf238e05015a3b85815b">y</a>(), ry);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a>(x, y);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
+</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00146" data-start="{" data-end="}">
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#a785f864ffbacd45153886d81cdc5f6c5">  146</a></span><span class="keyword">inline</span> T <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a785f864ffbacd45153886d81cdc5f6c5">sample_tent_2d_pdf</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a>&amp; p, T rx = 1.0, T ry = 1.0) {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a6c4bebf62df0502abed7e14c421f42f0">sample_tent_pdf</a>(p.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#aaa9cfea78aaba97d8fb5afb9feadefad">x</a>(), rx) * <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a6c4bebf62df0502abed7e14c421f42f0">sample_tent_pdf</a>(p.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#a76b7ef5c2bbeaf238e05015a3b85815b">y</a>(), ry);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>}</div>
+</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00167" data-start="{" data-end="}">
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#a649a4660b7a88402d03cf854b8f553a3">  167</a></span><span class="keyword">inline</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a> <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a649a4660b7a88402d03cf854b8f553a3">sample_uniform_disk</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a>&amp; uv, T radius = 1.0) {</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    T r = std::sqrt(uv.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#aaa9cfea78aaba97d8fb5afb9feadefad">x</a>()) * radius;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    T theta = 2.0 * <a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">math::pi_v&lt;T&gt;</a> * uv.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#a76b7ef5c2bbeaf238e05015a3b85815b">y</a>();</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a>(r * std::cos(theta), r * std::sin(theta));</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>}</div>
+</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00202" data-start="{" data-end="}">
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#af748bc9b3e92350ce55183485367fcdb">  202</a></span><span class="keyword">inline</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a> <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#af748bc9b3e92350ce55183485367fcdb">sample_uniform_disk_concentric</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a>&amp; uv, T radius = 1.0) {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a> p_offset = 2.0 * uv.<a class="code hl_function" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html#a3c8dbb86e74e0cacfb9112ec6221bf1f">to_vector</a>() - <a class="code hl_class" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">math::Vector&lt;T, 2&gt;</a>(1, 1);</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    T theta{}, r{};</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keywordflow">if</span> (std::abs(p_offset.x()) &gt; std::abs(p_offset.y())) {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        r = p_offset.x();</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        theta = (math::pi_v&lt;T&gt; / 4.0) * (p_offset.y() / p_offset.x());</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        r = p_offset.y();</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        theta = (math::pi_v&lt;T&gt; / 2.0) - (math::pi_v&lt;T&gt; / 4.0) * (p_offset.x() / p_offset.y());</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    }</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <span class="keywordflow">return</span> math::Point&lt;T, 2&gt;(radius * r * math::Vector&lt;T, 2&gt;(std::cos(theta), std::sin(theta)));</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>}</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="keyword">inline</span> T sample_uniform_disk_pdf(T radius = 1.0) {</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keywordflow">return</span> 1.0 / (math::pi_v&lt;T&gt; * radius * radius);</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>}</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="keyword">inline</span> math::Point&lt;T, 3&gt; sample_uniform_hemisphere(<span class="keyword">const</span> math::Point&lt;T, 2&gt;&amp; uv, T radius = 1.0) {</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    T z = uv.x();</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    T r = std::sqrt(std::max(T(0), T(1) - z * z));</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    T <a class="code hl_function" href="../../dc/d1f/spherical_8hpp.html#a870427e04f7c5fff5034562c14125c59">phi</a> = 2.0 * math::pi_v&lt;T&gt; * uv.y();</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordflow">return</span> math::Point&lt;T, 3&gt;(radius * r * std::cos(phi), radius * r * std::sin(phi), radius * z);</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>}</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span></div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>math::Point&lt;T, 3&gt; sample_uniform_hemisphere_concentric(<span class="keyword">const</span> math::Point&lt;T, 2&gt;&amp; uv, T radius = 1.0) {</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="keyword">auto</span> d = math::sample_uniform_disk_concentric(uv);</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keyword">auto</span> r2 = d.x() * d.x() + d.y() * d.y();</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    <span class="keyword">auto</span> z = std::sqrt(std::max(T(0), T(1) - r2));</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <span class="keywordflow">return</span> math::Point&lt;T, 3&gt;{radius * d.x(), radius * d.y(), radius * z};</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>}</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span></div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="keyword">inline</span> T sample_uniform_hemisphere_pdf(T radius = 1.0) {</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="keywordflow">return</span> 1.0 / (2.0 * math::pi_v&lt;T&gt; * radius * radius);</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>}</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="keyword">inline</span> math::Point&lt;T, 3&gt; sample_uniform_sphere(<span class="keyword">const</span> math::Point&lt;T, 2&gt;&amp; uv, T radius = 1.0) {</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    T z = 1.0 - 2.0 * uv.x();</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    T r = std::sqrt(std::max(T(0), T(1) - z * z));</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    T <a class="code hl_function" href="../../dc/d1f/spherical_8hpp.html#a870427e04f7c5fff5034562c14125c59">phi</a> = 2.0 * math::pi_v&lt;T&gt; * uv.y();</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">return</span> math::Point&lt;T, 3&gt;(radius * r * std::cos(phi), radius * r * std::sin(phi), radius * z);</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>}</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span></div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="keyword">inline</span> T sample_uniform_sphere_pdf(T radius = 1.0) {</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keywordflow">return</span> 1.0 / (4.0 * math::pi_v&lt;T&gt; * radius * radius);</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>}</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>}</div>
-<div class="ttc" id="aspherical_8hpp_html_a870427e04f7c5fff5034562c14125c59"><div class="ttname"><a href="../../dc/d1f/spherical_8hpp.html#a870427e04f7c5fff5034562c14125c59">pbpt::geometry::phi</a></div><div class="ttdeci">constexpr auto phi(const Vector&lt; T, 3 &gt; &amp;v)</div><div class="ttdoc">Azimuth angle of a 3D direction in [0, 2*pi).</div><div class="ttdef"><b>Definition</b> spherical.hpp:221</div></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">if</span> (p_offset.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#aaa9cfea78aaba97d8fb5afb9feadefad">x</a>() == 0 &amp;&amp; p_offset.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#a76b7ef5c2bbeaf238e05015a3b85815b">y</a>() == 0) {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a>(0, 0);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    }</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    T theta{}, r{};</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keywordflow">if</span> (std::abs(p_offset.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#aaa9cfea78aaba97d8fb5afb9feadefad">x</a>()) &gt; std::abs(p_offset.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#a76b7ef5c2bbeaf238e05015a3b85815b">y</a>())) {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        r = p_offset.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#aaa9cfea78aaba97d8fb5afb9feadefad">x</a>();</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        theta = (<a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">math::pi_v&lt;T&gt;</a> / 4.0) * (p_offset.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#a76b7ef5c2bbeaf238e05015a3b85815b">y</a>() / p_offset.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#aaa9cfea78aaba97d8fb5afb9feadefad">x</a>());</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        r = p_offset.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#a76b7ef5c2bbeaf238e05015a3b85815b">y</a>();</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        theta = (<a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">math::pi_v&lt;T&gt;</a> / 2.0) - (<a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">math::pi_v&lt;T&gt;</a> / 4.0) * (p_offset.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#aaa9cfea78aaba97d8fb5afb9feadefad">x</a>() / p_offset.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#a76b7ef5c2bbeaf238e05015a3b85815b">y</a>());</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    }</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a>(radius * r * <a class="code hl_class" href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">math::Vector&lt;T, 2&gt;</a>(std::cos(theta), std::sin(theta)));</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>}</div>
+</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00229" data-start="{" data-end="}">
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#a16e0b60764b6bea5eb4691def05f98b4">  229</a></span><span class="keyword">inline</span> T <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a16e0b60764b6bea5eb4691def05f98b4">sample_uniform_disk_pdf</a>(T radius = 1.0) {</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordflow">return</span> 1.0 / (<a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">math::pi_v&lt;T&gt;</a> * radius * radius);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>}</div>
+</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00244" data-start="{" data-end="}">
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#ac1bd4f8e7cc77d5daccb0b52193985b1">  244</a></span><span class="keyword">inline</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 3&gt;</a> <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#ac1bd4f8e7cc77d5daccb0b52193985b1">sample_uniform_hemisphere</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a>&amp; uv, T radius = 1.0) {</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    T z = uv.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#aaa9cfea78aaba97d8fb5afb9feadefad">x</a>();</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    T r = std::sqrt(std::max(T(0), T(1) - z * z));</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    T phi = 2.0 * <a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">math::pi_v&lt;T&gt;</a> * uv.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#a76b7ef5c2bbeaf238e05015a3b85815b">y</a>();</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 3&gt;</a>(radius * r * std::cos(phi), radius * r * std::sin(phi), radius * z);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>}</div>
+</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00261" data-start="{" data-end="}">
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#a0008299eea73bb4ad2cd296a6b782d31">  261</a></span><a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 3&gt;</a> <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a0008299eea73bb4ad2cd296a6b782d31">sample_uniform_hemisphere_concentric</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a>&amp; uv, T radius = 1.0) {</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keyword">auto</span> d = <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#af748bc9b3e92350ce55183485367fcdb">math::sample_uniform_disk_concentric</a>(uv);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keyword">auto</span> r2 = d.x() * d.x() + d.y() * d.y();</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <span class="keyword">auto</span> z = std::sqrt(std::max(T(0), T(1) - r2));</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 3&gt;</a>{radius * d.x(), radius * d.y(), radius * z};</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>}</div>
+</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00276" data-start="{" data-end="}">
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#aec68d2039b327c6aaa3f5dd183ab84ba">  276</a></span><span class="keyword">inline</span> T <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#aec68d2039b327c6aaa3f5dd183ab84ba">sample_uniform_hemisphere_pdf</a>(T radius = 1.0) {</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordflow">return</span> 1.0 / (2.0 * <a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">math::pi_v&lt;T&gt;</a> * radius * radius);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>}</div>
+</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00291" data-start="{" data-end="}">
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#a0bf08077640f5ae61b0a38f5efc8fa19">  291</a></span><span class="keyword">inline</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 3&gt;</a> <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a0bf08077640f5ae61b0a38f5efc8fa19">sample_uniform_sphere</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 2&gt;</a>&amp; uv, T radius = 1.0) {</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    T z = 1.0 - 2.0 * uv.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#aaa9cfea78aaba97d8fb5afb9feadefad">x</a>();</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    T r = std::sqrt(std::max(T(0), T(1) - z * z));</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    T phi = 2.0 * <a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">math::pi_v&lt;T&gt;</a> * uv.<a class="code hl_function" href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#a76b7ef5c2bbeaf238e05015a3b85815b">y</a>();</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">math::Point&lt;T, 3&gt;</a>(radius * r * std::cos(phi), radius * r * std::sin(phi), radius * z);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>}</div>
+</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00306" data-start="{" data-end="}">
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="../../dc/dbd/sampling_8hpp.html#a833a4c5e824f8a7e5699e8685d28e79e">  306</a></span><span class="keyword">inline</span> T <a class="code hl_function" href="../../dc/dbd/sampling_8hpp.html#a833a4c5e824f8a7e5699e8685d28e79e">sample_uniform_sphere_pdf</a>(T radius = 1.0) {</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keywordflow">return</span> 1.0 / (4.0 * <a class="code hl_variable" href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">math::pi_v&lt;T&gt;</a> * radius * radius);</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>}</div>
+</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>}</div>
+<div class="ttc" id="aclasspbpt_1_1math_1_1_point_html"><div class="ttname"><a href="../../d7/d1b/classpbpt_1_1math_1_1_point.html">pbpt::math::Point</a></div><div class="ttdoc">Geometric point in N-dimensional space.</div><div class="ttdef"><b>Definition</b> point.hpp:29</div></div>
+<div class="ttc" id="aclasspbpt_1_1math_1_1_point_html_a3c8dbb86e74e0cacfb9112ec6221bf1f"><div class="ttname"><a href="../../d7/d1b/classpbpt_1_1math_1_1_point.html#a3c8dbb86e74e0cacfb9112ec6221bf1f">pbpt::math::Point::to_vector</a></div><div class="ttdeci">constexpr auto to_vector() const</div><div class="ttdoc">Converts this point to a Vector&lt;T,N&gt; with the same coordinates.</div><div class="ttdef"><b>Definition</b> point.hpp:51</div></div>
+<div class="ttc" id="aclasspbpt_1_1math_1_1_tuple_html_a76b7ef5c2bbeaf238e05015a3b85815b"><div class="ttname"><a href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#a76b7ef5c2bbeaf238e05015a3b85815b">pbpt::math::Tuple::y</a></div><div class="ttdeci">constexpr T &amp; y()</div><div class="ttdoc">Shortcut accessor for the second component (mutable).</div><div class="ttdef"><b>Definition</b> tuple.hpp:129</div></div>
+<div class="ttc" id="aclasspbpt_1_1math_1_1_tuple_html_aaa9cfea78aaba97d8fb5afb9feadefad"><div class="ttname"><a href="../../de/d5c/classpbpt_1_1math_1_1_tuple.html#aaa9cfea78aaba97d8fb5afb9feadefad">pbpt::math::Tuple::x</a></div><div class="ttdeci">constexpr T &amp; x()</div><div class="ttdoc">Shortcut accessor for the first component (mutable).</div><div class="ttdef"><b>Definition</b> tuple.hpp:127</div></div>
+<div class="ttc" id="aclasspbpt_1_1math_1_1_vector_html"><div class="ttname"><a href="../../d5/dfd/classpbpt_1_1math_1_1_vector.html">pbpt::math::Vector</a></div><div class="ttdoc">Fixed-size mathematical vector with arithmetic operations.</div><div class="ttdef"><b>Definition</b> vector.hpp:27</div></div>
+<div class="ttc" id="amath_2function_8hpp_html_a2d075450131a401077dfa674fdfca5cb"><div class="ttname"><a href="../../db/d9d/math_2function_8hpp.html#a2d075450131a401077dfa674fdfca5cb">pbpt::math::pi_v</a></div><div class="ttdeci">constexpr T pi_v</div><div class="ttdoc">π constant for the requested scalar type.</div><div class="ttdef"><b>Definition</b> function.hpp:32</div></div>
+<div class="ttc" id="apoint_8hpp_html"><div class="ttname"><a href="../../d0/de4/point_8hpp.html">point.hpp</a></div><div class="ttdoc">Geometric point type built on top of Tuple and Vector.</div></div>
+<div class="ttc" id="asampling_8hpp_html_a0008299eea73bb4ad2cd296a6b782d31"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#a0008299eea73bb4ad2cd296a6b782d31">pbpt::math::sample_uniform_hemisphere_concentric</a></div><div class="ttdeci">math::Point&lt; T, 3 &gt; sample_uniform_hemisphere_concentric(const math::Point&lt; T, 2 &gt; &amp;uv, T radius=1.0)</div><div class="ttdoc">Sample a point uniformly distributed on a hemisphere using concentric disk mapping....</div><div class="ttdef"><b>Definition</b> sampling.hpp:261</div></div>
+<div class="ttc" id="asampling_8hpp_html_a05af5fc4f5c6d74f9f851289a002afaa"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#a05af5fc4f5c6d74f9f851289a002afaa">pbpt::math::sample_uniform_2d</a></div><div class="ttdeci">math::Point&lt; T, 2 &gt; sample_uniform_2d(const math::Point&lt; T, 2 &gt; &amp;uv, const math::Vector&lt; T, 2 &gt; &amp;x_range=math::Vector&lt; T, 2 &gt;(T(0), T(1)), const math::Vector&lt; T, 2 &gt; &amp;y_range=math::Vector&lt; T, 2 &gt;(T(0), T(1)))</div><div class="ttdoc">Sample a point uniformly distributed in a 2D box defined by x_range and y_range.</div><div class="ttdef"><b>Definition</b> sampling.hpp:51</div></div>
+<div class="ttc" id="asampling_8hpp_html_a0bf08077640f5ae61b0a38f5efc8fa19"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#a0bf08077640f5ae61b0a38f5efc8fa19">pbpt::math::sample_uniform_sphere</a></div><div class="ttdeci">math::Point&lt; T, 3 &gt; sample_uniform_sphere(const math::Point&lt; T, 2 &gt; &amp;uv, T radius=1.0)</div><div class="ttdoc">Sample a point uniformly distributed on a sphere. For z, we map uv.x() in [0, 1] to [-1,...</div><div class="ttdef"><b>Definition</b> sampling.hpp:291</div></div>
+<div class="ttc" id="asampling_8hpp_html_a16e0b60764b6bea5eb4691def05f98b4"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#a16e0b60764b6bea5eb4691def05f98b4">pbpt::math::sample_uniform_disk_pdf</a></div><div class="ttdeci">T sample_uniform_disk_pdf(T radius=1.0)</div><div class="ttdoc">Compute the probability density function for uniform disk sampling. The PDF is the reciprocal of the ...</div><div class="ttdef"><b>Definition</b> sampling.hpp:229</div></div>
+<div class="ttc" id="asampling_8hpp_html_a649a4660b7a88402d03cf854b8f553a3"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#a649a4660b7a88402d03cf854b8f553a3">pbpt::math::sample_uniform_disk</a></div><div class="ttdeci">math::Point&lt; T, 2 &gt; sample_uniform_disk(const math::Point&lt; T, 2 &gt; &amp;uv, T radius=1.0)</div><div class="ttdoc">Sample a point uniformly distributed on a disk. For theta, we uniformly sample [0,...</div><div class="ttdef"><b>Definition</b> sampling.hpp:167</div></div>
+<div class="ttc" id="asampling_8hpp_html_a6c4bebf62df0502abed7e14c421f42f0"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#a6c4bebf62df0502abed7e14c421f42f0">pbpt::math::sample_tent_pdf</a></div><div class="ttdeci">T sample_tent_pdf(T x, T r=1.0)</div><div class="ttdoc">Compute the probability density function for tent distribution centered at 0 with range [-r,...</div><div class="ttdef"><b>Definition</b> sampling.hpp:115</div></div>
+<div class="ttc" id="asampling_8hpp_html_a72587d0df4abab8c736a11693ca80e2c"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#a72587d0df4abab8c736a11693ca80e2c">pbpt::math::sample_tent</a></div><div class="ttdeci">T sample_tent(T u, T r=1.0)</div><div class="ttdoc">Sample a value from a tent distribution centered at 0 with range [-r, r]. The symmetric tent PDF is f...</div><div class="ttdef"><b>Definition</b> sampling.hpp:97</div></div>
+<div class="ttc" id="asampling_8hpp_html_a785f864ffbacd45153886d81cdc5f6c5"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#a785f864ffbacd45153886d81cdc5f6c5">pbpt::math::sample_tent_2d_pdf</a></div><div class="ttdeci">T sample_tent_2d_pdf(const math::Point&lt; T, 2 &gt; &amp;p, T rx=1.0, T ry=1.0)</div><div class="ttdoc">Compute the probability density function for 2D tent distribution in each dimension....</div><div class="ttdef"><b>Definition</b> sampling.hpp:146</div></div>
+<div class="ttc" id="asampling_8hpp_html_a833a4c5e824f8a7e5699e8685d28e79e"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#a833a4c5e824f8a7e5699e8685d28e79e">pbpt::math::sample_uniform_sphere_pdf</a></div><div class="ttdeci">T sample_uniform_sphere_pdf(T radius=1.0)</div><div class="ttdoc">Compute the probability density function for uniform sphere sampling. The PDF is the reciprocal of th...</div><div class="ttdef"><b>Definition</b> sampling.hpp:306</div></div>
+<div class="ttc" id="asampling_8hpp_html_a8f25b743ff8ab116044e3961363e4694"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#a8f25b743ff8ab116044e3961363e4694">pbpt::math::sample_uniform</a></div><div class="ttdeci">T sample_uniform(T u, T a=T(0), T b=T(1))</div><div class="ttdoc">Sample a value uniformly distributed in [a, b].</div><div class="ttdef"><b>Definition</b> sampling.hpp:21</div></div>
+<div class="ttc" id="asampling_8hpp_html_ac1bd4f8e7cc77d5daccb0b52193985b1"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#ac1bd4f8e7cc77d5daccb0b52193985b1">pbpt::math::sample_uniform_hemisphere</a></div><div class="ttdeci">math::Point&lt; T, 3 &gt; sample_uniform_hemisphere(const math::Point&lt; T, 2 &gt; &amp;uv, T radius=1.0)</div><div class="ttdoc">Sample a point uniformly distributed on a hemisphere. For z, we directly use uv.x() in [0,...</div><div class="ttdef"><b>Definition</b> sampling.hpp:244</div></div>
+<div class="ttc" id="asampling_8hpp_html_ad25687b1f41f7f002cffc0d65e74fc25"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#ad25687b1f41f7f002cffc0d65e74fc25">pbpt::math::sample_tent_2d</a></div><div class="ttdeci">math::Point&lt; T, 2 &gt; sample_tent_2d(const math::Point&lt; T, 2 &gt; &amp;uv, T rx=1.0, T ry=1.0)</div><div class="ttdoc">Sample a 2D point from a tent distribution in each dimension.</div><div class="ttdef"><b>Definition</b> sampling.hpp:131</div></div>
+<div class="ttc" id="asampling_8hpp_html_ae437e139dbb0ed4f152da83a17998471"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#ae437e139dbb0ed4f152da83a17998471">pbpt::math::sample_uniform_2d_pdf</a></div><div class="ttdeci">T sample_uniform_2d_pdf(const math::Point&lt; T, 2 &gt; &amp;p, const math::Vector&lt; T, 2 &gt; &amp;x_range=math::Vector&lt; T, 2 &gt;(T(0), T(1)), const math::Vector&lt; T, 2 &gt; &amp;y_range=math::Vector&lt; T, 2 &gt;(T(0), T(1)))</div><div class="ttdoc">Compute the probability density function for uniform sampling in a 2D box defined by x_range and y_ra...</div><div class="ttdef"><b>Definition</b> sampling.hpp:71</div></div>
+<div class="ttc" id="asampling_8hpp_html_aec68d2039b327c6aaa3f5dd183ab84ba"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#aec68d2039b327c6aaa3f5dd183ab84ba">pbpt::math::sample_uniform_hemisphere_pdf</a></div><div class="ttdeci">T sample_uniform_hemisphere_pdf(T radius=1.0)</div><div class="ttdoc">Compute the probability density function for uniform hemisphere sampling. The PDF is the reciprocal o...</div><div class="ttdef"><b>Definition</b> sampling.hpp:276</div></div>
+<div class="ttc" id="asampling_8hpp_html_af2efa54b60978dfac9b9a60f563a399f"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#af2efa54b60978dfac9b9a60f563a399f">pbpt::math::sample_uniform_pdf</a></div><div class="ttdeci">T sample_uniform_pdf(T x, T a=T(0), T b=T(1))</div><div class="ttdoc">Compute the probability density function for uniform sampling in [a, b]. The PDF is the reciprocal of...</div><div class="ttdef"><b>Definition</b> sampling.hpp:35</div></div>
+<div class="ttc" id="asampling_8hpp_html_af748bc9b3e92350ce55183485367fcdb"><div class="ttname"><a href="../../dc/dbd/sampling_8hpp.html#af748bc9b3e92350ce55183485367fcdb">pbpt::math::sample_uniform_disk_concentric</a></div><div class="ttdeci">math::Point&lt; T, 2 &gt; sample_uniform_disk_concentric(const math::Point&lt; T, 2 &gt; &amp;uv, T radius=1.0)</div><div class="ttdoc">Sample a point uniformly distributed on a disk using concentric mapping. Concentric (Shirley-Chiu) ma...</div><div class="ttdef"><b>Definition</b> sampling.hpp:202</div></div>
+<div class="ttc" id="avector_8hpp_html"><div class="ttname"><a href="../../da/d16/vector_8hpp.html">vector.hpp</a></div><div class="ttdoc">Fixed-size vector type and geometric helpers (cross product, bases).</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="../../dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li><li class="navelem"><b>sampling.hpp</b></li>
+    <li class="navelem"><a href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="../../dir_ae9a93452e2a84339148a16bcf2eb561.html">math</a></li><li class="navelem"><a href="../../dc/dbd/sampling_8hpp.html">sampling.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

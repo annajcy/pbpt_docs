@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wavelength_0',['WaveLength',['../dc/da5/radiometry__units_8hpp.html#a9812086d2e657772bd8066b5e402a685',1,'pbpt::radiometry']]]
+  ['uint_0',['UInt',['../df/d5b/type__alias_8hpp.html#ac14c74d05edcc01130b66805e8e601f3',1,'pbpt::math']]]
 ];
