@@ -111,6 +111,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4539ba85e223a6327fcca4d27191fc04" id="r_a4539ba85e223a6327fcca4d27191fc04"><td class="memItemLeft" align="right" valign="top"><a id="a4539ba85e223a6327fcca4d27191fc04" name="a4539ba85e223a6327fcca4d27191fc04"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>BlackBodySpectrumDistribution</b> (T temperature)</td></tr>
 <tr class="memdesc:a4539ba85e223a6327fcca4d27191fc04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a black-body spectrum at the given temperature in kelvin. <br /></td></tr>
+<tr class="memitem:a12df805a02ddbb835bf222a8dd9d5e32" id="r_a12df805a02ddbb835bf222a8dd9d5e32"><td class="memItemLeft" align="right" valign="top"><a id="a12df805a02ddbb835bf222a8dd9d5e32" name="a12df805a02ddbb835bf222a8dd9d5e32"></a>
+constexpr T&#160;</td><td class="memItemRight" valign="bottom"><b>max_wavelength</b> () const</td></tr>
+<tr class="memitem:adfc534568da33730d34c12bb8a6cd190" id="r_adfc534568da33730d34c12bb8a6cd190"><td class="memItemLeft" align="right" valign="top"><a id="adfc534568da33730d34c12bb8a6cd190" name="adfc534568da33730d34c12bb8a6cd190"></a>
+constexpr T&#160;</td><td class="memItemRight" valign="bottom"><b>max_value</b> () const</td></tr>
 <tr class="inherit_header pub_methods_classpbpt_1_1radiometry_1_1_spectrum_distribution"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classpbpt_1_1radiometry_1_1_spectrum_distribution')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="../../db/d1d/classpbpt_1_1radiometry_1_1_spectrum_distribution.html">pbpt::radiometry::SpectrumDistribution&lt; BlackBodySpectrumDistribution&lt; T &gt;, T &gt;</a></td></tr>
 <tr class="memitem:a00158d64f3d1ed2dcbae9e964d401141 inherit pub_methods_classpbpt_1_1radiometry_1_1_spectrum_distribution" id="r_a00158d64f3d1ed2dcbae9e964d401141"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d1d/classpbpt_1_1radiometry_1_1_spectrum_distribution.html#a00158d64f3d1ed2dcbae9e964d401141">at</a> (T lambda) const</td></tr>
 <tr class="memdesc:a00158d64f3d1ed2dcbae9e964d401141 inherit pub_methods_classpbpt_1_1radiometry_1_1_spectrum_distribution"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the spectrum at a given wavelength.  <br /></td></tr>
@@ -180,7 +184,7 @@ template&lt;typename T&gt; </div>
 <p>Uses Planck's law in SI units, taking wavelength in nanometers and converting internally to meters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_K</td><td><a class="el" href="../../dc/da5/radiometry__units_8hpp.html#a9aca7cdb8b0417ad6669bac2e1fdb8a5" title="Thermodynamic temperature (K).">Temperature</a> in kelvin. </td></tr>
+    <tr><td class="paramname">t_K</td><td>Temperature in kelvin. </td></tr>
     <tr><td class="paramname">lambda_nm</td><td>Wavelength in nanometers. </td></tr>
   </table>
   </dd>
@@ -217,7 +221,7 @@ template&lt;typename T&gt; </div>
 <p>Uses the Stefan–Boltzmann law to return power per unit area.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_K</td><td><a class="el" href="../../dc/da5/radiometry__units_8hpp.html#a9aca7cdb8b0417ad6669bac2e1fdb8a5" title="Thermodynamic temperature (K).">Temperature</a> in kelvin. </td></tr>
+    <tr><td class="paramname">t_K</td><td>Temperature in kelvin. </td></tr>
   </table>
   </dd>
 </dl>
@@ -253,7 +257,7 @@ template&lt;typename T&gt; </div>
 <p>Uses Wien's displacement law, which states that the peak wavelength is approximately b / T, where b is about 2.9e-3 meter kelvin.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_K</td><td><a class="el" href="../../dc/da5/radiometry__units_8hpp.html#a9aca7cdb8b0417ad6669bac2e1fdb8a5" title="Thermodynamic temperature (K).">Temperature</a> in kelvin. </td></tr>
+    <tr><td class="paramname">t_K</td><td>Temperature in kelvin. </td></tr>
   </table>
   </dd>
 </dl>

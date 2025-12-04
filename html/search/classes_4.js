@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['echelonresult_0',['EchelonResult',['../d9/db7/structpbpt_1_1math_1_1_matrix_1_1_echelon_result.html',1,'pbpt::math::Matrix']]],
-  ['evaluationresult_1',['EvaluationResult',['../df/d3d/structpbpt_1_1integrator_1_1_sampler_evaluator_1_1_evaluation_result.html',1,'pbpt::integrator::SamplerEvaluator']]]
+  ['film_0',['Film',['../d9/dad/classpbpt_1_1camera_1_1_film.html',1,'pbpt::camera']]],
+  ['film_3c_20rgbfilm_3c_20t_2c_20pixelsensortype_20_3e_2c_20t_20_3e_1',['Film&lt; RGBFilm&lt; T, PixelSensorType &gt;, T &gt;',['../d9/dad/classpbpt_1_1camera_1_1_film.html',1,'pbpt::camera']]],
+  ['filteredcamerasample_2',['FilteredCameraSample',['../d3/de6/structpbpt_1_1camera_1_1_pixel_filter_1_1_filtered_camera_sample.html',1,'pbpt::camera::PixelFilter']]],
+  ['frame_3',['Frame',['../df/dce/classpbpt_1_1geometry_1_1_frame.html',1,'pbpt::geometry']]],
+  ['frame_3c_20float_20_3e_4',['Frame&lt; Float &gt;',['../df/dce/classpbpt_1_1geometry_1_1_frame.html',1,'pbpt::geometry']]],
+  ['functionalspectrumdistribution_5',['FunctionalSpectrumDistribution',['../d3/d15/classpbpt_1_1radiometry_1_1_functional_spectrum_distribution.html',1,'pbpt::radiometry']]]
 ];

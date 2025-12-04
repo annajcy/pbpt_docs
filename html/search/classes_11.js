@@ -1,26 +1,4 @@
 var searchData=
 [
-  ['vector_0',['Vector',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20float_2c_201_20_3e_1',['Vector&lt; Float, 1 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20float_2c_202_20_3e_2',['Vector&lt; Float, 2 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20float_2c_203_20_3e_3',['Vector&lt; Float, 3 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20float_2c_204_20_3e_4',['Vector&lt; Float, 4 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20int_2c_201_20_3e_5',['Vector&lt; Int, 1 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20int_2c_202_20_3e_6',['Vector&lt; Int, 2 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20int_2c_202_20_3e_7',['Vector&lt; int, 2 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20int_2c_203_20_3e_8',['Vector&lt; Int, 3 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20int_2c_204_20_3e_9',['Vector&lt; Int, 4 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20t_2c_202_20_3e_10',['Vector&lt; T, 2 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20t_2c_203_20_3e_11',['Vector&lt; T, 3 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vector_3c_20t_2c_20n_20_2d_201_20_3e_12',['Vector&lt; T, N - 1 &gt;',['../d5/dfd/classpbpt_1_1math_1_1_vector.html',1,'pbpt::math']]],
-  ['vectorops_13',['VectorOps',['../de/d3d/classpbpt_1_1math_1_1_vector_ops.html',1,'pbpt::math']]],
-  ['vectorops_3c_20homogeneous_2c_20t_2c_20n_20_3e_14',['VectorOps&lt; Homogeneous, T, N &gt;',['../de/d3d/classpbpt_1_1math_1_1_vector_ops.html',1,'pbpt::math']]],
-  ['vectorops_3c_20normal_2c_20t_2c_20n_20_3e_15',['VectorOps&lt; Normal, T, N &gt;',['../de/d3d/classpbpt_1_1math_1_1_vector_ops.html',1,'pbpt::math']]],
-  ['vectorops_3c_20vector_2c_20int_2c_20n_20_3e_16',['VectorOps&lt; Vector, int, N &gt;',['../de/d3d/classpbpt_1_1math_1_1_vector_ops.html',1,'pbpt::math']]],
-  ['vectorops_3c_20vector_2c_20t_2c_20n_20_3e_17',['VectorOps&lt; Vector, T, N &gt;',['../de/d3d/classpbpt_1_1math_1_1_vector_ops.html',1,'pbpt::math']]],
-  ['vectorview_18',['VectorView',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
-  ['vectorview_3c_20t_2c_20c_20_3e_19',['VectorView&lt; T, C &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
-  ['vectorview_3c_20t_2c_20r_20_3e_20',['VectorView&lt; T, R &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
-  ['vectorview_3c_20t_2c_20viewc_20_3e_21',['VectorView&lt; T, ViewC &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]],
-  ['vectorview_3c_20t_2c_20viewr_20_3e_22',['VectorView&lt; T, ViewR &gt;',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html',1,'pbpt::math']]]
+  ['xyz_0',['XYZ',['../d6/d64/classpbpt_1_1radiometry_1_1_x_y_z.html',1,'pbpt::radiometry']]]
 ];

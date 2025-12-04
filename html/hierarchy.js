@@ -1,6 +1,5 @@
 var hierarchy =
 [
-    [ "pbpt::radiometry::AreaTag", "db/d6e/structpbpt_1_1radiometry_1_1_area_tag.html", null ],
     [ "pbpt::geometry::Bounds< T, N >", "d9/dc0/classpbpt_1_1geometry_1_1_bounds.html", null ],
     [ "pbpt::camera::Camera< Derived, T >", "d0/d55/classpbpt_1_1camera_1_1_camera.html", [
       [ "pbpt::camera::ProjectiveCamera< Derived, T >", "dd/deb/classpbpt_1_1camera_1_1_projective_camera.html", null ]
@@ -32,7 +31,6 @@ var hierarchy =
     [ "pbpt::camera::CameraSample< T >", "d6/dfe/structpbpt_1_1camera_1_1_camera_sample.html", null ],
     [ "pbpt::radiometry::CsvSpectrumDataSource< T >", "d6/dbb/classpbpt_1_1radiometry_1_1_csv_spectrum_data_source.html", null ],
     [ "pbpt::geometry::DirectionalCone< T >", "d0/d71/classpbpt_1_1geometry_1_1_directional_cone.html", null ],
-    [ "pbpt::radiometry::DirectionalSolidAngle< T >", "da/d5d/structpbpt_1_1radiometry_1_1_directional_solid_angle.html", null ],
     [ "pbpt::integrator::Distribution< N >", "d4/d53/classpbpt_1_1integrator_1_1_distribution.html", [
       [ "pbpt::integrator::UniformDistributionND< N >", "d5/d63/classpbpt_1_1integrator_1_1_uniform_distribution_n_d.html", null ]
     ] ],
@@ -47,7 +45,6 @@ var hierarchy =
       [ "pbpt::camera::RGBFilm< T, PixelSensorType >", "d9/d35/classpbpt_1_1camera_1_1_r_g_b_film.html", null ]
     ] ],
     [ "pbpt::camera::PixelFilter< T, Derived >::FilteredCameraSample", "d3/de6/structpbpt_1_1camera_1_1_pixel_filter_1_1_filtered_camera_sample.html", null ],
-    [ "pbpt::radiometry::FluxTag", "d2/d5e/structpbpt_1_1radiometry_1_1_flux_tag.html", null ],
     [ "pbpt::geometry::Frame< T >", "df/dce/classpbpt_1_1geometry_1_1_frame.html", null ],
     [ "pbpt::radiometry::Hold< S >", "db/df0/structpbpt_1_1radiometry_1_1_hold.html", null ],
     [ "pbpt::radiometry::IntegrableDomain< Derived, T >", "dc/ddf/classpbpt_1_1radiometry_1_1_integrable_domain.html", null ],
@@ -69,13 +66,11 @@ var hierarchy =
     [ "pbpt::integrator::Integrator< 1 >", "d2/d0f/classpbpt_1_1integrator_1_1_integrator.html", [
       [ "pbpt::integrator::MonteCarloIntegrator1D", "dc/d15/classpbpt_1_1integrator_1_1_monte_carlo_integrator1_d.html", null ]
     ] ],
-    [ "pbpt::radiometry::IntensityTag", "d4/d52/structpbpt_1_1radiometry_1_1_intensity_tag.html", null ],
     [ "pbpt::geometry::Interaction< T, Derived >", "df/dbc/classpbpt_1_1geometry_1_1_interaction.html", null ],
     [ "pbpt::geometry::Interaction< T, SurfaceInteraction< T > >", "df/dbc/classpbpt_1_1geometry_1_1_interaction.html", [
       [ "pbpt::geometry::SurfaceInteraction< T >", "dd/d8c/classpbpt_1_1geometry_1_1_surface_interaction.html", null ]
     ] ],
     [ "pbpt::shape::Sphere< T >::IntersectionResult< U >", "d7/d49/structpbpt_1_1shape_1_1_sphere_1_1_intersection_result.html", null ],
-    [ "pbpt::radiometry::IrradianceTag", "db/d25/structpbpt_1_1radiometry_1_1_irradiance_tag.html", null ],
     [ "pbpt::math::Matrix< T, R, C >", "da/d16/classpbpt_1_1math_1_1_matrix.html", null ],
     [ "pbpt::math::MatrixView< T, R, C, ViewR, ViewC >", "d3/d31/classpbpt_1_1math_1_1_matrix_view.html", null ],
     [ "pbpt::integrator::MCUniformSampler", "dc/d6d/classpbpt_1_1integrator_1_1_m_c_uniform_sampler.html", null ],
@@ -91,18 +86,6 @@ var hierarchy =
     [ "pbpt::camera::PixelSensor< T, SceneIlluminantSpectrumType, StandardIlluminantSpectrumType, SensorResponseSpectrumType >", "d0/d8e/classpbpt_1_1camera_1_1_pixel_sensor.html", null ],
     [ "pbpt::math::Polynomial< T >", "da/dac/classpbpt_1_1math_1_1_polynomial.html", null ],
     [ "pbpt::utils::ProgressBar", "db/d4d/classpbpt_1_1utils_1_1_progress_bar.html", null ],
-    [ "pbpt::radiometry::RadianceTag", "df/db8/structpbpt_1_1radiometry_1_1_radiance_tag.html", null ],
-    [ "pbpt::radiometry::RadiometryUnit< T, Tag >", "de/d82/classpbpt_1_1radiometry_1_1_radiometry_unit.html", null ],
-    [ "pbpt::radiometry::RadiometryUnitInfo< Tag >", "d5/dfc/structpbpt_1_1radiometry_1_1_radiometry_unit_info.html", null ],
-    [ "pbpt::radiometry::RadiometryUnitInfo< AreaTag >", "de/dd3/structpbpt_1_1radiometry_1_1_radiometry_unit_info_3_01_area_tag_01_4.html", null ],
-    [ "pbpt::radiometry::RadiometryUnitInfo< FluxTag >", "d9/d99/structpbpt_1_1radiometry_1_1_radiometry_unit_info_3_01_flux_tag_01_4.html", null ],
-    [ "pbpt::radiometry::RadiometryUnitInfo< IntensityTag >", "d0/d73/structpbpt_1_1radiometry_1_1_radiometry_unit_info_3_01_intensity_tag_01_4.html", null ],
-    [ "pbpt::radiometry::RadiometryUnitInfo< IrradianceTag >", "d5/d46/structpbpt_1_1radiometry_1_1_radiometry_unit_info_3_01_irradiance_tag_01_4.html", null ],
-    [ "pbpt::radiometry::RadiometryUnitInfo< RadianceTag >", "d6/d43/structpbpt_1_1radiometry_1_1_radiometry_unit_info_3_01_radiance_tag_01_4.html", null ],
-    [ "pbpt::radiometry::RadiometryUnitInfo< SolidAngleTag >", "db/d34/structpbpt_1_1radiometry_1_1_radiometry_unit_info_3_01_solid_angle_tag_01_4.html", null ],
-    [ "pbpt::radiometry::RadiometryUnitInfo< SpectralTag< Tag > >", "d0/db9/structpbpt_1_1radiometry_1_1_radiometry_unit_info_3_01_spectral_tag_3_01_tag_01_4_01_4.html", null ],
-    [ "pbpt::radiometry::RadiometryUnitInfo< TemperatureTag >", "d7/d34/structpbpt_1_1radiometry_1_1_radiometry_unit_info_3_01_temperature_tag_01_4.html", null ],
-    [ "pbpt::radiometry::RadiometryUnitInfo< WaveLengthTag >", "d4/d50/structpbpt_1_1radiometry_1_1_radiometry_unit_info_3_01_wave_length_tag_01_4.html", null ],
     [ "pbpt::math::RandomGenerator< T, N >", "d9/d9e/classpbpt_1_1math_1_1_random_generator.html", null ],
     [ "pbpt::geometry::Ray< T, N >", "df/d7f/classpbpt_1_1geometry_1_1_ray.html", [
       [ "pbpt::geometry::RayDifferential< double, 2 >", "dd/d25/classpbpt_1_1geometry_1_1_ray_differential.html", null ],
@@ -134,8 +117,6 @@ var hierarchy =
     ] ],
     [ "pbpt::shape::ShapeSample< T >", "d7/d12/structpbpt_1_1shape_1_1_shape_sample.html", null ],
     [ "pbpt::scene::SimpleScene< T >", "da/d66/classpbpt_1_1scene_1_1_simple_scene.html", null ],
-    [ "pbpt::radiometry::SolidAngleTag", "dd/d3b/structpbpt_1_1radiometry_1_1_solid_angle_tag.html", null ],
-    [ "pbpt::radiometry::SpectralTag< Tag >", "d4/dee/structpbpt_1_1radiometry_1_1_spectral_tag.html", null ],
     [ "pbpt::radiometry::SpectrumDistribution< Derived, T >", "db/d1d/classpbpt_1_1radiometry_1_1_spectrum_distribution.html", [
       [ "pbpt::radiometry::RGBAlbedoSpectrumDistribution< T, radiometry::RGBSigmoidPolynomialNormalized >", "de/def/classpbpt_1_1radiometry_1_1_r_g_b_albedo_spectrum_distribution.html", null ]
     ] ],
@@ -170,9 +151,6 @@ var hierarchy =
     [ "pbpt::geometry::SphericalPoint< T, N >", "d3/de6/classpbpt_1_1geometry_1_1_spherical_point.html", null ],
     [ "pbpt::radiometry::SurfaceInfo< T >", "de/d69/structpbpt_1_1radiometry_1_1_surface_info.html", null ],
     [ "pbpt::radiometry::TabularSpectrumRange< LMin, LMax >", "d0/d1d/structpbpt_1_1radiometry_1_1_tabular_spectrum_range.html", null ],
-    [ "pbpt::radiometry::TagTrait< Tag >", "d6/dd0/structpbpt_1_1radiometry_1_1_tag_trait.html", null ],
-    [ "pbpt::radiometry::TagTrait< SpectralTag< Tag > >", "dd/d2c/structpbpt_1_1radiometry_1_1_tag_trait_3_01_spectral_tag_3_01_tag_01_4_01_4.html", null ],
-    [ "pbpt::radiometry::TemperatureTag", "dc/da8/structpbpt_1_1radiometry_1_1_temperature_tag.html", null ],
     [ "pbpt::geometry::Transform< T >", "d5/d63/classpbpt_1_1geometry_1_1_transform.html", null ],
     [ "pbpt::geometry::TransformDecompositionResult< T >", "d0/d89/structpbpt_1_1geometry_1_1_transform_decomposition_result.html", null ],
     [ "pbpt::math::Tuple< Derived, T, N >", "de/d5c/classpbpt_1_1math_1_1_tuple.html", [
@@ -241,6 +219,5 @@ var hierarchy =
         [ "pbpt::math::Vector< int, 2 >", "d5/dfd/classpbpt_1_1math_1_1_vector.html", null ]
       ] ]
     ] ],
-    [ "pbpt::math::VectorView< T, N >", "d9/d17/classpbpt_1_1math_1_1_vector_view.html", null ],
-    [ "pbpt::radiometry::WaveLengthTag", "d9/d02/structpbpt_1_1radiometry_1_1_wave_length_tag.html", null ]
+    [ "pbpt::math::VectorView< T, N >", "d9/d17/classpbpt_1_1math_1_1_vector_view.html", null ]
 ];

@@ -2,14 +2,12 @@ var searchData=
 [
   ['w_0',['w',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#adbe7d57a2fdc07c17d22eec68a62a140',1,'pbpt::math::Homogeneous::w() const'],['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a7634ad4d1739745155c339e4631e918c',1,'pbpt::math::Homogeneous::w()'],['../de/d5c/classpbpt_1_1math_1_1_tuple.html#af8c6d4f34b75432c7526ffbb381981fc',1,'pbpt::math::Tuple::w()'],['../de/d5c/classpbpt_1_1math_1_1_tuple.html#a07baf2dc6d69be173a55db8514aaae08',1,'pbpt::math::Tuple::w() const']]],
   ['warp_5fequal_5farea_5fsquare_1',['warp_equal_area_square',['../dc/d1f/spherical_8hpp.html#a82090e53c2c9dc7e6733c44c1ec9a293',1,'pbpt::geometry']]],
-  ['wavelength_2',['WaveLength',['../dc/da5/radiometry__units_8hpp.html#a9812086d2e657772bd8066b5e402a685',1,'pbpt::radiometry']]],
-  ['wavelengthtag_3',['WaveLengthTag',['../d9/d02/structpbpt_1_1radiometry_1_1_wave_length_tag.html',1,'pbpt::radiometry']]],
-  ['weight_4',['weight',['../d3/de6/structpbpt_1_1camera_1_1_pixel_filter_1_1_filtered_camera_sample.html#acc51ba06095e77c577f26680e99d7f9d',1,'pbpt::camera::PixelFilter::FilteredCameraSample']]],
-  ['weight_5fsum_5',['weight_sum',['../d2/d39/structpbpt_1_1camera_1_1_r_g_b_film_1_1_pixel.html#aea7a8d9317994d65866b73fb741d7936',1,'pbpt::camera::RGBFilm::Pixel']]],
-  ['white_5fbalance_6',['white_balance',['../d6/dfd/color_8hpp.html#a7aaf36fd5bfc4e100a5e572de68623d1',1,'pbpt::radiometry']]],
-  ['white_5fpoint_7',['white_point',['../d6/d05/classpbpt_1_1radiometry_1_1_r_g_b_color_space.html#a00d1d94d4b8dbd5f3b1d579e28b5247f',1,'pbpt::radiometry::RGBColorSpace']]],
-  ['world_5fto_5fcamera_8',['world_to_camera',['../df/dec/classpbpt_1_1camera_1_1_render_transform.html#a3487a78831f6f19b7980e812348235d4',1,'pbpt::camera::RenderTransform']]],
-  ['world_5fto_5flocal_9',['world_to_local',['../df/dce/classpbpt_1_1geometry_1_1_frame.html#a8c3dd2c1ad29332c2f33caa85786df0c',1,'pbpt::geometry::Frame']]],
-  ['world_5fto_5frender_10',['world_to_render',['../df/dec/classpbpt_1_1camera_1_1_render_transform.html#a2ca37c0f6049b4822b5fd50467f363ea',1,'pbpt::camera::RenderTransform']]],
-  ['wrap_5fangle_5f2pi_11',['wrap_angle_2pi',['../dc/d1f/spherical_8hpp.html#a85f5d633c314c7485b7012708f325626',1,'pbpt::geometry']]]
+  ['weight_2',['weight',['../d3/de6/structpbpt_1_1camera_1_1_pixel_filter_1_1_filtered_camera_sample.html#acc51ba06095e77c577f26680e99d7f9d',1,'pbpt::camera::PixelFilter::FilteredCameraSample']]],
+  ['weight_5fsum_3',['weight_sum',['../d2/d39/structpbpt_1_1camera_1_1_r_g_b_film_1_1_pixel.html#aea7a8d9317994d65866b73fb741d7936',1,'pbpt::camera::RGBFilm::Pixel']]],
+  ['white_5fbalance_4',['white_balance',['../d6/dfd/color_8hpp.html#a7aaf36fd5bfc4e100a5e572de68623d1',1,'pbpt::radiometry']]],
+  ['white_5fpoint_5',['white_point',['../d6/d05/classpbpt_1_1radiometry_1_1_r_g_b_color_space.html#a00d1d94d4b8dbd5f3b1d579e28b5247f',1,'pbpt::radiometry::RGBColorSpace']]],
+  ['world_5fto_5fcamera_6',['world_to_camera',['../df/dec/classpbpt_1_1camera_1_1_render_transform.html#a3487a78831f6f19b7980e812348235d4',1,'pbpt::camera::RenderTransform']]],
+  ['world_5fto_5flocal_7',['world_to_local',['../df/dce/classpbpt_1_1geometry_1_1_frame.html#a8c3dd2c1ad29332c2f33caa85786df0c',1,'pbpt::geometry::Frame']]],
+  ['world_5fto_5frender_8',['world_to_render',['../df/dec/classpbpt_1_1camera_1_1_render_transform.html#a2ca37c0f6049b4822b5fd50467f363ea',1,'pbpt::camera::RenderTransform']]],
+  ['wrap_5fangle_5f2pi_9',['wrap_angle_2pi',['../dc/d1f/spherical_8hpp.html#a85f5d633c314c7485b7012708f325626',1,'pbpt::geometry']]]
 ];

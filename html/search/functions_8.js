@@ -22,8 +22,7 @@ var searchData=
   ['is_5foverlapped_19',['is_overlapped',['../d9/dc0/classpbpt_1_1geometry_1_1_bounds.html#abba1fa1c1bfc358f56e7256dae1b1a34',1,'pbpt::geometry::Bounds']]],
   ['is_5foverlapping_20',['is_overlapping',['../d0/d71/classpbpt_1_1geometry_1_1_directional_cone.html#a6115b3c631f64616ce21f3d1495e4064',1,'pbpt::geometry::DirectionalCone']]],
   ['is_5fpoint_21',['is_point',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a8a328a0268dc4e85e8be6f419b65441e',1,'pbpt::math::Homogeneous']]],
-  ['is_5fspectral_22',['is_spectral',['../d6/dd0/structpbpt_1_1radiometry_1_1_tag_trait.html#ad96aad28620286444f7d15da0c873ef3',1,'pbpt::radiometry::TagTrait::is_spectral()'],['../dd/d2c/structpbpt_1_1radiometry_1_1_tag_trait_3_01_spectral_tag_3_01_tag_01_4_01_4.html#afd38afccf5cd8f24d5f714c6c7ce419d',1,'pbpt::radiometry::TagTrait&lt; SpectralTag&lt; Tag &gt; &gt;::is_spectral()']]],
-  ['is_5fstandardized_23',['is_standardized',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a10d12e2fc93689af2aac78dd8373aab7',1,'pbpt::math::Homogeneous']]],
-  ['is_5fswaps_5fhandedness_24',['is_swaps_handedness',['../d5/d63/classpbpt_1_1geometry_1_1_transform.html#a6df408c017b07f14f46aa177141d1479',1,'pbpt::geometry::Transform']]],
-  ['is_5fvector_25',['is_vector',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#ad681e624469d449197d401e2555b3452',1,'pbpt::math::Homogeneous']]]
+  ['is_5fstandardized_22',['is_standardized',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#a10d12e2fc93689af2aac78dd8373aab7',1,'pbpt::math::Homogeneous']]],
+  ['is_5fswaps_5fhandedness_23',['is_swaps_handedness',['../d5/d63/classpbpt_1_1geometry_1_1_transform.html#a6df408c017b07f14f46aa177141d1479',1,'pbpt::geometry::Transform']]],
+  ['is_5fvector_24',['is_vector',['../d8/d13/classpbpt_1_1math_1_1_homogeneous.html#ad681e624469d449197d401e2555b3452',1,'pbpt::math::Homogeneous']]]
 ];

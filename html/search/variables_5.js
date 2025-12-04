@@ -19,6 +19,5 @@ var searchData=
   ['m_5fstart_5fptr_16',['m_start_ptr',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html#a31c705ad4c05dc53b50cc66771586fbc',1,'pbpt::math::VectorView']]],
   ['m_5fstride_17',['m_stride',['../d9/d17/classpbpt_1_1math_1_1_vector_view.html#a25cc317df71b840f7b90f1d44f2d0be1',1,'pbpt::math::VectorView']]],
   ['m_5fuv_18',['m_uv',['../dd/d8c/classpbpt_1_1geometry_1_1_surface_interaction.html#a1383aaa74aa68a4cfb3cfd408fcdd662',1,'pbpt::geometry::SurfaceInteraction']]],
-  ['m_5fvalue_19',['m_value',['../de/d82/classpbpt_1_1radiometry_1_1_radiometry_unit.html#a2fdbde57c23a475fdf7fb353fa8794d3',1,'pbpt::radiometry::RadiometryUnit']]],
-  ['matrix_20',['matrix',['../d9/db7/structpbpt_1_1math_1_1_matrix_1_1_echelon_result.html#a08ed4d07d9a9d606608317553df15746',1,'pbpt::math::Matrix::EchelonResult']]]
+  ['matrix_19',['matrix',['../d9/db7/structpbpt_1_1math_1_1_matrix_1_1_echelon_result.html#a08ed4d07d9a9d606608317553df15746',1,'pbpt::math::Matrix::EchelonResult']]]
 ];

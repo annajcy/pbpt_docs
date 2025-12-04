@@ -47,9 +47,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d6/d64/classpbpt_1_1radiometry_1_1_x_y_z.html#ad0e5c7b287bb375e2f1991a6402f7586",
-"da/d16/vector_8hpp_source.html",
-"de/def/classpbpt_1_1radiometry_1_1_r_g_b_albedo_spectrum_distribution.html#a6e6f5e3811dc4a4a46a5d1d1ed158497"
+"d6/df0/classpbpt_1_1camera_1_1_camera_projection.html#a19da01724c80e3cdd8b00df207b88c50",
+"db/d31/classpbpt_1_1radiometry_1_1_parallelogram_area_domain.html#a20ee8fe15c4ff98f590cdeef951cf553",
+"df/dce/classpbpt_1_1geometry_1_1_frame.html#a51f46c8510a945d6de9aeb2d066ca2f4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
